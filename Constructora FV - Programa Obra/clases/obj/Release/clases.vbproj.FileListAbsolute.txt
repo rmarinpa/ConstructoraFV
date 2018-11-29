@@ -1,0 +1,8 @@
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\clases\bin\Release\clases.dll
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\clases\bin\Release\clases.pdb
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\clases\bin\Release\clases.xml
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Release\clases.Resources.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Release\clases.vbproj.GenerateResource.Cache
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Release\clases.dll
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Release\clases.xml
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Release\clases.pdb
