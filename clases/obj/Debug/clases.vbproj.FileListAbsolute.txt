@@ -1,0 +1,168 @@
+D:\Visual Basic\OTROS\sistema-matricula-mysql\clases\bin\Debug\clases.dll
+D:\Visual Basic\OTROS\sistema-matricula-mysql\clases\bin\Debug\clases.pdb
+D:\Visual Basic\OTROS\sistema-matricula-mysql\clases\bin\Debug\clases.xml
+D:\Visual Basic\OTROS\sistema-matricula-mysql\clases\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Basic\OTROS\sistema-matricula-mysql\clases\obj\Debug\clases.Resources.resources
+D:\Visual Basic\OTROS\sistema-matricula-mysql\clases\obj\Debug\GenerateResource.read.1.tlog
+D:\Visual Basic\OTROS\sistema-matricula-mysql\clases\obj\Debug\GenerateResource.write.1.tlog
+D:\Visual Basic\OTROS\sistema-matricula-mysql\clases\obj\Debug\clases.dll
+D:\Visual Basic\OTROS\sistema-matricula-mysql\clases\obj\Debug\clases.xml
+D:\Visual Basic\OTROS\sistema-matricula-mysql\clases\obj\Debug\clases.pdb
+\\CUES\ArchivosA\gvargas4868\Documents\Visual Studio 2012\Projects\sistema-matricula-mysql\clases\obj\Debug\clases.Resources.resources
+\\CUES\ArchivosA\gvargas4868\Documents\Visual Studio 2012\Projects\sistema-matricula-mysql\clases\obj\Debug\clases.vbproj.GenerateResource.Cache
+\\CUES\ArchivosA\gvargas4868\Documents\Visual Studio 2012\Projects\sistema-matricula-mysql\clases\obj\Debug\clases.dll
+\\CUES\ArchivosA\gvargas4868\Documents\Visual Studio 2012\Projects\sistema-matricula-mysql\clases\obj\Debug\clases.xml
+\\CUES\ArchivosA\gvargas4868\Documents\Visual Studio 2012\Projects\sistema-matricula-mysql\clases\obj\Debug\clases.pdb
+\\CUES\ArchivosA\gvargas4868\Documents\Visual Studio 2012\Projects\sistema-matricula-mysql\clases\obj\Debug\clases.vbprojResolveAssemblyReference.cache
+\\CUES\ArchivosA\gvargas4868\Documents\Visual Studio 2012\Projects\sistema-matricula-mysql\clases\bin\Debug\clases.dll
+\\CUES\ArchivosA\gvargas4868\Documents\Visual Studio 2012\Projects\sistema-matricula-mysql\clases\bin\Debug\clases.pdb
+\\CUES\ArchivosA\gvargas4868\Documents\Visual Studio 2012\Projects\sistema-matricula-mysql\clases\bin\Debug\clases.xml
+\\CUES\ArchivosA\gvargas4868\Documents\Visual Studio 2012\Projects\sistema-matricula-mysql\clases\bin\Debug\MySql.Data.dll
+F:\Visual Basic\OTROS\sistema-matricula-mysql\clases\bin\Debug\clases.dll
+F:\Visual Basic\OTROS\sistema-matricula-mysql\clases\bin\Debug\clases.pdb
+F:\Visual Basic\OTROS\sistema-matricula-mysql\clases\bin\Debug\clases.xml
+F:\Visual Basic\OTROS\sistema-matricula-mysql\clases\obj\Debug\ResolveAssemblyReference.cache
+F:\Visual Basic\OTROS\sistema-matricula-mysql\clases\obj\Debug\clases.Resources.resources
+F:\Visual Basic\OTROS\sistema-matricula-mysql\clases\obj\Debug\GenerateResource.read.1.tlog
+F:\Visual Basic\OTROS\sistema-matricula-mysql\clases\obj\Debug\GenerateResource.write.1.tlog
+F:\Visual Basic\OTROS\sistema-matricula-mysql\clases\obj\Debug\clases.dll
+F:\Visual Basic\OTROS\sistema-matricula-mysql\clases\obj\Debug\clases.xml
+F:\Visual Basic\OTROS\sistema-matricula-mysql\clases\obj\Debug\clases.pdb
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\clases\bin\Debug\clases.dll
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\clases\bin\Debug\clases.pdb
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\clases\bin\Debug\clases.xml
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\clases\obj\Debug\clases.vbprojResolveAssemblyReference.cache
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\clases\obj\Debug\clases.Resources.resources
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\clases\obj\Debug\clases.vbproj.GenerateResource.Cache
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\clases\obj\Debug\clases.dll
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\clases\obj\Debug\clases.xml
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\clases\obj\Debug\clases.pdb
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\clases\bin\Debug\clases.dll
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\clases\bin\Debug\clases.pdb
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\clases\bin\Debug\clases.xml
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.vbprojResolveAssemblyReference.cache
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.Resources.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.vbproj.GenerateResource.Cache
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.dll
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.xml
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.pdb
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\bin\Debug\clases.dll.config
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\bin\Debug\clases.dll
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\bin\Debug\clases.pdb
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\bin\Debug\clases.xml
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.vbprojResolveAssemblyReference.cache
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.Resources.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.vbproj.GenerateResource.Cache
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.dll
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.xml
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.pdb
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\clases\bin\Debug\clases.dll.config
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\clases\bin\Debug\clases.dll
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\clases\bin\Debug\clases.pdb
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\clases\bin\Debug\clases.xml
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.vbprojResolveAssemblyReference.cache
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.Resources.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.vbproj.GenerateResource.Cache
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.dll
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.xml
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.pdb
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\bin\Debug\clases.dll.config
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\bin\Debug\clases.dll
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\bin\Debug\clases.pdb
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\bin\Debug\clases.xml
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.vbprojResolveAssemblyReference.cache
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.Resources.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.vbproj.GenerateResource.Cache
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.dll
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.xml
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.pdb
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\bin\Debug\clases.dll.config
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\bin\Debug\clases.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\bin\Debug\clases.pdb
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\bin\Debug\clases.xml
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.vbprojResolveAssemblyReference.cache
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.Resources.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.vbproj.GenerateResource.Cache
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.xml
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\clases\obj\Debug\clases.pdb
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\clases\bin\Debug\clases.dll.config
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\clases\bin\Debug\clases.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\clases\bin\Debug\clases.pdb
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\clases\bin\Debug\clases.xml
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\clases\obj\Debug\clases.vbprojResolveAssemblyReference.cache
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\clases\obj\Debug\clases.Resources.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\clases\obj\Debug\clases.vbproj.GenerateResource.Cache
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\clases\obj\Debug\clases.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\clases\obj\Debug\clases.xml
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\clases\obj\Debug\clases.pdb
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.dll.config
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.dll
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.pdb
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.xml
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.vbprojResolveAssemblyReference.cache
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.Resources.resources
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.vbproj.GenerateResource.Cache
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.dll
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.xml
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.pdb
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.dll.config
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.pdb
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.xml
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.vbprojResolveAssemblyReference.cache
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.Resources.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.vbproj.GenerateResource.Cache
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.xml
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.pdb
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.dll.config
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.dll
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.pdb
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.xml
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.vbprojResolveAssemblyReference.cache
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.Resources.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.vbproj.GenerateResource.Cache
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.dll
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.xml
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.pdb
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.dll.config
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.dll
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.pdb
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.xml
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.Resources.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.vbproj.GenerateResource.Cache
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.dll
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.xml
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.pdb
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.vbprojResolveAssemblyReference.cache
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.dll.config
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.dll
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.pdb
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.xml
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.Resources.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.vbproj.GenerateResource.Cache
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.dll
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.xml
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.pdb
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.vbprojResolveAssemblyReference.cache
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.dll.config
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.dll
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.pdb
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\bin\Debug\clases.xml
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.vbprojResolveAssemblyReference.cache
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.Resources.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.vbproj.GenerateResource.Cache
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.dll
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.xml
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\clases\obj\Debug\clases.pdb
+C:\Users\USUARIO\Desktop\sistema-matricula-mysql\clases\bin\Debug\clases.dll.config
+C:\Users\USUARIO\Desktop\sistema-matricula-mysql\clases\bin\Debug\clases.dll
+C:\Users\USUARIO\Desktop\sistema-matricula-mysql\clases\bin\Debug\clases.pdb
+C:\Users\USUARIO\Desktop\sistema-matricula-mysql\clases\bin\Debug\clases.xml
+C:\Users\USUARIO\Desktop\sistema-matricula-mysql\clases\obj\Debug\clases.Resources.resources
+C:\Users\USUARIO\Desktop\sistema-matricula-mysql\clases\obj\Debug\clases.vbproj.GenerateResource.cache
+C:\Users\USUARIO\Desktop\sistema-matricula-mysql\clases\obj\Debug\clases.dll
+C:\Users\USUARIO\Desktop\sistema-matricula-mysql\clases\obj\Debug\clases.xml
+C:\Users\USUARIO\Desktop\sistema-matricula-mysql\clases\obj\Debug\clases.pdb
+C:\Users\USUARIO\Desktop\sistema-matricula-mysql\clases\obj\Debug\clases.vbprojResolveAssemblyReference.cache

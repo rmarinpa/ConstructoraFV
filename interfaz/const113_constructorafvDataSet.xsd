@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="const113_constructorafvDataSet" targetNamespace="http://tempuri.org/const113_constructorafvDataSet.xsd" xmlns:mstns="http://tempuri.org/const113_constructorafvDataSet.xsd" xmlns="http://tempuri.org/const113_constructorafvDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="const113_constructorafvConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="const113_constructorafvConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Constructora_FV.My.MySettings.GlobalReference.Default.const113_constructorafvConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="estado_pagoTableAdapter" GeneratorDataComponentClassName="estado_pagoTableAdapter" Name="estado_pago" UserDataComponentName="estado_pagoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="const113_constructorafvConnectionString (MySettings)" DbObjectName="const113_constructorafv.estado_pago" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Id_Estado_Pago`, `Nro_Estado_Pago`, `Obra`, `Fecha`, `Nro_Factura`, `Obras`, `Reajuste`, `Retenciones`, `Retenciones_Canjeadas`, `Multas`, `Valor_Estado_Pago`, `Valor_Estado_Pago_Neto`, `Obras_Neto`, `Reajuste_Neto`, `Observaciones` FROM `estado_pago`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="const113_constructorafvDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="const113_constructorafvDataSet" msprop:Generator_UserDSName="const113_constructorafvDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="estado_pago" msprop:Generator_TableClassName="estado_pagoDataTable" msprop:Generator_TableVarName="tableestado_pago" msprop:Generator_TablePropName="estado_pago" msprop:Generator_RowDeletingName="estado_pagoRowDeleting" msprop:Generator_RowChangingName="estado_pagoRowChanging" msprop:Generator_RowEvHandlerName="estado_pagoRowChangeEventHandler" msprop:Generator_RowDeletedName="estado_pagoRowDeleted" msprop:Generator_UserTableName="estado_pago" msprop:Generator_RowChangedName="estado_pagoRowChanged" msprop:Generator_RowEvArgName="estado_pagoRowChangeEvent" msprop:Generator_RowClassName="estado_pagoRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
