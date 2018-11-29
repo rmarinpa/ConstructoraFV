@@ -1,0 +1,890 @@
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\bin\Debug\interfaz.exe
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\bin\Debug\interfaz.pdb
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\bin\Debug\interfaz.xml
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\bin\Debug\clases.dll
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\bin\Debug\clases.pdb
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\bin\Debug\clases.xml
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbprojResolveAssemblyReference.cache
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_autor.resources
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_curso.resources
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_estudiante.resources
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_login.resources
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_matricula.resources
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_principal.resources
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_usuario.resources
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.Resources.resources
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.GenerateResource.Cache
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.exe
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.xml
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.pdb
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\bin\Debug\interfaz.exe.manifest
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\bin\Debug\interfaz.application
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.exe.manifest
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matricula\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.application
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.exe
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.xml
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.pdb
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\bin\Debug\interfaz.exe.manifest
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\bin\Debug\interfaz.application
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\bin\Debug\interfaz.exe
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\bin\Debug\interfaz.pdb
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\bin\Debug\interfaz.xml
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\bin\Debug\clases.dll
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\bin\Debug\clases.pdb
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\bin\Debug\clases.xml
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbprojResolveAssemblyReference.cache
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_autor.resources
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_curso.resources
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_estudiante.resources
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_login.resources
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_matricula.resources
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_principal.resources
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_usuario.resources
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.Resources.resources
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.GenerateResource.Cache
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.exe.manifest
+C:\Users\Visual Studio 2012\Desktop\Sistema FV Rev. 1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.application
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matriculas\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.exe
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matriculas\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.xml
+C:\Users\Visual Studio 2012\Desktop\Sistema de Matriculas\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.pdb
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.exe
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.xml
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.pdb
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\interfaz.exe.manifest
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\interfaz.application
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\interfaz.exe
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\interfaz.pdb
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\interfaz.xml
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\clases.dll
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\clases.pdb
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\clases.xml
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbprojResolveAssemblyReference.cache
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_autor.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_curso.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_estudiante.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_login.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_matricula.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_principal.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_usuario.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.Resources.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.GenerateResource.Cache
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.exe.manifest
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.application
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.Frm_reports.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.Frm_Petroleo.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_menu_principal.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_configuracion.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_representates.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_Contrato.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_menu_contratos.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_maq_movil.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_registro_reports.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_menu_petroleo.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_cuenta_contable.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.Frm_Compra_Petroleo.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_plan_de_cuentas.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.frm_Tipo_maq.resources
+C:\Users\Visual Studio 2012\Desktop\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\interfaz.exe.config
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\clases.dll
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\clases.pdb
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\clases.xml
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbprojResolveAssemblyReference.cache
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.GenerateResource.Cache
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.config
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_Tipo_maq.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_plan_de_cuentas.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_Compra_Petroleo.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_cuenta_contable.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_petroleo.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_registro_reports.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_maq_movil.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_contratos.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_Contrato.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_representates.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_configuracion.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_Petroleo.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_reports.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_autor.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_curso.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_estudiante.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_login.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_matricula.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_principal.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_usuario.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Resources.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.config
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\clases.dll
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\clases.pdb
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\clases.xml
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbprojResolveAssemblyReference.cache
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Prueba_Petroleo.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Form1.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Petroleo.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_Tipo_maq.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_plan_de_cuentas.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_Compra_Petroleo.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_cuenta_contable.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_petroleo.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_registro_reports.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_maq_movil.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_contratos.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_Contrato.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_representates.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_configuracion.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_Petroleo.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_reports.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_autor.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_curso.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_estudiante.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_login.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_matricula.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_principal.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_usuario.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Resources.resources
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.GenerateResource.Cache
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\Visual Studio 2012\Desktop\Programa Obra\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Interop.CrystalReportsCommonObjectModelLib.dll
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.ResolveComReference.cache
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_codigo_petroleo.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Codigo_petroleo.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Form1.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Libro_Compras.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_compras_consumo.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Diesel_Completo.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_estado_de_pago.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_Pago.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_descuentos.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.descargar_datos.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_todos.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_Contrato_todos.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.FRM_Cuentas_Contables.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_de_Pago.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_parametros_configuracion.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_liquidacion_maq.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_de_Pago_Terceros.resources
+C:\Users\Visual Studio 2012\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_tabla_uf.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_de_Pago_Terceros_varios.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.config
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\clases.dll
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.dll
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.pdfa.dll
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.xtra.dll
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\clases.pdb
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\clases.xml
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.xml
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbprojResolveAssemblyReference.cache
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Interop.AcroPDFLib.dll
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.ResolveComReference.cache
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_boleta_garantia_aprob.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_boleta_garantia.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_informe_boleta4.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_informe_boleta3.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_informe_boleta2.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_informe_boleta1.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_aprobacion_boletas.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_canje.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_aumento.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_calculo_boleta.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_boleta_garantia.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_contrato_mod.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_Pago_res.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_boleta_adjunta.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_configuracion_obra.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_operadores.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_Petroleo_mod.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_Petroleo_list.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_usuarios.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_informes_boleta.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_EP_adjunto.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_contrato_ep.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_rendimiento_maquinaria_maq.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_codigo_petroleo_maq.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_items.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_Boletas.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_EP.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_Estado_de_pago_res.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_codigo_petroleo2.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_adm.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_viajes.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_ficha_trabajador.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Contratos_cuentas.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_Pago_resumen_subcontrato.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_descuentos_subcontratos.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_subcontratos.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_de_Pago_TT.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_categoria_maq.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_Pago_subcontrato.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_Petroleo_varios.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_avance_subcontratos.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_Pago_completo.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_rendimiento_maquinaria.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_tipo_trabajo.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_estados_de_pago.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_estado_de_pago_subcontrato.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_registro_subcontratos.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_registro_subcontrato.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_representates_subcontratos.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_tipo_subcontrato.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_Subcontratos.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_Pago_maquinaria2.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_Pago_maquinaria.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_estado_de_pago_maquinaria.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_ficha_maquinaria.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_ficha_trabajador.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_storage.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_storage.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_diesel.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_tabla_uf.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_de_Pago_Terceros.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_liquidacion_maq.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_parametros_configuracion.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_de_Pago.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.FRM_Cuentas_Contables.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_Contrato_todos.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_todos.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.descargar_datos.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_descuentos.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_Pago.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_estado_de_pago.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Diesel_Completo.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_compras_consumo.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Libro_Compras.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Codigo_petroleo.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Form1.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_codigo_petroleo.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_Tipo_maq.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_plan_de_cuentas.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_Compra_Petroleo.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_cuenta_contable.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_petroleo.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_registro_reports.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_maq_movil.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_contratos.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_Contrato.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_representates.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_configuracion.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_Petroleo.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_reports.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_autor.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_curso.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_estudiante.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_login.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_matricula.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_principal.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_usuario.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Resources.resources
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.GenerateResource.Cache
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\germa\Dropbox\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.config
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Interop.AcroPDFLib.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.ResolveComReference.cache
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\clases.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.pdfa.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.xtra.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\clases.pdb
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\clases.xml
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.xml
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbprojResolveAssemblyReference.cache
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_boleta_garantia_aprob.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_boleta_garantia.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_informe_boleta4.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_informe_boleta3.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_informe_boleta2.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_informe_boleta1.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_de_Pago_Terceros_varios.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_aprobacion_boletas.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_canje.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_aumento.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_calculo_boleta.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_boleta_garantia.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_contrato_mod.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_Pago_res.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_boleta_adjunta.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_configuracion_obra.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_operadores.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_Petroleo_mod.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_Petroleo_list.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_usuarios.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_informes_boleta.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_EP_adjunto.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_contrato_ep.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_rendimiento_maquinaria_maq.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_codigo_petroleo_maq.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_items.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_Boletas.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_EP.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_Estado_de_pago_res.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_codigo_petroleo2.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_adm.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_viajes.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_ficha_trabajador.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Contratos_cuentas.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_Pago_resumen_subcontrato.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_descuentos_subcontratos.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_subcontratos.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_de_Pago_TT.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_categoria_maq.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_Pago_subcontrato.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_Petroleo_varios.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_avance_subcontratos.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_Pago_completo.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_rendimiento_maquinaria.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_tipo_trabajo.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_estados_de_pago.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_estado_de_pago_subcontrato.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_registro_subcontratos.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_registro_subcontrato.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_representates_subcontratos.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_tipo_subcontrato.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_Subcontratos.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_Pago_maquinaria2.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_Pago_maquinaria.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_estado_de_pago_maquinaria.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_ficha_maquinaria.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_ficha_trabajador.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_storage.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_storage.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_diesel.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_tabla_uf.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_de_Pago_Terceros.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_liquidacion_maq.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_parametros_configuracion.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_de_Pago.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.FRM_Cuentas_Contables.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_Contrato_todos.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_todos.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.descargar_datos.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_descuentos.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_Pago.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_estado_de_pago.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Diesel_Completo.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_compras_consumo.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Libro_Compras.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Codigo_petroleo.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Form1.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_codigo_petroleo.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_Tipo_maq.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_plan_de_cuentas.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_Compra_Petroleo.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_cuenta_contable.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_petroleo.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_registro_reports.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_maq_movil.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_contratos.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_Contrato.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_representates.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_configuracion.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_Petroleo.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_reports.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_autor.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_curso.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_estudiante.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_login.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_matricula.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_principal.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_usuario.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Resources.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.GenerateResource.Cache
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_sincronizacion.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV Rev. 2\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_reports_e.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.config
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\bin\Debug\clases.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.pdfa.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.xtra.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\bin\Debug\clases.pdb
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.xml
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbprojResolveAssemblyReference.cache
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Interop.AcroPDFLib.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.ResolveComReference.cache
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_boleta_garantia_aprob.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_boleta_garantia.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_informe_boleta4.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_informe_boleta3.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_informe_boleta2.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_informe_boleta1.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_de_Pago_Terceros_varios.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_aprobacion_boletas.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_canje.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_aumento.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_calculo_boleta.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_boleta_garantia.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_contrato_mod.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_Pago_res.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_boleta_adjunta.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_configuracion_obra.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_II.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_reports_e.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_sincronizacion.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_operadores.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_Petroleo_mod.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_Petroleo_list.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_usuarios.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_informes_boleta.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_EP_adjunto.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_contrato_ep.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_rendimiento_maquinaria_maq.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_codigo_petroleo_maq.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_items.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_Boletas.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_EP.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_Estado_de_pago_res.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_codigo_petroleo2.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_adm.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_viajes.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_ficha_trabajador.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Contratos_cuentas.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_Pago_resumen_subcontrato.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_descuentos_subcontratos.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_subcontratos.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_de_Pago_TT.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_categoria_maq.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_Pago_subcontrato.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_Petroleo_varios.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_avance_subcontratos.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_Pago_completo.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_rendimiento_maquinaria.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_tipo_trabajo.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_estados_de_pago.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_estado_de_pago_subcontrato.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_registro_subcontratos.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_registro_subcontrato.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_representates_subcontratos.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_tipo_subcontrato.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_Subcontratos.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_Pago_maquinaria2.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_Pago_maquinaria.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_estado_de_pago_maquinaria.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_ficha_maquinaria.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_ficha_trabajador.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_storage.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_storage.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_diesel.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_tabla_uf.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_de_Pago_Terceros.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_liquidacion_maq.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_parametros_configuracion.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_de_Pago.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.FRM_Cuentas_Contables.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_Contrato_todos.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_todos.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.descargar_datos.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_descuentos.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_Pago.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_estado_de_pago.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Diesel_Completo.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_compras_consumo.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Libro_Compras.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Codigo_petroleo.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Form1.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_codigo_petroleo.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_Tipo_maq.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_plan_de_cuentas.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_Compra_Petroleo.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_cuenta_contable.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_petroleo.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_registro_reports.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_maq_movil.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_contratos.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_Contrato.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_representates.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_configuracion.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_Petroleo.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_reports.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_autor.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_curso.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_estudiante.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_login.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_matricula.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_principal.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_usuario.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Resources.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.GenerateResource.Cache
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\bin\Debug\clases.xml
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.0\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_III.resources
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.config
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\clases.dll
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.dll
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.pdfa.dll
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.xtra.dll
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\clases.pdb
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\clases.xml
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.xml
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbprojResolveAssemblyReference.cache
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Interop.AcroPDFLib.dll
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.ResolveComReference.cache
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_III.resources
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_II.resources
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal.resources
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_login.resources
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Resources.resources
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.GenerateResource.Cache
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\germa\Desktop\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.config
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\clases.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.pdfa.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.xtra.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\clases.pdb
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\clases.xml
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.xml
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbprojResolveAssemblyReference.cache
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Interop.AcroPDFLib.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.ResolveComReference.cache
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_III.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_II.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_login.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Resources.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.GenerateResource.Cache
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_Pago.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_IV.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago_terceros.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_V.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Diesel_Mensual.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Libro_Compras.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Diesel_Completo.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_compras_y_consumo.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Cuentas_Petroleo.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Libro_combustible_diesel.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_Storage.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_rendimiento.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Detalle_Horas.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Libro_combustible_diesel2.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_compras_y_consumo2.resources
+C:\Users\germa\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_password.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.config
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\clases.dll
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.dll
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.pdfa.dll
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.xtra.dll
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\clases.pdb
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\clases.xml
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.xml
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbprojResolveAssemblyReference.cache
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Interop.AcroPDFLib.dll
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.ResolveComReference.cache
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago_tercerosc.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Diesel_Completo.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Cuentas_Petroleo.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Detalle_Horas.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Libro_combustible_diesel2.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_compras_y_consumo2.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Libro_combustible_diesel.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_compras_y_consumo.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_Storage.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_rendimiento.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Libro_Compras.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Diesel_Mensual.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago_terceros.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_Pago.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_menu_rendimientos.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_liquidacion_maq.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_III.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_password.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_V.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_IV.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_II.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_login.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_viajes.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Resources.resources
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.GenerateResource.Cache
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\German\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbprojResolveAssemblyReference.cache
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Interop.AcroPDFLib.dll
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.ResolveComReference.cache
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago_tercerosc.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Diesel_Completo.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Cuentas_Petroleo.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Detalle_Horas.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Libro_combustible_diesel2.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_compras_y_consumo2.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Libro_combustible_diesel.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_compras_y_consumo.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_Storage.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_rendimiento.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Libro_Compras.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Diesel_Mensual.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago_terceros.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_Pago.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_menu_rendimientos.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_liquidacion_maq.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_III.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_password.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_V.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_IV.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_II.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_login.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_viajes.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Resources.resources
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.GenerateResource.Cache
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.config
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\clases.dll
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.dll
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.pdfa.dll
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.xtra.dll
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\clases.pdb
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\clases.xml
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.xml
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\USUARIO\OneDrive\Importante\Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.config
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\clases.dll
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.dll
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.pdfa.dll
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.xtra.dll
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\clases.pdb
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\clases.xml
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.xml
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbprojResolveAssemblyReference.cache
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Interop.AcroPDFLib.dll
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.ResolveComReference.cache
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago_subcontrato.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago_maq_ep.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago_maq.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_listado_equipos.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago_terceros_selec.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago_tercerosc.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_Pago_subcontrato.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Diesel_Completo.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Cuentas_Petroleo.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Detalle_Horas.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Libro_combustible_diesel2.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_compras_y_consumo2.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Libro_combustible_diesel.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_compras_y_consumo.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_Storage.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_rendimiento.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Libro_Compras.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Diesel_Mensual.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago_terceros.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_Pago.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_maquinaria.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_IV_V2.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_menu_rendimientos.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_liquidacion_maq.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_III.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_password.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_V.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_II.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_login.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_viajes.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Resources.resources
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.GenerateResource.Cache
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\USUARIO\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbprojResolveAssemblyReference.cache
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Interop.AcroPDFLib.dll
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.ResolveComReference.cache
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago_subcontrato.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago_maq_ep.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago_maq.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_listado_equipos.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago_terceros_selec.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago_tercerosc.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_Pago_subcontrato.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Diesel_Completo.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Cuentas_Petroleo.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Detalle_Horas.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Libro_combustible_diesel2.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_compras_y_consumo2.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Libro_combustible_diesel.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_compras_y_consumo.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_Storage.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_rendimiento.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Libro_Compras.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Diesel_Mensual.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago_terceros.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_Pago.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_maquinaria.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_IV_V2.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_menu_rendimientos.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_liquidacion_maq.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_III.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_password.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_V.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_II.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_login.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_viajes.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Resources.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.GenerateResource.Cache
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.config
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\clases.dll
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.dll
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.pdfa.dll
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.xtra.dll
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\clases.pdb
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\clases.xml
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.xml
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_listado_maquinas.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_X.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Detalle_Horas10.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago10.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago_terceros10.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago_tercerosc10.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago_terceros_selec10.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_Pago10.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Cuentas_Petroleo10.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Diesel_Completo10.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Diesel_Mensual10.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Estado_de_pago_subcontrato10.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_compras_y_consumo210.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_rendimiento10.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Informe_Storage10.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Libro_combustible_diesel210.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Libro_Compras10.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_listado_equipos10.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_Pago_subcontrato10.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_menu_rendimientos10.resources
+C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_V_V2.resources
+C:\Users\USUARIO\Desktop\1.- Constructora FV - Programa Obra Rev.1 (4)\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.config
+C:\Users\USUARIO\Desktop\1.- Constructora FV - Programa Obra Rev.1 (4)\sistema-matricula-mysql\interfaz\obj\x86\Debug\Interop.AcroPDFLib.dll
+C:\Users\USUARIO\Desktop\1.- Constructora FV - Programa Obra Rev.1 (4)\sistema-matricula-mysql\interfaz\obj\x86\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\USUARIO\Desktop\1.- Constructora FV - Programa Obra Rev.1 (4)\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.ResolveComReference.cache
+C:\Users\USUARIO\Desktop\1.- Constructora FV - Programa Obra Rev.1 (4)\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\USUARIO\Desktop\1.- Constructora FV - Programa Obra Rev.1 (4)\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\USUARIO\Desktop\1.- Constructora FV - Programa Obra Rev.1 (4)\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.pdb
