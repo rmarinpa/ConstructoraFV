@@ -1,0 +1,1446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{099C127E-B90D-4F4D-B090-340C10F8F519}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Constructora_FV.My.MyApplication</StartupObject>
+    <RootNamespace>Constructora_FV</RootNamespace>
+    <AssemblyName>Programa Obra Constructora FV S.A</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\German\OneDrive\Programa Obra CFV\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>224</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Programa Obra Constructora FV S.A.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Programa Obra Constructora FV S.A.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo_CFV_2017.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>BB7FFEF07565C7A0E607C6D8D913D98CED080814</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>interfaz_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="itextsharp, Version=5.5.10.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa, Version=5.5.10.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra, Version=5.5.10.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Boletas_consulta_vencida.vb">
+      <DependentUpon>Boletas_consulta_vencida.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Boletas_consulta_renovar.vb">
+      <DependentUpon>Boletas_consulta_renovar.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Boletas_consulta_vigente.vb">
+      <DependentUpon>Boletas_consulta_vigente.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="boleta_garantia.vb">
+      <DependentUpon>boleta_garantia.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Boletas_consulta.vb">
+      <DependentUpon>Boletas_consulta.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CrDiesel_Completo_local.vb">
+      <DependentUpon>CrDiesel_Completo_local.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CrDiesel_Completo.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrDiesel_Completo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crrevision_rendimiento_Los_marios.vb">
+      <DependentUpon>Crrevision_rendimiento_Los_marios.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CR_Cuentas_Petroleo10.Designer.vb">
+      <DependentUpon>CR_Cuentas_Petroleo10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Cuentas_Petroleo10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Detalle_Horas10.Designer.vb">
+      <DependentUpon>CR_Detalle_Horas10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Detalle_Horas10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Diesel_Completo10.Designer.vb">
+      <DependentUpon>CR_Diesel_Completo10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Diesel_Completo10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Diesel_Mensual10.Designer.vb">
+      <DependentUpon>CR_Diesel_Mensual10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Diesel_Mensual10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago10.Designer.vb">
+      <DependentUpon>CR_Estado_de_pago10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago_subcontrato10.Designer.vb">
+      <DependentUpon>CR_Estado_de_pago_subcontrato10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago_subcontrato10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago_subcontrato.Designer.vb">
+      <DependentUpon>CR_Estado_de_pago_subcontrato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago_subcontrato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago_maq_ep.Designer.vb">
+      <DependentUpon>CR_Estado_de_pago_maq_ep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago_maq_ep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago_maq.Designer.vb">
+      <DependentUpon>CR_Estado_de_pago_maq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago_maq.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago_terceros10.Designer.vb">
+      <DependentUpon>CR_Estado_de_pago_terceros10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago_terceros10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago_tercerosc10.Designer.vb">
+      <DependentUpon>CR_Estado_de_pago_tercerosc10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago_tercerosc10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago_terceros_selec10.Designer.vb">
+      <DependentUpon>CR_Estado_de_pago_terceros_selec10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago_terceros_selec10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Informe_compras_y_consumo210.Designer.vb">
+      <DependentUpon>CR_Informe_compras_y_consumo210.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Informe_compras_y_consumo210.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Informe_rendimiento10.Designer.vb">
+      <DependentUpon>CR_Informe_rendimiento10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Informe_rendimiento10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Informe_Storage10.Designer.vb">
+      <DependentUpon>CR_Informe_Storage10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Informe_Storage10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Libro_combustible_diesel210.Designer.vb">
+      <DependentUpon>CR_Libro_combustible_diesel210.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Libro_combustible_diesel210.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Libro_Compras10.Designer.vb">
+      <DependentUpon>CR_Libro_Compras10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Libro_Compras10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_listado_equipos10.Designer.vb">
+      <DependentUpon>CR_listado_equipos10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_listado_equipos10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_listado_equipos.Designer.vb">
+      <DependentUpon>CR_listado_equipos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_listado_equipos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago_terceros_selec.Designer.vb">
+      <DependentUpon>CR_Estado_de_pago_terceros_selec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago_terceros_selec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago_tercerosc.Designer.vb">
+      <DependentUpon>CR_Estado_de_pago_tercerosc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago_tercerosc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Resumen_Estado_Pago10.Designer.vb">
+      <DependentUpon>CR_Resumen_Estado_Pago10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Resumen_Estado_Pago10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Resumen_Estado_Pago_subcontrato10.Designer.vb">
+      <DependentUpon>CR_Resumen_Estado_Pago_subcontrato10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Resumen_Estado_Pago_subcontrato10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Resumen_Estado_Pago_subcontrato.Designer.vb">
+      <DependentUpon>CR_Resumen_Estado_Pago_subcontrato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Resumen_Estado_Pago_subcontrato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ep_cuenta_contable_v3.vb">
+      <DependentUpon>Ep_cuenta_contable_v3.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Crrevision_petroleo_local.vb">
+      <DependentUpon>Crrevision_petroleo_local.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Crrevision_petroleo.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crrevision_petroleo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crrevision_rendimiento_categoria_maq2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crrevision_rendimiento_categoria_maq2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crrevision_rendimiento_Los_marios_local.vb">
+      <DependentUpon>Crrevision_rendimiento_Los_marios_local.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CR_Cuentas_Contables4_local.vb">
+      <DependentUpon>CR_Cuentas_Contables4_local.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CR_Cuentas_Contables4.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_Cuentas_Contables4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CR_Diesel_Completo.Designer.vb">
+      <DependentUpon>CR_Diesel_Completo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Diesel_Completo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Cuentas_Petroleo.Designer.vb">
+      <DependentUpon>CR_Cuentas_Petroleo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Cuentas_Petroleo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Detalle_Horas.Designer.vb">
+      <DependentUpon>CR_Detalle_Horas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Detalle_Horas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Libro_combustible_diesel2.Designer.vb">
+      <DependentUpon>CR_Libro_combustible_diesel2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Libro_combustible_diesel2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Informe_compras_y_consumo2.Designer.vb">
+      <DependentUpon>CR_Informe_compras_y_consumo2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Informe_compras_y_consumo2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Libro_combustible_diesel.Designer.vb">
+      <DependentUpon>CR_Libro_combustible_diesel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Libro_combustible_diesel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Informe_compras_y_consumo.Designer.vb">
+      <DependentUpon>CR_Informe_compras_y_consumo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Informe_compras_y_consumo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Informe_Storage.Designer.vb">
+      <DependentUpon>CR_Informe_Storage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Informe_Storage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Informe_rendimiento.Designer.vb">
+      <DependentUpon>CR_Informe_rendimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Informe_rendimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Libro_Compras.Designer.vb">
+      <DependentUpon>CR_Libro_Compras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Libro_Compras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Diesel_Mensual.Designer.vb">
+      <DependentUpon>CR_Diesel_Mensual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Diesel_Mensual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago_terceros.Designer.vb">
+      <DependentUpon>CR_Estado_de_pago_terceros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago_terceros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago.Designer.vb">
+      <DependentUpon>CR_Estado_de_pago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Estado_de_pago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Resumen_Estado_Pago.Designer.vb">
+      <DependentUpon>CR_Resumen_Estado_Pago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Resumen_Estado_Pago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_litros_petroleo.vb">
+      <DependentUpon>CR_litros_petroleo.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Estado_de_pago_fechas_maq.vb">
+      <DependentUpon>Estado_de_pago_fechas_maq.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Frm_listado_maquinas.Designer.vb">
+      <DependentUpon>Frm_listado_maquinas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_listado_maquinas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_maquinaria.Designer.vb">
+      <DependentUpon>Frm_maquinaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_maquinaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_menu_principal_V_V2.Designer.vb">
+      <DependentUpon>frm_menu_principal_V_V2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_principal_V_V2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_menu_principal_X.Designer.vb">
+      <DependentUpon>frm_menu_principal_X.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_principal_X.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_menu_principal_IV_V2.Designer.vb">
+      <DependentUpon>frm_menu_principal_IV_V2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_principal_IV_V2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_menu_rendimientos10.Designer.vb">
+      <DependentUpon>Frm_menu_rendimientos10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_menu_rendimientos10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listado_equipost.vb">
+      <DependentUpon>Listado_equipost.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Listado_equipos_tet.vb">
+      <DependentUpon>Listado_equipos_tet.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Listado_equipos_te.vb">
+      <DependentUpon>Listado_equipos_te.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Listado_equipos.vb">
+      <DependentUpon>Listado_equipos.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Frm_menu_rendimientos.Designer.vb">
+      <DependentUpon>Frm_menu_rendimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_menu_rendimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M3_KM.vb">
+      <DependentUpon>M3_KM.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Detalle_horas_local.vb">
+      <DependentUpon>Detalle_horas_local.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Detalle_horas.vb">
+      <DependentUpon>Detalle_horas.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Estado_de_pago_fechas_local.vb">
+      <DependentUpon>Estado_de_pago_fechas_local.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Estado_de_pago_fechas.vb">
+      <DependentUpon>Estado_de_pago_fechas.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Estado_de_pago.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Estado_de_pago.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Estado_de_pago_resumen_subcontrato.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Estado_de_pago_resumen_subcontrato.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Estado_de_pago_subcontrato.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Estado_de_pago_subcontrato.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Frm_liquidacion_maq.Designer.vb">
+      <DependentUpon>Frm_liquidacion_maq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_liquidacion_maq.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_menu_principal_III.Designer.vb">
+      <DependentUpon>frm_menu_principal_III.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_principal_III.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_password.Designer.vb">
+      <DependentUpon>frm_password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_menu_principal_V.Designer.vb">
+      <DependentUpon>frm_menu_principal_V.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_principal_V.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_menu_principal_II.Designer.vb">
+      <DependentUpon>frm_menu_principal_II.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_principal_II.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_menu_principal.Designer.vb">
+      <DependentUpon>frm_menu_principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_login.Designer.vb">
+      <DependentUpon>frm_login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_viajes.Designer.vb">
+      <DependentUpon>Frm_viajes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_viajes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informe_de_compras_y_consumo3_corregido2.vb">
+      <DependentUpon>Informe_de_compras_y_consumo3_corregido2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Informe_de_compras_y_consumo3_corregido2_local.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Informe_de_compras_y_consumo3_corregido2_local.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="informe_diesel3a_corregido3_local.vb">
+      <DependentUpon>informe_diesel3a_corregido3_local.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="informe_diesel3a_corregido3.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>informe_diesel3a_corregido3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informe_Storage_final_local.vb">
+      <DependentUpon>Informe_Storage_final_local.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Informe_Storage_final.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Informe_Storage_final.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Libro_compras_local.vb">
+      <DependentUpon>Libro_compras_local.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Libro_compras.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Libro_compras.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Resumen_Estado_de_pago_v2_fechas_local2.vb">
+      <DependentUpon>Resumen_Estado_de_pago_v2_fechas_local2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resumen_Estado_de_pago_v2_fechas.vb">
+      <DependentUpon>Resumen_Estado_de_pago_v2_fechas.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resumen_Estado_de_pago_v2_fechas_selec.vb">
+      <DependentUpon>Resumen_Estado_de_pago_v2_fechas_selec.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resumen_Estado_de_pago_v2_fechas_ter_ANT2.vb">
+      <DependentUpon>Resumen_Estado_de_pago_v2_fechas_ter_ANT2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resumen_Estado_de_pago_v2_fechas_ter.vb">
+      <DependentUpon>Resumen_Estado_de_pago_v2_fechas_ter.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resumen_Estado_de_pago_v2_fechas_terc.vb">
+      <DependentUpon>Resumen_Estado_de_pago_v2_fechas_terc.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resumen_Estado_de_pago_v2_fechas_selec_local.vb">
+      <DependentUpon>Resumen_Estado_de_pago_v2_fechas_selec_local.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resumen_Estado_de_pago_v2_fechas_ter_localc.vb">
+      <DependentUpon>Resumen_Estado_de_pago_v2_fechas_ter_localc.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resumen_Estado_de_pago_v2_fechas_ter_local.vb">
+      <DependentUpon>Resumen_Estado_de_pago_v2_fechas_ter_local.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Boletas_consulta_vencida.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Boletas_consulta_vencida.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boletas_consulta_renovar.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Boletas_consulta_renovar.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boletas_consulta_vigente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Boletas_consulta_vigente.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="boleta_garantia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>boleta_garantia.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boletas_consulta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Boletas_consulta.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrDiesel_Completo_local.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrDiesel_Completo_local.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrDiesel_Completo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrDiesel_Completo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crrevision_rendimiento_Los_marios.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crrevision_rendimiento_Los_marios.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Cuentas_Petroleo10.resx">
+      <DependentUpon>CR_Cuentas_Petroleo10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Detalle_Horas10.resx">
+      <DependentUpon>CR_Detalle_Horas10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Diesel_Completo10.resx">
+      <DependentUpon>CR_Diesel_Completo10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Diesel_Mensual10.resx">
+      <DependentUpon>CR_Diesel_Mensual10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Estado_de_pago10.resx">
+      <DependentUpon>CR_Estado_de_pago10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Estado_de_pago_subcontrato10.resx">
+      <DependentUpon>CR_Estado_de_pago_subcontrato10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Estado_de_pago_subcontrato.resx">
+      <DependentUpon>CR_Estado_de_pago_subcontrato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Estado_de_pago_maq_ep.resx">
+      <DependentUpon>CR_Estado_de_pago_maq_ep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Estado_de_pago_maq.resx">
+      <DependentUpon>CR_Estado_de_pago_maq.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Estado_de_pago_terceros10.resx">
+      <DependentUpon>CR_Estado_de_pago_terceros10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Estado_de_pago_tercerosc10.resx">
+      <DependentUpon>CR_Estado_de_pago_tercerosc10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Estado_de_pago_terceros_selec10.resx">
+      <DependentUpon>CR_Estado_de_pago_terceros_selec10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Informe_compras_y_consumo210.resx">
+      <DependentUpon>CR_Informe_compras_y_consumo210.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Informe_rendimiento10.resx">
+      <DependentUpon>CR_Informe_rendimiento10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Informe_Storage10.resx">
+      <DependentUpon>CR_Informe_Storage10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Libro_combustible_diesel210.resx">
+      <DependentUpon>CR_Libro_combustible_diesel210.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Libro_Compras10.resx">
+      <DependentUpon>CR_Libro_Compras10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_listado_equipos10.resx">
+      <DependentUpon>CR_listado_equipos10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_listado_equipos.resx">
+      <DependentUpon>CR_listado_equipos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Estado_de_pago_terceros_selec.resx">
+      <DependentUpon>CR_Estado_de_pago_terceros_selec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Estado_de_pago_tercerosc.resx">
+      <DependentUpon>CR_Estado_de_pago_tercerosc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Resumen_Estado_Pago10.resx">
+      <DependentUpon>CR_Resumen_Estado_Pago10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Resumen_Estado_Pago_subcontrato10.resx">
+      <DependentUpon>CR_Resumen_Estado_Pago_subcontrato10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Resumen_Estado_Pago_subcontrato.resx">
+      <DependentUpon>CR_Resumen_Estado_Pago_subcontrato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ep_cuenta_contable_v3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Ep_cuenta_contable_v3.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crrevision_petroleo_local.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crrevision_petroleo_local.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crrevision_petroleo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crrevision_petroleo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crrevision_rendimiento_categoria_maq2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crrevision_rendimiento_categoria_maq2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crrevision_rendimiento_Los_marios_local.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crrevision_rendimiento_Los_marios_local.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Cuentas_Contables4_local.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Cuentas_Contables4_local.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Cuentas_Contables4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Cuentas_Contables4.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Diesel_Completo.resx">
+      <DependentUpon>CR_Diesel_Completo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Cuentas_Petroleo.resx">
+      <DependentUpon>CR_Cuentas_Petroleo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Detalle_Horas.resx">
+      <DependentUpon>CR_Detalle_Horas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Libro_combustible_diesel2.resx">
+      <DependentUpon>CR_Libro_combustible_diesel2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Informe_compras_y_consumo2.resx">
+      <DependentUpon>CR_Informe_compras_y_consumo2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Libro_combustible_diesel.resx">
+      <DependentUpon>CR_Libro_combustible_diesel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Informe_compras_y_consumo.resx">
+      <DependentUpon>CR_Informe_compras_y_consumo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Informe_Storage.resx">
+      <DependentUpon>CR_Informe_Storage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Informe_rendimiento.resx">
+      <DependentUpon>CR_Informe_rendimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Libro_Compras.resx">
+      <DependentUpon>CR_Libro_Compras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Diesel_Mensual.resx">
+      <DependentUpon>CR_Diesel_Mensual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Estado_de_pago_terceros.resx">
+      <DependentUpon>CR_Estado_de_pago_terceros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Estado_de_pago.resx">
+      <DependentUpon>CR_Estado_de_pago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Resumen_Estado_Pago.resx">
+      <DependentUpon>CR_Resumen_Estado_Pago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_litros_petroleo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_litros_petroleo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_de_pago_fechas_maq.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Estado_de_pago_fechas_maq.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_listado_maquinas.resx">
+      <DependentUpon>Frm_listado_maquinas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_maquinaria.resx">
+      <DependentUpon>Frm_maquinaria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_principal_V_V2.resx">
+      <DependentUpon>frm_menu_principal_V_V2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_principal_X.resx">
+      <DependentUpon>frm_menu_principal_X.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_principal_IV_V2.resx">
+      <DependentUpon>frm_menu_principal_IV_V2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_menu_rendimientos10.resx">
+      <DependentUpon>Frm_menu_rendimientos10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listado_equipost.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Listado_equipost.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listado_equipos_tet.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Listado_equipos_tet.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listado_equipos_te.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Listado_equipos_te.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listado_equipos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Listado_equipos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_menu_rendimientos.resx">
+      <DependentUpon>Frm_menu_rendimientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M3_KM.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>M3_KM.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Detalle_horas_local.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Detalle_horas_local.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Detalle_horas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Detalle_horas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_de_pago_fechas_local.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Estado_de_pago_fechas_local.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_de_pago_fechas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Estado_de_pago_fechas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_de_pago.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Estado_de_pago.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_de_pago_resumen_subcontrato.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Estado_de_pago_resumen_subcontrato.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_de_pago_subcontrato.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Estado_de_pago_subcontrato.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_liquidacion_maq.resx">
+      <DependentUpon>Frm_liquidacion_maq.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_principal_III.resx">
+      <DependentUpon>frm_menu_principal_III.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_password.resx">
+      <DependentUpon>frm_password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_principal_V.resx">
+      <DependentUpon>frm_menu_principal_V.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_principal_II.resx">
+      <DependentUpon>frm_menu_principal_II.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_principal.resx">
+      <DependentUpon>frm_menu_principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_login.resx">
+      <DependentUpon>frm_login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_viajes.resx">
+      <DependentUpon>Frm_viajes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informe_de_compras_y_consumo3_corregido2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Informe_de_compras_y_consumo3_corregido2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informe_de_compras_y_consumo3_corregido2_local.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Informe_de_compras_y_consumo3_corregido2_local.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informe_diesel3a_corregido3_local.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>informe_diesel3a_corregido3_local.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informe_diesel3a_corregido3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>informe_diesel3a_corregido3.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informe_Storage_final_local.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Informe_Storage_final_local.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informe_Storage_final.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Informe_Storage_final.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Libro_compras_local.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Libro_compras_local.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Libro_compras.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Libro_compras.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resumen_Estado_de_pago_v2_fechas_local2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Resumen_Estado_de_pago_v2_fechas_local2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resumen_Estado_de_pago_v2_fechas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Resumen_Estado_de_pago_v2_fechas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resumen_Estado_de_pago_v2_fechas_selec.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Resumen_Estado_de_pago_v2_fechas_selec.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resumen_Estado_de_pago_v2_fechas_ter_ANT2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Resumen_Estado_de_pago_v2_fechas_ter_ANT2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resumen_Estado_de_pago_v2_fechas_ter.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Resumen_Estado_de_pago_v2_fechas_ter.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resumen_Estado_de_pago_v2_fechas_terc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Resumen_Estado_de_pago_v2_fechas_terc.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resumen_Estado_de_pago_v2_fechas_selec_local.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Resumen_Estado_de_pago_v2_fechas_selec_local.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resumen_Estado_de_pago_v2_fechas_ter_localc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Resumen_Estado_de_pago_v2_fechas_ter_localc.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resumen_Estado_de_pago_v2_fechas_ter_local.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Resumen_Estado_de_pago_v2_fechas_ter_local.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="interfaz_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\clases\clases.vbproj">
+      <Project>{A9B8B801-BD03-4906-AE64-DA6F068D36F4}</Project>
+      <Name>clases</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="itextsharp.dll" />
+    <Content Include="itextsharp.pdfa.dll" />
+    <Content Include="iTextSharp.xml" />
+    <Content Include="itextsharp.xtra.dll" />
+    <Content Include="Logo_CFV_2017.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommLayer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Controllers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CubeDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataSetConversion">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ObjectFactory">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Prompting">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ReportDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.XmlSerialize">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportSource">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Shared">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Windows.Forms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FlashControlV71">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="itextsharp.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="itextsharp.pdfa">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="itextsharp.xtra.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="MySql.Data">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ShockwaveFlashObjects">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="CrystalReportsCommonObjectModelLib">
+      <Guid>{85C3BB41-5C11-4920-ABC2-8C04F629F2DE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

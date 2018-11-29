@@ -1,0 +1,23 @@
+1) consulta_categoria12_v2
+Tiene
+(`mov_tierra_acum_v2`.`Total_horas_con_desc` + `mov_tierra_acum_v2`.`Panne_Descuentos`) AS `Total_horas_con_desc`,
+
+2) Tabla equipos
+Columna
+ren_est Tipo Double  
+
+Falta la sincronización
+
+3) Modificar vista arrendador_equipos  
+
+Agregarle al final la columna ren_est
+
+`equipos`.`ren_est` AS `ren_est` 
+
+4) Crrevision_rendimiento_Los_marios_local
+
+Agregar parámetro de estudio
+
+5) Agregar a consulta_categoria12_v2  
+
+`arrendador_equipos`.`ren_est` AS `ren_est`
