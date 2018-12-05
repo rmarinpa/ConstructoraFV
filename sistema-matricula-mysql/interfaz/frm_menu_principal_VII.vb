@@ -212,7 +212,6 @@ Public Class frm_menu_principal_VII
                     If modificaciones.RegistroExistente(obras, nromodificacion) = True Then
                         idModificaciones = txtIdModificaciones.Text
                         modificaciones.ModificarListado(idModificaciones, obras, nromodificacion, fecha, aumentoObra, disminucionObra, obraExtraordinaria, aumentoDisminucion, retencion, proforma)
-
                         actualizar_dgvListado()
                         LimpiarListado()
                         BloquearListado()

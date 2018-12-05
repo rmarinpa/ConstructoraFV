@@ -1,5 +1,6 @@
 ﻿Module Module1
     Public Nombre_Obra As String
+    Public Nombre_Faena As String
     Public id_obra As Integer
     Public Fecha_inicio As String
     Public fecha_sincroniza As String

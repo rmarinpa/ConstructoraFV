@@ -2,9 +2,10 @@
 Imports Microsoft.Office.Core
 Imports System.IO 'sistema de archivos
 Imports Microsoft.Office.Interop
+Imports System.Net
 
 Public Class frm_menu_principal_X
-
+    Dim nue_obra6 As New clases.EstadoPagoMandante
     Dim nue_obra8 As New clases.Generacion_ep
     Dim nue_report As New clases.listado_maquinas
     Dim nue_obra5 As New clases.Ingreso_subcontratos
@@ -48,6 +49,11 @@ Public Class frm_menu_principal_X
     Dim obra As String
 
     Private Sub frm_menu_principal_Load(sender As Object, e As EventArgs) Handles Me.Load
+        RellenarCboObra()
+        gbPagoFirmadoAdjunto.Visible = False
+        gbFacturasFirmadas.Visible = False
+        LlenarDataGridView()
+        actualizar_dgvFacturasAdjunto()
         If sincroniza = 0 Then
             btn_5_ingresar.Visible = True
             btn_7_ingresar.Visible = True
@@ -597,5 +603,260 @@ Public Class frm_menu_principal_X
         num_tab = 1
         frm_menu_principal.Show()
         Me.Close()
+    End Sub
+    Private Sub btnEpFirmado_Click(sender As Object, e As EventArgs) Handles btnEpFirmado.Click
+        gbPagoFirmadoAdjunto.Visible = True
+        gbFacturasFirmadas.Visible = False
+    End Sub
+
+    Private Sub btnFacturasFirmadas_Click(sender As Object, e As EventArgs) Handles btnFacturasFirmadas.Click
+        gbFacturasFirmadas.Visible = True
+        gbPagoFirmadoAdjunto.Visible = False
+    End Sub
+
+    Private Sub dgvAdjuntosPagosFirmados_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvAdjuntosPagosFirmados.CellClick
+        Try
+            Dim index As Integer
+            index = e.RowIndex
+            Dim selectRow As DataGridViewRow
+            selectRow = dgvAdjuntosPagosFirmados.Rows(index)
+
+            txtNombreObraArchivo.Text = selectRow.Cells(1).Value.ToString()
+            If txtNombreObraArchivo.Text <> "" Then
+                txtNroEstadoPagoArchivo.Text = selectRow.Cells(2).Value.ToString()
+                txtNombreArchivo.Text = selectRow.Cells(3).Value.ToString()
+                txtUsuarioArchivo.Text = selectRow.Cells(4).Value.ToString()
+                txtFechaAdjuntadoArchivo.Text = selectRow.Cells(5).Value
+            Else
+                MsgBox("No se encuentra registro de adjuntos", MsgBoxStyle.Information)
+                Limpiar()
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub btnDescargar_Click(sender As Object, e As EventArgs) Handles btnDescargar.Click
+        Try
+            If txtNombreArchivo.Text <> "" Then
+                Dim nombreArchivo As String
+                nombreArchivo = txtNombreArchivo.Text
+                SaveFileDialogEP.FileName = txtNombreArchivo.Text
+                If SaveFileDialogEP.ShowDialog = DialogResult.OK Then
+                    SaveFileDialogEP.Title = "Escoje la ruta para descargar"
+                    SaveFileDialogEP.InitialDirectory = "Descargas"
+                    lblRutaDescarga.Text = SaveFileDialogEP.FileName
+                    FTPDownloadFile(lblRutaDescarga.Text + "", "ftp://201.148.105.75/Estado_De_Pago_Mandante/Estados_De_Pago_Firmados" + "/" + txtNombreArchivo.Text + "", "cfv@constructorafv.com", "gsolis2013")
+                    lblRutaDescarga.Text = ""
+                    SaveFileDialogEP.FileName = ""
+                Else
+                    SaveFileDialogEP.FileName = ""
+                End If
+            Else
+                MsgBox("Debe seleccionar un registro", MsgBoxStyle.Exclamation)
+                SaveFileDialogEP.FileName = ""
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub cboObra_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cboObra.SelectionChangeCommitted
+        LlenarDataGridView()
+    End Sub
+    Public Function Limpiar()
+        txtNombreObraArchivo.Text = ""
+        txtNroEstadoPagoArchivo.Text = ""
+        txtNombreArchivo.Text = ""
+        txtUsuarioArchivo.Text = ""
+        txtFechaAdjuntadoArchivo.Text = ""
+    End Function
+    Public Function RellenarCboObra()
+        Try
+            cboObras.DataSource = nue_obra5.listar5(id_obra)
+            cboObras.DisplayMember = "nombre_faena"
+            cboObras.ValueMember = "Id_identificacion"
+            cboObras.Text = Module1.Nombre_Obra
+
+            cboObra.DataSource = nue_obra5.listar5(id_obra)
+            cboObra.DisplayMember = "nombre_faena"
+            cboObra.ValueMember = "Id_identificacion"
+            cboObra.Text = Module1.Nombre_Obra
+
+            cboObraFactura.DataSource = nue_obra5.listar5(id_obra)
+            cboObraFactura.DisplayMember = "nombre_faena"
+            cboObraFactura.ValueMember = "Id_identificacion"
+            cboObraFactura.Text = Module1.Nombre_Obra
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+    End Function
+
+    'Rellenar GridView
+    Sub LlenarDataGridView()
+        Try
+            Dim total As Double = 0
+            Dim fila As DataGridViewRow = New DataGridViewRow()
+            Dim obra As String
+            obra = cboObra.Text
+            dgvAdjuntosPagosFirmados.DataSource = nue_obra6.LeerAdjuntoPagosFirmados(obra)
+
+            With dgvAdjuntosPagosFirmados
+                .RowHeadersVisible = False
+                .Columns(0).HeaderCell.Value = "ID"
+                .Columns(0).Visible = False
+                .Columns(1).HeaderCell.Value = "Obra"
+                .Columns(2).HeaderCell.Value = "Nro Estado de Pago"
+                .Columns(3).HeaderCell.Value = "Adjunto"
+                .Columns(3).Visible = False
+                .Columns(4).HeaderCell.Value = "Usuario"
+                .Columns(5).HeaderCell.Value = "Fecha de subida"
+                .Columns(6).HeaderCell.Value = "Obras Adjunto"
+                .Columns(6).Visible = False
+                .Columns(7).HeaderCell.Value = "Adjunto"
+                dgvAdjuntosPagosFirmados.Columns(0).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                dgvAdjuntosPagosFirmados.Columns(1).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                dgvAdjuntosPagosFirmados.Columns(2).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                dgvAdjuntosPagosFirmados.Columns(3).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                dgvAdjuntosPagosFirmados.Columns(4).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                dgvAdjuntosPagosFirmados.Columns(5).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                dgvAdjuntosPagosFirmados.Columns(6).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+            End With
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    'Metodos
+    'Descarga desde FTP
+
+    Private Sub FTPDownloadFile(ByVal downloadpath As String, ByVal ftpuri As String, ByVal ftpusername As String, ByVal ftppassword As String)
+        'Create a WebClient.
+        Dim request As New WebClient()
+
+        ' Confirm the Network credentials based on the user name and password passed in.
+        request.Credentials = New NetworkCredential(ftpusername, ftppassword)
+
+        'Read the file data into a Byte array
+        Dim bytes() As Byte = request.DownloadData(ftpuri)
+
+        Try
+            '  Create a FileStream to read the file into
+            Dim DownloadStream As FileStream = IO.File.Create(downloadpath)
+            '  Stream this data into the file
+            DownloadStream.Write(bytes, 0, bytes.Length)
+            '  Close the FileStream
+            DownloadStream.Close()
+            MsgBox("Se ha descargado el archivo ")
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+            Exit Sub
+        End Try
+
+    End Sub
+
+    Private Sub btnDescargarFacturasAdjuntas_Click(sender As Object, e As EventArgs) Handles btnDescargarFacturasAdjuntas.Click
+        Try
+            If txtAdjuntoFacturasFirmadas.Text <> "" Then
+                SaveFileDialogFacturasFirmadas.FileName = txtAdjuntoFacturasFirmadas.Text
+                If SaveFileDialogFacturasFirmadas.ShowDialog = DialogResult.OK Then
+                    SaveFileDialogFacturasFirmadas.Title = "Escoje la ruta para descargar"
+                    SaveFileDialogFacturasFirmadas.InitialDirectory = "Descargas"
+                    lblAdjuntoFacturas.Text = SaveFileDialogFacturasFirmadas.FileName
+                    FTPDownloadFile(lblAdjuntoFacturas.Text + "", "ftp://201.148.105.75/Estado_De_Pago_Mandante/Facturas_Firmadas/" + txtAdjuntoFacturasFirmadas.Text, "cfv@constructorafv.com", "gsolis2013")
+                    SaveFileDialog1.FileName = ""
+                    lblAdjuntoFacturas.Text = ""
+                End If
+                SaveFileDialogFacturasFirmadas.FileName = ""
+            Else
+                MsgBox("Debes seleccionar un registro", MsgBoxStyle.Exclamation)
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub dgvFacturasAdjunto_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvFacturasAdjunto.CellClick
+        Try
+
+            Dim index As Integer
+            index = e.RowIndex
+            Dim selectRow As DataGridViewRow
+            selectRow = dgvFacturasAdjunto.Rows(index)
+
+
+            txtInfoObra.Text = selectRow.Cells(2).Value.ToString()
+            If txtInfoObra.Text <> "" Then
+
+                txtInfoNroEstadoPago.Text = selectRow.Cells(3).Value.ToString()
+                txtInfoNroFactura.Text = selectRow.Cells(4).Value.ToString()
+                txtAdjuntoFacturasFirmadas.Text = selectRow.Cells(8).Value.ToString()
+                txtInfoFechaAdjunto.Text = selectRow.Cells(7).Value
+            Else
+                MsgBox("No se encuentra registro de adjuntos", MsgBoxStyle.Information)
+                Limpiar()
+            End If
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub cboObraFactura_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cboObraFactura.SelectionChangeCommitted
+        actualizar_dgvFacturasAdjunto()
+        Limpiar()
+    End Sub
+    Sub actualizar_dgvFacturasAdjunto()
+        Try
+            Dim total As Double = 0
+            Dim obrasFiltro As String
+
+            obrasFiltro = cboObraFactura.Text
+
+            Dim fila As DataGridViewRow = New DataGridViewRow()
+            dgvFacturasAdjunto.DataSource = nue_obra6.LeerAdjuntoFacturas(obrasFiltro)
+            With dgvFacturasAdjunto
+                .RowHeadersVisible = False
+                .Columns(0).HeaderCell.Value = "ID"
+                .Columns(0).Visible = False
+                .Columns(1).HeaderCell.Value = "Obra Adjunto"
+                .Columns(1).Visible = False
+                .Columns(2).HeaderCell.Value = "Obra"
+                .Columns(3).HeaderCell.Value = "N° Estado de Pago Asociado"
+                .Columns(4).HeaderCell.Value = "N° Factura"
+                .Columns(5).HeaderCell.Value = "Adjunto"
+                .Columns(6).HeaderCell.Value = "Usuario"
+                .Columns(7).HeaderCell.Value = "Fecha de subida"
+                .Columns(8).HeaderCell.Value = "Adjunto"
+                .Columns(8).Visible = False
+                dgvFacturasAdjunto.Columns(1).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                dgvFacturasAdjunto.Columns(2).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                dgvFacturasAdjunto.Columns(3).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                dgvFacturasAdjunto.Columns(4).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                dgvFacturasAdjunto.Columns(5).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+            End With
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub cboObras_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cboObras.SelectionChangeCommitted
+        actualizar_dgvFacturasAdjunto()
+        LlenarDataGridView()
+    End Sub
+
+    Private Sub btnEstadoPago_Click(sender As Object, e As EventArgs) Handles btnEstadoPago.Click
+        Try
+            If cboObra.Text <> "" Then
+                CR_EstadoPagoMandante.Show()
+            Else
+                MsgBox("Debe selecionar una obra", MsgBoxStyle.Information)
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            MsgBox("Favor, contacte al administrador", MsgBoxStyle.Critical)
+        End Try
     End Sub
 End Class

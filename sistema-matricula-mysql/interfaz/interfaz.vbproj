@@ -492,16 +492,16 @@
     <Compile Include="frm_menu_principal_V_V2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_menu_principal_X.Designer.vb">
-      <DependentUpon>frm_menu_principal_X.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frm_menu_principal_X.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frm_menu_principal_IV_V2.Designer.vb">
       <DependentUpon>frm_menu_principal_IV_V2.vb</DependentUpon>
     </Compile>
     <Compile Include="frm_menu_principal_IV_V2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_menu_principal_X.designer.vb">
+      <DependentUpon>frm_menu_principal_X.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_principal_X.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_menu_rendimientos10.Designer.vb">
@@ -950,11 +950,11 @@
     <EmbeddedResource Include="frm_menu_principal_V_V2.resx">
       <DependentUpon>frm_menu_principal_V_V2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_menu_principal_X.resx">
-      <DependentUpon>frm_menu_principal_X.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frm_menu_principal_IV_V2.resx">
       <DependentUpon>frm_menu_principal_IV_V2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_principal_X.resx">
+      <DependentUpon>frm_menu_principal_X.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_menu_rendimientos10.resx">
       <DependentUpon>Frm_menu_rendimientos10.vb</DependentUpon>

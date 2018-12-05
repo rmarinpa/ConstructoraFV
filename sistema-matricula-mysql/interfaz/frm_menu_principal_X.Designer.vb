@@ -116,6 +116,8 @@ Partial Class frm_menu_principal_X
         Me.Label28 = New System.Windows.Forms.Label()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.TabPage55 = New System.Windows.Forms.TabPage()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.cmb_activo = New System.Windows.Forms.ComboBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.btn_detalle_obra = New System.Windows.Forms.Button()
         Me.cmb_obra = New System.Windows.Forms.ComboBox()
@@ -142,6 +144,39 @@ Partial Class frm_menu_principal_X
         Me.Label39 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TabPage58 = New System.Windows.Forms.TabPage()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.cboObras = New System.Windows.Forms.ComboBox()
+        Me.btnFacturasFirmadas = New System.Windows.Forms.Button()
+        Me.btnEpFirmado = New System.Windows.Forms.Button()
+        Me.gbFacturasFirmadas = New System.Windows.Forms.GroupBox()
+        Me.lblAdjuntoFacturas = New System.Windows.Forms.Label()
+        Me.dgvFacturasAdjunto = New System.Windows.Forms.DataGridView()
+        Me.cboObraFactura = New System.Windows.Forms.ComboBox()
+        Me.btnDescargarFacturasAdjuntas = New System.Windows.Forms.Button()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.txtInfoObra = New System.Windows.Forms.TextBox()
+        Me.txtInfoNroEstadoPago = New System.Windows.Forms.TextBox()
+        Me.txtAdjuntoFacturasFirmadas = New System.Windows.Forms.TextBox()
+        Me.txtInfoNroFactura = New System.Windows.Forms.TextBox()
+        Me.txtInfoFechaAdjunto = New System.Windows.Forms.TextBox()
+        Me.lblNroFactura = New System.Windows.Forms.Label()
+        Me.lblFechaAdjunto = New System.Windows.Forms.Label()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.lblNroEstadoDePago = New System.Windows.Forms.Label()
+        Me.gbPagoFirmadoAdjunto = New System.Windows.Forms.GroupBox()
+        Me.dgvAdjuntosPagosFirmados = New System.Windows.Forms.DataGridView()
+        Me.lblObra = New System.Windows.Forms.Label()
+        Me.cboObra = New System.Windows.Forms.ComboBox()
+        Me.btnDescargar = New System.Windows.Forms.Button()
+        Me.lblRutaDescarga = New System.Windows.Forms.Label()
+        Me.txtUsuarioArchivo = New System.Windows.Forms.TextBox()
+        Me.txtFechaAdjuntadoArchivo = New System.Windows.Forms.TextBox()
+        Me.txtNroEstadoPagoArchivo = New System.Windows.Forms.TextBox()
+        Me.txtNombreObraArchivo = New System.Windows.Forms.TextBox()
+        Me.lblFechaAdjuntado = New System.Windows.Forms.Label()
+        Me.lblNroEstadoPago = New System.Windows.Forms.Label()
+        Me.lblObra2 = New System.Windows.Forms.Label()
+        Me.txtNombreArchivo = New System.Windows.Forms.TextBox()
         Me.TabPage59 = New System.Windows.Forms.TabPage()
         Me.TabPage60 = New System.Windows.Forms.TabPage()
         Me.TabPage61 = New System.Windows.Forms.TabPage()
@@ -381,8 +416,10 @@ Partial Class frm_menu_principal_X
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.OpenFileDialog7 = New System.Windows.Forms.OpenFileDialog()
         Me.SaveFileDialog3 = New System.Windows.Forms.SaveFileDialog()
-        Me.Label29 = New System.Windows.Forms.Label()
-        Me.cmb_activo = New System.Windows.Forms.ComboBox()
+        Me.SaveFileDialogFacturasFirmadas = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialogEP = New System.Windows.Forms.SaveFileDialog()
+        Me.btnEstadoPago = New System.Windows.Forms.Button()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage10.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -393,6 +430,11 @@ Partial Class frm_menu_principal_X
         Me.TabPage54.SuspendLayout()
         Me.TabPage55.SuspendLayout()
         Me.TabPage57.SuspendLayout()
+        Me.TabPage58.SuspendLayout()
+        Me.gbFacturasFirmadas.SuspendLayout()
+        CType(Me.dgvFacturasAdjunto, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.gbPagoFirmadoAdjunto.SuspendLayout()
+        CType(Me.dgvAdjuntosPagosFirmados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage9.SuspendLayout()
         Me.TabControl8.SuspendLayout()
         Me.TabPage8.SuspendLayout()
@@ -1641,6 +1683,27 @@ Partial Class frm_menu_principal_X
         Me.TabPage55.Text = "Listado de Máquinas"
         Me.TabPage55.UseVisualStyleBackColor = True
         '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Location = New System.Drawing.Point(24, 150)
+        Me.Label29.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(108, 17)
+        Me.Label29.TabIndex = 1226
+        Me.Label29.Text = "Equipos Activos"
+        '
+        'cmb_activo
+        '
+        Me.cmb_activo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmb_activo.FormattingEnabled = True
+        Me.cmb_activo.Items.AddRange(New Object() {"Todos", "SI", "NO"})
+        Me.cmb_activo.Location = New System.Drawing.Point(136, 147)
+        Me.cmb_activo.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmb_activo.Name = "cmb_activo"
+        Me.cmb_activo.Size = New System.Drawing.Size(402, 25)
+        Me.cmb_activo.TabIndex = 1225
+        '
         'TextBox2
         '
         Me.TextBox2.BackColor = System.Drawing.Color.LightGoldenrodYellow
@@ -1920,12 +1983,350 @@ Partial Class frm_menu_principal_X
         'TabPage58
         '
         Me.TabPage58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TabPage58.Controls.Add(Me.TextBox8)
+        Me.TabPage58.Controls.Add(Me.btnEstadoPago)
+        Me.TabPage58.Controls.Add(Me.Label32)
+        Me.TabPage58.Controls.Add(Me.cboObras)
+        Me.TabPage58.Controls.Add(Me.btnFacturasFirmadas)
+        Me.TabPage58.Controls.Add(Me.btnEpFirmado)
+        Me.TabPage58.Controls.Add(Me.gbFacturasFirmadas)
+        Me.TabPage58.Controls.Add(Me.gbPagoFirmadoAdjunto)
         Me.TabPage58.Location = New System.Drawing.Point(4, 38)
         Me.TabPage58.Name = "TabPage58"
         Me.TabPage58.Size = New System.Drawing.Size(1382, 503)
         Me.TabPage58.TabIndex = 5
         Me.TabPage58.Text = "Estados de Pago Mandante"
         Me.TabPage58.UseVisualStyleBackColor = True
+        '
+        'Label32
+        '
+        Me.Label32.AutoSize = True
+        Me.Label32.Location = New System.Drawing.Point(47, 112)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(40, 17)
+        Me.Label32.TabIndex = 44
+        Me.Label32.Text = "Obra"
+        '
+        'cboObras
+        '
+        Me.cboObras.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboObras.FormattingEnabled = True
+        Me.cboObras.Location = New System.Drawing.Point(234, 113)
+        Me.cboObras.Name = "cboObras"
+        Me.cboObras.Size = New System.Drawing.Size(292, 25)
+        Me.cboObras.TabIndex = 43
+        '
+        'btnFacturasFirmadas
+        '
+        Me.btnFacturasFirmadas.Font = New System.Drawing.Font("Calibri", 11.25!)
+        Me.btnFacturasFirmadas.Location = New System.Drawing.Point(389, 202)
+        Me.btnFacturasFirmadas.Name = "btnFacturasFirmadas"
+        Me.btnFacturasFirmadas.Size = New System.Drawing.Size(137, 45)
+        Me.btnFacturasFirmadas.TabIndex = 42
+        Me.btnFacturasFirmadas.Text = "Ver Facturas Firmadas"
+        Me.btnFacturasFirmadas.UseVisualStyleBackColor = True
+        '
+        'btnEpFirmado
+        '
+        Me.btnEpFirmado.Font = New System.Drawing.Font("Calibri", 11.25!)
+        Me.btnEpFirmado.Location = New System.Drawing.Point(234, 202)
+        Me.btnEpFirmado.Name = "btnEpFirmado"
+        Me.btnEpFirmado.Size = New System.Drawing.Size(118, 45)
+        Me.btnEpFirmado.TabIndex = 41
+        Me.btnEpFirmado.Text = "Ver E.P. Firmados"
+        Me.btnEpFirmado.UseVisualStyleBackColor = True
+        '
+        'gbFacturasFirmadas
+        '
+        Me.gbFacturasFirmadas.Controls.Add(Me.lblAdjuntoFacturas)
+        Me.gbFacturasFirmadas.Controls.Add(Me.dgvFacturasAdjunto)
+        Me.gbFacturasFirmadas.Controls.Add(Me.cboObraFactura)
+        Me.gbFacturasFirmadas.Controls.Add(Me.btnDescargarFacturasAdjuntas)
+        Me.gbFacturasFirmadas.Controls.Add(Me.Label30)
+        Me.gbFacturasFirmadas.Controls.Add(Me.txtInfoObra)
+        Me.gbFacturasFirmadas.Controls.Add(Me.txtInfoNroEstadoPago)
+        Me.gbFacturasFirmadas.Controls.Add(Me.txtAdjuntoFacturasFirmadas)
+        Me.gbFacturasFirmadas.Controls.Add(Me.txtInfoNroFactura)
+        Me.gbFacturasFirmadas.Controls.Add(Me.txtInfoFechaAdjunto)
+        Me.gbFacturasFirmadas.Controls.Add(Me.lblNroFactura)
+        Me.gbFacturasFirmadas.Controls.Add(Me.lblFechaAdjunto)
+        Me.gbFacturasFirmadas.Controls.Add(Me.Label31)
+        Me.gbFacturasFirmadas.Controls.Add(Me.lblNroEstadoDePago)
+        Me.gbFacturasFirmadas.Font = New System.Drawing.Font("Calibri", 11.25!)
+        Me.gbFacturasFirmadas.Location = New System.Drawing.Point(606, 19)
+        Me.gbFacturasFirmadas.Name = "gbFacturasFirmadas"
+        Me.gbFacturasFirmadas.Size = New System.Drawing.Size(616, 480)
+        Me.gbFacturasFirmadas.TabIndex = 40
+        Me.gbFacturasFirmadas.TabStop = False
+        Me.gbFacturasFirmadas.Text = "Facturas Firmadas"
+        '
+        'lblAdjuntoFacturas
+        '
+        Me.lblAdjuntoFacturas.AutoSize = True
+        Me.lblAdjuntoFacturas.Location = New System.Drawing.Point(554, 133)
+        Me.lblAdjuntoFacturas.Name = "lblAdjuntoFacturas"
+        Me.lblAdjuntoFacturas.Size = New System.Drawing.Size(0, 18)
+        Me.lblAdjuntoFacturas.TabIndex = 41
+        Me.lblAdjuntoFacturas.Visible = False
+        '
+        'dgvFacturasAdjunto
+        '
+        Me.dgvFacturasAdjunto.AllowUserToAddRows = False
+        Me.dgvFacturasAdjunto.AllowUserToDeleteRows = False
+        Me.dgvFacturasAdjunto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvFacturasAdjunto.Location = New System.Drawing.Point(12, 257)
+        Me.dgvFacturasAdjunto.Name = "dgvFacturasAdjunto"
+        Me.dgvFacturasAdjunto.ReadOnly = True
+        Me.dgvFacturasAdjunto.Size = New System.Drawing.Size(502, 167)
+        Me.dgvFacturasAdjunto.TabIndex = 31
+        '
+        'cboObraFactura
+        '
+        Me.cboObraFactura.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboObraFactura.FormattingEnabled = True
+        Me.cboObraFactura.Location = New System.Drawing.Point(190, 41)
+        Me.cboObraFactura.Name = "cboObraFactura"
+        Me.cboObraFactura.Size = New System.Drawing.Size(195, 26)
+        Me.cboObraFactura.TabIndex = 40
+        '
+        'btnDescargarFacturasAdjuntas
+        '
+        Me.btnDescargarFacturasAdjuntas.Font = New System.Drawing.Font("Calibri", 11.25!)
+        Me.btnDescargarFacturasAdjuntas.Location = New System.Drawing.Point(526, 217)
+        Me.btnDescargarFacturasAdjuntas.Name = "btnDescargarFacturasAdjuntas"
+        Me.btnDescargarFacturasAdjuntas.Size = New System.Drawing.Size(84, 26)
+        Me.btnDescargarFacturasAdjuntas.TabIndex = 28
+        Me.btnDescargarFacturasAdjuntas.Text = "Descargar"
+        Me.btnDescargarFacturasAdjuntas.UseVisualStyleBackColor = True
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Location = New System.Drawing.Point(9, 41)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(38, 18)
+        Me.Label30.TabIndex = 39
+        Me.Label30.Text = "Obra"
+        '
+        'txtInfoObra
+        '
+        Me.txtInfoObra.Enabled = False
+        Me.txtInfoObra.Location = New System.Drawing.Point(190, 89)
+        Me.txtInfoObra.Name = "txtInfoObra"
+        Me.txtInfoObra.Size = New System.Drawing.Size(195, 26)
+        Me.txtInfoObra.TabIndex = 33
+        '
+        'txtInfoNroEstadoPago
+        '
+        Me.txtInfoNroEstadoPago.Enabled = False
+        Me.txtInfoNroEstadoPago.Location = New System.Drawing.Point(190, 125)
+        Me.txtInfoNroEstadoPago.Name = "txtInfoNroEstadoPago"
+        Me.txtInfoNroEstadoPago.Size = New System.Drawing.Size(195, 26)
+        Me.txtInfoNroEstadoPago.TabIndex = 34
+        '
+        'txtAdjuntoFacturasFirmadas
+        '
+        Me.txtAdjuntoFacturasFirmadas.Location = New System.Drawing.Point(554, 181)
+        Me.txtAdjuntoFacturasFirmadas.Name = "txtAdjuntoFacturasFirmadas"
+        Me.txtAdjuntoFacturasFirmadas.Size = New System.Drawing.Size(56, 26)
+        Me.txtAdjuntoFacturasFirmadas.TabIndex = 38
+        Me.txtAdjuntoFacturasFirmadas.Visible = False
+        '
+        'txtInfoNroFactura
+        '
+        Me.txtInfoNroFactura.Enabled = False
+        Me.txtInfoNroFactura.Location = New System.Drawing.Point(190, 160)
+        Me.txtInfoNroFactura.Name = "txtInfoNroFactura"
+        Me.txtInfoNroFactura.Size = New System.Drawing.Size(195, 26)
+        Me.txtInfoNroFactura.TabIndex = 37
+        '
+        'txtInfoFechaAdjunto
+        '
+        Me.txtInfoFechaAdjunto.Enabled = False
+        Me.txtInfoFechaAdjunto.Location = New System.Drawing.Point(190, 193)
+        Me.txtInfoFechaAdjunto.Name = "txtInfoFechaAdjunto"
+        Me.txtInfoFechaAdjunto.Size = New System.Drawing.Size(195, 26)
+        Me.txtInfoFechaAdjunto.TabIndex = 35
+        '
+        'lblNroFactura
+        '
+        Me.lblNroFactura.AutoSize = True
+        Me.lblNroFactura.Location = New System.Drawing.Point(9, 160)
+        Me.lblNroFactura.Name = "lblNroFactura"
+        Me.lblNroFactura.Size = New System.Drawing.Size(71, 18)
+        Me.lblNroFactura.TabIndex = 36
+        Me.lblNroFactura.Text = "N° Factura"
+        '
+        'lblFechaAdjunto
+        '
+        Me.lblFechaAdjunto.AutoSize = True
+        Me.lblFechaAdjunto.Location = New System.Drawing.Point(9, 196)
+        Me.lblFechaAdjunto.Name = "lblFechaAdjunto"
+        Me.lblFechaAdjunto.Size = New System.Drawing.Size(112, 18)
+        Me.lblFechaAdjunto.TabIndex = 32
+        Me.lblFechaAdjunto.Text = "Fecha Adjuntado"
+        '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.Location = New System.Drawing.Point(10, 92)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(38, 18)
+        Me.Label31.TabIndex = 29
+        Me.Label31.Text = "Obra"
+        '
+        'lblNroEstadoDePago
+        '
+        Me.lblNroEstadoDePago.AutoSize = True
+        Me.lblNroEstadoDePago.Location = New System.Drawing.Point(9, 128)
+        Me.lblNroEstadoDePago.Name = "lblNroEstadoDePago"
+        Me.lblNroEstadoDePago.Size = New System.Drawing.Size(178, 18)
+        Me.lblNroEstadoDePago.TabIndex = 30
+        Me.lblNroEstadoDePago.Text = "N° Estado de Pago Asociado"
+        '
+        'gbPagoFirmadoAdjunto
+        '
+        Me.gbPagoFirmadoAdjunto.Controls.Add(Me.dgvAdjuntosPagosFirmados)
+        Me.gbPagoFirmadoAdjunto.Controls.Add(Me.lblObra)
+        Me.gbPagoFirmadoAdjunto.Controls.Add(Me.cboObra)
+        Me.gbPagoFirmadoAdjunto.Controls.Add(Me.btnDescargar)
+        Me.gbPagoFirmadoAdjunto.Controls.Add(Me.lblRutaDescarga)
+        Me.gbPagoFirmadoAdjunto.Controls.Add(Me.txtUsuarioArchivo)
+        Me.gbPagoFirmadoAdjunto.Controls.Add(Me.txtFechaAdjuntadoArchivo)
+        Me.gbPagoFirmadoAdjunto.Controls.Add(Me.txtNroEstadoPagoArchivo)
+        Me.gbPagoFirmadoAdjunto.Controls.Add(Me.txtNombreObraArchivo)
+        Me.gbPagoFirmadoAdjunto.Controls.Add(Me.lblFechaAdjuntado)
+        Me.gbPagoFirmadoAdjunto.Controls.Add(Me.lblNroEstadoPago)
+        Me.gbPagoFirmadoAdjunto.Controls.Add(Me.lblObra2)
+        Me.gbPagoFirmadoAdjunto.Controls.Add(Me.txtNombreArchivo)
+        Me.gbPagoFirmadoAdjunto.Font = New System.Drawing.Font("Calibri", 11.25!)
+        Me.gbPagoFirmadoAdjunto.Location = New System.Drawing.Point(606, 19)
+        Me.gbPagoFirmadoAdjunto.Name = "gbPagoFirmadoAdjunto"
+        Me.gbPagoFirmadoAdjunto.Size = New System.Drawing.Size(592, 482)
+        Me.gbPagoFirmadoAdjunto.TabIndex = 20
+        Me.gbPagoFirmadoAdjunto.TabStop = False
+        Me.gbPagoFirmadoAdjunto.Text = "Estados de Pago Firmados Adjuntos"
+        '
+        'dgvAdjuntosPagosFirmados
+        '
+        Me.dgvAdjuntosPagosFirmados.AllowUserToAddRows = False
+        Me.dgvAdjuntosPagosFirmados.AllowUserToDeleteRows = False
+        Me.dgvAdjuntosPagosFirmados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvAdjuntosPagosFirmados.Location = New System.Drawing.Point(22, 225)
+        Me.dgvAdjuntosPagosFirmados.Name = "dgvAdjuntosPagosFirmados"
+        Me.dgvAdjuntosPagosFirmados.ReadOnly = True
+        Me.dgvAdjuntosPagosFirmados.Size = New System.Drawing.Size(400, 150)
+        Me.dgvAdjuntosPagosFirmados.TabIndex = 20
+        '
+        'lblObra
+        '
+        Me.lblObra.AutoSize = True
+        Me.lblObra.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblObra.Location = New System.Drawing.Point(9, 40)
+        Me.lblObra.Name = "lblObra"
+        Me.lblObra.Size = New System.Drawing.Size(38, 18)
+        Me.lblObra.TabIndex = 21
+        Me.lblObra.Text = "Obra"
+        '
+        'cboObra
+        '
+        Me.cboObra.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboObra.FormattingEnabled = True
+        Me.cboObra.Location = New System.Drawing.Point(152, 40)
+        Me.cboObra.Name = "cboObra"
+        Me.cboObra.Size = New System.Drawing.Size(195, 26)
+        Me.cboObra.TabIndex = 22
+        '
+        'btnDescargar
+        '
+        Me.btnDescargar.Font = New System.Drawing.Font("Calibri", 11.25!)
+        Me.btnDescargar.Location = New System.Drawing.Point(478, 225)
+        Me.btnDescargar.Name = "btnDescargar"
+        Me.btnDescargar.Size = New System.Drawing.Size(89, 26)
+        Me.btnDescargar.TabIndex = 13
+        Me.btnDescargar.Text = "Descargar"
+        Me.btnDescargar.UseVisualStyleBackColor = True
+        '
+        'lblRutaDescarga
+        '
+        Me.lblRutaDescarga.AutoSize = True
+        Me.lblRutaDescarga.Location = New System.Drawing.Point(403, 175)
+        Me.lblRutaDescarga.Name = "lblRutaDescarga"
+        Me.lblRutaDescarga.Size = New System.Drawing.Size(0, 18)
+        Me.lblRutaDescarga.TabIndex = 25
+        Me.lblRutaDescarga.Visible = False
+        '
+        'txtUsuarioArchivo
+        '
+        Me.txtUsuarioArchivo.Enabled = False
+        Me.txtUsuarioArchivo.Location = New System.Drawing.Point(522, 157)
+        Me.txtUsuarioArchivo.Name = "txtUsuarioArchivo"
+        Me.txtUsuarioArchivo.Size = New System.Drawing.Size(36, 26)
+        Me.txtUsuarioArchivo.TabIndex = 24
+        Me.txtUsuarioArchivo.Visible = False
+        '
+        'txtFechaAdjuntadoArchivo
+        '
+        Me.txtFechaAdjuntadoArchivo.Enabled = False
+        Me.txtFechaAdjuntadoArchivo.Location = New System.Drawing.Point(152, 157)
+        Me.txtFechaAdjuntadoArchivo.Name = "txtFechaAdjuntadoArchivo"
+        Me.txtFechaAdjuntadoArchivo.Size = New System.Drawing.Size(195, 26)
+        Me.txtFechaAdjuntadoArchivo.TabIndex = 22
+        '
+        'txtNroEstadoPagoArchivo
+        '
+        Me.txtNroEstadoPagoArchivo.Enabled = False
+        Me.txtNroEstadoPagoArchivo.Location = New System.Drawing.Point(152, 125)
+        Me.txtNroEstadoPagoArchivo.Name = "txtNroEstadoPagoArchivo"
+        Me.txtNroEstadoPagoArchivo.Size = New System.Drawing.Size(195, 26)
+        Me.txtNroEstadoPagoArchivo.TabIndex = 21
+        '
+        'txtNombreObraArchivo
+        '
+        Me.txtNombreObraArchivo.Enabled = False
+        Me.txtNombreObraArchivo.Location = New System.Drawing.Point(152, 93)
+        Me.txtNombreObraArchivo.Name = "txtNombreObraArchivo"
+        Me.txtNombreObraArchivo.Size = New System.Drawing.Size(195, 26)
+        Me.txtNombreObraArchivo.TabIndex = 20
+        '
+        'lblFechaAdjuntado
+        '
+        Me.lblFechaAdjuntado.AutoSize = True
+        Me.lblFechaAdjuntado.Font = New System.Drawing.Font("Calibri", 11.25!)
+        Me.lblFechaAdjuntado.Location = New System.Drawing.Point(10, 163)
+        Me.lblFechaAdjuntado.Name = "lblFechaAdjuntado"
+        Me.lblFechaAdjuntado.Size = New System.Drawing.Size(112, 18)
+        Me.lblFechaAdjuntado.TabIndex = 19
+        Me.lblFechaAdjuntado.Text = "Fecha Adjuntado"
+        '
+        'lblNroEstadoPago
+        '
+        Me.lblNroEstadoPago.AutoSize = True
+        Me.lblNroEstadoPago.Font = New System.Drawing.Font("Calibri", 11.25!)
+        Me.lblNroEstadoPago.Location = New System.Drawing.Point(9, 128)
+        Me.lblNroEstadoPago.Name = "lblNroEstadoPago"
+        Me.lblNroEstadoPago.Size = New System.Drawing.Size(108, 18)
+        Me.lblNroEstadoPago.TabIndex = 18
+        Me.lblNroEstadoPago.Text = "Nro Estado Pago"
+        '
+        'lblObra2
+        '
+        Me.lblObra2.AutoSize = True
+        Me.lblObra2.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblObra2.Location = New System.Drawing.Point(9, 93)
+        Me.lblObra2.Name = "lblObra2"
+        Me.lblObra2.Size = New System.Drawing.Size(38, 18)
+        Me.lblObra2.TabIndex = 17
+        Me.lblObra2.Text = "Obra"
+        '
+        'txtNombreArchivo
+        '
+        Me.txtNombreArchivo.Enabled = False
+        Me.txtNombreArchivo.Location = New System.Drawing.Point(353, 157)
+        Me.txtNombreArchivo.Name = "txtNombreArchivo"
+        Me.txtNombreArchivo.Size = New System.Drawing.Size(127, 26)
+        Me.txtNombreArchivo.TabIndex = 16
+        Me.txtNombreArchivo.Visible = False
         '
         'TabPage59
         '
@@ -4772,26 +5173,34 @@ Partial Class frm_menu_principal_X
         '
         Me.SaveFileDialog3.Filter = "PDF files (*.pdf)|*.pdf"
         '
-        'Label29
+        'SaveFileDialogFacturasFirmadas
         '
-        Me.Label29.AutoSize = True
-        Me.Label29.Location = New System.Drawing.Point(24, 150)
-        Me.Label29.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(108, 17)
-        Me.Label29.TabIndex = 1226
-        Me.Label29.Text = "Equipos Activos"
+        Me.SaveFileDialogFacturasFirmadas.Filter = "PDF files (*.pdf)|*.pdf"
         '
-        'cmb_activo
+        'SaveFileDialogEP
         '
-        Me.cmb_activo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmb_activo.FormattingEnabled = True
-        Me.cmb_activo.Items.AddRange(New Object() {"Todos", "SI", "NO"})
-        Me.cmb_activo.Location = New System.Drawing.Point(136, 147)
-        Me.cmb_activo.Margin = New System.Windows.Forms.Padding(2)
-        Me.cmb_activo.Name = "cmb_activo"
-        Me.cmb_activo.Size = New System.Drawing.Size(402, 25)
-        Me.cmb_activo.TabIndex = 1225
+        Me.SaveFileDialogEP.Filter = "PDF files (*.pdf)|*.pdf"
+        '
+        'btnEstadoPago
+        '
+        Me.btnEstadoPago.Font = New System.Drawing.Font("Calibri", 11.25!)
+        Me.btnEstadoPago.Location = New System.Drawing.Point(50, 203)
+        Me.btnEstadoPago.Name = "btnEstadoPago"
+        Me.btnEstadoPago.Size = New System.Drawing.Size(135, 44)
+        Me.btnEstadoPago.TabIndex = 45
+        Me.btnEstadoPago.Text = "Generar Resumen E.P. Mandante"
+        Me.btnEstadoPago.UseVisualStyleBackColor = True
+        '
+        'TextBox8
+        '
+        Me.TextBox8.BackColor = System.Drawing.Color.Aquamarine
+        Me.TextBox8.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox8.Location = New System.Drawing.Point(3, 19)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(597, 26)
+        Me.TextBox8.TabIndex = 46
+        Me.TextBox8.Text = "Informes Estados de Pago Mandante"
+        Me.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'frm_menu_principal_X
         '
@@ -4829,6 +5238,14 @@ Partial Class frm_menu_principal_X
         Me.TabPage55.PerformLayout()
         Me.TabPage57.ResumeLayout(False)
         Me.TabPage57.PerformLayout()
+        Me.TabPage58.ResumeLayout(False)
+        Me.TabPage58.PerformLayout()
+        Me.gbFacturasFirmadas.ResumeLayout(False)
+        Me.gbFacturasFirmadas.PerformLayout()
+        CType(Me.dgvFacturasAdjunto, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.gbPagoFirmadoAdjunto.ResumeLayout(False)
+        Me.gbPagoFirmadoAdjunto.PerformLayout()
+        CType(Me.dgvAdjuntosPagosFirmados, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage9.ResumeLayout(False)
         Me.TabControl8.ResumeLayout(False)
         Me.TabPage8.ResumeLayout(False)
@@ -5243,4 +5660,41 @@ Partial Class frm_menu_principal_X
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
     Friend WithEvents Label29 As System.Windows.Forms.Label
     Friend WithEvents cmb_activo As System.Windows.Forms.ComboBox
+    Friend WithEvents btnFacturasFirmadas As System.Windows.Forms.Button
+    Friend WithEvents btnEpFirmado As System.Windows.Forms.Button
+    Friend WithEvents gbFacturasFirmadas As System.Windows.Forms.GroupBox
+    Friend WithEvents lblAdjuntoFacturas As System.Windows.Forms.Label
+    Friend WithEvents dgvFacturasAdjunto As System.Windows.Forms.DataGridView
+    Friend WithEvents cboObraFactura As System.Windows.Forms.ComboBox
+    Friend WithEvents btnDescargarFacturasAdjuntas As System.Windows.Forms.Button
+    Friend WithEvents Label30 As System.Windows.Forms.Label
+    Friend WithEvents txtInfoObra As System.Windows.Forms.TextBox
+    Friend WithEvents txtInfoNroEstadoPago As System.Windows.Forms.TextBox
+    Friend WithEvents txtAdjuntoFacturasFirmadas As System.Windows.Forms.TextBox
+    Friend WithEvents txtInfoNroFactura As System.Windows.Forms.TextBox
+    Friend WithEvents txtInfoFechaAdjunto As System.Windows.Forms.TextBox
+    Friend WithEvents lblNroFactura As System.Windows.Forms.Label
+    Friend WithEvents lblFechaAdjunto As System.Windows.Forms.Label
+    Friend WithEvents Label31 As System.Windows.Forms.Label
+    Friend WithEvents lblNroEstadoDePago As System.Windows.Forms.Label
+    Friend WithEvents gbPagoFirmadoAdjunto As System.Windows.Forms.GroupBox
+    Friend WithEvents dgvAdjuntosPagosFirmados As System.Windows.Forms.DataGridView
+    Friend WithEvents lblObra As System.Windows.Forms.Label
+    Friend WithEvents cboObra As System.Windows.Forms.ComboBox
+    Friend WithEvents btnDescargar As System.Windows.Forms.Button
+    Friend WithEvents lblRutaDescarga As System.Windows.Forms.Label
+    Friend WithEvents txtUsuarioArchivo As System.Windows.Forms.TextBox
+    Friend WithEvents txtFechaAdjuntadoArchivo As System.Windows.Forms.TextBox
+    Friend WithEvents txtNroEstadoPagoArchivo As System.Windows.Forms.TextBox
+    Friend WithEvents txtNombreObraArchivo As System.Windows.Forms.TextBox
+    Friend WithEvents lblFechaAdjuntado As System.Windows.Forms.Label
+    Friend WithEvents lblNroEstadoPago As System.Windows.Forms.Label
+    Friend WithEvents lblObra2 As System.Windows.Forms.Label
+    Friend WithEvents txtNombreArchivo As System.Windows.Forms.TextBox
+    Friend WithEvents Label32 As System.Windows.Forms.Label
+    Friend WithEvents cboObras As System.Windows.Forms.ComboBox
+    Friend WithEvents SaveFileDialogFacturasFirmadas As System.Windows.Forms.SaveFileDialog
+    Friend WithEvents SaveFileDialogEP As System.Windows.Forms.SaveFileDialog
+    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
+    Friend WithEvents btnEstadoPago As System.Windows.Forms.Button
 End Class
