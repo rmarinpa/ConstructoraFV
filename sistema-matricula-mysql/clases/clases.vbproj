@@ -85,8 +85,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Archivos_contratos.vb" />
+    <Compile Include="Contratos_Originales.vb" />
+    <Compile Include="EstadoPagoMandante.vb" />
     <Compile Include="Facturas_petroleo.vb" />
+    <Compile Include="listadoModificaciones.vb" />
     <Compile Include="listado_maquinas.vb" />
+    <Compile Include="Modificaciones.vb" />
     <Compile Include="Sincroniza15.vb" />
     <Compile Include="Sincroniza14.vb" />
     <Compile Include="Sincroniza13.vb" />
@@ -172,6 +176,7 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
