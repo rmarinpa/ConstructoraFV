@@ -881,3 +881,10 @@ C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\si
 C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_Pago_subcontrato10.resources
 C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_menu_rendimientos10.resources
 C:\Users\German\OneDrive\Importante\1.- Constructora FV - Programa Obra Rev.1\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_V_V2.resources
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.config
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Interop.AcroPDFLib.dll
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.ResolveComReference.cache
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.pdb
