@@ -1,0 +1,7 @@
+este programa utiliza el conector de mysql para .net (descargalo de su pagina e instálalo 
+o sino en la carpeta de la solucion en la carpeta clases esta la dll de mysqldata.dll 
+agregala como referencia si te marca error en el proyecto clases)
+
+visita mi pagina: http://genesisvargasj.com
+necesitas desarrollo de software o paginas web: http://dstic.co
+todo el codigo esta bajo los terminos de la licencia gpl v3 (copyleft)
