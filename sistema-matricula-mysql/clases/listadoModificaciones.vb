@@ -43,8 +43,8 @@ Public Class listadoModificaciones
 
     End Function
 
-    Public Function ModificarListado(ByVal id_modificaciones As Integer, ByVal obra As String, ByVal nro_modificacion As Integer, ByVal fecha As Date, ByVal aumentoObra As Integer, ByVal disminucionObra As Integer, ByVal obraExtraordinaria As Integer, ByVal plazo As Integer, ByVal retencion As Integer, ByVal proforma As Integer)
-        nue_var.consulta = "UPDATE listadomodificaciones SET obra = ?obra, nro_modificacion = ?nro_modificacion, fecha = ?fecha, aumentoObra = ?aumentoObra,disminucionObra= ?disminucionObra, obraExtraordinaria = ?obraExtraordinaria,  plazo = ?plazo, retencion = ?retencion, proforma =?proforma WHERE id_modificaciones = ?id_modificaciones"
+    Public Function ModificarListado(ByVal id_modificaciones As Integer, ByVal obra As String, ByVal nro_modificacion As Integer, ByVal fecha As Date, ByVal aumentoObra As Integer, ByVal disminucionObra As Integer, ByVal obraExtraordinaria As Integer, ByVal plazo As Integer)
+        nue_var.consulta = "UPDATE listadomodificaciones SET obra = ?obra, nro_modificacion = ?nro_modificacion, fecha = ?fecha, aumentoObra = ?aumentoObra,disminucionObra= ?disminucionObra, obraExtraordinaria = ?obraExtraordinaria,  plazo = ?plazo WHERE id_modificaciones = ?id_modificaciones"
         Try
             nue_conexion.conectar()
             nue_var.cmd = New MySqlCommand(nue_var.consulta, nue_conexion.conex())
@@ -56,8 +56,6 @@ Public Class listadoModificaciones
             nue_var.cmd.Parameters.Add("?disminucionObra", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = disminucionObra
             nue_var.cmd.Parameters.Add("?obraExtraordinaria", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = obraExtraordinaria
             nue_var.cmd.Parameters.Add("?plazo", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = plazo
-            nue_var.cmd.Parameters.Add("?retencion", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = retencion
-            nue_var.cmd.Parameters.Add("?proforma", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = proforma
             nue_var.cmd.ExecuteNonQuery()
             nue_conexion.desconectar()
             MsgBox("Se modificó correctamente")
@@ -70,7 +68,7 @@ Public Class listadoModificaciones
             Return False
         End Try
     End Function
-
+    'Metodo de prueba
     Public Function Eliminar(ByVal IdModificaciones As Integer)
         nue_var.consulta = "Delete from listadomodificaciones WHERE id_modificaciones = " & IdModificaciones & ""
         Try
@@ -108,7 +106,7 @@ Public Class listadoModificaciones
         Dim resultado As Boolean = False
         Try
             nue_conexion.conectar()
-            nue_var.cmd = New MySqlCommand("SELECT * FROM modificaciones WHERE ListadoModificaciones_id_modificaciones='" & ListadoModificaciones_id_modificaciones & "' AND obra='" & obra & "'", nue_conexion.conex())
+            nue_var.cmd = New MySqlCommand("SELECT * FROM modificaciones WHERE listadomodificaciones_id_modificaciones='" & ListadoModificaciones_id_modificaciones & "' AND obra='" & obra & "'", nue_conexion.conex())
             nue_var.dr = nue_var.cmd.ExecuteReader
             If nue_var.dr.Read Then
                 resultado = True
@@ -125,7 +123,7 @@ Public Class listadoModificaciones
         Dim resultado As Boolean = False
         Try
             nue_conexion.conectar()
-            nue_var.cmd = New MySqlCommand("SELECT * FROM contratooriginales WHERE adjunto='" & adjunto & "' AND obra='" & obra & "'", nue_conexion.conex())
+            nue_var.cmd = New MySqlCommand("SELECT * FROM contratosoriginales WHERE adjunto='" & adjunto & "' AND obra='" & obra & "'", nue_conexion.conex())
             nue_var.dr = nue_var.cmd.ExecuteReader
             If nue_var.dr.Read Then
                 resultado = True

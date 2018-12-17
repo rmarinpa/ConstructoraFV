@@ -3,6 +3,9 @@
     Private Sub CR_Estado_de_pago_Load(sender As Object, e As EventArgs) Handles Me.Load
         If sincroniza = 0 Then
             Dim Report1 As New Resumen_Estado_de_pago_v2_fechas
+
+
+            'Resumen_Estado_de_pago_v2_fechas_ter_un
             'Dim mes_final As Integer
             'Dim mes_ep1, año_ep2 As String
             Dim fecha_inicial As Date

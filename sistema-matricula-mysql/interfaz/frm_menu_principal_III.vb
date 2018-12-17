@@ -2084,22 +2084,26 @@ Public Class frm_menu_principal_III
     End Sub
 
     Private Sub dgv_3_trabajos_adicionales_MouseClick(sender As Object, e As MouseEventArgs) Handles dgv_3_trabajos_adicionales.MouseClick
-        Cod_3 = dgv_3_trabajos_adicionales.CurrentRow.Cells(0).Value.ToString()
+        Try
+            Cod_3 = dgv_3_trabajos_adicionales.CurrentRow.Cells(0).Value.ToString()
 
-        cmb_3_arrendador.Text = dgv_3_trabajos_adicionales.CurrentRow.Cells(5).Value.ToString()
-        cmb_3_clasificacion.Text = dgv_3_trabajos_adicionales.CurrentRow.Cells(7).Value.ToString()
-        txt_3_descripcion.Text = dgv_3_trabajos_adicionales.CurrentRow.Cells(8).Value.ToString()
-        txt_3_cantidad.Text = dgv_3_trabajos_adicionales.CurrentRow.Cells(9).Value.ToString()
-        cmb_3_un_pago.Text = dgv_3_trabajos_adicionales.CurrentRow.Cells(10).Value.ToString()
-        txt_3_precio.Text = dgv_3_trabajos_adicionales.CurrentRow.Cells(11).Value.ToString()
-        txt_3_total.Text = dgv_3_trabajos_adicionales.CurrentRow.Cells(12).Value.ToString()
-        cmb_3_cuenta_contable.SelectedValue = dgv_3_trabajos_adicionales.CurrentRow.Cells(13).Value.ToString()
-        dtp_3_fecha.Text = dgv_3_trabajos_adicionales.CurrentRow.Cells(14).Value.ToString()
+            cmb_3_arrendador.Text = dgv_3_trabajos_adicionales.CurrentRow.Cells(5).Value.ToString()
+            cmb_3_clasificacion.Text = dgv_3_trabajos_adicionales.CurrentRow.Cells(7).Value.ToString()
+            txt_3_descripcion.Text = dgv_3_trabajos_adicionales.CurrentRow.Cells(8).Value.ToString()
+            txt_3_cantidad.Text = dgv_3_trabajos_adicionales.CurrentRow.Cells(9).Value.ToString()
+            cmb_3_un_pago.Text = dgv_3_trabajos_adicionales.CurrentRow.Cells(10).Value.ToString()
+            txt_3_precio.Text = dgv_3_trabajos_adicionales.CurrentRow.Cells(11).Value.ToString()
+            txt_3_total.Text = dgv_3_trabajos_adicionales.CurrentRow.Cells(12).Value.ToString()
+            cmb_3_cuenta_contable.SelectedValue = dgv_3_trabajos_adicionales.CurrentRow.Cells(13).Value.ToString()
+            dtp_3_fecha.Text = dgv_3_trabajos_adicionales.CurrentRow.Cells(14).Value.ToString()
 
-        txt_3_total.Text = FormatNumber(txt_3_total.Text, 0)
-        sincroniza_local3 = CInt(dgv_3_trabajos_adicionales.CurrentRow.Cells(1).Value.ToString())
-        version_mod3 = CInt(dgv_3_trabajos_adicionales.CurrentRow.Cells(2).Value.ToString())
-        sincroniza_mod3 = 2
+            txt_3_total.Text = FormatNumber(txt_3_total.Text, 0)
+            sincroniza_local3 = CInt(dgv_3_trabajos_adicionales.CurrentRow.Cells(1).Value.ToString())
+            version_mod3 = CInt(dgv_3_trabajos_adicionales.CurrentRow.Cells(2).Value.ToString())
+            sincroniza_mod3 = 2
+        Catch
+
+        End Try
     End Sub
     Public Sub actualiza_cuentas_trabajo()
         cmb_3_cuenta_contable.DataSource = nue_obra3.listar6(id_obra)
@@ -2932,17 +2936,21 @@ Public Class frm_menu_principal_III
     End Sub
 
     Private Sub dgv_5_empresa_MouseClick(sender As Object, e As MouseEventArgs) Handles dgv_5_empresa.MouseClick
-        If IsNumeric(dgv_5_empresa.CurrentRow.Cells(0).Value.ToString()) Then
-            Cod_5 = dgv_5_empresa.CurrentRow.Cells(0).Value.ToString()
-            txt_5_contrato2.Text = dgv_5_empresa.CurrentRow.Cells(7).Value.ToString()
-            txt_5_equipo2.Text = dgv_5_empresa.CurrentRow.Cells(6).Value.ToString()
-            version_mod5 = CInt(dgv_5_empresa.CurrentRow.Cells(2).Value.ToString())
-        Else
-            txt_5_contrato2.Clear()
-            txt_5_equipo2.Clear()
-            Cod_5 = ""
-            version_mod5 = 0
-        End If
+        Try
+            If IsNumeric(dgv_5_empresa.CurrentRow.Cells(0).Value.ToString()) Then
+                Cod_5 = dgv_5_empresa.CurrentRow.Cells(0).Value.ToString()
+                txt_5_contrato2.Text = dgv_5_empresa.CurrentRow.Cells(7).Value.ToString()
+                txt_5_equipo2.Text = dgv_5_empresa.CurrentRow.Cells(6).Value.ToString()
+                version_mod5 = CInt(dgv_5_empresa.CurrentRow.Cells(2).Value.ToString())
+            Else
+                txt_5_contrato2.Clear()
+                txt_5_equipo2.Clear()
+                Cod_5 = ""
+                version_mod5 = 0
+            End If
+        Catch
+
+        End Try
     End Sub
 
     Private Sub btn_eliminar5_Click(sender As Object, e As EventArgs) Handles btn_eliminar5.Click
@@ -3093,17 +3101,21 @@ Public Class frm_menu_principal_III
     End Sub
 
     Private Sub dgv_7_empresa_MouseClick(sender As Object, e As MouseEventArgs) Handles dgv_7_empresa.MouseClick
-        If IsNumeric(dgv_7_empresa.CurrentRow.Cells(0).Value.ToString()) Then
-            Cod_7 = dgv_7_empresa.CurrentRow.Cells(0).Value.ToString()
-            txt_7_finiquito2.Text = dgv_7_empresa.CurrentRow.Cells(7).Value.ToString()
-            txt_7_equipo2.Text = dgv_7_empresa.CurrentRow.Cells(6).Value.ToString()
-            version_mod7 = CInt(dgv_7_empresa.CurrentRow.Cells(2).Value.ToString())
-        Else
-            txt_7_finiquito2.Clear()
-            txt_7_equipo2.Clear()
-            Cod_7 = ""
-            version_mod7 = 0
-        End If
+        Try
+            If IsNumeric(dgv_7_empresa.CurrentRow.Cells(0).Value.ToString()) Then
+                Cod_7 = dgv_7_empresa.CurrentRow.Cells(0).Value.ToString()
+                txt_7_finiquito2.Text = dgv_7_empresa.CurrentRow.Cells(7).Value.ToString()
+                txt_7_equipo2.Text = dgv_7_empresa.CurrentRow.Cells(6).Value.ToString()
+                version_mod7 = CInt(dgv_7_empresa.CurrentRow.Cells(2).Value.ToString())
+            Else
+                txt_7_finiquito2.Clear()
+                txt_7_equipo2.Clear()
+                Cod_7 = ""
+                version_mod7 = 0
+            End If
+        Catch
+
+        End Try
     End Sub
 
     Private Sub btn_eliminar7_Click(sender As Object, e As EventArgs) Handles btn_eliminar7.Click
@@ -3907,19 +3919,25 @@ Public Class frm_menu_principal_III
     End Sub
 
     Private Sub dgv_9_empresa_MouseClick(sender As Object, e As MouseEventArgs) Handles dgv_9_empresa.MouseClick
-        If IsNumeric(dgv_9_empresa.CurrentRow.Cells(0).Value.ToString()) Then
-            Cod_9 = dgv_9_empresa.CurrentRow.Cells(0).Value.ToString()
-            txt_9_rut.Text = dgv_9_empresa.CurrentRow.Cells(5).Value.ToString()
-            txt_9_empresa.Text = dgv_9_empresa.CurrentRow.Cells(6).Value.ToString()
-            txt_9_n_ep.Text = dgv_9_empresa.CurrentRow.Cells(7).Value.ToString()
-            version_mod9 = CInt(dgv_9_empresa.CurrentRow.Cells(2).Value.ToString())
-        Else
-            txt_9_empresa.Clear()
-            txt_9_n_ep.Clear()
-            txt_9_rut.Clear()
-            Cod_9 = ""
-            version_mod9 = 0
-        End If
+        Try
+
+            If IsNumeric(dgv_9_empresa.CurrentRow.Cells(0).Value.ToString()) Then
+                Cod_9 = dgv_9_empresa.CurrentRow.Cells(0).Value.ToString()
+                txt_9_rut.Text = dgv_9_empresa.CurrentRow.Cells(5).Value.ToString()
+                txt_9_empresa.Text = dgv_9_empresa.CurrentRow.Cells(6).Value.ToString()
+                txt_9_n_ep.Text = dgv_9_empresa.CurrentRow.Cells(7).Value.ToString()
+                version_mod9 = CInt(dgv_9_empresa.CurrentRow.Cells(2).Value.ToString())
+            Else
+                txt_9_empresa.Clear()
+                txt_9_n_ep.Clear()
+                txt_9_rut.Clear()
+                Cod_9 = ""
+                version_mod9 = 0
+            End If
+        Catch ex As Exception
+
+        End Try
+
     End Sub
 
     Sub descargar_ep()

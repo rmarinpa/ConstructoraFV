@@ -43,7 +43,7 @@ Public Class EstadoPagoMandante
     End Sub
 
     Public Function Insertar(ByVal nro_Estado_Pago As Integer, ByVal obra As String, ByVal fecha As Date, ByVal nro_factura As Integer, ByVal obras As Integer, ByVal reajuste As Integer, ByVal retenciones As Integer, ByVal retenciones_canjeadas As Integer, ByVal multas As Integer, ByVal valor_estado_pago As Integer, ByVal valor_estado_pago_neto As Integer, ByVal obras_neto As Integer, ByVal reajuste_neto As Integer, ByVal observaciones As String)
-        nue_var.consulta = "INSERT INTO estado_pago (nro_Estado_Pago,Obra,Fecha,Nro_factura, obras, reajuste, retenciones, retenciones_canjeadas, multas, valor_estado_pago, valor_estado_pago_neto, obras_neto, reajuste_neto,observaciones) VALUES(?nro_Estado_Pago,?Obra,?Fecha,?Nro_factura, ?obras, ?reajuste, ?retenciones, ?retenciones_canjeadas, ?multas, ?valor_estado_pago, ?valor_estado_pago_neto, ?obras_neto, ?reajuste_neto,?observaciones)"
+        nue_var.consulta = "INSERT INTO ESTADO_PAGO (nro_Estado_Pago,Obra,Fecha,Nro_factura, obras, reajuste, retenciones, retenciones_canjeadas, multas, valor_estado_pago, valor_estado_pago_neto, obras_neto, reajuste_neto,observaciones) VALUES(?nro_Estado_Pago,?Obra,?Fecha,?Nro_factura, ?obras, ?reajuste, ?retenciones, ?retenciones_canjeadas, ?multas, ?valor_estado_pago, ?valor_estado_pago_neto, ?obras_neto, ?reajuste_neto,?observaciones)"
         Try
             nue_conexion.conectar()
             nue_var.cmd = New MySqlCommand(nue_var.consulta, nue_conexion.conex())
@@ -63,6 +63,7 @@ Public Class EstadoPagoMandante
             nue_var.cmd.Parameters.Add("?observaciones", MySql.Data.MySqlClient.MySqlDbType.String).Value = observaciones
             nue_var.cmd.ExecuteNonQuery()
             nue_conexion.desconectar()
+            MsgBox("Se insertó correctamente")
             Return True
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -102,7 +103,7 @@ Public Class EstadoPagoMandante
         Try
             nue_var.dt = New DataTable
             nue_conexion.conectar()
-            nue_var.da = New MySqlDataAdapter("SELECT * from estado_pago where obra = '" & obra & "' ", nue_conexion.conex())
+            nue_var.da = New MySqlDataAdapter("SELECT * from ESTADO_PAGO where obra = '" & obra & "' ", nue_conexion.conex())
             nue_var.da.Fill(nue_var.dt)
             nue_conexion.desconectar()
             LeerFacturaFirmada = nue_var.dt
@@ -169,7 +170,7 @@ Public Class EstadoPagoMandante
         Dim resultado As Boolean = False
         Try
             nue_conexion.conectar()
-            nue_var.cmd = New MySqlCommand("SELECT * FROM estado_pago WHERE nro_estado_pago='" & nro_estadoPago & "' AND obra='" & obra & "'", nue_conexion.conex())
+            nue_var.cmd = New MySqlCommand("SELECT * FROM ESTADO_PAGO WHERE nro_estado_pago='" & nro_estadoPago & "' AND obra='" & obra & "'", nue_conexion.conex())
             nue_var.dr = nue_var.cmd.ExecuteReader
             If nue_var.dr.Read Then
                 resultado = True
@@ -185,7 +186,7 @@ Public Class EstadoPagoMandante
         Dim resultado As Boolean = False
         Try
             nue_conexion.conectar()
-            nue_var.cmd = New MySqlCommand("SELECT * FROM estado_pago_firmado WHERE estado_pago_Id_Estado_Pago='" & nro_estadoPago & "' AND obra='" & obra & "'", nue_conexion.conex())
+            nue_var.cmd = New MySqlCommand("SELECT * FROM ESTADO_PAGO_FIRMADO WHERE estado_pago_Id_Estado_Pago='" & nro_estadoPago & "' AND obra='" & obra & "'", nue_conexion.conex())
             nue_var.dr = nue_var.cmd.ExecuteReader
             If nue_var.dr.Read Then
                 resultado = True
@@ -201,7 +202,7 @@ Public Class EstadoPagoMandante
         Dim resultado As Boolean = False
         Try
             nue_conexion.conectar()
-            nue_var.cmd = New MySqlCommand("SELECT * FROM facturas_firmadas WHERE estado_pago_Id_Estado_Pago='" & nro_estadoPago & "' AND obra='" & obra & "'", nue_conexion.conex())
+            nue_var.cmd = New MySqlCommand("SELECT * FROM FACTURAS_FIRMADAS WHERE estado_pago_Id_Estado_Pago='" & nro_estadoPago & "' AND obra='" & obra & "'", nue_conexion.conex())
             nue_var.dr = nue_var.cmd.ExecuteReader
             If nue_var.dr.Read Then
                 resultado = True
@@ -233,7 +234,7 @@ Public Class EstadoPagoMandante
             nue_var.cmd.Parameters.Add("?Obras_Neto", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = obras_neto
             nue_var.cmd.Parameters.Add("?Reajuste_Neto", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = reajuste_neto
             nue_var.cmd.Parameters.Add("?Observaciones", MySql.Data.MySqlClient.MySqlDbType.String).Value = observaciones
-
+            MsgBox("Se modificó correctamente")
             nue_var.cmd.ExecuteNonQuery()
             nue_conexion.desconectar()
         Catch mierror As MySqlException
@@ -253,8 +254,7 @@ Public Class EstadoPagoMandante
         LeerArchivoAdjunto = nue_var.dt
         Return LeerArchivoAdjunto
     End Function
-    'Metodo descartado
-    'Borrar en una limpieza de código
+
     Public Function UltimoNroFactura(ByVal NombreObra As String) As DataTable
         nue_var.dt = New DataTable
         nue_conexion.conectar()
@@ -280,7 +280,7 @@ Public Class EstadoPagoMandante
     End Function
 
     Public Sub EliminarAdjunto(ByVal idestadopagofirmado As Integer)
-        nue_var.consulta = "Delete from estado_pago_firmado WHERE Id_Estado_Pago_Firmado = " & idestadopagofirmado & ""
+        nue_var.consulta = "Delete from ESTADO_PAGO_FIRMADO WHERE Id_Estado_Pago_Firmado = " & idestadopagofirmado & ""
         Try
             nue_conexion.conectar()
             nue_var.cmd = New MySqlCommand(nue_var.consulta, nue_conexion.conex())
@@ -305,6 +305,16 @@ Public Class EstadoPagoMandante
             nue_conexion.desconectar()
         End Try
     End Sub
+
+    Public Function CalcularPagoIVA(ByVal val1 As Double)
+        Dim val2 As Double
+        val2 = 1
+        If val1 <> 0 Then
+            Return val1 / val2
+        Else
+            Throw New DivideByZeroException("¡¡¡¡No se puede dividir por CERO!!!!")
+        End If
+    End Function
 
 
 End Class

@@ -52,6 +52,8 @@ Public Class frm_menu_principal_X
         RellenarCboObra()
         gbPagoFirmadoAdjunto.Visible = False
         gbFacturasFirmadas.Visible = False
+        gbContrato.Visible = False
+        gbModificacionesFirmadas.Visible = False
         LlenarDataGridView()
         actualizar_dgvFacturasAdjunto()
         If sincroniza = 0 Then
@@ -849,7 +851,8 @@ Public Class frm_menu_principal_X
 
     Private Sub btnEstadoPago_Click(sender As Object, e As EventArgs) Handles btnEstadoPago.Click
         Try
-            If cboObra.Text <> "" Then
+            If cboObras.Text <> "" Then
+                Module1.Nombre_Faena = cboObras.Text
                 CR_EstadoPagoMandante.Show()
             Else
                 MsgBox("Debe selecionar una obra", MsgBoxStyle.Information)
@@ -857,6 +860,117 @@ Public Class frm_menu_principal_X
         Catch ex As Exception
             MsgBox(ex.Message)
             MsgBox("Favor, contacte al administrador", MsgBoxStyle.Critical)
+        End Try
+    End Sub
+
+    Private Sub Button67_Click(sender As Object, e As EventArgs) Handles Button67.Click
+        gbContrato.Visible = True
+        gbModificacionesFirmadas.Visible = False
+    End Sub
+
+    Private Sub Button66_Click(sender As Object, e As EventArgs) Handles Button66.Click
+        gbContrato.Visible = False
+        gbModificacionesFirmadas.Visible = True
+    End Sub
+
+    Private Sub Button65_Click(sender As Object, e As EventArgs) Handles Button65.Click
+        Try
+            If cboObras.Text <> "" Then
+                Module1.Nombre_Faena = cboObras.Text
+                CR_ListadoContratoModificaciones.Show()
+            Else
+                MsgBox("Debe selecionar una obra", MsgBoxStyle.Information)
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            MsgBox("Favor, contacte al administrador", MsgBoxStyle.Critical)
+        End Try
+    End Sub
+
+    Private Sub Button68_Click(sender As Object, e As EventArgs) Handles Button68.Click
+        Try
+            lblRutaDescarga.Text.ToString()
+            If txtidContratoOriginal.Text <> "" Then
+                SaveFileDialog3.FileName = txtNombreArchivo.Text
+                If SaveFileDialog3.ShowDialog = DialogResult.OK Then
+                    SaveFileDialog3.Title = "Escoje la ruta para descargar"
+                    SaveFileDialog3.InitialDirectory = "Descargas"
+                    lblRutaDescarga.Text = SaveFileDialog3.FileName
+
+                    FTPDownloadFile(lblRutaDescarga.Text + "", "ftp://201.148.105.75/Contrato_Original_Modificaciones_Obras/Contrato_Original/" + txtNombreArchivo.Text + "", "cfv@constructorafv.com", "gsolis2013")
+                    lblRutaDescarga.Text = ""
+                    SaveFileDialog3.FileName = ""
+                End If
+            Else
+                MsgBox("Debe seleccionar un registro", MsgBoxStyle.Exclamation)
+                lblRutaDescarga.Text = ""
+                SaveFileDialog3.FileName = ""
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub dgvContratoOriginal_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvContratoOriginal.CellClick
+        Try
+            Dim index As Integer
+            index = e.RowIndex
+            Dim selectRow As DataGridViewRow
+            selectRow = dgvContratoOriginal.Rows(index)
+            txtidContratoOriginal.Text = selectRow.Cells(0).Value.ToString()
+            txtNombreObraArchivo.Text = selectRow.Cells(1).Value.ToString()
+            txtNombreArchivo.Text = selectRow.Cells(5).Value.ToString()
+            txtUsuarioArchivo.Text = selectRow.Cells(3).Value.ToString()
+            txtFechaAdjuntadoArchivo.Text = selectRow.Cells(4).Value()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub DgvModificaciones_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DgvModificaciones.CellClick
+        Try
+            Dim index As Integer
+            index = e.RowIndex
+            Dim selectRow As DataGridViewRow
+            selectRow = DgvModificaciones.Rows(index)
+            txtIdModificacionesContrato.Text = selectRow.Cells(0).Value.ToString()
+            If txtIdModificacionesContrato.Text <> "" Then
+                txtObraModificaciones.Text = selectRow.Cells(1).Value.ToString()
+                txtxNroModificacionModificaciones.Text = selectRow.Cells(2).Value.ToString()
+                txtNombreAdjuntoModificaciones.Text = selectRow.Cells(3).Value.ToString()
+                txtUsuarioModificaciones.Text = selectRow.Cells(4).Value.ToString()
+                txtFechaAdjuntoModificaciones.Text = selectRow.Cells(5).Value.ToString()
+            Else
+                MsgBox("No se encuentra registro de adjuntos", MsgBoxStyle.Information)
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub Button70_Click(sender As Object, e As EventArgs) Handles Button70.Click
+        Try
+            If txtObraModificaciones.Text <> "" And txtFechaAdjuntoModificaciones.Text <> "" And txtxNroModificacionModificaciones.Text <> "" Then
+
+                SaveFileDialog3.FileName = txtNombreAdjuntoModificaciones.Text
+                SaveFileDialog3.Title = "Escoje la ruta para descargar"
+                SaveFileDialog3.InitialDirectory = "Descargas"
+                If SaveFileDialog3.ShowDialog = DialogResult.OK Then
+                    lblRutaDescarga.Text = SaveFileDialog3.FileName
+                    FTPDownloadFile(lblRutaDescarga.Text + "", "ftp://201.148.105.75/Contrato_Original_Modificaciones_Obras/Modificaciones/" + txtNombreAdjuntoModificaciones.Text + "", "cfv@constructorafv.com", "gsolis2013")
+                    SaveFileDialog3.FileName = ""
+                    lblRutaDescarga.Text = ""
+                End If
+            Else
+                MsgBox("Debe seleccionar un archivo", MsgBoxStyle.Exclamation)
+                SaveFileDialog3.FileName = ""
+
+
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+
         End Try
     End Sub
 End Class

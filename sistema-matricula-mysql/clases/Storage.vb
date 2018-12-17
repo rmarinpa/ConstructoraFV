@@ -105,4 +105,14 @@ Public Class Storage
         listar3_guias = nue_var.dt
         Return listar3_guias
     End Function
+
+    Public Function listar5() As DataTable
+        nue_var.dt = New DataTable
+        nue_conexion.conectar()
+        nue_var.da = New MySqlDataAdapter("Truncate table fecha_filtro", nue_conexion.conex())
+        nue_var.da.Fill(nue_var.dt)
+        nue_conexion.desconectar()
+        listar5 = nue_var.dt
+        Return listar5
+    End Function
 End Class

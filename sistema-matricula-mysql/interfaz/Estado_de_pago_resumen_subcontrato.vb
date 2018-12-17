@@ -118,7 +118,7 @@ Public Class Estado_de_pago_resumen_subcontrato
     
     <Browsable(false),  _
      DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)>  _
-    Public ReadOnly Property Parameter_tipo_subcontrato() As CrystalDecisions.[Shared].IParameterField
+    Public ReadOnly Property Parameter_fecha_actual() As CrystalDecisions.[Shared].IParameterField
         Get
             Return Me.DataDefinition.ParameterFields(0)
         End Get
@@ -126,7 +126,7 @@ Public Class Estado_de_pago_resumen_subcontrato
     
     <Browsable(false),  _
      DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)>  _
-    Public ReadOnly Property Parameter_fecha_actual() As CrystalDecisions.[Shared].IParameterField
+    Public ReadOnly Property Parameter_n_ep() As CrystalDecisions.[Shared].IParameterField
         Get
             Return Me.DataDefinition.ParameterFields(1)
         End Get
@@ -134,7 +134,7 @@ Public Class Estado_de_pago_resumen_subcontrato
     
     <Browsable(false),  _
      DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)>  _
-    Public ReadOnly Property Parameter_fecha_ant() As CrystalDecisions.[Shared].IParameterField
+    Public ReadOnly Property Parameter_id_obra() As CrystalDecisions.[Shared].IParameterField
         Get
             Return Me.DataDefinition.ParameterFields(2)
         End Get
@@ -142,7 +142,7 @@ Public Class Estado_de_pago_resumen_subcontrato
     
     <Browsable(false),  _
      DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)>  _
-    Public ReadOnly Property Parameter_n_ep() As CrystalDecisions.[Shared].IParameterField
+    Public ReadOnly Property Parameter_obra() As CrystalDecisions.[Shared].IParameterField
         Get
             Return Me.DataDefinition.ParameterFields(3)
         End Get
@@ -150,7 +150,7 @@ Public Class Estado_de_pago_resumen_subcontrato
     
     <Browsable(false),  _
      DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)>  _
-    Public ReadOnly Property Parameter_id_obra() As CrystalDecisions.[Shared].IParameterField
+    Public ReadOnly Property Parameter_nombre2() As CrystalDecisions.[Shared].IParameterField
         Get
             Return Me.DataDefinition.ParameterFields(4)
         End Get
@@ -158,7 +158,7 @@ Public Class Estado_de_pago_resumen_subcontrato
     
     <Browsable(false),  _
      DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)>  _
-    Public ReadOnly Property Parameter_rut() As CrystalDecisions.[Shared].IParameterField
+    Public ReadOnly Property Parameter_codigo_subcontrato() As CrystalDecisions.[Shared].IParameterField
         Get
             Return Me.DataDefinition.ParameterFields(5)
         End Get
@@ -166,17 +166,9 @@ Public Class Estado_de_pago_resumen_subcontrato
     
     <Browsable(false),  _
      DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)>  _
-    Public ReadOnly Property Parameter_obra() As CrystalDecisions.[Shared].IParameterField
+    Public ReadOnly Property Parameter_Estado_de_pago_resumen_subcontrato_cuentasrpt_tipo_subcontrato() As CrystalDecisions.[Shared].IParameterField
         Get
-            Return Me.DataDefinition.ParameterFields(6)
-        End Get
-    End Property
-    
-    <Browsable(false),  _
-     DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)>  _
-    Public ReadOnly Property Parameter_nombre2() As CrystalDecisions.[Shared].IParameterField
-        Get
-            Return Me.DataDefinition.ParameterFields(7)
+            Return Me.DataDefinition.ParameterFields(8)
         End Get
     End Property
     
@@ -184,7 +176,7 @@ Public Class Estado_de_pago_resumen_subcontrato
      DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)>  _
     Public ReadOnly Property Parameter_Estado_de_pago_resumen_subcontrato_cuentasrpt_n_ep() As CrystalDecisions.[Shared].IParameterField
         Get
-            Return Me.DataDefinition.ParameterFields(12)
+            Return Me.DataDefinition.ParameterFields(10)
         End Get
     End Property
     
@@ -192,7 +184,39 @@ Public Class Estado_de_pago_resumen_subcontrato
      DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)>  _
     Public ReadOnly Property Parameter_Estado_de_pago_resumen_subcontrato_cuentas2rpt_n_ep() As CrystalDecisions.[Shared].IParameterField
         Get
-            Return Me.DataDefinition.ParameterFields(17)
+            Return Me.DataDefinition.ParameterFields(14)
+        End Get
+    End Property
+    
+    <Browsable(false),  _
+     DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)>  _
+    Public ReadOnly Property Parameter_Estado_de_pago_resumen_subcontrato_cuentas2rpt_codigo_subcontrato() As CrystalDecisions.[Shared].IParameterField
+        Get
+            Return Me.DataDefinition.ParameterFields(15)
+        End Get
+    End Property
+    
+    <Browsable(false),  _
+     DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)>  _
+    Public ReadOnly Property Parameter_Estado_de_pago_resumen_subcontrato_descuentosrpt_tipo_subcontrato() As CrystalDecisions.[Shared].IParameterField
+        Get
+            Return Me.DataDefinition.ParameterFields(16)
+        End Get
+    End Property
+    
+    <Browsable(false),  _
+     DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)>  _
+    Public ReadOnly Property Parameter_Estado_de_pago_resumen_subcontrato_descuentosrpt_rut() As CrystalDecisions.[Shared].IParameterField
+        Get
+            Return Me.DataDefinition.ParameterFields(20)
+        End Get
+    End Property
+    
+    <Browsable(false),  _
+     DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)>  _
+    Public ReadOnly Property Parameter_Estado_de_pago_subcontrato_anteriorrpt_fecha_ant() As CrystalDecisions.[Shared].IParameterField
+        Get
+            Return Me.DataDefinition.ParameterFields(31)
         End Get
     End Property
 End Class

@@ -11,6 +11,7 @@ Public Class frm_menu_principal_VI
     Dim nue_obra7 As New clases.Storage
     Dim nue_obra5 As New clases.Ingreso_contratos
     Dim nue_obra6 As New clases.EstadoPagoMandante
+    Dim Obra As New clases.Identificacion_obra
     Dim nue_var As New clases.variables
     Dim Cod_1 As String = ""
     Dim Cod_2 As String = ""
@@ -42,6 +43,33 @@ Public Class frm_menu_principal_VI
     Dim suma_litros As Double
     Dim Boton As Integer
 
+    Sub LeerRetencion()
+        Try
+            Dim total As Double = 0
+            Dim fila As DataGridViewRow = New DataGridViewRow()
+            Dim obraFiltro As String
+            obraFiltro = cboObrasFiltro.Text
+            If obraFiltro = "System.Data.DataRowView" Then
+                cboObrasFiltro.Text = Nombre_Obra
+            End If
+            dgRetencionesProforma.DataSource = Obra.LeerRetencionesProformas(cboObrasFiltro.Text)
+            With dgRetencionesProforma
+                .RowHeadersVisible = False
+                .Columns(0).HeaderCell.Value = "Retencion"
+                .Columns(1).HeaderCell.Value = "Proforma"
+            End With
+
+            dgvEstadoPago.Columns(0).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+            dgvEstadoPago.Columns(1).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+            dgvEstadoPago.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+    Sub LeerProforma()
+
+    End Sub
 
     Sub RellenarCboObras()
         cboObrasPagoFirmado.DataSource = nue_obra5.listar5(id_obra)
@@ -91,7 +119,7 @@ Public Class frm_menu_principal_VI
         Actualizar_dgvEstadosPagoFirmado()
         dgvFiltroEstadoPagoMandante()
 
-
+        LeerRetencion()
         If sincroniza = 0 Then
             btn_sincronizar.Visible = False
             pb_list.Visible = False
@@ -240,7 +268,6 @@ Public Class frm_menu_principal_VI
                         'Se desformatean los valores 
                         'DesformateoValores()
                         nue_obra6.Insertar(nro_estadoPago, obra, fecha, nro_factura, valor_obra, reajuste, retenciones, retenciones_canjeadas, multas, valor_estado_pago, valor_estado_pago_neto, obras_neto, reajuste_neto, observaciones)
-                        MsgBox("Se insertó correctamente")
                         LimpiarEstado()
                         BloquearEstado()
                         btnAgregar.Enabled = False
@@ -250,6 +277,8 @@ Public Class frm_menu_principal_VI
                         btnEliminar.Enabled = True
                         cboObras.Text = obra
                         dgvFiltroEstadoPagoMandante()
+                        Actualizar_dgvEstadosPagoFirmado()
+                        actualizar_dgvFacturasAdjunto()
 
                     Else
                         MsgBox("Falta ingresar datos", MsgBoxStyle.Exclamation)
@@ -301,7 +330,7 @@ Public Class frm_menu_principal_VI
                 observaciones = txtObservaciones.Text
                 If idestadopago.ToString <> "" Then
                     nue_obra6.modificar(idestadopago, nro_estadoPago, obra, fecha, nro_factura, valor_obra, reajuste, retenciones, retenciones_canjeadas, multas, valor_estado_pago, valor_estado_pago_neto, obras_neto, reajuste_neto, observaciones)
-                    MsgBox("Se modificó correctamente")
+
                     btnAgregar.Enabled = False
                     btnCancelar.Enabled = False
                     btnNuevo.Enabled = True
@@ -311,6 +340,10 @@ Public Class frm_menu_principal_VI
                     cboObras.Text = lbl_nombre_obra.Text
                     BloquearEstado()
                     dgvFiltroEstadoPagoMandante()
+                    Actualizar_dgvEstadosPagoFirmado()
+                    actualizar_dgvFacturasAdjunto()
+
+
                 Else
                     MsgBox("Verifique los datos")
                 End If
@@ -576,6 +609,8 @@ Public Class frm_menu_principal_VI
                     nue_obra6.Eliminar(idestadopago)
                     dgvFiltroEstadoPagoMandante()
                     LimpiarEstado()
+                    Actualizar_dgvEstadosPagoFirmado()
+                    actualizar_dgvFacturasAdjunto()
                 Catch ex As Exception
                     MsgBox(ex.Message)
                 End Try
@@ -891,9 +926,11 @@ Public Class frm_menu_principal_VI
             Dim adjunto As String
             Dim nombreArchivo As String
             obra = txtNombreObraArchivo.Text
+            idestadopagofirmado = txtIdEstadoPagoFirmado.Text
             Estado_Pago_Nro_Estado_Pago = txtNroEstadoPagoArchivo.Text
             nombreArchivo = txtNombreArchivo.Text
             adjunto = obra + "_" + Estado_Pago_Nro_Estado_Pago.ToString + "_" + nombreArchivo
+
             Dim resultado As Integer = MessageBox.Show("¿Desea eliminar este adjunto?", "caption", MessageBoxButtons.YesNo)
             Dim mReq As System.Net.FtpWebRequest = DirectCast(System.Net.WebRequest.Create("ftp://201.148.105.75/Estado_De_Pago_Mandante/Estados_De_Pago_Firmados" + "/" + txtNombreArchivo.Text + ""), System.Net.FtpWebRequest)
 
@@ -902,9 +939,7 @@ Public Class frm_menu_principal_VI
                     mReq.Credentials = New System.Net.NetworkCredential("cfv@constructorafv.com", "gsolis2013")
                     mReq.Method = System.Net.WebRequestMethods.Ftp.DeleteFile
                     mReq.GetResponse()
-                    idestadopagofirmado = txtIdEstadoPagoFirmado.Text
                     nue_obra6.EliminarAdjunto(idestadopagofirmado)
-
                     LimpiarEstadosPago()
                     Actualizar_dgvEstadosPagoFirmado()
                 Catch ex As Exception
@@ -1446,4 +1481,6 @@ Public Class frm_menu_principal_VI
             MessageBox.Show(ex.Message)
         End Try
     End Sub
+
+
 End Class

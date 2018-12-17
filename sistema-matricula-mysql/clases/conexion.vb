@@ -8,11 +8,16 @@ Public Class conexion
     Private con2 As New MySqlConnection("server=localhost; database=const113_constructorafv; user id=const113_admin2; password=gsolis2013;Convert Zero Datetime=True;Convert Zero Datetime=True; Use Procedure Bodies=false;default command timeout=600")
     'procedimiento que abre la conexion mysql
     Public Sub conectar()
-        If sincroniza = 0 Then
-            con.Open()
-        ElseIf sincroniza = 1 Then
-            con2.Open()
-        End If
+        Try
+            If sincroniza = 0 Then
+                con.Open()
+            ElseIf sincroniza = 1 Then
+                con2.Open()
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical)
+        End Try
+        
     End Sub
     Public Sub conectar_local()
         con2.Open()

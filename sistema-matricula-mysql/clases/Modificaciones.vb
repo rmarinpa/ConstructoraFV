@@ -22,10 +22,9 @@ Public Class Modificaciones
     End Sub
     Public Function LeerDgvModificaciones(ByVal obra As String) As DataTable
         Try
-
             nue_var.dt = New DataTable
             nue_conexion.conectar()
-            nue_var.da = New MySqlDataAdapter("select mo.id_modificaciones, li.obra, li.nro_modificacion, mo.adjunto, mo.usuario, mo.fecha, case WHEN adjunto is not null then 'SI' ELSE 'NO' END AS 'Adjunto', mo.obra from listadomodificaciones li left join modificaciones mo on mo.ListadoModificaciones_id_modificaciones = li.id_modificaciones where li.obra = '" & obra & "' ORDER BY mo.fecha desc", nue_conexion.conex())
+            nue_var.da = New MySqlDataAdapter("select mo.id_modificaciones, li.obra, li.nro_modificacion, mo.adjunto, mo.usuario, mo.fecha, case WHEN adjunto is not null then 'SI' ELSE 'NO' END AS 'Adjunto', mo.obra from listadomodificaciones li left join modificaciones mo on mo.ListadoModificaciones_id_modificaciones = li.id_modificaciones where li.obra = '" & obra & "' ORDER BY li.fecha asc", nue_conexion.conex())
             nue_var.da.Fill(nue_var.dt)
             nue_conexion.desconectar()
             LeerDgvModificaciones = nue_var.dt
@@ -39,7 +38,7 @@ Public Class Modificaciones
 
 
     Public Sub EliminarContrato(ByVal id_contrato As Integer)
-        nue_var.consulta = "Delete from contratosoriginales WHERE id_contratosOriginales = " & id_contrato & ""
+        nue_var.consulta = "Delete from contratosOriginales WHERE id_contratosOriginales = " & id_contrato & ""
         Try
             nue_conexion.conectar()
             nue_var.cmd = New MySqlCommand(nue_var.consulta, nue_conexion.conex())

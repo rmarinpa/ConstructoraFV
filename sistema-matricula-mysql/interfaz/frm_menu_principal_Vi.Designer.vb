@@ -124,16 +124,16 @@ Partial Class frm_menu_principal_VI
         Me.txtValorEstadoPagoNeto = New System.Windows.Forms.TextBox()
         Me.Label56 = New System.Windows.Forms.Label()
         Me.txtValorEstadoPago = New System.Windows.Forms.TextBox()
+        Me.dtFecha = New System.Windows.Forms.DateTimePicker()
         Me.Label55 = New System.Windows.Forms.Label()
         Me.txtMultas = New System.Windows.Forms.TextBox()
         Me.Label53 = New System.Windows.Forms.Label()
         Me.txtRetencionesCanjeadas = New System.Windows.Forms.TextBox()
         Me.Label52 = New System.Windows.Forms.Label()
         Me.txtRetenciones = New System.Windows.Forms.TextBox()
-        Me.Label51 = New System.Windows.Forms.Label()
-        Me.dtFecha = New System.Windows.Forms.DateTimePicker()
-        Me.txtNroEstadoPago = New System.Windows.Forms.TextBox()
         Me.cboObras = New System.Windows.Forms.ComboBox()
+        Me.Label51 = New System.Windows.Forms.Label()
+        Me.txtNroEstadoPago = New System.Windows.Forms.TextBox()
         Me.txtReajuste = New System.Windows.Forms.TextBox()
         Me.Label42 = New System.Windows.Forms.Label()
         Me.txtNroFactura = New System.Windows.Forms.TextBox()
@@ -294,52 +294,54 @@ Partial Class frm_menu_principal_VI
         Me.OpenFileDialog4 = New System.Windows.Forms.OpenFileDialog()
         Me.OpenFileDialog5 = New System.Windows.Forms.OpenFileDialog()
         Me.SaveFileDialog3 = New System.Windows.Forms.SaveFileDialog()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPage9.SuspendLayout()
-        Me.TabControl8.SuspendLayout()
-        Me.TabPage8.SuspendLayout()
-        Me.TabControl7.SuspendLayout()
-        Me.TabPage7.SuspendLayout()
-        Me.TabControl6.SuspendLayout()
-        Me.TabPage6.SuspendLayout()
-        Me.TabControl5.SuspendLayout()
-        Me.TabPage35.SuspendLayout()
-        CType(Me.dgvEstadoPago, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox10.SuspendLayout()
-        Me.TabPage36.SuspendLayout()
-        Me.GroupBox12.SuspendLayout()
-        CType(Me.dgvAdjuntosPagosFirmados, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox11.SuspendLayout()
-        Me.TabPage37.SuspendLayout()
-        CType(Me.dgvFacturasAdjunto, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox14.SuspendLayout()
-        Me.GroupBox13.SuspendLayout()
-        Me.TabPage5.SuspendLayout()
-        Me.TabControl4.SuspendLayout()
-        Me.TabPage4.SuspendLayout()
-        Me.TabControl3.SuspendLayout()
-        Me.TabPage3.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        Me.TabControl11.SuspendLayout()
-        Me.TabPage1.SuspendLayout()
-        Me.TabPage2.SuspendLayout()
-        Me.Panel.SuspendLayout()
-        Me.TabPage11.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
-        Me.TabPage12.SuspendLayout()
-        CType(Me.dgv_2_cuentas, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox3.SuspendLayout()
-        Me.TabPage13.SuspendLayout()
-        CType(Me.dgv_uf, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox4.SuspendLayout()
-        CType(Me.dgv_arrendador, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
+        Me.dgRetencionesProforma = New System.Windows.Forms.DataGridView()
+        CType(Me.PictureBox5,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.TabPage9.SuspendLayout
+        Me.TabControl8.SuspendLayout
+        Me.TabPage8.SuspendLayout
+        Me.TabControl7.SuspendLayout
+        Me.TabPage7.SuspendLayout
+        Me.TabControl6.SuspendLayout
+        Me.TabPage6.SuspendLayout
+        Me.TabControl5.SuspendLayout
+        Me.TabPage35.SuspendLayout
+        CType(Me.dgvEstadoPago,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.GroupBox10.SuspendLayout
+        Me.TabPage36.SuspendLayout
+        Me.GroupBox12.SuspendLayout
+        CType(Me.dgvAdjuntosPagosFirmados,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.GroupBox11.SuspendLayout
+        Me.TabPage37.SuspendLayout
+        CType(Me.dgvFacturasAdjunto,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.GroupBox14.SuspendLayout
+        Me.GroupBox13.SuspendLayout
+        Me.TabPage5.SuspendLayout
+        Me.TabControl4.SuspendLayout
+        Me.TabPage4.SuspendLayout
+        Me.TabControl3.SuspendLayout
+        Me.TabPage3.SuspendLayout
+        Me.Panel2.SuspendLayout
+        Me.TabControl11.SuspendLayout
+        Me.TabPage1.SuspendLayout
+        Me.TabPage2.SuspendLayout
+        Me.Panel.SuspendLayout
+        Me.TabPage11.SuspendLayout
+        Me.GroupBox2.SuspendLayout
+        Me.GroupBox1.SuspendLayout
+        Me.TabPage12.SuspendLayout
+        CType(Me.dgv_2_cuentas,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.GroupBox3.SuspendLayout
+        Me.TabPage13.SuspendLayout
+        CType(Me.dgv_uf,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.GroupBox4.SuspendLayout
+        CType(Me.dgv_arrendador,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.dgRetencionesProforma,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SuspendLayout
         '
         'lbl_nombre_obra
         '
-        Me.lbl_nombre_obra.AutoSize = True
-        Me.lbl_nombre_obra.Font = New System.Drawing.Font("Calibri", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_nombre_obra.AutoSize = true
+        Me.lbl_nombre_obra.Font = New System.Drawing.Font("Calibri", 36!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lbl_nombre_obra.Location = New System.Drawing.Point(211, 12)
         Me.lbl_nombre_obra.Name = "lbl_nombre_obra"
         Me.lbl_nombre_obra.Size = New System.Drawing.Size(334, 59)
@@ -354,130 +356,130 @@ Partial Class frm_menu_principal_VI
         Me.PictureBox5.Size = New System.Drawing.Size(160, 54)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox5.TabIndex = 28
-        Me.PictureBox5.TabStop = False
+        Me.PictureBox5.TabStop = false
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192,Byte),Integer), CType(CType(192,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button1.Location = New System.Drawing.Point(21, 5)
         Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(135, 85)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Configuración de la Obra"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.Button1.UseVisualStyleBackColor = false
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button2.Location = New System.Drawing.Point(160, 5)
         Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(135, 85)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "Control de Maquinaria"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.Button2.UseVisualStyleBackColor = false
         '
         'Button3
         '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(192,Byte),Integer))
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button3.Location = New System.Drawing.Point(300, 5)
         Me.Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(135, 85)
         Me.Button3.TabIndex = 4
         Me.Button3.Text = "Control de Subcontrato"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.Button3.UseVisualStyleBackColor = false
         '
         'Button4
         '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(192,Byte),Integer))
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button4.Location = New System.Drawing.Point(440, 5)
         Me.Button4.Margin = New System.Windows.Forms.Padding(2)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(135, 85)
         Me.Button4.TabIndex = 5
         Me.Button4.Text = "Control de Petróleo"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.Button4.UseVisualStyleBackColor = false
         '
         'Button5
         '
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(224,Byte),Integer), CType(CType(192,Byte),Integer))
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button5.Location = New System.Drawing.Point(579, 5)
         Me.Button5.Margin = New System.Windows.Forms.Padding(2)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(135, 85)
         Me.Button5.TabIndex = 6
         Me.Button5.Text = "Estado de Pago Mandante"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.Button5.UseVisualStyleBackColor = false
         '
         'Button6
         '
-        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(192,Byte),Integer), CType(CType(192,Byte),Integer))
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button6.Location = New System.Drawing.Point(718, 5)
         Me.Button6.Margin = New System.Windows.Forms.Padding(2)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(135, 85)
         Me.Button6.TabIndex = 7
         Me.Button6.Text = "Contrato Original (Resolución) y Modificaciones de Obra"
-        Me.Button6.UseVisualStyleBackColor = False
+        Me.Button6.UseVisualStyleBackColor = false
         '
         'Button7
         '
-        Me.Button7.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button7.BackColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(192,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button7.Location = New System.Drawing.Point(858, 5)
         Me.Button7.Margin = New System.Windows.Forms.Padding(2)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(135, 85)
         Me.Button7.TabIndex = 8
         Me.Button7.Text = "Control de Obra"
-        Me.Button7.UseVisualStyleBackColor = False
+        Me.Button7.UseVisualStyleBackColor = false
         '
         'Button8
         '
         Me.Button8.BackColor = System.Drawing.Color.LightSalmon
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button8.Location = New System.Drawing.Point(998, 5)
         Me.Button8.Margin = New System.Windows.Forms.Padding(2)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(135, 85)
         Me.Button8.TabIndex = 9
         Me.Button8.Text = "Carpeta Mensual"
-        Me.Button8.UseVisualStyleBackColor = False
+        Me.Button8.UseVisualStyleBackColor = false
         '
         'Button9
         '
         Me.Button9.BackColor = System.Drawing.Color.LightGoldenrodYellow
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button9.Location = New System.Drawing.Point(1137, 5)
         Me.Button9.Margin = New System.Windows.Forms.Padding(2)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(250, 85)
         Me.Button9.TabIndex = 10
         Me.Button9.Text = "Informes"
-        Me.Button9.UseVisualStyleBackColor = False
+        Me.Button9.UseVisualStyleBackColor = false
         '
         'Button10
         '
-        Me.Button10.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button10.BackColor = System.Drawing.Color.FromArgb(CType(CType(128,Byte),Integer), CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button10.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button10.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button10.ForeColor = System.Drawing.Color.Black
         Me.Button10.Location = New System.Drawing.Point(33, 95)
         Me.Button10.Margin = New System.Windows.Forms.Padding(2)
@@ -485,13 +487,13 @@ Partial Class frm_menu_principal_VI
         Me.Button10.Size = New System.Drawing.Size(112, 45)
         Me.Button10.TabIndex = 11
         Me.Button10.Text = "Identificación de la Obra"
-        Me.Button10.UseVisualStyleBackColor = False
+        Me.Button10.UseVisualStyleBackColor = false
         '
         'Button11
         '
-        Me.Button11.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button11.BackColor = System.Drawing.Color.FromArgb(CType(CType(128,Byte),Integer), CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button11.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button11.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button11.ForeColor = System.Drawing.Color.Black
         Me.Button11.Location = New System.Drawing.Point(33, 145)
         Me.Button11.Margin = New System.Windows.Forms.Padding(2)
@@ -499,13 +501,13 @@ Partial Class frm_menu_principal_VI
         Me.Button11.Size = New System.Drawing.Size(112, 45)
         Me.Button11.TabIndex = 12
         Me.Button11.Text = "Plan de Cuentas"
-        Me.Button11.UseVisualStyleBackColor = False
+        Me.Button11.UseVisualStyleBackColor = false
         '
         'Button12
         '
-        Me.Button12.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button12.BackColor = System.Drawing.Color.FromArgb(CType(CType(128,Byte),Integer), CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button12.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button12.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button12.ForeColor = System.Drawing.Color.Black
         Me.Button12.Location = New System.Drawing.Point(33, 194)
         Me.Button12.Margin = New System.Windows.Forms.Padding(2)
@@ -513,13 +515,13 @@ Partial Class frm_menu_principal_VI
         Me.Button12.Size = New System.Drawing.Size(112, 45)
         Me.Button12.TabIndex = 13
         Me.Button12.Text = "Tabla Valor UF"
-        Me.Button12.UseVisualStyleBackColor = False
+        Me.Button12.UseVisualStyleBackColor = false
         '
         'Button15
         '
-        Me.Button15.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button15.BackColor = System.Drawing.Color.FromArgb(CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button15.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button15.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button15.ForeColor = System.Drawing.Color.Black
         Me.Button15.Location = New System.Drawing.Point(172, 95)
         Me.Button15.Margin = New System.Windows.Forms.Padding(2)
@@ -527,13 +529,13 @@ Partial Class frm_menu_principal_VI
         Me.Button15.Size = New System.Drawing.Size(112, 45)
         Me.Button15.TabIndex = 14
         Me.Button15.Text = "Ident. de Equipos y Arrendadores"
-        Me.Button15.UseVisualStyleBackColor = False
+        Me.Button15.UseVisualStyleBackColor = false
         '
         'Button13
         '
-        Me.Button13.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button13.BackColor = System.Drawing.Color.FromArgb(CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button13.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button13.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button13.ForeColor = System.Drawing.Color.Black
         Me.Button13.Location = New System.Drawing.Point(172, 145)
         Me.Button13.Margin = New System.Windows.Forms.Padding(2)
@@ -541,13 +543,13 @@ Partial Class frm_menu_principal_VI
         Me.Button13.Size = New System.Drawing.Size(112, 45)
         Me.Button13.TabIndex = 15
         Me.Button13.Text = "Ingreso de Reports"
-        Me.Button13.UseVisualStyleBackColor = False
+        Me.Button13.UseVisualStyleBackColor = false
         '
         'Button14
         '
-        Me.Button14.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button14.BackColor = System.Drawing.Color.FromArgb(CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button14.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button14.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button14.ForeColor = System.Drawing.Color.Black
         Me.Button14.Location = New System.Drawing.Point(172, 194)
         Me.Button14.Margin = New System.Windows.Forms.Padding(2)
@@ -555,13 +557,13 @@ Partial Class frm_menu_principal_VI
         Me.Button14.Size = New System.Drawing.Size(112, 45)
         Me.Button14.TabIndex = 16
         Me.Button14.Text = "Descuentos y Trabajos Adicionales"
-        Me.Button14.UseVisualStyleBackColor = False
+        Me.Button14.UseVisualStyleBackColor = false
         '
         'Button16
         '
-        Me.Button16.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button16.BackColor = System.Drawing.Color.FromArgb(CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button16.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button16.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button16.ForeColor = System.Drawing.Color.Black
         Me.Button16.Location = New System.Drawing.Point(172, 343)
         Me.Button16.Margin = New System.Windows.Forms.Padding(2)
@@ -569,13 +571,13 @@ Partial Class frm_menu_principal_VI
         Me.Button16.Size = New System.Drawing.Size(112, 45)
         Me.Button16.TabIndex = 19
         Me.Button16.Text = "Generación de Finiquitos"
-        Me.Button16.UseVisualStyleBackColor = False
+        Me.Button16.UseVisualStyleBackColor = false
         '
         'Button17
         '
-        Me.Button17.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button17.BackColor = System.Drawing.Color.FromArgb(CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Button17.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button17.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button17.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button17.ForeColor = System.Drawing.Color.Black
         Me.Button17.Location = New System.Drawing.Point(172, 293)
         Me.Button17.Margin = New System.Windows.Forms.Padding(2)
@@ -583,13 +585,13 @@ Partial Class frm_menu_principal_VI
         Me.Button17.Size = New System.Drawing.Size(112, 45)
         Me.Button17.TabIndex = 18
         Me.Button17.Text = "Ingreso de Contratos Firmados"
-        Me.Button17.UseVisualStyleBackColor = False
+        Me.Button17.UseVisualStyleBackColor = false
         '
         'Button18
         '
-        Me.Button18.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button18.BackColor = System.Drawing.Color.FromArgb(CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Button18.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button18.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button18.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button18.ForeColor = System.Drawing.Color.Black
         Me.Button18.Location = New System.Drawing.Point(172, 244)
         Me.Button18.Margin = New System.Windows.Forms.Padding(2)
@@ -597,13 +599,13 @@ Partial Class frm_menu_principal_VI
         Me.Button18.Size = New System.Drawing.Size(112, 45)
         Me.Button18.TabIndex = 17
         Me.Button18.Text = "Generación de Contratos"
-        Me.Button18.UseVisualStyleBackColor = False
+        Me.Button18.UseVisualStyleBackColor = false
         '
         'Button21
         '
-        Me.Button21.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button21.BackColor = System.Drawing.Color.FromArgb(CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Button21.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button21.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button21.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button21.ForeColor = System.Drawing.Color.Black
         Me.Button21.Location = New System.Drawing.Point(172, 392)
         Me.Button21.Margin = New System.Windows.Forms.Padding(2)
@@ -611,13 +613,13 @@ Partial Class frm_menu_principal_VI
         Me.Button21.Size = New System.Drawing.Size(112, 45)
         Me.Button21.TabIndex = 20
         Me.Button21.Text = "Ingreso de Finiquitos Firmados"
-        Me.Button21.UseVisualStyleBackColor = False
+        Me.Button21.UseVisualStyleBackColor = false
         '
         'Button24
         '
-        Me.Button24.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button24.BackColor = System.Drawing.Color.FromArgb(CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer))
         Me.Button24.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button24.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button24.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button24.ForeColor = System.Drawing.Color.Black
         Me.Button24.Location = New System.Drawing.Point(312, 392)
         Me.Button24.Margin = New System.Windows.Forms.Padding(2)
@@ -625,13 +627,13 @@ Partial Class frm_menu_principal_VI
         Me.Button24.Size = New System.Drawing.Size(112, 45)
         Me.Button24.TabIndex = 29
         Me.Button24.Text = "Ingreso de Finiquitos Firmados"
-        Me.Button24.UseVisualStyleBackColor = False
+        Me.Button24.UseVisualStyleBackColor = false
         '
         'Button25
         '
-        Me.Button25.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button25.BackColor = System.Drawing.Color.FromArgb(CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer))
         Me.Button25.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button25.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button25.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button25.ForeColor = System.Drawing.Color.Black
         Me.Button25.Location = New System.Drawing.Point(312, 343)
         Me.Button25.Margin = New System.Windows.Forms.Padding(2)
@@ -639,13 +641,13 @@ Partial Class frm_menu_principal_VI
         Me.Button25.Size = New System.Drawing.Size(112, 45)
         Me.Button25.TabIndex = 28
         Me.Button25.Text = "Generación de Finiquitos"
-        Me.Button25.UseVisualStyleBackColor = False
+        Me.Button25.UseVisualStyleBackColor = false
         '
         'Button26
         '
-        Me.Button26.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button26.BackColor = System.Drawing.Color.FromArgb(CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer))
         Me.Button26.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button26.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button26.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button26.ForeColor = System.Drawing.Color.Black
         Me.Button26.Location = New System.Drawing.Point(312, 293)
         Me.Button26.Margin = New System.Windows.Forms.Padding(2)
@@ -653,13 +655,13 @@ Partial Class frm_menu_principal_VI
         Me.Button26.Size = New System.Drawing.Size(112, 45)
         Me.Button26.TabIndex = 27
         Me.Button26.Text = "Ingreso de Contratos Firmados"
-        Me.Button26.UseVisualStyleBackColor = False
+        Me.Button26.UseVisualStyleBackColor = false
         '
         'Button27
         '
-        Me.Button27.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button27.BackColor = System.Drawing.Color.FromArgb(CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer))
         Me.Button27.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button27.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button27.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button27.ForeColor = System.Drawing.Color.Black
         Me.Button27.Location = New System.Drawing.Point(312, 244)
         Me.Button27.Margin = New System.Windows.Forms.Padding(2)
@@ -667,13 +669,13 @@ Partial Class frm_menu_principal_VI
         Me.Button27.Size = New System.Drawing.Size(112, 45)
         Me.Button27.TabIndex = 26
         Me.Button27.Text = "Generación de Contratos"
-        Me.Button27.UseVisualStyleBackColor = False
+        Me.Button27.UseVisualStyleBackColor = false
         '
         'Button28
         '
-        Me.Button28.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button28.BackColor = System.Drawing.Color.FromArgb(CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer))
         Me.Button28.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button28.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button28.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button28.ForeColor = System.Drawing.Color.Black
         Me.Button28.Location = New System.Drawing.Point(312, 194)
         Me.Button28.Margin = New System.Windows.Forms.Padding(2)
@@ -681,13 +683,13 @@ Partial Class frm_menu_principal_VI
         Me.Button28.Size = New System.Drawing.Size(112, 45)
         Me.Button28.TabIndex = 25
         Me.Button28.Text = "Descuentos y Trabajos Adicionales"
-        Me.Button28.UseVisualStyleBackColor = False
+        Me.Button28.UseVisualStyleBackColor = false
         '
         'Button29
         '
-        Me.Button29.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button29.BackColor = System.Drawing.Color.FromArgb(CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer))
         Me.Button29.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button29.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button29.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button29.ForeColor = System.Drawing.Color.Black
         Me.Button29.Location = New System.Drawing.Point(312, 145)
         Me.Button29.Margin = New System.Windows.Forms.Padding(2)
@@ -695,13 +697,13 @@ Partial Class frm_menu_principal_VI
         Me.Button29.Size = New System.Drawing.Size(112, 45)
         Me.Button29.TabIndex = 24
         Me.Button29.Text = "Ingreso de Avances"
-        Me.Button29.UseVisualStyleBackColor = False
+        Me.Button29.UseVisualStyleBackColor = false
         '
         'Button30
         '
-        Me.Button30.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button30.BackColor = System.Drawing.Color.FromArgb(CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer))
         Me.Button30.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button30.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button30.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button30.ForeColor = System.Drawing.Color.Black
         Me.Button30.Location = New System.Drawing.Point(312, 95)
         Me.Button30.Margin = New System.Windows.Forms.Padding(2)
@@ -709,13 +711,13 @@ Partial Class frm_menu_principal_VI
         Me.Button30.Size = New System.Drawing.Size(112, 45)
         Me.Button30.TabIndex = 23
         Me.Button30.Text = "Ident. Subcontratos y Subcontratistas"
-        Me.Button30.UseVisualStyleBackColor = False
+        Me.Button30.UseVisualStyleBackColor = false
         '
         'Button31
         '
-        Me.Button31.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button31.BackColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer))
         Me.Button31.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button31.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button31.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button31.ForeColor = System.Drawing.Color.Black
         Me.Button31.Location = New System.Drawing.Point(452, 194)
         Me.Button31.Margin = New System.Windows.Forms.Padding(2)
@@ -723,13 +725,13 @@ Partial Class frm_menu_principal_VI
         Me.Button31.Size = New System.Drawing.Size(112, 45)
         Me.Button31.TabIndex = 34
         Me.Button31.Text = "Storage"
-        Me.Button31.UseVisualStyleBackColor = False
+        Me.Button31.UseVisualStyleBackColor = false
         '
         'Button32
         '
-        Me.Button32.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button32.BackColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer))
         Me.Button32.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button32.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button32.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button32.ForeColor = System.Drawing.Color.Black
         Me.Button32.Location = New System.Drawing.Point(452, 145)
         Me.Button32.Margin = New System.Windows.Forms.Padding(2)
@@ -737,13 +739,13 @@ Partial Class frm_menu_principal_VI
         Me.Button32.Size = New System.Drawing.Size(112, 45)
         Me.Button32.TabIndex = 33
         Me.Button32.Text = "Ingreso de Compras"
-        Me.Button32.UseVisualStyleBackColor = False
+        Me.Button32.UseVisualStyleBackColor = false
         '
         'Button33
         '
-        Me.Button33.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button33.BackColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer))
         Me.Button33.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button33.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button33.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button33.ForeColor = System.Drawing.Color.Black
         Me.Button33.Location = New System.Drawing.Point(452, 95)
         Me.Button33.Margin = New System.Windows.Forms.Padding(2)
@@ -751,13 +753,13 @@ Partial Class frm_menu_principal_VI
         Me.Button33.Size = New System.Drawing.Size(112, 45)
         Me.Button33.TabIndex = 32
         Me.Button33.Text = "Ingreso de Consumos"
-        Me.Button33.UseVisualStyleBackColor = False
+        Me.Button33.UseVisualStyleBackColor = false
         '
         'Button34
         '
-        Me.Button34.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button34.BackColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(192,Byte),Integer), CType(CType(128,Byte),Integer))
         Me.Button34.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button34.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button34.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button34.ForeColor = System.Drawing.Color.Black
         Me.Button34.Location = New System.Drawing.Point(592, 194)
         Me.Button34.Margin = New System.Windows.Forms.Padding(2)
@@ -765,13 +767,13 @@ Partial Class frm_menu_principal_VI
         Me.Button34.Size = New System.Drawing.Size(112, 45)
         Me.Button34.TabIndex = 37
         Me.Button34.Text = "Ingreso Facturas de Estados de Pago"
-        Me.Button34.UseVisualStyleBackColor = False
+        Me.Button34.UseVisualStyleBackColor = false
         '
         'Button35
         '
-        Me.Button35.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button35.BackColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(192,Byte),Integer), CType(CType(128,Byte),Integer))
         Me.Button35.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button35.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button35.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button35.ForeColor = System.Drawing.Color.Black
         Me.Button35.Location = New System.Drawing.Point(592, 145)
         Me.Button35.Margin = New System.Windows.Forms.Padding(2)
@@ -779,13 +781,13 @@ Partial Class frm_menu_principal_VI
         Me.Button35.Size = New System.Drawing.Size(112, 45)
         Me.Button35.TabIndex = 36
         Me.Button35.Text = "Ingreso Estados de Pago Firmados"
-        Me.Button35.UseVisualStyleBackColor = False
+        Me.Button35.UseVisualStyleBackColor = false
         '
         'Button36
         '
-        Me.Button36.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button36.BackColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(192,Byte),Integer), CType(CType(128,Byte),Integer))
         Me.Button36.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button36.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button36.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button36.ForeColor = System.Drawing.Color.Black
         Me.Button36.Location = New System.Drawing.Point(592, 95)
         Me.Button36.Margin = New System.Windows.Forms.Padding(2)
@@ -793,13 +795,13 @@ Partial Class frm_menu_principal_VI
         Me.Button36.Size = New System.Drawing.Size(112, 45)
         Me.Button36.TabIndex = 35
         Me.Button36.Text = "Listado Estados de Pago Mandante"
-        Me.Button36.UseVisualStyleBackColor = False
+        Me.Button36.UseVisualStyleBackColor = false
         '
         'Button37
         '
-        Me.Button37.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button37.BackColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer), CType(CType(128,Byte),Integer))
         Me.Button37.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button37.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button37.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button37.ForeColor = System.Drawing.Color.Black
         Me.Button37.Location = New System.Drawing.Point(730, 194)
         Me.Button37.Margin = New System.Windows.Forms.Padding(2)
@@ -807,13 +809,13 @@ Partial Class frm_menu_principal_VI
         Me.Button37.Size = New System.Drawing.Size(112, 45)
         Me.Button37.TabIndex = 40
         Me.Button37.Text = "Ingreso de Mod. Firmadas"
-        Me.Button37.UseVisualStyleBackColor = False
+        Me.Button37.UseVisualStyleBackColor = false
         '
         'Button38
         '
-        Me.Button38.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button38.BackColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer), CType(CType(128,Byte),Integer))
         Me.Button38.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button38.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button38.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button38.ForeColor = System.Drawing.Color.Black
         Me.Button38.Location = New System.Drawing.Point(730, 145)
         Me.Button38.Margin = New System.Windows.Forms.Padding(2)
@@ -821,13 +823,13 @@ Partial Class frm_menu_principal_VI
         Me.Button38.Size = New System.Drawing.Size(112, 45)
         Me.Button38.TabIndex = 39
         Me.Button38.Text = "Ingreso de Contrato Original (Resolución)"
-        Me.Button38.UseVisualStyleBackColor = False
+        Me.Button38.UseVisualStyleBackColor = false
         '
         'Button39
         '
-        Me.Button39.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button39.BackColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer), CType(CType(128,Byte),Integer))
         Me.Button39.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button39.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button39.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button39.ForeColor = System.Drawing.Color.Black
         Me.Button39.Location = New System.Drawing.Point(730, 95)
         Me.Button39.Margin = New System.Windows.Forms.Padding(2)
@@ -835,13 +837,13 @@ Partial Class frm_menu_principal_VI
         Me.Button39.Size = New System.Drawing.Size(112, 45)
         Me.Button39.TabIndex = 38
         Me.Button39.Text = "Listado Modificaciones"
-        Me.Button39.UseVisualStyleBackColor = False
+        Me.Button39.UseVisualStyleBackColor = false
         '
         'Button40
         '
-        Me.Button40.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button40.BackColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Button40.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button40.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button40.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button40.ForeColor = System.Drawing.Color.Black
         Me.Button40.Location = New System.Drawing.Point(867, 194)
         Me.Button40.Margin = New System.Windows.Forms.Padding(2)
@@ -849,13 +851,13 @@ Partial Class frm_menu_principal_VI
         Me.Button40.Size = New System.Drawing.Size(112, 45)
         Me.Button40.TabIndex = 43
         Me.Button40.Text = "Carta Gantt"
-        Me.Button40.UseVisualStyleBackColor = False
+        Me.Button40.UseVisualStyleBackColor = false
         '
         'Button41
         '
-        Me.Button41.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button41.BackColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Button41.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button41.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button41.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button41.ForeColor = System.Drawing.Color.Black
         Me.Button41.Location = New System.Drawing.Point(867, 145)
         Me.Button41.Margin = New System.Windows.Forms.Padding(2)
@@ -863,13 +865,13 @@ Partial Class frm_menu_principal_VI
         Me.Button41.Size = New System.Drawing.Size(112, 45)
         Me.Button41.TabIndex = 42
         Me.Button41.Text = "Ingreso Avance Ítems Controlados"
-        Me.Button41.UseVisualStyleBackColor = False
+        Me.Button41.UseVisualStyleBackColor = false
         '
         'Button42
         '
-        Me.Button42.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button42.BackColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Button42.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button42.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button42.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button42.ForeColor = System.Drawing.Color.Black
         Me.Button42.Location = New System.Drawing.Point(867, 95)
         Me.Button42.Margin = New System.Windows.Forms.Padding(2)
@@ -877,13 +879,13 @@ Partial Class frm_menu_principal_VI
         Me.Button42.Size = New System.Drawing.Size(112, 45)
         Me.Button42.TabIndex = 41
         Me.Button42.Text = "Ítems a Controlar"
-        Me.Button42.UseVisualStyleBackColor = False
+        Me.Button42.UseVisualStyleBackColor = false
         '
         'Button43
         '
-        Me.Button43.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button43.BackColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Button43.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button43.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button43.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button43.ForeColor = System.Drawing.Color.Black
         Me.Button43.Location = New System.Drawing.Point(867, 244)
         Me.Button43.Margin = New System.Windows.Forms.Padding(2)
@@ -891,13 +893,13 @@ Partial Class frm_menu_principal_VI
         Me.Button43.Size = New System.Drawing.Size(112, 45)
         Me.Button43.TabIndex = 44
         Me.Button43.Text = "Ingreso Avance Mensual Carta Gantt"
-        Me.Button43.UseVisualStyleBackColor = False
+        Me.Button43.UseVisualStyleBackColor = false
         '
         'Button44
         '
         Me.Button44.BackColor = System.Drawing.Color.Tomato
         Me.Button44.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button44.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button44.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button44.ForeColor = System.Drawing.Color.Black
         Me.Button44.Location = New System.Drawing.Point(1012, 194)
         Me.Button44.Margin = New System.Windows.Forms.Padding(2)
@@ -905,13 +907,13 @@ Partial Class frm_menu_principal_VI
         Me.Button44.Size = New System.Drawing.Size(112, 45)
         Me.Button44.TabIndex = 47
         Me.Button44.Text = "Cobros de Bodega"
-        Me.Button44.UseVisualStyleBackColor = False
+        Me.Button44.UseVisualStyleBackColor = false
         '
         'Button45
         '
         Me.Button45.BackColor = System.Drawing.Color.Tomato
         Me.Button45.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button45.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button45.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button45.ForeColor = System.Drawing.Color.Black
         Me.Button45.Location = New System.Drawing.Point(1012, 145)
         Me.Button45.Margin = New System.Windows.Forms.Padding(2)
@@ -919,13 +921,13 @@ Partial Class frm_menu_principal_VI
         Me.Button45.Size = New System.Drawing.Size(112, 45)
         Me.Button45.TabIndex = 46
         Me.Button45.Text = "Liquidación de Equipos Menores"
-        Me.Button45.UseVisualStyleBackColor = False
+        Me.Button45.UseVisualStyleBackColor = false
         '
         'Button46
         '
         Me.Button46.BackColor = System.Drawing.Color.Tomato
         Me.Button46.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button46.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button46.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button46.ForeColor = System.Drawing.Color.Black
         Me.Button46.Location = New System.Drawing.Point(1012, 95)
         Me.Button46.Margin = New System.Windows.Forms.Padding(2)
@@ -933,13 +935,13 @@ Partial Class frm_menu_principal_VI
         Me.Button46.Size = New System.Drawing.Size(112, 45)
         Me.Button46.TabIndex = 45
         Me.Button46.Text = "Liquidación de Camionetas"
-        Me.Button46.UseVisualStyleBackColor = False
+        Me.Button46.UseVisualStyleBackColor = false
         '
         'Button47
         '
         Me.Button47.BackColor = System.Drawing.Color.Tomato
         Me.Button47.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button47.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button47.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button47.ForeColor = System.Drawing.Color.Black
         Me.Button47.Location = New System.Drawing.Point(1012, 343)
         Me.Button47.Margin = New System.Windows.Forms.Padding(2)
@@ -947,13 +949,13 @@ Partial Class frm_menu_principal_VI
         Me.Button47.Size = New System.Drawing.Size(112, 45)
         Me.Button47.TabIndex = 50
         Me.Button47.Text = "Resumen Órdenes de Compra"
-        Me.Button47.UseVisualStyleBackColor = False
+        Me.Button47.UseVisualStyleBackColor = false
         '
         'Button48
         '
         Me.Button48.BackColor = System.Drawing.Color.Tomato
         Me.Button48.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button48.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button48.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button48.ForeColor = System.Drawing.Color.Black
         Me.Button48.Location = New System.Drawing.Point(1012, 293)
         Me.Button48.Margin = New System.Windows.Forms.Padding(2)
@@ -961,13 +963,13 @@ Partial Class frm_menu_principal_VI
         Me.Button48.Size = New System.Drawing.Size(112, 45)
         Me.Button48.TabIndex = 49
         Me.Button48.Text = "Cobros a Otras Obras"
-        Me.Button48.UseVisualStyleBackColor = False
+        Me.Button48.UseVisualStyleBackColor = false
         '
         'Button49
         '
         Me.Button49.BackColor = System.Drawing.Color.Tomato
         Me.Button49.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button49.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button49.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button49.ForeColor = System.Drawing.Color.Black
         Me.Button49.Location = New System.Drawing.Point(1012, 244)
         Me.Button49.Margin = New System.Windows.Forms.Padding(2)
@@ -975,13 +977,13 @@ Partial Class frm_menu_principal_VI
         Me.Button49.Size = New System.Drawing.Size(112, 45)
         Me.Button49.TabIndex = 48
         Me.Button49.Text = "Gastos por Liquidar"
-        Me.Button49.UseVisualStyleBackColor = False
+        Me.Button49.UseVisualStyleBackColor = false
         '
         'Button50
         '
         Me.Button50.BackColor = System.Drawing.Color.Tomato
         Me.Button50.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button50.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button50.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button50.ForeColor = System.Drawing.Color.Black
         Me.Button50.Location = New System.Drawing.Point(1012, 392)
         Me.Button50.Margin = New System.Windows.Forms.Padding(2)
@@ -989,13 +991,13 @@ Partial Class frm_menu_principal_VI
         Me.Button50.Size = New System.Drawing.Size(112, 45)
         Me.Button50.TabIndex = 51
         Me.Button50.Text = "Fotografías"
-        Me.Button50.UseVisualStyleBackColor = False
+        Me.Button50.UseVisualStyleBackColor = false
         '
         'Button51
         '
         Me.Button51.BackColor = System.Drawing.Color.PaleGoldenrod
         Me.Button51.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button51.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button51.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button51.ForeColor = System.Drawing.Color.Black
         Me.Button51.Location = New System.Drawing.Point(1148, 95)
         Me.Button51.Margin = New System.Windows.Forms.Padding(2)
@@ -1003,13 +1005,13 @@ Partial Class frm_menu_principal_VI
         Me.Button51.Size = New System.Drawing.Size(112, 45)
         Me.Button51.TabIndex = 52
         Me.Button51.Text = "Estados de Pago Maquinaria"
-        Me.Button51.UseVisualStyleBackColor = False
+        Me.Button51.UseVisualStyleBackColor = false
         '
         'Button52
         '
         Me.Button52.BackColor = System.Drawing.Color.PaleGoldenrod
         Me.Button52.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button52.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button52.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button52.ForeColor = System.Drawing.Color.Black
         Me.Button52.Location = New System.Drawing.Point(1148, 145)
         Me.Button52.Margin = New System.Windows.Forms.Padding(2)
@@ -1017,13 +1019,13 @@ Partial Class frm_menu_principal_VI
         Me.Button52.Size = New System.Drawing.Size(112, 45)
         Me.Button52.TabIndex = 53
         Me.Button52.Text = "Estados de Pago Subcontratos"
-        Me.Button52.UseVisualStyleBackColor = False
+        Me.Button52.UseVisualStyleBackColor = false
         '
         'Button53
         '
         Me.Button53.BackColor = System.Drawing.Color.PaleGoldenrod
         Me.Button53.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button53.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button53.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button53.ForeColor = System.Drawing.Color.Black
         Me.Button53.Location = New System.Drawing.Point(1148, 244)
         Me.Button53.Margin = New System.Windows.Forms.Padding(2)
@@ -1031,13 +1033,13 @@ Partial Class frm_menu_principal_VI
         Me.Button53.Size = New System.Drawing.Size(112, 45)
         Me.Button53.TabIndex = 55
         Me.Button53.Text = "Listado de Subcontratos"
-        Me.Button53.UseVisualStyleBackColor = False
+        Me.Button53.UseVisualStyleBackColor = false
         '
         'Button54
         '
         Me.Button54.BackColor = System.Drawing.Color.PaleGoldenrod
         Me.Button54.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button54.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button54.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button54.ForeColor = System.Drawing.Color.Black
         Me.Button54.Location = New System.Drawing.Point(1148, 194)
         Me.Button54.Margin = New System.Windows.Forms.Padding(2)
@@ -1045,13 +1047,13 @@ Partial Class frm_menu_principal_VI
         Me.Button54.Size = New System.Drawing.Size(112, 45)
         Me.Button54.TabIndex = 54
         Me.Button54.Text = "Listado de Equipos"
-        Me.Button54.UseVisualStyleBackColor = False
+        Me.Button54.UseVisualStyleBackColor = false
         '
         'Button55
         '
         Me.Button55.BackColor = System.Drawing.Color.PaleGoldenrod
         Me.Button55.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button55.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button55.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button55.ForeColor = System.Drawing.Color.Black
         Me.Button55.Location = New System.Drawing.Point(1148, 343)
         Me.Button55.Margin = New System.Windows.Forms.Padding(2)
@@ -1059,13 +1061,13 @@ Partial Class frm_menu_principal_VI
         Me.Button55.Size = New System.Drawing.Size(112, 45)
         Me.Button55.TabIndex = 57
         Me.Button55.Text = "Estados de Pago Mandante"
-        Me.Button55.UseVisualStyleBackColor = False
+        Me.Button55.UseVisualStyleBackColor = false
         '
         'Button56
         '
         Me.Button56.BackColor = System.Drawing.Color.PaleGoldenrod
         Me.Button56.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button56.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button56.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button56.ForeColor = System.Drawing.Color.Black
         Me.Button56.Location = New System.Drawing.Point(1148, 293)
         Me.Button56.Margin = New System.Windows.Forms.Padding(2)
@@ -1073,13 +1075,13 @@ Partial Class frm_menu_principal_VI
         Me.Button56.Size = New System.Drawing.Size(112, 45)
         Me.Button56.TabIndex = 56
         Me.Button56.Text = "Informes de Petroleo"
-        Me.Button56.UseVisualStyleBackColor = False
+        Me.Button56.UseVisualStyleBackColor = false
         '
         'Button58
         '
         Me.Button58.BackColor = System.Drawing.Color.PaleGoldenrod
         Me.Button58.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button58.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button58.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button58.ForeColor = System.Drawing.Color.Black
         Me.Button58.Location = New System.Drawing.Point(1148, 392)
         Me.Button58.Margin = New System.Windows.Forms.Padding(2)
@@ -1087,13 +1089,13 @@ Partial Class frm_menu_principal_VI
         Me.Button58.Size = New System.Drawing.Size(112, 45)
         Me.Button58.TabIndex = 58
         Me.Button58.Text = "Contrato y Mod. de Obra"
-        Me.Button58.UseVisualStyleBackColor = False
+        Me.Button58.UseVisualStyleBackColor = false
         '
         'Button59
         '
         Me.Button59.BackColor = System.Drawing.Color.PaleGoldenrod
         Me.Button59.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button59.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button59.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button59.ForeColor = System.Drawing.Color.Black
         Me.Button59.Location = New System.Drawing.Point(1264, 194)
         Me.Button59.Margin = New System.Windows.Forms.Padding(2)
@@ -1101,13 +1103,13 @@ Partial Class frm_menu_principal_VI
         Me.Button59.Size = New System.Drawing.Size(112, 45)
         Me.Button59.TabIndex = 62
         Me.Button59.Text = "Boletas de Garantía"
-        Me.Button59.UseVisualStyleBackColor = False
+        Me.Button59.UseVisualStyleBackColor = false
         '
         'Button60
         '
         Me.Button60.BackColor = System.Drawing.Color.PaleGoldenrod
         Me.Button60.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button60.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button60.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button60.ForeColor = System.Drawing.Color.Black
         Me.Button60.Location = New System.Drawing.Point(1264, 145)
         Me.Button60.Margin = New System.Windows.Forms.Padding(2)
@@ -1115,13 +1117,13 @@ Partial Class frm_menu_principal_VI
         Me.Button60.Size = New System.Drawing.Size(112, 45)
         Me.Button60.TabIndex = 61
         Me.Button60.Text = "Carpeta Mensual"
-        Me.Button60.UseVisualStyleBackColor = False
+        Me.Button60.UseVisualStyleBackColor = false
         '
         'Button61
         '
         Me.Button61.BackColor = System.Drawing.Color.PaleGoldenrod
         Me.Button61.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button61.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button61.Font = New System.Drawing.Font("Calibri", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button61.ForeColor = System.Drawing.Color.Black
         Me.Button61.Location = New System.Drawing.Point(1264, 95)
         Me.Button61.Margin = New System.Windows.Forms.Padding(2)
@@ -1129,11 +1131,11 @@ Partial Class frm_menu_principal_VI
         Me.Button61.Size = New System.Drawing.Size(112, 45)
         Me.Button61.TabIndex = 60
         Me.Button61.Text = "Curva S"
-        Me.Button61.UseVisualStyleBackColor = False
+        Me.Button61.UseVisualStyleBackColor = false
         '
         'TabPage10
         '
-        Me.TabPage10.AutoScroll = True
+        Me.TabPage10.AutoScroll = true
         Me.TabPage10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TabPage10.Location = New System.Drawing.Point(4, 44)
         Me.TabPage10.Margin = New System.Windows.Forms.Padding(2)
@@ -1141,7 +1143,7 @@ Partial Class frm_menu_principal_VI
         Me.TabPage10.Size = New System.Drawing.Size(1410, 552)
         Me.TabPage10.TabIndex = 9
         Me.TabPage10.Text = "Informes"
-        Me.TabPage10.UseVisualStyleBackColor = True
+        Me.TabPage10.UseVisualStyleBackColor = true
         '
         'TabPage9
         '
@@ -1153,7 +1155,7 @@ Partial Class frm_menu_principal_VI
         Me.TabPage9.Size = New System.Drawing.Size(1410, 552)
         Me.TabPage9.TabIndex = 8
         Me.TabPage9.Text = "Carpeta Mensual"
-        Me.TabPage9.UseVisualStyleBackColor = True
+        Me.TabPage9.UseVisualStyleBackColor = true
         '
         'TabControl8
         '
@@ -1164,7 +1166,7 @@ Partial Class frm_menu_principal_VI
         Me.TabControl8.Controls.Add(Me.TabPage49)
         Me.TabControl8.Controls.Add(Me.TabPage50)
         Me.TabControl8.Controls.Add(Me.TabPage51)
-        Me.TabControl8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabControl8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.TabControl8.ItemSize = New System.Drawing.Size(100, 34)
         Me.TabControl8.Location = New System.Drawing.Point(3, 2)
         Me.TabControl8.Margin = New System.Windows.Forms.Padding(2)
@@ -1175,9 +1177,9 @@ Partial Class frm_menu_principal_VI
         '
         'TabPage45
         '
-        Me.TabPage45.AutoScroll = True
+        Me.TabPage45.AutoScroll = true
         Me.TabPage45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TabPage45.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabPage45.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.TabPage45.Location = New System.Drawing.Point(4, 38)
         Me.TabPage45.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage45.Name = "TabPage45"
@@ -1185,13 +1187,13 @@ Partial Class frm_menu_principal_VI
         Me.TabPage45.Size = New System.Drawing.Size(1404, 523)
         Me.TabPage45.TabIndex = 0
         Me.TabPage45.Text = "Liquidación de Camionetas"
-        Me.TabPage45.UseVisualStyleBackColor = True
+        Me.TabPage45.UseVisualStyleBackColor = true
         '
         'TabPage46
         '
-        Me.TabPage46.AutoScroll = True
+        Me.TabPage46.AutoScroll = true
         Me.TabPage46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TabPage46.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabPage46.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.TabPage46.Location = New System.Drawing.Point(4, 38)
         Me.TabPage46.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage46.Name = "TabPage46"
@@ -1199,35 +1201,35 @@ Partial Class frm_menu_principal_VI
         Me.TabPage46.Size = New System.Drawing.Size(1404, 523)
         Me.TabPage46.TabIndex = 1
         Me.TabPage46.Text = "Liquidación de Equipos Menores"
-        Me.TabPage46.UseVisualStyleBackColor = True
+        Me.TabPage46.UseVisualStyleBackColor = true
         '
         'TabPage47
         '
-        Me.TabPage47.AutoScroll = True
+        Me.TabPage47.AutoScroll = true
         Me.TabPage47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TabPage47.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabPage47.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.TabPage47.Location = New System.Drawing.Point(4, 38)
         Me.TabPage47.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage47.Name = "TabPage47"
         Me.TabPage47.Size = New System.Drawing.Size(1404, 523)
         Me.TabPage47.TabIndex = 2
         Me.TabPage47.Text = "Cobros de Bodega"
-        Me.TabPage47.UseVisualStyleBackColor = True
+        Me.TabPage47.UseVisualStyleBackColor = true
         '
         'TabPage48
         '
-        Me.TabPage48.AutoScroll = True
+        Me.TabPage48.AutoScroll = true
         Me.TabPage48.Location = New System.Drawing.Point(4, 38)
         Me.TabPage48.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage48.Name = "TabPage48"
         Me.TabPage48.Size = New System.Drawing.Size(1404, 523)
         Me.TabPage48.TabIndex = 3
         Me.TabPage48.Text = "Gastos por Liquidar"
-        Me.TabPage48.UseVisualStyleBackColor = True
+        Me.TabPage48.UseVisualStyleBackColor = true
         '
         'TabPage49
         '
-        Me.TabPage49.AutoScroll = True
+        Me.TabPage49.AutoScroll = true
         Me.TabPage49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TabPage49.Location = New System.Drawing.Point(4, 38)
         Me.TabPage49.Margin = New System.Windows.Forms.Padding(2)
@@ -1235,11 +1237,11 @@ Partial Class frm_menu_principal_VI
         Me.TabPage49.Size = New System.Drawing.Size(1404, 523)
         Me.TabPage49.TabIndex = 4
         Me.TabPage49.Text = "Cobros a Otras Obras"
-        Me.TabPage49.UseVisualStyleBackColor = True
+        Me.TabPage49.UseVisualStyleBackColor = true
         '
         'TabPage50
         '
-        Me.TabPage50.AutoScroll = True
+        Me.TabPage50.AutoScroll = true
         Me.TabPage50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TabPage50.Location = New System.Drawing.Point(4, 38)
         Me.TabPage50.Margin = New System.Windows.Forms.Padding(2)
@@ -1247,11 +1249,11 @@ Partial Class frm_menu_principal_VI
         Me.TabPage50.Size = New System.Drawing.Size(1404, 523)
         Me.TabPage50.TabIndex = 5
         Me.TabPage50.Text = "Resumen Órdenes de Compra"
-        Me.TabPage50.UseVisualStyleBackColor = True
+        Me.TabPage50.UseVisualStyleBackColor = true
         '
         'TabPage51
         '
-        Me.TabPage51.AutoScroll = True
+        Me.TabPage51.AutoScroll = true
         Me.TabPage51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TabPage51.Location = New System.Drawing.Point(4, 38)
         Me.TabPage51.Margin = New System.Windows.Forms.Padding(2)
@@ -1259,7 +1261,7 @@ Partial Class frm_menu_principal_VI
         Me.TabPage51.Size = New System.Drawing.Size(1404, 523)
         Me.TabPage51.TabIndex = 6
         Me.TabPage51.Text = "Fotografías"
-        Me.TabPage51.UseVisualStyleBackColor = True
+        Me.TabPage51.UseVisualStyleBackColor = true
         '
         'TabPage8
         '
@@ -1271,7 +1273,7 @@ Partial Class frm_menu_principal_VI
         Me.TabPage8.Size = New System.Drawing.Size(1410, 552)
         Me.TabPage8.TabIndex = 7
         Me.TabPage8.Text = "Control de Obra"
-        Me.TabPage8.UseVisualStyleBackColor = True
+        Me.TabPage8.UseVisualStyleBackColor = true
         '
         'TabControl7
         '
@@ -1279,7 +1281,7 @@ Partial Class frm_menu_principal_VI
         Me.TabControl7.Controls.Add(Me.TabPage42)
         Me.TabControl7.Controls.Add(Me.TabPage43)
         Me.TabControl7.Controls.Add(Me.TabPage44)
-        Me.TabControl7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabControl7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.TabControl7.ItemSize = New System.Drawing.Size(100, 34)
         Me.TabControl7.Location = New System.Drawing.Point(3, 2)
         Me.TabControl7.Margin = New System.Windows.Forms.Padding(2)
@@ -1290,9 +1292,9 @@ Partial Class frm_menu_principal_VI
         '
         'TabPage41
         '
-        Me.TabPage41.AutoScroll = True
+        Me.TabPage41.AutoScroll = true
         Me.TabPage41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TabPage41.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabPage41.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.TabPage41.Location = New System.Drawing.Point(4, 38)
         Me.TabPage41.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage41.Name = "TabPage41"
@@ -1300,13 +1302,13 @@ Partial Class frm_menu_principal_VI
         Me.TabPage41.Size = New System.Drawing.Size(1404, 523)
         Me.TabPage41.TabIndex = 0
         Me.TabPage41.Text = "Ítems a Controlar"
-        Me.TabPage41.UseVisualStyleBackColor = True
+        Me.TabPage41.UseVisualStyleBackColor = true
         '
         'TabPage42
         '
-        Me.TabPage42.AutoScroll = True
+        Me.TabPage42.AutoScroll = true
         Me.TabPage42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TabPage42.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabPage42.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.TabPage42.Location = New System.Drawing.Point(4, 38)
         Me.TabPage42.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage42.Name = "TabPage42"
@@ -1314,24 +1316,24 @@ Partial Class frm_menu_principal_VI
         Me.TabPage42.Size = New System.Drawing.Size(1404, 523)
         Me.TabPage42.TabIndex = 1
         Me.TabPage42.Text = "Ingreso Avance Ítems Controlados"
-        Me.TabPage42.UseVisualStyleBackColor = True
+        Me.TabPage42.UseVisualStyleBackColor = true
         '
         'TabPage43
         '
-        Me.TabPage43.AutoScroll = True
+        Me.TabPage43.AutoScroll = true
         Me.TabPage43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TabPage43.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabPage43.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.TabPage43.Location = New System.Drawing.Point(4, 38)
         Me.TabPage43.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage43.Name = "TabPage43"
         Me.TabPage43.Size = New System.Drawing.Size(1404, 523)
         Me.TabPage43.TabIndex = 2
         Me.TabPage43.Text = "Carta Gantt"
-        Me.TabPage43.UseVisualStyleBackColor = True
+        Me.TabPage43.UseVisualStyleBackColor = true
         '
         'TabPage44
         '
-        Me.TabPage44.AutoScroll = True
+        Me.TabPage44.AutoScroll = true
         Me.TabPage44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TabPage44.Location = New System.Drawing.Point(4, 38)
         Me.TabPage44.Margin = New System.Windows.Forms.Padding(2)
@@ -1339,7 +1341,7 @@ Partial Class frm_menu_principal_VI
         Me.TabPage44.Size = New System.Drawing.Size(1404, 523)
         Me.TabPage44.TabIndex = 3
         Me.TabPage44.Text = "Ingreso Avance Mensual Carta Gantt"
-        Me.TabPage44.UseVisualStyleBackColor = True
+        Me.TabPage44.UseVisualStyleBackColor = true
         '
         'TabPage7
         '
@@ -1351,14 +1353,14 @@ Partial Class frm_menu_principal_VI
         Me.TabPage7.Size = New System.Drawing.Size(1410, 552)
         Me.TabPage7.TabIndex = 6
         Me.TabPage7.Text = "Contrato Original"
-        Me.TabPage7.UseVisualStyleBackColor = True
+        Me.TabPage7.UseVisualStyleBackColor = true
         '
         'TabControl6
         '
         Me.TabControl6.Controls.Add(Me.TabPage38)
         Me.TabControl6.Controls.Add(Me.TabPage39)
         Me.TabControl6.Controls.Add(Me.TabPage40)
-        Me.TabControl6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabControl6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.TabControl6.ItemSize = New System.Drawing.Size(100, 34)
         Me.TabControl6.Location = New System.Drawing.Point(4, 2)
         Me.TabControl6.Margin = New System.Windows.Forms.Padding(2)
@@ -1369,9 +1371,9 @@ Partial Class frm_menu_principal_VI
         '
         'TabPage38
         '
-        Me.TabPage38.AutoScroll = True
+        Me.TabPage38.AutoScroll = true
         Me.TabPage38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TabPage38.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabPage38.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.TabPage38.Location = New System.Drawing.Point(4, 38)
         Me.TabPage38.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage38.Name = "TabPage38"
@@ -1379,13 +1381,13 @@ Partial Class frm_menu_principal_VI
         Me.TabPage38.Size = New System.Drawing.Size(1404, 523)
         Me.TabPage38.TabIndex = 0
         Me.TabPage38.Text = "Listado Modificaciones"
-        Me.TabPage38.UseVisualStyleBackColor = True
+        Me.TabPage38.UseVisualStyleBackColor = true
         '
         'TabPage39
         '
-        Me.TabPage39.AutoScroll = True
+        Me.TabPage39.AutoScroll = true
         Me.TabPage39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TabPage39.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabPage39.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.TabPage39.Location = New System.Drawing.Point(4, 38)
         Me.TabPage39.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage39.Name = "TabPage39"
@@ -1393,20 +1395,20 @@ Partial Class frm_menu_principal_VI
         Me.TabPage39.Size = New System.Drawing.Size(1404, 523)
         Me.TabPage39.TabIndex = 1
         Me.TabPage39.Text = "Ingreso de Contrato Original (Resolución)"
-        Me.TabPage39.UseVisualStyleBackColor = True
+        Me.TabPage39.UseVisualStyleBackColor = true
         '
         'TabPage40
         '
-        Me.TabPage40.AutoScroll = True
+        Me.TabPage40.AutoScroll = true
         Me.TabPage40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TabPage40.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabPage40.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.TabPage40.Location = New System.Drawing.Point(4, 38)
         Me.TabPage40.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage40.Name = "TabPage40"
         Me.TabPage40.Size = New System.Drawing.Size(1404, 523)
         Me.TabPage40.TabIndex = 2
         Me.TabPage40.Text = "Ingreso de Modificaciónes Firmadas"
-        Me.TabPage40.UseVisualStyleBackColor = True
+        Me.TabPage40.UseVisualStyleBackColor = true
         '
         'TabPage6
         '
@@ -1418,14 +1420,14 @@ Partial Class frm_menu_principal_VI
         Me.TabPage6.Size = New System.Drawing.Size(1410, 552)
         Me.TabPage6.TabIndex = 5
         Me.TabPage6.Text = "Estado de Pago Mandante"
-        Me.TabPage6.UseVisualStyleBackColor = True
+        Me.TabPage6.UseVisualStyleBackColor = true
         '
         'TabControl5
         '
         Me.TabControl5.Controls.Add(Me.TabPage35)
         Me.TabControl5.Controls.Add(Me.TabPage36)
         Me.TabControl5.Controls.Add(Me.TabPage37)
-        Me.TabControl5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabControl5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.TabControl5.ItemSize = New System.Drawing.Size(100, 34)
         Me.TabControl5.Location = New System.Drawing.Point(2, 2)
         Me.TabControl5.Margin = New System.Windows.Forms.Padding(2)
@@ -1436,8 +1438,9 @@ Partial Class frm_menu_principal_VI
         '
         'TabPage35
         '
-        Me.TabPage35.AutoScroll = True
+        Me.TabPage35.AutoScroll = true
         Me.TabPage35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TabPage35.Controls.Add(Me.dgRetencionesProforma)
         Me.TabPage35.Controls.Add(Me.cboObrasFiltro)
         Me.TabPage35.Controls.Add(Me.Label23)
         Me.TabPage35.Controls.Add(Me.txtIdEstadoPago)
@@ -1449,7 +1452,7 @@ Partial Class frm_menu_principal_VI
         Me.TabPage35.Controls.Add(Me.dgvEstadoPago)
         Me.TabPage35.Controls.Add(Me.GroupBox10)
         Me.TabPage35.Controls.Add(Me.TextBox2)
-        Me.TabPage35.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabPage35.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.TabPage35.Location = New System.Drawing.Point(4, 38)
         Me.TabPage35.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage35.Name = "TabPage35"
@@ -1457,12 +1460,12 @@ Partial Class frm_menu_principal_VI
         Me.TabPage35.Size = New System.Drawing.Size(1404, 523)
         Me.TabPage35.TabIndex = 0
         Me.TabPage35.Text = "Ingreso Estados de Pago Mandante"
-        Me.TabPage35.UseVisualStyleBackColor = True
+        Me.TabPage35.UseVisualStyleBackColor = true
         '
         'cboObrasFiltro
         '
-        Me.cboObrasFiltro.FormattingEnabled = True
-        Me.cboObrasFiltro.Location = New System.Drawing.Point(454, 62)
+        Me.cboObrasFiltro.FormattingEnabled = true
+        Me.cboObrasFiltro.Location = New System.Drawing.Point(450, 43)
         Me.cboObrasFiltro.Name = "cboObrasFiltro"
         Me.cboObrasFiltro.Size = New System.Drawing.Size(149, 25)
         Me.cboObrasFiltro.TabIndex = 22
@@ -1470,7 +1473,7 @@ Partial Class frm_menu_principal_VI
         'Label23
         '
         Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(338, 62)
+        Me.Label23.Location = New System.Drawing.Point(335, 45)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(109, 17)
         Me.Label23.TabIndex = 21
@@ -1478,7 +1481,7 @@ Partial Class frm_menu_principal_VI
         '
         'txtIdEstadoPago
         '
-        Me.txtIdEstadoPago.Location = New System.Drawing.Point(596, 374)
+        Me.txtIdEstadoPago.Location = New System.Drawing.Point(596, 380)
         Me.txtIdEstadoPago.Name = "txtIdEstadoPago"
         Me.txtIdEstadoPago.Size = New System.Drawing.Size(100, 23)
         Me.txtIdEstadoPago.TabIndex = 20
@@ -1489,7 +1492,7 @@ Partial Class frm_menu_principal_VI
         Me.btnEliminar.BackColor = System.Drawing.Color.Transparent
         Me.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnEliminar.Location = New System.Drawing.Point(510, 374)
+        Me.btnEliminar.Location = New System.Drawing.Point(510, 380)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(80, 52)
         Me.btnEliminar.TabIndex = 14
@@ -1501,7 +1504,7 @@ Partial Class frm_menu_principal_VI
         '
         Me.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnModificar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnModificar.Location = New System.Drawing.Point(424, 374)
+        Me.btnModificar.Location = New System.Drawing.Point(424, 380)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(80, 52)
         Me.btnModificar.TabIndex = 13
@@ -1514,7 +1517,7 @@ Partial Class frm_menu_principal_VI
         Me.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnAgregar.Enabled = False
         Me.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnAgregar.Location = New System.Drawing.Point(338, 432)
+        Me.btnAgregar.Location = New System.Drawing.Point(338, 438)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(80, 52)
         Me.btnAgregar.TabIndex = 15
@@ -1526,7 +1529,7 @@ Partial Class frm_menu_principal_VI
         '
         Me.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnNuevo.Location = New System.Drawing.Point(338, 374)
+        Me.btnNuevo.Location = New System.Drawing.Point(338, 380)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(80, 52)
         Me.btnNuevo.TabIndex = 12
@@ -1539,7 +1542,7 @@ Partial Class frm_menu_principal_VI
         Me.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnCancelar.Enabled = False
         Me.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnCancelar.Location = New System.Drawing.Point(424, 432)
+        Me.btnCancelar.Location = New System.Drawing.Point(424, 438)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(80, 52)
         Me.btnCancelar.TabIndex = 16
@@ -1552,7 +1555,7 @@ Partial Class frm_menu_principal_VI
         Me.dgvEstadoPago.AllowUserToAddRows = False
         Me.dgvEstadoPago.AllowUserToDeleteRows = False
         Me.dgvEstadoPago.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvEstadoPago.Location = New System.Drawing.Point(338, 103)
+        Me.dgvEstadoPago.Location = New System.Drawing.Point(338, 109)
         Me.dgvEstadoPago.Name = "dgvEstadoPago"
         Me.dgvEstadoPago.ReadOnly = True
         Me.dgvEstadoPago.Size = New System.Drawing.Size(978, 265)
@@ -1569,16 +1572,16 @@ Partial Class frm_menu_principal_VI
         Me.GroupBox10.Controls.Add(Me.txtValorEstadoPagoNeto)
         Me.GroupBox10.Controls.Add(Me.Label56)
         Me.GroupBox10.Controls.Add(Me.txtValorEstadoPago)
+        Me.GroupBox10.Controls.Add(Me.dtFecha)
         Me.GroupBox10.Controls.Add(Me.Label55)
         Me.GroupBox10.Controls.Add(Me.txtMultas)
         Me.GroupBox10.Controls.Add(Me.Label53)
         Me.GroupBox10.Controls.Add(Me.txtRetencionesCanjeadas)
         Me.GroupBox10.Controls.Add(Me.Label52)
         Me.GroupBox10.Controls.Add(Me.txtRetenciones)
-        Me.GroupBox10.Controls.Add(Me.Label51)
-        Me.GroupBox10.Controls.Add(Me.dtFecha)
-        Me.GroupBox10.Controls.Add(Me.txtNroEstadoPago)
         Me.GroupBox10.Controls.Add(Me.cboObras)
+        Me.GroupBox10.Controls.Add(Me.Label51)
+        Me.GroupBox10.Controls.Add(Me.txtNroEstadoPago)
         Me.GroupBox10.Controls.Add(Me.txtReajuste)
         Me.GroupBox10.Controls.Add(Me.Label42)
         Me.GroupBox10.Controls.Add(Me.txtNroFactura)
@@ -1673,6 +1676,13 @@ Partial Class frm_menu_principal_VI
         Me.txtValorEstadoPago.Size = New System.Drawing.Size(110, 23)
         Me.txtValorEstadoPago.TabIndex = 38
         '
+        'dtFecha
+        '
+        Me.dtFecha.Location = New System.Drawing.Point(94, 88)
+        Me.dtFecha.Name = "dtFecha"
+        Me.dtFecha.Size = New System.Drawing.Size(208, 23)
+        Me.dtFecha.TabIndex = 30
+        '
         'Label55
         '
         Me.Label55.AutoSize = True
@@ -1719,10 +1729,18 @@ Partial Class frm_menu_principal_VI
         '
         'txtRetenciones
         '
-        Me.txtRetenciones.Location = New System.Drawing.Point(121, 198)
+        Me.txtRetenciones.Location = New System.Drawing.Point(121, 201)
         Me.txtRetenciones.Name = "txtRetenciones"
         Me.txtRetenciones.Size = New System.Drawing.Size(182, 23)
         Me.txtRetenciones.TabIndex = 32
+        '
+        'cboObras
+        '
+        Me.cboObras.FormattingEnabled = True
+        Me.cboObras.Location = New System.Drawing.Point(94, 30)
+        Me.cboObras.Name = "cboObras"
+        Me.cboObras.Size = New System.Drawing.Size(209, 25)
+        Me.cboObras.TabIndex = 28
         '
         'Label51
         '
@@ -1734,27 +1752,12 @@ Partial Class frm_menu_principal_VI
         Me.Label51.TabIndex = 31
         Me.Label51.Text = "Retenciones ($)"
         '
-        'dtFecha
-        '
-        Me.dtFecha.Location = New System.Drawing.Point(94, 88)
-        Me.dtFecha.Name = "dtFecha"
-        Me.dtFecha.Size = New System.Drawing.Size(208, 23)
-        Me.dtFecha.TabIndex = 30
-        '
         'txtNroEstadoPago
         '
         Me.txtNroEstadoPago.Location = New System.Drawing.Point(174, 59)
         Me.txtNroEstadoPago.Name = "txtNroEstadoPago"
         Me.txtNroEstadoPago.Size = New System.Drawing.Size(129, 23)
         Me.txtNroEstadoPago.TabIndex = 29
-        '
-        'cboObras
-        '
-        Me.cboObras.FormattingEnabled = True
-        Me.cboObras.Location = New System.Drawing.Point(94, 30)
-        Me.cboObras.Name = "cboObras"
-        Me.cboObras.Size = New System.Drawing.Size(209, 25)
-        Me.cboObras.TabIndex = 28
         '
         'txtReajuste
         '
@@ -3531,11 +3534,25 @@ Partial Class frm_menu_principal_VI
         '
         Me.SaveFileDialog3.Filter = "PDF files (*.pdf)|*.pdf"
         '
+        'dgRetencionesProforma
+        '
+        Me.dgRetencionesProforma.AllowUserToAddRows = False
+        Me.dgRetencionesProforma.AllowUserToDeleteRows = False
+        Me.dgRetencionesProforma.BackgroundColor = System.Drawing.SystemColors.Control
+        Me.dgRetencionesProforma.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgRetencionesProforma.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgRetencionesProforma.GridColor = System.Drawing.SystemColors.Control
+        Me.dgRetencionesProforma.Location = New System.Drawing.Point(616, 43)
+        Me.dgRetencionesProforma.Name = "dgRetencionesProforma"
+        Me.dgRetencionesProforma.ReadOnly = True
+        Me.dgRetencionesProforma.Size = New System.Drawing.Size(216, 57)
+        Me.dgRetencionesProforma.TabIndex = 27
+        '
         'frm_menu_principal_VI
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.AutoScroll = True
+        Me.AutoScroll = true
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(1060, 619)
         Me.Controls.Add(Me.dgv_arrendador)
@@ -3549,69 +3566,70 @@ Partial Class frm_menu_principal_VI
         Me.Controls.Add(Me.TabControl11)
         Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.lbl_nombre_obra)
-        Me.DoubleBuffered = True
+        Me.DoubleBuffered = true
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "frm_menu_principal_VI"
         Me.Text = "Estado Pago Mandante"
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPage9.ResumeLayout(False)
-        Me.TabControl8.ResumeLayout(False)
-        Me.TabPage8.ResumeLayout(False)
-        Me.TabControl7.ResumeLayout(False)
-        Me.TabPage7.ResumeLayout(False)
-        Me.TabControl6.ResumeLayout(False)
-        Me.TabPage6.ResumeLayout(False)
-        Me.TabControl5.ResumeLayout(False)
-        Me.TabPage35.ResumeLayout(False)
-        Me.TabPage35.PerformLayout()
-        CType(Me.dgvEstadoPago, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox10.ResumeLayout(False)
-        Me.GroupBox10.PerformLayout()
-        Me.TabPage36.ResumeLayout(False)
-        Me.TabPage36.PerformLayout()
-        Me.GroupBox12.ResumeLayout(False)
-        Me.GroupBox12.PerformLayout()
-        CType(Me.dgvAdjuntosPagosFirmados, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox11.ResumeLayout(False)
-        Me.GroupBox11.PerformLayout()
-        Me.TabPage37.ResumeLayout(False)
-        Me.TabPage37.PerformLayout()
-        CType(Me.dgvFacturasAdjunto, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox14.ResumeLayout(False)
-        Me.GroupBox14.PerformLayout()
-        Me.GroupBox13.ResumeLayout(False)
-        Me.GroupBox13.PerformLayout()
-        Me.TabPage5.ResumeLayout(False)
-        Me.TabControl4.ResumeLayout(False)
-        Me.TabPage4.ResumeLayout(False)
-        Me.TabControl3.ResumeLayout(False)
-        Me.TabPage3.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        Me.TabControl11.ResumeLayout(False)
-        Me.TabPage1.ResumeLayout(False)
-        Me.TabPage2.ResumeLayout(False)
-        Me.Panel.ResumeLayout(False)
-        Me.TabPage11.ResumeLayout(False)
-        Me.TabPage11.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        Me.TabPage12.ResumeLayout(False)
-        Me.TabPage12.PerformLayout()
-        CType(Me.dgv_2_cuentas, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
-        Me.TabPage13.ResumeLayout(False)
-        Me.TabPage13.PerformLayout()
-        CType(Me.dgv_uf, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox4.PerformLayout()
-        CType(Me.dgv_arrendador, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        CType(Me.PictureBox5,System.ComponentModel.ISupportInitialize).EndInit
+        Me.TabPage9.ResumeLayout(false)
+        Me.TabControl8.ResumeLayout(false)
+        Me.TabPage8.ResumeLayout(false)
+        Me.TabControl7.ResumeLayout(false)
+        Me.TabPage7.ResumeLayout(false)
+        Me.TabControl6.ResumeLayout(false)
+        Me.TabPage6.ResumeLayout(false)
+        Me.TabControl5.ResumeLayout(false)
+        Me.TabPage35.ResumeLayout(false)
+        Me.TabPage35.PerformLayout
+        CType(Me.dgvEstadoPago,System.ComponentModel.ISupportInitialize).EndInit
+        Me.GroupBox10.ResumeLayout(false)
+        Me.GroupBox10.PerformLayout
+        Me.TabPage36.ResumeLayout(false)
+        Me.TabPage36.PerformLayout
+        Me.GroupBox12.ResumeLayout(false)
+        Me.GroupBox12.PerformLayout
+        CType(Me.dgvAdjuntosPagosFirmados,System.ComponentModel.ISupportInitialize).EndInit
+        Me.GroupBox11.ResumeLayout(false)
+        Me.GroupBox11.PerformLayout
+        Me.TabPage37.ResumeLayout(false)
+        Me.TabPage37.PerformLayout
+        CType(Me.dgvFacturasAdjunto,System.ComponentModel.ISupportInitialize).EndInit
+        Me.GroupBox14.ResumeLayout(false)
+        Me.GroupBox14.PerformLayout
+        Me.GroupBox13.ResumeLayout(false)
+        Me.GroupBox13.PerformLayout
+        Me.TabPage5.ResumeLayout(false)
+        Me.TabControl4.ResumeLayout(false)
+        Me.TabPage4.ResumeLayout(false)
+        Me.TabControl3.ResumeLayout(false)
+        Me.TabPage3.ResumeLayout(false)
+        Me.Panel2.ResumeLayout(false)
+        Me.TabControl11.ResumeLayout(false)
+        Me.TabPage1.ResumeLayout(false)
+        Me.TabPage2.ResumeLayout(false)
+        Me.Panel.ResumeLayout(false)
+        Me.TabPage11.ResumeLayout(false)
+        Me.TabPage11.PerformLayout
+        Me.GroupBox2.ResumeLayout(false)
+        Me.GroupBox2.PerformLayout
+        Me.GroupBox1.ResumeLayout(false)
+        Me.GroupBox1.PerformLayout
+        Me.TabPage12.ResumeLayout(false)
+        Me.TabPage12.PerformLayout
+        CType(Me.dgv_2_cuentas,System.ComponentModel.ISupportInitialize).EndInit
+        Me.GroupBox3.ResumeLayout(false)
+        Me.GroupBox3.PerformLayout
+        Me.TabPage13.ResumeLayout(false)
+        Me.TabPage13.PerformLayout
+        CType(Me.dgv_uf,System.ComponentModel.ISupportInitialize).EndInit
+        Me.GroupBox4.ResumeLayout(false)
+        Me.GroupBox4.PerformLayout
+        CType(Me.dgv_arrendador,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.dgRetencionesProforma,System.ComponentModel.ISupportInitialize).EndInit
+        Me.ResumeLayout(false)
+        Me.PerformLayout
 
-    End Sub
+End Sub
     Friend WithEvents lbl_nombre_obra As System.Windows.Forms.Label
     Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
@@ -3883,4 +3901,5 @@ Partial Class frm_menu_principal_VI
     Friend WithEvents cboEstadoPagoFirmado As ComboBox
     Friend WithEvents cboEstadoPagoAsociado As ComboBox
     Friend WithEvents txtAdjuntoFacturasFirmadas As TextBox
+    Friend WithEvents dgRetencionesProforma As System.Windows.Forms.DataGridView
 End Class

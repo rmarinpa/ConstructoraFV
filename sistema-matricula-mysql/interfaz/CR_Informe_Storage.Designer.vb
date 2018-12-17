@@ -23,33 +23,35 @@ Partial Class CR_Informe_Storage
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.Informe_Storage_final1 = New Constructora_FV.Informe_Storage_final()
         Me.Libro_compras1 = New Constructora_FV.Libro_compras()
         Me.Crrevision_petroleo1 = New Constructora_FV.Crrevision_petroleo()
         Me.Estado_de_pago1 = New Constructora_FV.Estado_de_pago()
-        Me.Informe_Storage_final1 = New Constructora_FV.Informe_Storage_final()
         Me.SuspendLayout()
         '
         'CrystalReportViewer1
         '
         Me.CrystalReportViewer1.ActiveViewIndex = 0
         Me.CrystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CrystalReportViewer1.CachedPageNumberPerDoc = 10
         Me.CrystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default
         Me.CrystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CrystalReportViewer1.Location = New System.Drawing.Point(0, 0)
+        Me.CrystalReportViewer1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
         Me.CrystalReportViewer1.ReportSource = Me.Informe_Storage_final1
-        Me.CrystalReportViewer1.Size = New System.Drawing.Size(1079, 541)
+        Me.CrystalReportViewer1.Size = New System.Drawing.Size(809, 440)
         Me.CrystalReportViewer1.TabIndex = 0
+        Me.CrystalReportViewer1.ToolPanelWidth = 150
         '
         'CR_Informe_Storage
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1079, 541)
+        Me.ClientSize = New System.Drawing.Size(809, 440)
         Me.Controls.Add(Me.CrystalReportViewer1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "CR_Informe_Storage"
-        Me.Text = "Compras y Storage"
+        Me.Text = "Guías v/s Facturas Petróleo"
         Me.ResumeLayout(False)
 
     End Sub

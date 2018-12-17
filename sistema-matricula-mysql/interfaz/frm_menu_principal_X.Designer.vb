@@ -144,6 +144,8 @@ Partial Class frm_menu_principal_X
         Me.Label39 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TabPage58 = New System.Windows.Forms.TabPage()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.btnEstadoPago = New System.Windows.Forms.Button()
         Me.Label32 = New System.Windows.Forms.Label()
         Me.cboObras = New System.Windows.Forms.ComboBox()
         Me.btnFacturasFirmadas = New System.Windows.Forms.Button()
@@ -178,6 +180,39 @@ Partial Class frm_menu_principal_X
         Me.lblObra2 = New System.Windows.Forms.Label()
         Me.txtNombreArchivo = New System.Windows.Forms.TextBox()
         Me.TabPage59 = New System.Windows.Forms.TabPage()
+        Me.gbContrato = New System.Windows.Forms.GroupBox()
+        Me.txtidContratoOriginal = New System.Windows.Forms.TextBox()
+        Me.gbModificacionesFirmadas = New System.Windows.Forms.GroupBox()
+        Me.DgvModificaciones = New System.Windows.Forms.DataGridView()
+        Me.txtxNroModificacionModificaciones = New System.Windows.Forms.TextBox()
+        Me.Label42 = New System.Windows.Forms.Label()
+        Me.Label43 = New System.Windows.Forms.Label()
+        Me.txtUsuarioModificaciones = New System.Windows.Forms.TextBox()
+        Me.Label44 = New System.Windows.Forms.Label()
+        Me.txtFechaAdjuntoModificaciones = New System.Windows.Forms.TextBox()
+        Me.txtObraModificaciones = New System.Windows.Forms.TextBox()
+        Me.Label45 = New System.Windows.Forms.Label()
+        Me.Label46 = New System.Windows.Forms.Label()
+        Me.Label47 = New System.Windows.Forms.Label()
+        Me.txtNombreAdjuntoModificaciones = New System.Windows.Forms.TextBox()
+        Me.Button70 = New System.Windows.Forms.Button()
+        Me.dgvContratoOriginal = New System.Windows.Forms.DataGridView()
+        Me.Label35 = New System.Windows.Forms.Label()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.Label36 = New System.Windows.Forms.Label()
+        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.Label37 = New System.Windows.Forms.Label()
+        Me.Label40 = New System.Windows.Forms.Label()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.TextBox14 = New System.Windows.Forms.TextBox()
+        Me.Button68 = New System.Windows.Forms.Button()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.Button65 = New System.Windows.Forms.Button()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Button66 = New System.Windows.Forms.Button()
+        Me.Button67 = New System.Windows.Forms.Button()
         Me.TabPage60 = New System.Windows.Forms.TabPage()
         Me.TabPage61 = New System.Windows.Forms.TabPage()
         Me.TabPage62 = New System.Windows.Forms.TabPage()
@@ -418,8 +453,7 @@ Partial Class frm_menu_principal_X
         Me.SaveFileDialog3 = New System.Windows.Forms.SaveFileDialog()
         Me.SaveFileDialogFacturasFirmadas = New System.Windows.Forms.SaveFileDialog()
         Me.SaveFileDialogEP = New System.Windows.Forms.SaveFileDialog()
-        Me.btnEstadoPago = New System.Windows.Forms.Button()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.txtIdModificacionesContrato = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage10.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -435,6 +469,11 @@ Partial Class frm_menu_principal_X
         CType(Me.dgvFacturasAdjunto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbPagoFirmadoAdjunto.SuspendLayout()
         CType(Me.dgvAdjuntosPagosFirmados, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage59.SuspendLayout()
+        Me.gbContrato.SuspendLayout()
+        Me.gbModificacionesFirmadas.SuspendLayout()
+        CType(Me.DgvModificaciones, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvContratoOriginal, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage9.SuspendLayout()
         Me.TabControl8.SuspendLayout()
         Me.TabPage8.SuspendLayout()
@@ -1998,6 +2037,27 @@ Partial Class frm_menu_principal_X
         Me.TabPage58.Text = "Estados de Pago Mandante"
         Me.TabPage58.UseVisualStyleBackColor = True
         '
+        'TextBox8
+        '
+        Me.TextBox8.BackColor = System.Drawing.Color.Aquamarine
+        Me.TextBox8.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox8.Location = New System.Drawing.Point(3, 19)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(597, 26)
+        Me.TextBox8.TabIndex = 46
+        Me.TextBox8.Text = "Informes Estados de Pago Mandante"
+        Me.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'btnEstadoPago
+        '
+        Me.btnEstadoPago.Font = New System.Drawing.Font("Calibri", 11.25!)
+        Me.btnEstadoPago.Location = New System.Drawing.Point(50, 203)
+        Me.btnEstadoPago.Name = "btnEstadoPago"
+        Me.btnEstadoPago.Size = New System.Drawing.Size(135, 44)
+        Me.btnEstadoPago.TabIndex = 45
+        Me.btnEstadoPago.Text = "Generar Resumen E.P. Mandante"
+        Me.btnEstadoPago.UseVisualStyleBackColor = True
+        '
         'Label32
         '
         Me.Label32.AutoSize = True
@@ -2331,12 +2391,351 @@ Partial Class frm_menu_principal_X
         'TabPage59
         '
         Me.TabPage59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TabPage59.Controls.Add(Me.gbContrato)
+        Me.TabPage59.Controls.Add(Me.TextBox9)
+        Me.TabPage59.Controls.Add(Me.Button65)
+        Me.TabPage59.Controls.Add(Me.Label34)
+        Me.TabPage59.Controls.Add(Me.ComboBox1)
+        Me.TabPage59.Controls.Add(Me.Button66)
+        Me.TabPage59.Controls.Add(Me.Button67)
         Me.TabPage59.Location = New System.Drawing.Point(4, 38)
         Me.TabPage59.Name = "TabPage59"
         Me.TabPage59.Size = New System.Drawing.Size(1382, 503)
         Me.TabPage59.TabIndex = 6
         Me.TabPage59.Text = "Contrato y Mod. de Obra"
         Me.TabPage59.UseVisualStyleBackColor = True
+        '
+        'gbContrato
+        '
+        Me.gbContrato.Controls.Add(Me.txtidContratoOriginal)
+        Me.gbContrato.Controls.Add(Me.gbModificacionesFirmadas)
+        Me.gbContrato.Controls.Add(Me.dgvContratoOriginal)
+        Me.gbContrato.Controls.Add(Me.Label35)
+        Me.gbContrato.Controls.Add(Me.TextBox10)
+        Me.gbContrato.Controls.Add(Me.Label36)
+        Me.gbContrato.Controls.Add(Me.TextBox12)
+        Me.gbContrato.Controls.Add(Me.TextBox13)
+        Me.gbContrato.Controls.Add(Me.Label37)
+        Me.gbContrato.Controls.Add(Me.Label40)
+        Me.gbContrato.Controls.Add(Me.Label41)
+        Me.gbContrato.Controls.Add(Me.TextBox14)
+        Me.gbContrato.Controls.Add(Me.Button68)
+        Me.gbContrato.Location = New System.Drawing.Point(620, 12)
+        Me.gbContrato.Name = "gbContrato"
+        Me.gbContrato.Size = New System.Drawing.Size(592, 368)
+        Me.gbContrato.TabIndex = 53
+        Me.gbContrato.TabStop = False
+        Me.gbContrato.Text = "Contrato Original"
+        Me.gbContrato.Visible = False
+        '
+        'txtidContratoOriginal
+        '
+        Me.txtidContratoOriginal.Location = New System.Drawing.Point(471, 36)
+        Me.txtidContratoOriginal.Name = "txtidContratoOriginal"
+        Me.txtidContratoOriginal.Size = New System.Drawing.Size(100, 23)
+        Me.txtidContratoOriginal.TabIndex = 55
+        Me.txtidContratoOriginal.Visible = False
+        '
+        'gbModificacionesFirmadas
+        '
+        Me.gbModificacionesFirmadas.Controls.Add(Me.txtIdModificacionesContrato)
+        Me.gbModificacionesFirmadas.Controls.Add(Me.DgvModificaciones)
+        Me.gbModificacionesFirmadas.Controls.Add(Me.txtxNroModificacionModificaciones)
+        Me.gbModificacionesFirmadas.Controls.Add(Me.Label42)
+        Me.gbModificacionesFirmadas.Controls.Add(Me.Label43)
+        Me.gbModificacionesFirmadas.Controls.Add(Me.txtUsuarioModificaciones)
+        Me.gbModificacionesFirmadas.Controls.Add(Me.Label44)
+        Me.gbModificacionesFirmadas.Controls.Add(Me.txtFechaAdjuntoModificaciones)
+        Me.gbModificacionesFirmadas.Controls.Add(Me.txtObraModificaciones)
+        Me.gbModificacionesFirmadas.Controls.Add(Me.Label45)
+        Me.gbModificacionesFirmadas.Controls.Add(Me.Label46)
+        Me.gbModificacionesFirmadas.Controls.Add(Me.Label47)
+        Me.gbModificacionesFirmadas.Controls.Add(Me.txtNombreAdjuntoModificaciones)
+        Me.gbModificacionesFirmadas.Controls.Add(Me.Button70)
+        Me.gbModificacionesFirmadas.Location = New System.Drawing.Point(0, 0)
+        Me.gbModificacionesFirmadas.Name = "gbModificacionesFirmadas"
+        Me.gbModificacionesFirmadas.Size = New System.Drawing.Size(592, 368)
+        Me.gbModificacionesFirmadas.TabIndex = 54
+        Me.gbModificacionesFirmadas.TabStop = False
+        Me.gbModificacionesFirmadas.Text = "Información de Adjuntos"
+        '
+        'DgvModificaciones
+        '
+        Me.DgvModificaciones.AllowUserToAddRows = False
+        Me.DgvModificaciones.AllowUserToDeleteRows = False
+        Me.DgvModificaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DgvModificaciones.Location = New System.Drawing.Point(0, 143)
+        Me.DgvModificaciones.Name = "DgvModificaciones"
+        Me.DgvModificaciones.ReadOnly = True
+        Me.DgvModificaciones.Size = New System.Drawing.Size(592, 216)
+        Me.DgvModificaciones.TabIndex = 28
+        '
+        'txtxNroModificacionModificaciones
+        '
+        Me.txtxNroModificacionModificaciones.Enabled = False
+        Me.txtxNroModificacionModificaciones.Location = New System.Drawing.Point(149, 113)
+        Me.txtxNroModificacionModificaciones.Name = "txtxNroModificacionModificaciones"
+        Me.txtxNroModificacionModificaciones.Size = New System.Drawing.Size(195, 23)
+        Me.txtxNroModificacionModificaciones.TabIndex = 27
+        '
+        'Label42
+        '
+        Me.Label42.AutoSize = True
+        Me.Label42.Location = New System.Drawing.Point(6, 113)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(106, 17)
+        Me.Label42.TabIndex = 26
+        Me.Label42.Text = "N° Modificación"
+        '
+        'Label43
+        '
+        Me.Label43.AutoSize = True
+        Me.Label43.Location = New System.Drawing.Point(400, 117)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(0, 17)
+        Me.Label43.TabIndex = 25
+        Me.Label43.Visible = False
+        '
+        'txtUsuarioModificaciones
+        '
+        Me.txtUsuarioModificaciones.Enabled = False
+        Me.txtUsuarioModificaciones.Location = New System.Drawing.Point(149, 143)
+        Me.txtUsuarioModificaciones.Name = "txtUsuarioModificaciones"
+        Me.txtUsuarioModificaciones.Size = New System.Drawing.Size(195, 23)
+        Me.txtUsuarioModificaciones.TabIndex = 24
+        Me.txtUsuarioModificaciones.Visible = False
+        '
+        'Label44
+        '
+        Me.Label44.AutoSize = True
+        Me.Label44.Location = New System.Drawing.Point(6, 152)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(91, 17)
+        Me.Label44.TabIndex = 23
+        Me.Label44.Text = "Responsable"
+        Me.Label44.Visible = False
+        '
+        'txtFechaAdjuntoModificaciones
+        '
+        Me.txtFechaAdjuntoModificaciones.Enabled = False
+        Me.txtFechaAdjuntoModificaciones.Location = New System.Drawing.Point(149, 72)
+        Me.txtFechaAdjuntoModificaciones.Name = "txtFechaAdjuntoModificaciones"
+        Me.txtFechaAdjuntoModificaciones.Size = New System.Drawing.Size(195, 23)
+        Me.txtFechaAdjuntoModificaciones.TabIndex = 22
+        '
+        'txtObraModificaciones
+        '
+        Me.txtObraModificaciones.Enabled = False
+        Me.txtObraModificaciones.Location = New System.Drawing.Point(149, 33)
+        Me.txtObraModificaciones.Name = "txtObraModificaciones"
+        Me.txtObraModificaciones.Size = New System.Drawing.Size(195, 23)
+        Me.txtObraModificaciones.TabIndex = 20
+        '
+        'Label45
+        '
+        Me.Label45.AutoSize = True
+        Me.Label45.Location = New System.Drawing.Point(6, 75)
+        Me.Label45.Name = "Label45"
+        Me.Label45.Size = New System.Drawing.Size(115, 17)
+        Me.Label45.TabIndex = 19
+        Me.Label45.Text = "Fecha Adjuntado"
+        '
+        'Label46
+        '
+        Me.Label46.AutoSize = True
+        Me.Label46.Location = New System.Drawing.Point(6, 36)
+        Me.Label46.Name = "Label46"
+        Me.Label46.Size = New System.Drawing.Size(40, 17)
+        Me.Label46.TabIndex = 17
+        Me.Label46.Text = "Obra"
+        '
+        'Label47
+        '
+        Me.Label47.AutoSize = True
+        Me.Label47.Location = New System.Drawing.Point(6, 172)
+        Me.Label47.Name = "Label47"
+        Me.Label47.Size = New System.Drawing.Size(133, 17)
+        Me.Label47.TabIndex = 15
+        Me.Label47.Text = "Nombre del Adjunto"
+        Me.Label47.Visible = False
+        '
+        'txtNombreAdjuntoModificaciones
+        '
+        Me.txtNombreAdjuntoModificaciones.Enabled = False
+        Me.txtNombreAdjuntoModificaciones.Location = New System.Drawing.Point(149, 170)
+        Me.txtNombreAdjuntoModificaciones.Name = "txtNombreAdjuntoModificaciones"
+        Me.txtNombreAdjuntoModificaciones.Size = New System.Drawing.Size(195, 23)
+        Me.txtNombreAdjuntoModificaciones.TabIndex = 16
+        Me.txtNombreAdjuntoModificaciones.Visible = False
+        '
+        'Button70
+        '
+        Me.Button70.Location = New System.Drawing.Point(376, 36)
+        Me.Button70.Name = "Button70"
+        Me.Button70.Size = New System.Drawing.Size(89, 26)
+        Me.Button70.TabIndex = 13
+        Me.Button70.Text = "Descargar"
+        Me.Button70.UseVisualStyleBackColor = True
+        '
+        'dgvContratoOriginal
+        '
+        Me.dgvContratoOriginal.AllowUserToAddRows = False
+        Me.dgvContratoOriginal.AllowUserToDeleteRows = False
+        Me.dgvContratoOriginal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvContratoOriginal.Location = New System.Drawing.Point(6, 184)
+        Me.dgvContratoOriginal.Name = "dgvContratoOriginal"
+        Me.dgvContratoOriginal.ReadOnly = True
+        Me.dgvContratoOriginal.Size = New System.Drawing.Size(376, 178)
+        Me.dgvContratoOriginal.TabIndex = 26
+        '
+        'Label35
+        '
+        Me.Label35.AutoSize = True
+        Me.Label35.Location = New System.Drawing.Point(400, 117)
+        Me.Label35.Name = "Label35"
+        Me.Label35.Size = New System.Drawing.Size(0, 17)
+        Me.Label35.TabIndex = 25
+        Me.Label35.Visible = False
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Enabled = False
+        Me.TextBox10.Location = New System.Drawing.Point(149, 131)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(195, 23)
+        Me.TextBox10.TabIndex = 24
+        Me.TextBox10.Visible = False
+        '
+        'Label36
+        '
+        Me.Label36.AutoSize = True
+        Me.Label36.Location = New System.Drawing.Point(6, 137)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(91, 17)
+        Me.Label36.TabIndex = 23
+        Me.Label36.Text = "Responsable"
+        Me.Label36.Visible = False
+        '
+        'TextBox12
+        '
+        Me.TextBox12.Enabled = False
+        Me.TextBox12.Location = New System.Drawing.Point(149, 83)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.Size = New System.Drawing.Size(195, 23)
+        Me.TextBox12.TabIndex = 22
+        '
+        'TextBox13
+        '
+        Me.TextBox13.Enabled = False
+        Me.TextBox13.Location = New System.Drawing.Point(149, 48)
+        Me.TextBox13.Name = "TextBox13"
+        Me.TextBox13.Size = New System.Drawing.Size(195, 23)
+        Me.TextBox13.TabIndex = 20
+        '
+        'Label37
+        '
+        Me.Label37.AutoSize = True
+        Me.Label37.Location = New System.Drawing.Point(6, 86)
+        Me.Label37.Name = "Label37"
+        Me.Label37.Size = New System.Drawing.Size(115, 17)
+        Me.Label37.TabIndex = 19
+        Me.Label37.Text = "Fecha Adjuntado"
+        '
+        'Label40
+        '
+        Me.Label40.AutoSize = True
+        Me.Label40.Location = New System.Drawing.Point(10, 51)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(40, 17)
+        Me.Label40.TabIndex = 17
+        Me.Label40.Text = "Obra"
+        '
+        'Label41
+        '
+        Me.Label41.AutoSize = True
+        Me.Label41.Location = New System.Drawing.Point(10, 146)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(133, 17)
+        Me.Label41.TabIndex = 15
+        Me.Label41.Text = "Nombre del Adjunto"
+        Me.Label41.Visible = False
+        '
+        'TextBox14
+        '
+        Me.TextBox14.Enabled = False
+        Me.TextBox14.Location = New System.Drawing.Point(149, 143)
+        Me.TextBox14.Name = "TextBox14"
+        Me.TextBox14.Size = New System.Drawing.Size(195, 23)
+        Me.TextBox14.TabIndex = 16
+        Me.TextBox14.Visible = False
+        '
+        'Button68
+        '
+        Me.Button68.Location = New System.Drawing.Point(376, 36)
+        Me.Button68.Name = "Button68"
+        Me.Button68.Size = New System.Drawing.Size(89, 26)
+        Me.Button68.TabIndex = 13
+        Me.Button68.Text = "Descargar"
+        Me.Button68.UseVisualStyleBackColor = True
+        '
+        'TextBox9
+        '
+        Me.TextBox9.BackColor = System.Drawing.Color.Aquamarine
+        Me.TextBox9.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox9.Location = New System.Drawing.Point(3, 12)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(597, 26)
+        Me.TextBox9.TabIndex = 52
+        Me.TextBox9.Text = "Informes Estados de Pago Mandante"
+        Me.TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Button65
+        '
+        Me.Button65.Font = New System.Drawing.Font("Calibri", 11.25!)
+        Me.Button65.Location = New System.Drawing.Point(50, 196)
+        Me.Button65.Name = "Button65"
+        Me.Button65.Size = New System.Drawing.Size(135, 44)
+        Me.Button65.TabIndex = 51
+        Me.Button65.Text = "Generar Resumen Modificaciones"
+        Me.Button65.UseVisualStyleBackColor = True
+        '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.Location = New System.Drawing.Point(47, 105)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(40, 17)
+        Me.Label34.TabIndex = 50
+        Me.Label34.Text = "Obra"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(234, 106)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(292, 25)
+        Me.ComboBox1.TabIndex = 49
+        '
+        'Button66
+        '
+        Me.Button66.Font = New System.Drawing.Font("Calibri", 11.25!)
+        Me.Button66.Location = New System.Drawing.Point(389, 195)
+        Me.Button66.Name = "Button66"
+        Me.Button66.Size = New System.Drawing.Size(137, 45)
+        Me.Button66.TabIndex = 48
+        Me.Button66.Text = "Ver Facturas Firmadas"
+        Me.Button66.UseVisualStyleBackColor = True
+        '
+        'Button67
+        '
+        Me.Button67.Font = New System.Drawing.Font("Calibri", 11.25!)
+        Me.Button67.Location = New System.Drawing.Point(234, 195)
+        Me.Button67.Name = "Button67"
+        Me.Button67.Size = New System.Drawing.Size(118, 45)
+        Me.Button67.TabIndex = 47
+        Me.Button67.Text = "Ver Contrato Original"
+        Me.Button67.UseVisualStyleBackColor = True
         '
         'TabPage60
         '
@@ -5181,26 +5580,13 @@ Partial Class frm_menu_principal_X
         '
         Me.SaveFileDialogEP.Filter = "PDF files (*.pdf)|*.pdf"
         '
-        'btnEstadoPago
+        'txtIdModificacionesContrato
         '
-        Me.btnEstadoPago.Font = New System.Drawing.Font("Calibri", 11.25!)
-        Me.btnEstadoPago.Location = New System.Drawing.Point(50, 203)
-        Me.btnEstadoPago.Name = "btnEstadoPago"
-        Me.btnEstadoPago.Size = New System.Drawing.Size(135, 44)
-        Me.btnEstadoPago.TabIndex = 45
-        Me.btnEstadoPago.Text = "Generar Resumen E.P. Mandante"
-        Me.btnEstadoPago.UseVisualStyleBackColor = True
-        '
-        'TextBox8
-        '
-        Me.TextBox8.BackColor = System.Drawing.Color.Aquamarine
-        Me.TextBox8.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(3, 19)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(597, 26)
-        Me.TextBox8.TabIndex = 46
-        Me.TextBox8.Text = "Informes Estados de Pago Mandante"
-        Me.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtIdModificacionesContrato.Location = New System.Drawing.Point(351, 81)
+        Me.txtIdModificacionesContrato.Name = "txtIdModificacionesContrato"
+        Me.txtIdModificacionesContrato.Size = New System.Drawing.Size(100, 23)
+        Me.txtIdModificacionesContrato.TabIndex = 54
+        Me.txtIdModificacionesContrato.Visible = False
         '
         'frm_menu_principal_X
         '
@@ -5246,6 +5632,14 @@ Partial Class frm_menu_principal_X
         Me.gbPagoFirmadoAdjunto.ResumeLayout(False)
         Me.gbPagoFirmadoAdjunto.PerformLayout()
         CType(Me.dgvAdjuntosPagosFirmados, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage59.ResumeLayout(False)
+        Me.TabPage59.PerformLayout()
+        Me.gbContrato.ResumeLayout(False)
+        Me.gbContrato.PerformLayout()
+        Me.gbModificacionesFirmadas.ResumeLayout(False)
+        Me.gbModificacionesFirmadas.PerformLayout()
+        CType(Me.DgvModificaciones, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvContratoOriginal, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage9.ResumeLayout(False)
         Me.TabControl8.ResumeLayout(False)
         Me.TabPage8.ResumeLayout(False)
@@ -5298,9 +5692,9 @@ Partial Class frm_menu_principal_X
         Me.GroupBox4.PerformLayout()
         CType(Me.dgv_arrendador, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Me.PerformLayout
 
-    End Sub
+End Sub
     Friend WithEvents lbl_nombre_obra As System.Windows.Forms.Label
     Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
@@ -5697,4 +6091,38 @@ Partial Class frm_menu_principal_X
     Friend WithEvents SaveFileDialogEP As System.Windows.Forms.SaveFileDialog
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
     Friend WithEvents btnEstadoPago As System.Windows.Forms.Button
+    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
+    Friend WithEvents Button65 As System.Windows.Forms.Button
+    Friend WithEvents Label34 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Button66 As System.Windows.Forms.Button
+    Friend WithEvents Button67 As System.Windows.Forms.Button
+    Friend WithEvents gbContrato As System.Windows.Forms.GroupBox
+    Friend WithEvents dgvContratoOriginal As System.Windows.Forms.DataGridView
+    Friend WithEvents Label35 As System.Windows.Forms.Label
+    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
+    Friend WithEvents Label36 As System.Windows.Forms.Label
+    Friend WithEvents TextBox12 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox13 As System.Windows.Forms.TextBox
+    Friend WithEvents Label37 As System.Windows.Forms.Label
+    Friend WithEvents Label40 As System.Windows.Forms.Label
+    Friend WithEvents Label41 As System.Windows.Forms.Label
+    Friend WithEvents TextBox14 As System.Windows.Forms.TextBox
+    Friend WithEvents Button68 As System.Windows.Forms.Button
+    Friend WithEvents gbModificacionesFirmadas As System.Windows.Forms.GroupBox
+    Friend WithEvents DgvModificaciones As System.Windows.Forms.DataGridView
+    Friend WithEvents txtxNroModificacionModificaciones As System.Windows.Forms.TextBox
+    Friend WithEvents Label42 As System.Windows.Forms.Label
+    Friend WithEvents Label43 As System.Windows.Forms.Label
+    Friend WithEvents txtUsuarioModificaciones As System.Windows.Forms.TextBox
+    Friend WithEvents Label44 As System.Windows.Forms.Label
+    Friend WithEvents txtFechaAdjuntoModificaciones As System.Windows.Forms.TextBox
+    Friend WithEvents txtObraModificaciones As System.Windows.Forms.TextBox
+    Friend WithEvents Label45 As System.Windows.Forms.Label
+    Friend WithEvents Label46 As System.Windows.Forms.Label
+    Friend WithEvents Label47 As System.Windows.Forms.Label
+    Friend WithEvents txtNombreAdjuntoModificaciones As System.Windows.Forms.TextBox
+    Friend WithEvents Button70 As System.Windows.Forms.Button
+    Friend WithEvents txtidContratoOriginal As System.Windows.Forms.TextBox
+    Friend WithEvents txtIdModificacionesContrato As System.Windows.Forms.TextBox
 End Class

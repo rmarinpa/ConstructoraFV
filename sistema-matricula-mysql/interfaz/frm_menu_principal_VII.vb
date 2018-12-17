@@ -194,8 +194,6 @@ Public Class frm_menu_principal_VII
                 If txtNroModificacion.Text >= 0 Or txtAumentoObra.Text >= 0 Or txtDisminucionObra.Text >= 0 Or txtObraExtraordinaria.Text >= 0 Or txtAumentoDisminucion.Text >= 0 Then
                     If modificaciones.RegistroExistente(obras, nromodificacion) = False Then
                         modificaciones.InsertarlistadoModificaciones(obras, nromodificacion, fecha, aumentoObra, disminucionObra, obraExtraordinaria, aumentoDisminucion, retencion, proforma)
-
-                        actualizar_dgvListado()
                         LimpiarListado()
                         BloquearListado()
                         btnAgregar.Enabled = False
@@ -203,6 +201,9 @@ Public Class frm_menu_principal_VII
                         btnNuevo.Enabled = True
                         btnModificar.Enabled = True
                         btnEliminar.Enabled = True
+                        actualizar_dgvListado()
+                        Actualizar_dgvContrato()
+                        Actualizar_dgvModificacion()
                     Else
                         MsgBox("Registro ya existente", MsgBoxStyle.Exclamation)
                     End If
@@ -211,8 +212,7 @@ Public Class frm_menu_principal_VII
                 If txtNroModificacion.Text > 0 Or txtAumentoObra.Text > 0 Or txtDisminucionObra.Text > 0 Or txtObraExtraordinaria.Text > 0 Or txtAumentoDisminucion.Text > 0 Then
                     If modificaciones.RegistroExistente(obras, nromodificacion) = True Then
                         idModificaciones = txtIdModificaciones.Text
-                        modificaciones.ModificarListado(idModificaciones, obras, nromodificacion, fecha, aumentoObra, disminucionObra, obraExtraordinaria, aumentoDisminucion, retencion, proforma)
-                        actualizar_dgvListado()
+                        modificaciones.ModificarListado(idModificaciones, obras, nromodificacion, fecha, aumentoObra, disminucionObra, obraExtraordinaria, aumentoDisminucion)
                         LimpiarListado()
                         BloquearListado()
                         btnAgregar.Enabled = False
@@ -220,6 +220,9 @@ Public Class frm_menu_principal_VII
                         btnNuevo.Enabled = True
                         btnModificar.Enabled = True
                         btnEliminar.Enabled = True
+                        actualizar_dgvListado()
+                        Actualizar_dgvContrato()
+                        Actualizar_dgvModificacion()
                     Else
                         MsgBox("Registro ya existente", MsgBoxStyle.Exclamation)
                     End If
@@ -433,9 +436,10 @@ Public Class frm_menu_principal_VII
                 Try
                     idModificaciones = txtIdModificaciones.Text
                     modificaciones.Eliminar(idModificaciones)
-
-                    actualizar_dgvListado()
                     LimpiarListado()
+                    actualizar_dgvListado()
+                    Actualizar_dgvContrato()
+                    Actualizar_dgvModificacion()
                 Catch ex As Exception
                     MsgBox(ex.Message)
                 End Try
@@ -894,7 +898,7 @@ Public Class frm_menu_principal_VII
         End If
     End Sub
 
-    Private Sub DgvModificaciones_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DgvModificaciones.CellMouseClick
+    Private Sub DgvModificaciones_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs)
         Try
             Dim index As Integer
             index = e.RowIndex
@@ -915,7 +919,7 @@ Public Class frm_menu_principal_VII
         End Try
     End Sub
 
-    Private Sub dgvContratoOriginal_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles dgvContratoOriginal.CellMouseClick
+    Private Sub dgvContratoOriginal_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs)
         Try
             Dim index As Integer
             index = e.RowIndex
@@ -926,24 +930,29 @@ Public Class frm_menu_principal_VII
             txtNombreArchivo.Text = selectRow.Cells(5).Value.ToString()
             txtUsuarioArchivo.Text = selectRow.Cells(3).Value.ToString()
             txtFechaAdjuntadoArchivo.Text = selectRow.Cells(4).Value()
-
-
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
     End Sub
 
     Private Sub txtAumentoDisminucion_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtAumentoDisminucion.KeyPress
-        'Condicional que evalua que la tecla pulsada sea un número si no lo es mostrará un MSGBOX con una orden de que teclées sólo números
 
-        If Char.IsNumber(e.KeyChar) Then
-            e.Handled = False
-        ElseIf Char.IsControl(e.KeyChar) Then
-            e.Handled = False
-        ElseIf Char.IsSeparator(e.KeyChar) Then
-            e.Handled = False
-        Else : e.Handled = True
+        If Char.IsLetter(e.KeyChar) Then
+            e.Handled = True
         End If
+
+        'Comentado, proque puede ser un número negativo.
+
+        'Condicional que evalua que la tecla pulsada sea un número positivo si no lo es mostrará un MSGBOX con una orden de que teclées sólo números
+
+        'If Char.IsNumber(e.KeyChar) Then
+        '    e.Handled = False
+        'ElseIf Char.IsControl(e.KeyChar) Then
+        '    e.Handled = False
+        'ElseIf Char.IsSeparator(e.KeyChar) Then
+        '    e.Handled = False
+        'Else : e.Handled = True
+        'End If
     End Sub
 
     Private Sub txtRetenciones_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtRetenciones.KeyPress

@@ -24,10 +24,10 @@ Partial Class frm_menu_principal_V_V2
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_menu_principal_V_V2))
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.lbl_nombre_obra = New System.Windows.Forms.Label()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -213,14 +213,15 @@ Partial Class frm_menu_principal_V_V2
         Me.TextBox28 = New System.Windows.Forms.TextBox()
         Me.TabPage20 = New System.Windows.Forms.TabPage()
         Me.btn_eliminar7 = New System.Windows.Forms.Button()
+        Me.cmb_7_facturas = New System.Windows.Forms.ComboBox()
         Me.btn_editar7 = New System.Windows.Forms.Button()
         Me.btn_guardar7 = New System.Windows.Forms.Button()
         Me.btn_nuevo7 = New System.Windows.Forms.Button()
         Me.btn_cancelar7 = New System.Windows.Forms.Button()
         Me.dgv_7_storage = New System.Windows.Forms.DataGridView()
         Me.GroupBox9 = New System.Windows.Forms.GroupBox()
+        Me.txt_7_precio = New System.Windows.Forms.TextBox()
         Me.Label36 = New System.Windows.Forms.Label()
-        Me.cmb_7_facturas = New System.Windows.Forms.ComboBox()
         Me.txt_7_num_guia = New System.Windows.Forms.TextBox()
         Me.Label34 = New System.Windows.Forms.Label()
         Me.dtp_7_fecha = New System.Windows.Forms.DateTimePicker()
@@ -242,6 +243,7 @@ Partial Class frm_menu_principal_V_V2
         Me.Label51 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.informes = New System.Windows.Forms.TabPage()
+        Me.dgv_8_equipos = New System.Windows.Forms.DataGridView()
         Me.dtp_8_fecha_final = New System.Windows.Forms.DateTimePicker()
         Me.dtp_8_fecha_inicial = New System.Windows.Forms.DateTimePicker()
         Me.btn_8_rendimiento = New System.Windows.Forms.Button()
@@ -331,7 +333,7 @@ Partial Class frm_menu_principal_V_V2
         Me.OpenFileDialog2 = New System.Windows.Forms.OpenFileDialog()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.OpenFileDialog7 = New System.Windows.Forms.OpenFileDialog()
-        Me.txt_7_precio = New System.Windows.Forms.TextBox()
+        Me.btn_stock = New System.Windows.Forms.Button()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage9.SuspendLayout()
         Me.TabControl8.SuspendLayout()
@@ -365,6 +367,7 @@ Partial Class frm_menu_principal_V_V2
         CType(Me.dgv_9_stock, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox6.SuspendLayout()
         Me.informes.SuspendLayout()
+        CType(Me.dgv_8_equipos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl11.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -1828,34 +1831,34 @@ Partial Class frm_menu_principal_V_V2
         Me.dgv_datosAgregados.AllowUserToAddRows = False
         Me.dgv_datosAgregados.AllowUserToDeleteRows = False
         Me.dgv_datosAgregados.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle13.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Transparent
-        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_datosAgregados.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Transparent
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_datosAgregados.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgv_datosAgregados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv_datosAgregados.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Id, Me.Fecha, Me.Column1, Me.Column2, Me.Column14, Me.Column12, Me.id_modifica, Me.id_equipo, Me.version, Me.id_sincroniza, Me.btn_eliminar})
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgv_datosAgregados.DefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgv_datosAgregados.DefaultCellStyle = DataGridViewCellStyle3
         Me.dgv_datosAgregados.Location = New System.Drawing.Point(4, 178)
         Me.dgv_datosAgregados.Name = "dgv_datosAgregados"
-        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle16.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_datosAgregados.RowHeadersDefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_datosAgregados.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.dgv_datosAgregados.RowHeadersVisible = False
         Me.dgv_datosAgregados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
         Me.dgv_datosAgregados.Size = New System.Drawing.Size(1128, 316)
@@ -1876,8 +1879,8 @@ Partial Class frm_menu_principal_V_V2
         '
         'Column1
         '
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        Me.Column1.DefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        Me.Column1.DefaultCellStyle = DataGridViewCellStyle2
         Me.Column1.HeaderText = "Equipo"
         Me.Column1.Name = "Column1"
         Me.Column1.ReadOnly = True
@@ -2698,6 +2701,16 @@ Partial Class frm_menu_principal_V_V2
         Me.btn_eliminar7.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btn_eliminar7.UseVisualStyleBackColor = False
         '
+        'cmb_7_facturas
+        '
+        Me.cmb_7_facturas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmb_7_facturas.FormattingEnabled = True
+        Me.cmb_7_facturas.Location = New System.Drawing.Point(23, 375)
+        Me.cmb_7_facturas.Name = "cmb_7_facturas"
+        Me.cmb_7_facturas.Size = New System.Drawing.Size(24, 25)
+        Me.cmb_7_facturas.TabIndex = 26
+        Me.cmb_7_facturas.Visible = False
+        '
         'btn_editar7
         '
         Me.btn_editar7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
@@ -2784,6 +2797,14 @@ Partial Class frm_menu_principal_V_V2
         Me.GroupBox9.TabStop = False
         Me.GroupBox9.Text = "Registro de Guías"
         '
+        'txt_7_precio
+        '
+        Me.txt_7_precio.Location = New System.Drawing.Point(94, 108)
+        Me.txt_7_precio.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_7_precio.Name = "txt_7_precio"
+        Me.txt_7_precio.Size = New System.Drawing.Size(209, 23)
+        Me.txt_7_precio.TabIndex = 28
+        '
         'Label36
         '
         Me.Label36.AutoSize = True
@@ -2793,16 +2814,6 @@ Partial Class frm_menu_principal_V_V2
         Me.Label36.Size = New System.Drawing.Size(48, 17)
         Me.Label36.TabIndex = 27
         Me.Label36.Text = "Precio"
-        '
-        'cmb_7_facturas
-        '
-        Me.cmb_7_facturas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmb_7_facturas.FormattingEnabled = True
-        Me.cmb_7_facturas.Location = New System.Drawing.Point(23, 375)
-        Me.cmb_7_facturas.Name = "cmb_7_facturas"
-        Me.cmb_7_facturas.Size = New System.Drawing.Size(24, 25)
-        Me.cmb_7_facturas.TabIndex = 26
-        Me.cmb_7_facturas.Visible = False
         '
         'txt_7_num_guia
         '
@@ -3037,6 +3048,8 @@ Partial Class frm_menu_principal_V_V2
         'informes
         '
         Me.informes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.informes.Controls.Add(Me.btn_stock)
+        Me.informes.Controls.Add(Me.dgv_8_equipos)
         Me.informes.Controls.Add(Me.dtp_8_fecha_final)
         Me.informes.Controls.Add(Me.dtp_8_fecha_inicial)
         Me.informes.Controls.Add(Me.btn_8_rendimiento)
@@ -3060,6 +3073,17 @@ Partial Class frm_menu_principal_V_V2
         Me.informes.Text = "Informes de Petróleo"
         Me.informes.UseVisualStyleBackColor = True
         '
+        'dgv_8_equipos
+        '
+        Me.dgv_8_equipos.AllowUserToAddRows = False
+        Me.dgv_8_equipos.AllowUserToDeleteRows = False
+        Me.dgv_8_equipos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv_8_equipos.Location = New System.Drawing.Point(3, 40)
+        Me.dgv_8_equipos.Name = "dgv_8_equipos"
+        Me.dgv_8_equipos.ReadOnly = True
+        Me.dgv_8_equipos.Size = New System.Drawing.Size(10, 10)
+        Me.dgv_8_equipos.TabIndex = 1220
+        '
         'dtp_8_fecha_final
         '
         Me.dtp_8_fecha_final.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
@@ -3082,7 +3106,7 @@ Partial Class frm_menu_principal_V_V2
         '
         Me.btn_8_rendimiento.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.btn_8_rendimiento.ForeColor = System.Drawing.Color.Black
-        Me.btn_8_rendimiento.Location = New System.Drawing.Point(220, 305)
+        Me.btn_8_rendimiento.Location = New System.Drawing.Point(32, 302)
         Me.btn_8_rendimiento.Name = "btn_8_rendimiento"
         Me.btn_8_rendimiento.Size = New System.Drawing.Size(155, 45)
         Me.btn_8_rendimiento.TabIndex = 10
@@ -3093,23 +3117,24 @@ Partial Class frm_menu_principal_V_V2
         '
         Me.btn_8_storage.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.btn_8_storage.ForeColor = System.Drawing.Color.Black
-        Me.btn_8_storage.Location = New System.Drawing.Point(32, 302)
+        Me.btn_8_storage.Location = New System.Drawing.Point(32, 251)
         Me.btn_8_storage.Name = "btn_8_storage"
         Me.btn_8_storage.Size = New System.Drawing.Size(155, 45)
         Me.btn_8_storage.TabIndex = 9
-        Me.btn_8_storage.Text = "Informe Storage"
+        Me.btn_8_storage.Text = "Guías v/s Facturas Petróleo"
         Me.btn_8_storage.UseVisualStyleBackColor = False
         '
         'btn_8_libro_combustible
         '
         Me.btn_8_libro_combustible.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.btn_8_libro_combustible.ForeColor = System.Drawing.Color.Black
-        Me.btn_8_libro_combustible.Location = New System.Drawing.Point(220, 254)
+        Me.btn_8_libro_combustible.Location = New System.Drawing.Point(462, 165)
         Me.btn_8_libro_combustible.Name = "btn_8_libro_combustible"
         Me.btn_8_libro_combustible.Size = New System.Drawing.Size(155, 45)
         Me.btn_8_libro_combustible.TabIndex = 8
         Me.btn_8_libro_combustible.Text = "Libro Combustible Diesel"
         Me.btn_8_libro_combustible.UseVisualStyleBackColor = False
+        Me.btn_8_libro_combustible.Visible = False
         '
         'txt_8_stock_anterior
         '
@@ -3120,6 +3145,7 @@ Partial Class frm_menu_principal_V_V2
         Me.txt_8_stock_anterior.Size = New System.Drawing.Size(90, 23)
         Me.txt_8_stock_anterior.TabIndex = 2
         Me.txt_8_stock_anterior.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txt_8_stock_anterior.Visible = False
         '
         'Label33
         '
@@ -3129,39 +3155,41 @@ Partial Class frm_menu_principal_V_V2
         Me.Label33.Size = New System.Drawing.Size(101, 17)
         Me.Label33.TabIndex = 2
         Me.Label33.Text = "Stock Anterior:"
+        Me.Label33.Visible = False
         '
         'btn_8_cuentas_contables
         '
         Me.btn_8_cuentas_contables.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.btn_8_cuentas_contables.ForeColor = System.Drawing.Color.Black
-        Me.btn_8_cuentas_contables.Location = New System.Drawing.Point(32, 251)
+        Me.btn_8_cuentas_contables.Location = New System.Drawing.Point(32, 200)
         Me.btn_8_cuentas_contables.Name = "btn_8_cuentas_contables"
         Me.btn_8_cuentas_contables.Size = New System.Drawing.Size(155, 45)
         Me.btn_8_cuentas_contables.TabIndex = 7
-        Me.btn_8_cuentas_contables.Text = "Cuentas Contables"
+        Me.btn_8_cuentas_contables.Text = "Dist. de Petróleo por Cuentas Contables"
         Me.btn_8_cuentas_contables.UseVisualStyleBackColor = False
         '
         'btn_8_diesel_completo
         '
         Me.btn_8_diesel_completo.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.btn_8_diesel_completo.ForeColor = System.Drawing.Color.Black
-        Me.btn_8_diesel_completo.Location = New System.Drawing.Point(220, 199)
+        Me.btn_8_diesel_completo.Location = New System.Drawing.Point(220, 200)
         Me.btn_8_diesel_completo.Name = "btn_8_diesel_completo"
         Me.btn_8_diesel_completo.Size = New System.Drawing.Size(155, 45)
         Me.btn_8_diesel_completo.TabIndex = 6
-        Me.btn_8_diesel_completo.Text = "Diesel Completo"
+        Me.btn_8_diesel_completo.Text = "Distribución Diaria del Petróleo por Máquina"
         Me.btn_8_diesel_completo.UseVisualStyleBackColor = False
         '
         'btn_8_compras_y_cons
         '
         Me.btn_8_compras_y_cons.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.btn_8_compras_y_cons.ForeColor = System.Drawing.Color.Black
-        Me.btn_8_compras_y_cons.Location = New System.Drawing.Point(32, 199)
+        Me.btn_8_compras_y_cons.Location = New System.Drawing.Point(462, 216)
         Me.btn_8_compras_y_cons.Name = "btn_8_compras_y_cons"
         Me.btn_8_compras_y_cons.Size = New System.Drawing.Size(155, 45)
         Me.btn_8_compras_y_cons.TabIndex = 5
         Me.btn_8_compras_y_cons.Text = "Informe de Compras y Consumo de Petróleo"
         Me.btn_8_compras_y_cons.UseVisualStyleBackColor = False
+        Me.btn_8_compras_y_cons.Visible = False
         '
         'btn_8_libro_compras
         '
@@ -3182,7 +3210,7 @@ Partial Class frm_menu_principal_V_V2
         Me.btn_8_diesel_mensual.Name = "btn_8_diesel_mensual"
         Me.btn_8_diesel_mensual.Size = New System.Drawing.Size(155, 45)
         Me.btn_8_diesel_mensual.TabIndex = 4
-        Me.btn_8_diesel_mensual.Text = "Diesel Mensual"
+        Me.btn_8_diesel_mensual.Text = "Petróleo Mensual Según Rec. del IE"
         Me.btn_8_diesel_mensual.UseVisualStyleBackColor = False
         '
         'Label38
@@ -4089,13 +4117,16 @@ Partial Class frm_menu_principal_V_V2
         Me.OpenFileDialog7.FileName = "OpenFileDialog7"
         Me.OpenFileDialog7.Filter = "PDF files (*.pdf)|*.pdf"
         '
-        'txt_7_precio
+        'btn_stock
         '
-        Me.txt_7_precio.Location = New System.Drawing.Point(94, 108)
-        Me.txt_7_precio.Margin = New System.Windows.Forms.Padding(2)
-        Me.txt_7_precio.Name = "txt_7_precio"
-        Me.txt_7_precio.Size = New System.Drawing.Size(209, 23)
-        Me.txt_7_precio.TabIndex = 28
+        Me.btn_stock.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btn_stock.ForeColor = System.Drawing.Color.Black
+        Me.btn_stock.Location = New System.Drawing.Point(220, 251)
+        Me.btn_stock.Name = "btn_stock"
+        Me.btn_stock.Size = New System.Drawing.Size(155, 45)
+        Me.btn_stock.TabIndex = 1221
+        Me.btn_stock.Text = "Stock Medido v/s Stock Teórico"
+        Me.btn_stock.UseVisualStyleBackColor = False
         '
         'frm_menu_principal_V_V2
         '
@@ -4163,6 +4194,7 @@ Partial Class frm_menu_principal_V_V2
         Me.GroupBox6.PerformLayout()
         Me.informes.ResumeLayout(False)
         Me.informes.PerformLayout()
+        CType(Me.dgv_8_equipos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl11.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
@@ -4492,4 +4524,6 @@ Partial Class frm_menu_principal_V_V2
     Friend WithEvents dtp_9_fecha As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label50 As System.Windows.Forms.Label
     Friend WithEvents txt_7_precio As System.Windows.Forms.TextBox
+    Friend WithEvents dgv_8_equipos As System.Windows.Forms.DataGridView
+    Friend WithEvents btn_stock As System.Windows.Forms.Button
 End Class

@@ -104,4 +104,19 @@ Public Class Identificacion_obra
         Return listar2
     End Function
 
+    Public Function LeerRetencionesProformas(ByVal obra As String) As DataTable
+        Try
+            nue_var.dt = New DataTable
+            nue_conexion.conectar()
+            nue_var.da = New MySqlDataAdapter("select retenciones, proforma from identificacion_obra where nombre_faena = '" & obra & "' ", nue_conexion.conex())
+            nue_var.da.Fill(nue_var.dt)
+            nue_conexion.desconectar()
+            LeerRetencionesProformas = nue_var.dt
+            Return LeerRetencionesProformas
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            nue_conexion.desconectar()
+        End Try
+    End Function
+
 End Class

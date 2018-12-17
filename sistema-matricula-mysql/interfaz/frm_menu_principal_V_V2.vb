@@ -803,7 +803,9 @@ Public Class frm_menu_principal_V_V2
         dgv_7_storage.Columns(7).HeaderText = "Fecha"
         dgv_7_storage.Columns(7).Width = 100
         dgv_7_storage.Columns(8).Visible = False
-        dgv_7_storage.Columns(9).Visible = False
+        dgv_7_storage.Columns(9).HeaderText = "Precio"
+        dgv_7_storage.Columns(9).Width = 100
+        dgv_7_storage.Columns(9).DefaultCellStyle.Format = "##,###.##"
         dgv_7_storage.AllowUserToOrderColumns = True
     End Sub
 
@@ -829,27 +831,33 @@ Public Class frm_menu_principal_V_V2
         End If
     End Sub
     Private Sub dgv_3_trabajos_adicionales_MouseClick(sender As Object, e As MouseEventArgs) Handles dgv_3_compras.MouseClick
-        limpiar3()
-        bloquear3()
-        limpiar4()
-        bloquear4()
+        Try
+            limpiar3()
+            bloquear3()
+            limpiar4()
+            bloquear4()
 
-        Cod_3 = dgv_3_compras.CurrentRow.Cells(0).Value.ToString()
+            Cod_3 = dgv_3_compras.CurrentRow.Cells(0).Value.ToString()
 
-        dtp_3_fecha.Text = dgv_3_compras.CurrentRow.Cells(5).Value.ToString()
-        txt_3_num_factura.Text = dgv_3_compras.CurrentRow.Cells(6).Value.ToString()
-        txt_3_proveedor.Text = dgv_3_compras.CurrentRow.Cells(7).Value.ToString()
-        txt_3_rut.Text = dgv_3_compras.CurrentRow.Cells(8).Value.ToString()
-        txt_3_litros.Text = dgv_3_compras.CurrentRow.Cells(9).Value.ToString()
-        txt_3_adm.Text = dgv_3_compras.CurrentRow.Cells(10).Value.ToString()
+            dtp_3_fecha.Text = dgv_3_compras.CurrentRow.Cells(5).Value.ToString()
+            txt_3_num_factura.Text = dgv_3_compras.CurrentRow.Cells(6).Value.ToString()
+            txt_3_proveedor.Text = dgv_3_compras.CurrentRow.Cells(7).Value.ToString()
+            txt_3_rut.Text = dgv_3_compras.CurrentRow.Cells(8).Value.ToString()
+            txt_3_litros.Text = dgv_3_compras.CurrentRow.Cells(9).Value.ToString()
+            txt_3_adm.Text = dgv_3_compras.CurrentRow.Cells(10).Value.ToString()
 
-        sincroniza_local3 = CInt(dgv_3_compras.CurrentRow.Cells(1).Value.ToString())
-        version_mod3 = CInt(dgv_3_compras.CurrentRow.Cells(2).Value.ToString())
-        sincroniza_mod3 = 2
+            sincroniza_local3 = CInt(dgv_3_compras.CurrentRow.Cells(1).Value.ToString())
+            version_mod3 = CInt(dgv_3_compras.CurrentRow.Cells(2).Value.ToString())
+            sincroniza_mod3 = 2
 
-        If Cod_3 <> "" Then
-            actualizar_dgv4()
-        End If
+            If Cod_3 <> "" Then
+                actualizar_dgv4()
+            End If
+
+        Catch
+
+
+        End Try
     End Sub
     Private Sub TabPage4_Enter(sender As Object, e As EventArgs) Handles TabPage4.Enter
         num_tab = 1
@@ -883,13 +891,13 @@ Public Class frm_menu_principal_V_V2
             txt_3_precio.Clear()
         End If
 
-        If IsNumeric(Me.txt_3_adm.Text) And IsNumeric(Me.txt_4_litros.Text) And IsNumeric(Me.txt_3_iev.Text) And IsNumeric(Me.txt_3_ief.Text) And IsNumeric(Me.txt_3_precio.Text) And IsNumeric(Me.txt_3_descuento.Text) Then
+        If IsNumeric(Me.txt_4_litros.Text) And IsNumeric(Me.txt_3_iev.Text) And IsNumeric(Me.txt_3_ief.Text) And IsNumeric(Me.txt_3_precio.Text) And IsNumeric(Me.txt_3_descuento.Text) Then
             txt_3_total_iev.Text = CDbl(Me.txt_4_litros.Text) * CDbl(Me.txt_3_iev.Text)
             txt_3_total_ief.Text = CDbl(Me.txt_4_litros.Text) * CDbl(Me.txt_3_ief.Text)
             txt_3_precio_base.Text = (CDbl(Me.txt_3_precio.Text) - CDbl(Me.txt_3_iev.Text) - CDbl(Me.txt_3_ief.Text) - CDbl(Me.txt_3_descuento.Text)) / 1.19
             txt_3_total.Text = CDbl(Me.txt_3_precio_base.Text) * CDbl(Me.txt_4_litros.Text)
             txt_3_total_iva.Text = 0.19 * CDbl(Me.txt_3_total.Text)
-            txt_3_total_compra.Text = CDbl(Me.txt_3_total.Text) + CDbl(Me.txt_3_total_iev.Text) + CDbl(Me.txt_3_total_ief.Text) + CDbl(Me.txt_3_total_iva.Text) + CDbl(Me.txt_3_adm.Text)
+            txt_3_total_compra.Text = CDbl(Me.txt_3_total.Text) + CDbl(Me.txt_3_total_iev.Text) + CDbl(Me.txt_3_total_ief.Text) + CDbl(Me.txt_3_total_iva.Text)
 
             txt_3_total_iev.Text = FormatNumber(txt_3_total_iev.Text, 0)
             txt_3_total_ief.Text = FormatNumber(txt_3_total_ief.Text, 0)
@@ -905,13 +913,13 @@ Public Class frm_menu_principal_V_V2
             txt_3_iev.Clear()
         End If
 
-        If IsNumeric(Me.txt_3_adm.Text) And IsNumeric(Me.txt_4_litros.Text) And IsNumeric(Me.txt_3_iev.Text) And IsNumeric(Me.txt_3_ief.Text) And IsNumeric(Me.txt_3_precio.Text) And IsNumeric(Me.txt_3_descuento.Text) Then
+        If IsNumeric(Me.txt_4_litros.Text) And IsNumeric(Me.txt_3_iev.Text) And IsNumeric(Me.txt_3_ief.Text) And IsNumeric(Me.txt_3_precio.Text) And IsNumeric(Me.txt_3_descuento.Text) Then
             txt_3_total_iev.Text = CDbl(Me.txt_4_litros.Text) * CDbl(Me.txt_3_iev.Text)
             txt_3_total_ief.Text = CDbl(Me.txt_4_litros.Text) * CDbl(Me.txt_3_ief.Text)
             txt_3_precio_base.Text = (CDbl(Me.txt_3_precio.Text) - CDbl(Me.txt_3_iev.Text) - CDbl(Me.txt_3_ief.Text) - CDbl(Me.txt_3_descuento.Text)) / 1.19
             txt_3_total.Text = CDbl(Me.txt_3_precio_base.Text) * CDbl(Me.txt_4_litros.Text)
             txt_3_total_iva.Text = 0.19 * CDbl(Me.txt_3_total.Text)
-            txt_3_total_compra.Text = CDbl(Me.txt_3_total.Text) + CDbl(Me.txt_3_total_iev.Text) + CDbl(Me.txt_3_total_ief.Text) + CDbl(Me.txt_3_total_iva.Text) + CDbl(Me.txt_3_adm.Text)
+            txt_3_total_compra.Text = CDbl(Me.txt_3_total.Text) + CDbl(Me.txt_3_total_iev.Text) + CDbl(Me.txt_3_total_ief.Text) + CDbl(Me.txt_3_total_iva.Text)
 
             txt_3_total_iev.Text = FormatNumber(txt_3_total_iev.Text, 0)
             txt_3_total_ief.Text = FormatNumber(txt_3_total_ief.Text, 0)
@@ -927,13 +935,13 @@ Public Class frm_menu_principal_V_V2
             txt_3_ief.Clear()
         End If
 
-        If IsNumeric(Me.txt_3_adm.Text) And IsNumeric(Me.txt_4_litros.Text) And IsNumeric(Me.txt_3_iev.Text) And IsNumeric(Me.txt_3_ief.Text) And IsNumeric(Me.txt_3_precio.Text) And IsNumeric(Me.txt_3_descuento.Text) Then
+        If IsNumeric(Me.txt_4_litros.Text) And IsNumeric(Me.txt_3_iev.Text) And IsNumeric(Me.txt_3_ief.Text) And IsNumeric(Me.txt_3_precio.Text) And IsNumeric(Me.txt_3_descuento.Text) Then
             txt_3_total_iev.Text = CDbl(Me.txt_4_litros.Text) * CDbl(Me.txt_3_iev.Text)
             txt_3_total_ief.Text = CDbl(Me.txt_4_litros.Text) * CDbl(Me.txt_3_ief.Text)
             txt_3_precio_base.Text = (CDbl(Me.txt_3_precio.Text) - CDbl(Me.txt_3_iev.Text) - CDbl(Me.txt_3_ief.Text) - CDbl(Me.txt_3_descuento.Text)) / 1.19
             txt_3_total.Text = CDbl(Me.txt_3_precio_base.Text) * CDbl(Me.txt_4_litros.Text)
             txt_3_total_iva.Text = 0.19 * CDbl(Me.txt_3_total.Text)
-            txt_3_total_compra.Text = CDbl(Me.txt_3_total.Text) + CDbl(Me.txt_3_total_iev.Text) + CDbl(Me.txt_3_total_ief.Text) + CDbl(Me.txt_3_total_iva.Text) + CDbl(Me.txt_3_adm.Text)
+            txt_3_total_compra.Text = CDbl(Me.txt_3_total.Text) + CDbl(Me.txt_3_total_iev.Text) + CDbl(Me.txt_3_total_ief.Text) + CDbl(Me.txt_3_total_iva.Text)
 
             txt_3_total_iev.Text = FormatNumber(txt_3_total_iev.Text, 0)
             txt_3_total_ief.Text = FormatNumber(txt_3_total_ief.Text, 0)
@@ -950,13 +958,13 @@ Public Class frm_menu_principal_V_V2
         End If
 
 
-        If IsNumeric(Me.txt_3_adm.Text) And IsNumeric(Me.txt_4_litros.Text) And IsNumeric(Me.txt_3_iev.Text) And IsNumeric(Me.txt_3_ief.Text) And IsNumeric(Me.txt_3_precio.Text) And IsNumeric(Me.txt_3_descuento.Text) Then
+        If IsNumeric(Me.txt_4_litros.Text) And IsNumeric(Me.txt_3_iev.Text) And IsNumeric(Me.txt_3_ief.Text) And IsNumeric(Me.txt_3_precio.Text) And IsNumeric(Me.txt_3_descuento.Text) Then
             txt_3_total_iev.Text = CDbl(Me.txt_4_litros.Text) * CDbl(Me.txt_3_iev.Text)
             txt_3_total_ief.Text = CDbl(Me.txt_4_litros.Text) * CDbl(Me.txt_3_ief.Text)
             txt_3_precio_base.Text = (CDbl(Me.txt_3_precio.Text) - CDbl(Me.txt_3_iev.Text) - CDbl(Me.txt_3_ief.Text) - CDbl(Me.txt_3_descuento.Text)) / 1.19
             txt_3_total.Text = CDbl(Me.txt_3_precio_base.Text) * CDbl(Me.txt_4_litros.Text)
             txt_3_total_iva.Text = 0.19 * CDbl(Me.txt_3_total.Text)
-            txt_3_total_compra.Text = CDbl(Me.txt_3_total.Text) + CDbl(Me.txt_3_total_iev.Text) + CDbl(Me.txt_3_total_ief.Text) + CDbl(Me.txt_3_total_iva.Text) + CDbl(Me.txt_3_adm.Text)
+            txt_3_total_compra.Text = CDbl(Me.txt_3_total.Text) + CDbl(Me.txt_3_total_iev.Text) + CDbl(Me.txt_3_total_ief.Text) + CDbl(Me.txt_3_total_iva.Text)
 
             txt_3_total_iev.Text = FormatNumber(txt_3_total_iev.Text, 0)
             txt_3_total_ief.Text = FormatNumber(txt_3_total_ief.Text, 0)
@@ -1082,16 +1090,20 @@ Public Class frm_menu_principal_V_V2
     End Sub
 
     Private Sub dgv_7_storage_MouseClick(sender As Object, e As MouseEventArgs) Handles dgv_7_storage.MouseClick
-        Cod_7 = dgv_7_storage.CurrentRow.Cells(0).Value.ToString()
+        Try
+            Cod_7 = dgv_7_storage.CurrentRow.Cells(0).Value.ToString()
 
-        txt_7_num_guia.Text = dgv_7_storage.CurrentRow.Cells(5).Value.ToString()
-        dtp_7_fecha.Text = dgv_7_storage.CurrentRow.Cells(7).Value.ToString()
-        txt_7_litros.Text = dgv_7_storage.CurrentRow.Cells(6).Value.ToString()
-        txt_7_precio.Text = dgv_7_storage.CurrentRow.Cells(9).Value.ToString()
+            txt_7_num_guia.Text = dgv_7_storage.CurrentRow.Cells(5).Value.ToString()
+            dtp_7_fecha.Text = dgv_7_storage.CurrentRow.Cells(7).Value.ToString()
+            txt_7_litros.Text = dgv_7_storage.CurrentRow.Cells(6).Value.ToString()
+            txt_7_precio.Text = dgv_7_storage.CurrentRow.Cells(9).Value.ToString()
 
-        sincroniza_local7 = CInt(dgv_7_storage.CurrentRow.Cells(1).Value.ToString())
-        version_mod7 = CInt(dgv_7_storage.CurrentRow.Cells(2).Value.ToString())
-        sincroniza_mod7 = 2
+            sincroniza_local7 = CInt(dgv_7_storage.CurrentRow.Cells(1).Value.ToString())
+            version_mod7 = CInt(dgv_7_storage.CurrentRow.Cells(2).Value.ToString())
+            sincroniza_mod7 = 2
+        Catch
+
+        End Try
     End Sub
 
     Private Sub btn_8_diesel_mensual_Click(sender As Object, e As EventArgs) Handles btn_8_diesel_mensual.Click
@@ -1110,7 +1122,32 @@ Public Class frm_menu_principal_V_V2
         End If
     End Sub
     Private Sub btn_8_diesel_completo_Click(sender As Object, e As EventArgs) Handles btn_8_diesel_completo.Click
-        If IsDate(dtp_8_fecha_inicial.Text) And IsDate(dtp_8_fecha_final.Text) Then
+        Dim fecha_inicial, fecha_final As Date
+
+        fecha_inicial = CDate(dtp_8_fecha_inicial.Text)
+        fecha_final = CDate(dtp_8_fecha_final.Text)
+
+        If IsDate(dtp_8_fecha_inicial.Text) And IsDate(dtp_8_fecha_final.Text) And fecha_final >= fecha_inicial Then
+            nue_obra7.listar5()
+            dgv_8_equipos.DataSource = nue_obra2.listar2_reports(id_obra)
+
+            If dgv_8_equipos.Rows.Count > 0 Then
+                For i = 0 To dgv_8_equipos.Rows.Count - 1
+
+                    fecha_inicial = CDate(dtp_8_fecha_inicial.Text)
+                    fecha_final = CDate(dtp_8_fecha_final.Text).AddDays(+1)
+
+                    While fecha_inicial <> fecha_final
+
+                        nue_obra9.insertar_filtro(fecha_inicial, id_obra, dgv_8_equipos.Rows(i).Cells(4).Value.ToString(), dgv_8_equipos.Rows(i).Cells(13).Value.ToString(), dgv_8_equipos.Rows(i).Cells(14).Value.ToString(), 0)
+
+                        fecha_inicial = fecha_inicial.AddDays(+1)
+                    End While
+                Next i
+            End If
+
+            MsgBox("INFORME GENERADO")
+
             CR_Diesel_Completo.Show()
         Else
             MsgBox("FALTAN DATOS PARA INGRESAR ", MsgBoxStyle.Critical)
@@ -1176,9 +1213,17 @@ Public Class frm_menu_principal_V_V2
             cmb_3_asociar_guia.ValueMember = "Id_storage"
         End Try
 
+        Try
+            txt_4_litros.Text = nue_obra3.litros_guia(cmb_3_asociar_guia.SelectedValue.ToString(), id_obra)
+        Catch
+            txt_4_litros.Text = 0
+        End Try
 
-        txt_4_litros.Text = nue_obra3.litros_guia(cmb_3_asociar_guia.SelectedValue.ToString(), id_obra)
-        txt_3_precio.Text = nue_obra3.precio_guia(cmb_3_asociar_guia.SelectedValue.ToString(), id_obra)
+        Try
+            txt_3_precio.Text = nue_obra3.precio_guia(cmb_3_asociar_guia.SelectedValue.ToString(), id_obra)
+        Catch
+            txt_3_precio.Text = 0
+        End Try
     End Sub
 
     Private Sub dgv_datosAgregados_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_datosAgregados.CellValueChanged
@@ -1216,21 +1261,21 @@ Public Class frm_menu_principal_V_V2
             txt_3_adm.Clear()
         End If
 
-        If IsNumeric(Me.txt_3_adm.Text) And IsNumeric(Me.txt_4_litros.Text) And IsNumeric(Me.txt_3_iev.Text) And IsNumeric(Me.txt_3_ief.Text) And IsNumeric(Me.txt_3_precio.Text) And IsNumeric(Me.txt_3_descuento.Text) Then
-            txt_3_total_iev.Text = CDbl(Me.txt_4_litros.Text) * CDbl(Me.txt_3_iev.Text)
-            txt_3_total_ief.Text = CDbl(Me.txt_4_litros.Text) * CDbl(Me.txt_3_ief.Text)
-            txt_3_precio_base.Text = (CDbl(Me.txt_3_precio.Text) - CDbl(Me.txt_3_iev.Text) - CDbl(Me.txt_3_ief.Text) - CDbl(Me.txt_3_descuento.Text)) / 1.19
-            txt_3_total.Text = CDbl(Me.txt_3_precio_base.Text) * CDbl(Me.txt_4_litros.Text)
-            txt_3_total_iva.Text = 0.19 * CDbl(Me.txt_3_total.Text)
-            txt_3_total_compra.Text = CDbl(Me.txt_3_total.Text) + CDbl(Me.txt_3_total_iev.Text) + CDbl(Me.txt_3_total_ief.Text) + CDbl(Me.txt_3_total_iva.Text) + CDbl(Me.txt_3_adm.Text)
+        'If IsNumeric(Me.txt_4_litros.Text) And IsNumeric(Me.txt_3_iev.Text) And IsNumeric(Me.txt_3_ief.Text) And IsNumeric(Me.txt_3_precio.Text) And IsNumeric(Me.txt_3_descuento.Text) Then
+        '    txt_3_total_iev.Text = CDbl(Me.txt_4_litros.Text) * CDbl(Me.txt_3_iev.Text)
+        '    txt_3_total_ief.Text = CDbl(Me.txt_4_litros.Text) * CDbl(Me.txt_3_ief.Text)
+        '    txt_3_precio_base.Text = (CDbl(Me.txt_3_precio.Text) - CDbl(Me.txt_3_iev.Text) - CDbl(Me.txt_3_ief.Text) - CDbl(Me.txt_3_descuento.Text)) / 1.19
+        '    txt_3_total.Text = CDbl(Me.txt_3_precio_base.Text) * CDbl(Me.txt_4_litros.Text)
+        '    txt_3_total_iva.Text = 0.19 * CDbl(Me.txt_3_total.Text)
+        '    txt_3_total_compra.Text = CDbl(Me.txt_3_total.Text) + CDbl(Me.txt_3_total_iev.Text) + CDbl(Me.txt_3_total_ief.Text) + CDbl(Me.txt_3_total_iva.Text)
 
-            txt_3_total_iev.Text = FormatNumber(txt_3_total_iev.Text, 0)
-            txt_3_total_ief.Text = FormatNumber(txt_3_total_ief.Text, 0)
-            txt_3_precio_base.Text = FormatNumber(txt_3_precio_base.Text, 2)
-            txt_3_total.Text = FormatNumber(txt_3_total.Text, 0)
-            txt_3_total_iva.Text = FormatNumber(txt_3_total_iva.Text, 0)
-            txt_3_total_compra.Text = FormatNumber(txt_3_total_compra.Text, 0)
-        End If
+        '    txt_3_total_iev.Text = FormatNumber(txt_3_total_iev.Text, 0)
+        '    txt_3_total_ief.Text = FormatNumber(txt_3_total_ief.Text, 0)
+        '    txt_3_precio_base.Text = FormatNumber(txt_3_precio_base.Text, 2)
+        '    txt_3_total.Text = FormatNumber(txt_3_total.Text, 0)
+        '    txt_3_total_iva.Text = FormatNumber(txt_3_total_iva.Text, 0)
+        '    txt_3_total_compra.Text = FormatNumber(txt_3_total_compra.Text, 0)
+        'End If
     End Sub
 
     Private Sub dgv_datosAgregados_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_datosAgregados.CellContentClick
@@ -1418,6 +1463,7 @@ Public Class frm_menu_principal_V_V2
                 End If
                 limpiar4()
                 bloquear4()
+                actualiza_guias()
             Else
                 MessageBox.Show("FALTAN CAMPOS POR LLENAR")
             End If
@@ -1457,22 +1503,26 @@ Public Class frm_menu_principal_V_V2
     End Sub
 
     Private Sub dgv_4_compras_MouseClick(sender As Object, e As MouseEventArgs) Handles dgv_4_compras.MouseClick
-        limpiar4()
-        bloquear4()
+        Try
+            limpiar4()
+            bloquear4()
 
-        Cod_4 = dgv_4_compras.CurrentRow.Cells(0).Value.ToString()
+            Cod_4 = dgv_4_compras.CurrentRow.Cells(0).Value.ToString()
 
-        actualiza_guias()
-        txt_3_precio.Text = dgv_4_compras.CurrentRow.Cells(8).Value.ToString()
-        txt_3_descuento.Text = dgv_4_compras.CurrentRow.Cells(9).Value.ToString()
-        txt_3_iev.Text = dgv_4_compras.CurrentRow.Cells(10).Value.ToString()
-        txt_3_ief.Text = dgv_4_compras.CurrentRow.Cells(11).Value.ToString()
+            actualiza_guias()
+            txt_3_precio.Text = dgv_4_compras.CurrentRow.Cells(8).Value.ToString()
+            txt_3_descuento.Text = dgv_4_compras.CurrentRow.Cells(9).Value.ToString()
+            txt_3_iev.Text = dgv_4_compras.CurrentRow.Cells(10).Value.ToString()
+            txt_3_ief.Text = dgv_4_compras.CurrentRow.Cells(11).Value.ToString()
 
-        sincroniza_local4 = CInt(dgv_4_compras.CurrentRow.Cells(1).Value.ToString())
-        version_mod4 = CInt(dgv_4_compras.CurrentRow.Cells(2).Value.ToString())
-        sincroniza_mod4 = 2
+            sincroniza_local4 = CInt(dgv_4_compras.CurrentRow.Cells(1).Value.ToString())
+            version_mod4 = CInt(dgv_4_compras.CurrentRow.Cells(2).Value.ToString())
+            sincroniza_mod4 = 2
 
-        cmb_3_asociar_guia.Text = dgv_4_compras.CurrentRow.Cells(5).Value.ToString()
+            cmb_3_asociar_guia.Text = dgv_4_compras.CurrentRow.Cells(5).Value.ToString()
+        Catch
+
+        End Try
     End Sub
 
     Private Sub txt_4_litros_TextChanged(sender As Object, e As EventArgs) Handles txt_4_litros.TextChanged
@@ -1588,19 +1638,31 @@ Public Class frm_menu_principal_V_V2
     End Sub
 
     Private Sub dgv_9_stock_MouseClick(sender As Object, e As MouseEventArgs) Handles dgv_9_stock.MouseClick
-        Cod_9 = dgv_9_stock.CurrentRow.Cells(0).Value.ToString()
+        Try
+            Cod_9 = dgv_9_stock.CurrentRow.Cells(0).Value.ToString()
 
-        dtp_9_fecha.Text = dgv_9_stock.CurrentRow.Cells(6).Value.ToString()
-        txt_9_litros.Text = dgv_9_stock.CurrentRow.Cells(5).Value.ToString()
+            dtp_9_fecha.Text = dgv_9_stock.CurrentRow.Cells(6).Value.ToString()
+            txt_9_litros.Text = dgv_9_stock.CurrentRow.Cells(5).Value.ToString()
 
-        sincroniza_local9 = CInt(dgv_9_stock.CurrentRow.Cells(1).Value.ToString())
-        version_mod9 = CInt(dgv_9_stock.CurrentRow.Cells(2).Value.ToString())
-        sincroniza_mod9 = 2
+            sincroniza_local9 = CInt(dgv_9_stock.CurrentRow.Cells(1).Value.ToString())
+            version_mod9 = CInt(dgv_9_stock.CurrentRow.Cells(2).Value.ToString())
+            sincroniza_mod9 = 2
+        Catch
+
+        End Try
     End Sub
 
     Private Sub txt_7_precio_TextChanged(sender As Object, e As EventArgs) Handles txt_7_precio.TextChanged
         If Not IsNumeric(txt_7_precio.Text) Then
             txt_7_precio.Clear()
+        End If
+    End Sub
+
+    Private Sub btn_stock_Click(sender As Object, e As EventArgs) Handles btn_stock.Click
+        If IsDate(dtp_8_fecha_inicial.Text) And IsDate(dtp_8_fecha_final.Text) Then
+            CR_Stock_Petroleo.Show()
+        Else
+            MsgBox("FALTAN DATOS PARA INGRESAR ", MsgBoxStyle.Critical)
         End If
     End Sub
 End Class

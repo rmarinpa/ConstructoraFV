@@ -27,7 +27,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>225</ApplicationRevision>
+    <ApplicationRevision>234</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -162,6 +162,12 @@
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="CrDiesel_Completo _v2.vb">
+      <DependentUpon>CrDiesel_Completo _v2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="CrDiesel_Completo_local.vb">
       <DependentUpon>CrDiesel_Completo_local.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -174,11 +180,53 @@
       <DependentUpon>CrDiesel_Completo.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Crrevision_petroleo_v2.vb">
+      <DependentUpon>Crrevision_petroleo_v2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Crrevision_rendimiento_Los_marios_v2.vb">
+      <DependentUpon>Crrevision_rendimiento_Los_marios_v2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Crrevision_rendimiento_Los_marios.vb">
       <DependentUpon>Crrevision_rendimiento_Los_marios.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CR_Cuentas_Contables4_v2.vb">
+      <DependentUpon>CR_Cuentas_Contables4_v2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CR_Cuentas_Contables4_v2_T.vb">
+      <DependentUpon>CR_Cuentas_Contables4_v2_T.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CR_EstadoPagoMandante.designer.vb">
+      <DependentUpon>CR_EstadoPagoMandante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_EstadoPagoMandante.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_ListadoContratoModificaciones.Designer.vb">
+      <DependentUpon>CR_ListadoContratoModificaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_ListadoContratoModificaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_Stock_Petroleo.Designer.vb">
+      <DependentUpon>CR_Stock_Petroleo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Stock_Petroleo.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="CR_Cuentas_Petroleo10.Designer.vb">
       <DependentUpon>CR_Cuentas_Petroleo10.vb</DependentUpon>
@@ -456,6 +504,17 @@
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="EstadoPagoMandante.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EstadoPagoMandante.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="EstadoPagoMandante2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EstadoPagoMandante2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Estado_de_pago_fechas_maq.vb">
       <DependentUpon>Estado_de_pago_fechas_maq.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -492,16 +551,16 @@
     <Compile Include="frm_menu_principal_V_V2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm_menu_principal_X.Designer.vb">
+      <DependentUpon>frm_menu_principal_X.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_principal_X.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_menu_principal_IV_V2.Designer.vb">
       <DependentUpon>frm_menu_principal_IV_V2.vb</DependentUpon>
     </Compile>
     <Compile Include="frm_menu_principal_IV_V2.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_menu_principal_X.designer.vb">
-      <DependentUpon>frm_menu_principal_X.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frm_menu_principal_X.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_menu_rendimientos10.Designer.vb">
@@ -509,6 +568,48 @@
     </Compile>
     <Compile Include="Frm_menu_rendimientos10.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informe_de_compras_y_consumo3_corregido2_v2.vb">
+      <DependentUpon>Informe_de_compras_y_consumo3_corregido2_v2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="informe_diesel3a_corregido3_v2.vb">
+      <DependentUpon>informe_diesel3a_corregido3_v2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Informe_Stock_v2.vb">
+      <DependentUpon>Informe_Stock_v2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Informe_Storage_final_v2.vb">
+      <DependentUpon>Informe_Storage_final_v2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Libro_compras_v2_cmt.vb">
+      <DependentUpon>Libro_compras_v2_cmt.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Libro_compras_v2.vb">
+      <DependentUpon>Libro_compras_v2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ListadoContratoModificaciones2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListadoContratoModificaciones2.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Listado_equipost.vb">
       <DependentUpon>Listado_equipost.rpt</DependentUpon>
@@ -718,6 +819,12 @@
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Resumen_Estado_de_pago_v2_fechas_ter_un.vb">
+      <DependentUpon>Resumen_Estado_de_pago_v2_fechas_ter_un.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Resumen_Estado_de_pago_v2_fechas_ter_ANT2.vb">
       <DependentUpon>Resumen_Estado_de_pago_v2_fechas_ter_ANT2.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -776,6 +883,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Boletas_consulta.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="CrDiesel_Completo _v2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrDiesel_Completo _v2.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="CrDiesel_Completo_local.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrDiesel_Completo_local.vb</LastGenOutput>
@@ -784,9 +895,34 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrDiesel_Completo.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Crrevision_petroleo_v2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crrevision_petroleo_v2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crrevision_rendimiento_Los_marios_v2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crrevision_rendimiento_Los_marios_v2.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Crrevision_rendimiento_Los_marios.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Crrevision_rendimiento_Los_marios.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Cuentas_Contables4_v2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Cuentas_Contables4_v2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Cuentas_Contables4_v2_T.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Cuentas_Contables4_v2_T.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_EstadoPagoMandante.resx">
+      <DependentUpon>CR_EstadoPagoMandante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_ListadoContratoModificaciones.resx">
+      <DependentUpon>CR_ListadoContratoModificaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Stock_Petroleo.resx">
+      <DependentUpon>CR_Stock_Petroleo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CR_Cuentas_Petroleo10.resx">
       <DependentUpon>CR_Cuentas_Petroleo10.vb</DependentUpon>
@@ -934,6 +1070,14 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CR_litros_petroleo.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="EstadoPagoMandante.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EstadoPagoMandante.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstadoPagoMandante2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EstadoPagoMandante2.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Estado_de_pago_fechas_maq.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Estado_de_pago_fechas_maq.vb</LastGenOutput>
@@ -950,14 +1094,42 @@
     <EmbeddedResource Include="frm_menu_principal_V_V2.resx">
       <DependentUpon>frm_menu_principal_V_V2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_menu_principal_IV_V2.resx">
-      <DependentUpon>frm_menu_principal_IV_V2.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frm_menu_principal_X.resx">
       <DependentUpon>frm_menu_principal_X.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_principal_IV_V2.resx">
+      <DependentUpon>frm_menu_principal_IV_V2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_menu_rendimientos10.resx">
       <DependentUpon>Frm_menu_rendimientos10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informe_de_compras_y_consumo3_corregido2_v2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Informe_de_compras_y_consumo3_corregido2_v2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informe_diesel3a_corregido3_v2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>informe_diesel3a_corregido3_v2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informe_Stock_v2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Informe_Stock_v2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informe_Storage_final_v2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Informe_Storage_final_v2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Libro_compras_v2_cmt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Libro_compras_v2_cmt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Libro_compras_v2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Libro_compras_v2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoContratoModificaciones2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListadoContratoModificaciones2.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Listado_equipost.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -1083,6 +1255,10 @@
     <EmbeddedResource Include="Resumen_Estado_de_pago_v2_fechas_selec.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Resumen_Estado_de_pago_v2_fechas_selec.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resumen_Estado_de_pago_v2_fechas_ter_un.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Resumen_Estado_de_pago_v2_fechas_ter_un.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resumen_Estado_de_pago_v2_fechas_ter_ANT2.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

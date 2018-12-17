@@ -9,6 +9,7 @@
             Dim fecha_consulta As Date
             Dim fecha_consulta_str As String
             Dim mes, ano As Integer
+            Dim id_subcontrato As Integer
 
 
             If Month(frm_menu_principal_IV_V2.dtp_8_fecha_inicial.Text) = 1 Then
@@ -25,10 +26,12 @@
             subcontratista = ArrCadena(0)
             subcontrato = ArrCadena(1)
 
+            id_subcontrato = CInt(frm_menu_principal_IV_V2.cmb_8_subcontrato.SelectedValue.ToString())
+
             Report1.SetParameterValue("fecha_actual", frm_menu_principal_IV_V2.dtp_8_fecha_inicial.Text)
             Report1.SetParameterValue("id_obra", id_obra)
-            Report1.SetParameterValue("rut", frm_menu_principal_IV_V2.cmb_8_subcontrato.SelectedValue.ToString())
-            Report1.SetParameterValue("tipo_subcontrato", subcontrato)
+            'Report1.SetParameterValue("rut", frm_menu_principal_IV_V2.cmb_8_subcontrato.SelectedValue.ToString())
+            Report1.SetParameterValue("codigo_subcontrato", id_subcontrato)
             Report1.SetParameterValue("n_ep", frm_menu_principal_IV_V2.txt_8_ep.Text)
             Report1.SetParameterValue("fecha_ant", fecha_consulta_str)
             Report1.SetParameterValue("nombre2", subcontratista)

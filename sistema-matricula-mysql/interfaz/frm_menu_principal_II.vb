@@ -600,57 +600,61 @@
         End If
     End Sub
     Private Sub dgv_1_faenas_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_1_faenas.CellClick
-        Cod_1 = dgv_1_faenas.CurrentRow.Cells(0).Value.ToString()
-        txt_1_nom_faena.Text = dgv_1_faenas.CurrentRow.Cells(5).Value.ToString()
-        txt_1_prof_residente.Text = dgv_1_faenas.CurrentRow.Cells(6).Value.ToString()
-        txt_1_rut_prof.Text = dgv_1_faenas.CurrentRow.Cells(7).Value.ToString()
-        txt_1_jefe.Text = dgv_1_faenas.CurrentRow.Cells(8).Value.ToString()
-        cmb_1_gerente.Text = dgv_1_faenas.CurrentRow.Cells(9).Value.ToString()
-        txt_1_mandante.Text = dgv_1_faenas.CurrentRow.Cells(10).Value.ToString()
-        txt_1_resol.Text = dgv_1_faenas.CurrentRow.Cells(11).Value.ToString()
-        dtp_1_res.Text = dgv_1_faenas.CurrentRow.Cells(12).Value.ToString()
-        dtp_1_inicio.Text = dgv_1_faenas.CurrentRow.Cells(13).Value.ToString()
-        txt_1_plazo.Text = dgv_1_faenas.CurrentRow.Cells(14).Value.ToString()
-        txt_1_monto.Text = dgv_1_faenas.CurrentRow.Cells(16).Value.ToString()
-        txt_1_det_obra.Text = dgv_1_faenas.CurrentRow.Cells(17).Value.ToString()
-        txt_1_retenciones.Text = dgv_1_faenas.CurrentRow.Cells(18).Value.ToString()
-        txt_1_proforma.Text = dgv_1_faenas.CurrentRow.Cells(19).Value.ToString()
+        Try
+            Cod_1 = dgv_1_faenas.CurrentRow.Cells(0).Value.ToString()
+            txt_1_nom_faena.Text = dgv_1_faenas.CurrentRow.Cells(5).Value.ToString()
+            txt_1_prof_residente.Text = dgv_1_faenas.CurrentRow.Cells(6).Value.ToString()
+            txt_1_rut_prof.Text = dgv_1_faenas.CurrentRow.Cells(7).Value.ToString()
+            txt_1_jefe.Text = dgv_1_faenas.CurrentRow.Cells(8).Value.ToString()
+            cmb_1_gerente.Text = dgv_1_faenas.CurrentRow.Cells(9).Value.ToString()
+            txt_1_mandante.Text = dgv_1_faenas.CurrentRow.Cells(10).Value.ToString()
+            txt_1_resol.Text = dgv_1_faenas.CurrentRow.Cells(11).Value.ToString()
+            dtp_1_res.Text = dgv_1_faenas.CurrentRow.Cells(12).Value.ToString()
+            dtp_1_inicio.Text = dgv_1_faenas.CurrentRow.Cells(13).Value.ToString()
+            txt_1_plazo.Text = dgv_1_faenas.CurrentRow.Cells(14).Value.ToString()
+            txt_1_monto.Text = dgv_1_faenas.CurrentRow.Cells(16).Value.ToString()
+            txt_1_det_obra.Text = dgv_1_faenas.CurrentRow.Cells(17).Value.ToString()
+            txt_1_retenciones.Text = dgv_1_faenas.CurrentRow.Cells(18).Value.ToString()
+            txt_1_proforma.Text = dgv_1_faenas.CurrentRow.Cells(19).Value.ToString()
 
-        sincroniza_local = CInt(dgv_1_faenas.CurrentRow.Cells(1).Value.ToString())
-        version_mod1 = CInt(dgv_1_faenas.CurrentRow.Cells(2).Value.ToString())
-        sincroniza_mod1 = 2
+            sincroniza_local = CInt(dgv_1_faenas.CurrentRow.Cells(1).Value.ToString())
+            version_mod1 = CInt(dgv_1_faenas.CurrentRow.Cells(2).Value.ToString())
+            sincroniza_mod1 = 2
 
 
-        If IsNumeric(txt_1_monto.Text) Then
-            txt_1_monto.Text = FormatNumber(txt_1_monto.Text, 0)
-        Else
-            txt_1_monto.Clear()
-        End If
+            If IsNumeric(txt_1_monto.Text) Then
+                txt_1_monto.Text = FormatNumber(txt_1_monto.Text, 0)
+            Else
+                txt_1_monto.Clear()
+            End If
 
-        If IsNumeric(txt_1_retenciones.Text) Then
-            txt_1_retenciones.Text = FormatNumber(txt_1_retenciones.Text, 0)
-        Else
-            txt_1_retenciones.Clear()
-        End If
+            If IsNumeric(txt_1_retenciones.Text) Then
+                txt_1_retenciones.Text = FormatNumber(txt_1_retenciones.Text, 0)
+            Else
+                txt_1_retenciones.Clear()
+            End If
 
-        If IsNumeric(txt_1_proforma.Text) Then
-            txt_1_proforma.Text = FormatNumber(txt_1_proforma.Text, 0)
-        Else
-            txt_1_proforma.Clear()
-        End If
+            If IsNumeric(txt_1_proforma.Text) Then
+                txt_1_proforma.Text = FormatNumber(txt_1_proforma.Text, 0)
+            Else
+                txt_1_proforma.Clear()
+            End If
 
-        Dim rut_ver As String
-        rut_ver = Limpiar(txt_1_rut_prof.Text)
-        If Len(rut_ver) < 8 Then
-            txt_1_rut_prof.Mask = ""
-        ElseIf Len(rut_ver) = 9 Then
-            txt_1_rut_prof.Mask = "00,000,000->a"
-        ElseIf Len(rut_ver) = 8 Then
-            txt_1_rut_prof.Mask = "0,000,000->a"
-        Else
-            txt_1_rut_prof.Mask = ""
-            txt_1_rut_prof.Clear()
-        End If
+            Dim rut_ver As String
+            rut_ver = Limpiar(txt_1_rut_prof.Text)
+            If Len(rut_ver) < 8 Then
+                txt_1_rut_prof.Mask = ""
+            ElseIf Len(rut_ver) = 9 Then
+                txt_1_rut_prof.Mask = "00,000,000->a"
+            ElseIf Len(rut_ver) = 8 Then
+                txt_1_rut_prof.Mask = "0,000,000->a"
+            Else
+                txt_1_rut_prof.Mask = ""
+                txt_1_rut_prof.Clear()
+            End If
+        Catch
+
+        End Try
     End Sub
 
     Sub actualizar_dgv2()
@@ -683,12 +687,16 @@
         dgv_3_uf.AllowUserToOrderColumns = True
     End Sub
     Private Sub dgv_2_cuentas_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles dgv_2_cuentas.CellMouseClick
-        Cod_2 = dgv_2_cuentas.CurrentRow.Cells(0).Value.ToString()
-        txt_2_cuenta.Text = dgv_2_cuentas.CurrentRow.Cells(5).Value.ToString()
-        txt_2_descripcion.Text = dgv_2_cuentas.CurrentRow.Cells(6).Value.ToString()
-        sincroniza_local2 = CInt(dgv_2_cuentas.CurrentRow.Cells(1).Value.ToString())
-        version_mod2 = CInt(dgv_2_cuentas.CurrentRow.Cells(2).Value.ToString())
-        sincroniza_mod2 = 2
+        Try
+            Cod_2 = dgv_2_cuentas.CurrentRow.Cells(0).Value.ToString()
+            txt_2_cuenta.Text = dgv_2_cuentas.CurrentRow.Cells(5).Value.ToString()
+            txt_2_descripcion.Text = dgv_2_cuentas.CurrentRow.Cells(6).Value.ToString()
+            sincroniza_local2 = CInt(dgv_2_cuentas.CurrentRow.Cells(1).Value.ToString())
+            version_mod2 = CInt(dgv_2_cuentas.CurrentRow.Cells(2).Value.ToString())
+            sincroniza_mod2 = 2
+
+        Catch
+        End Try
     End Sub
     Private Sub btn_sincronizar_Click(sender As Object, e As EventArgs) Handles btn_sincronizar.Click
         num_tab = 0
@@ -709,12 +717,16 @@
     End Sub
 
     Private Sub dgv_3_uf_MouseClick(sender As Object, e As MouseEventArgs) Handles dgv_3_uf.MouseClick
-        Cod_3 = dgv_3_uf.CurrentRow.Cells(0).Value.ToString()
-        dtp_3_actual.Text = dgv_3_uf.CurrentRow.Cells(5).Value.ToString()
-        txt_3_uf.Text = dgv_3_uf.CurrentRow.Cells(6).Value.ToString()
-        sincroniza_local3 = CInt(dgv_3_uf.CurrentRow.Cells(1).Value.ToString())
-        version_mod3 = CInt(dgv_3_uf.CurrentRow.Cells(2).Value.ToString())
-        sincroniza_mod3 = 2
+        Try
+            Cod_3 = dgv_3_uf.CurrentRow.Cells(0).Value.ToString()
+            dtp_3_actual.Text = dgv_3_uf.CurrentRow.Cells(5).Value.ToString()
+            txt_3_uf.Text = dgv_3_uf.CurrentRow.Cells(6).Value.ToString()
+            sincroniza_local3 = CInt(dgv_3_uf.CurrentRow.Cells(1).Value.ToString())
+            version_mod3 = CInt(dgv_3_uf.CurrentRow.Cells(2).Value.ToString())
+            sincroniza_mod3 = 2
+        Catch
+
+        End Try
     End Sub
     Private Sub TabPage4_Enter(sender As Object, e As EventArgs) Handles TabPage4.Enter
         num_tab = 1

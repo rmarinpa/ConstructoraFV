@@ -3,7 +3,7 @@ Public Class Contratos_Originales
     Dim nue_conexion As New conexion
     Dim nue_var As New variables
     Public Sub InsertarIngresodeContratoOriginal(ByVal obra As String, ByVal adjunto As String, ByVal usuario As String, ByVal fecha As DateTime)
-        nue_var.consulta = "INSERT INTO contratosoriginales(obra,adjunto,usuario,fecha) VALUES (?obra,?adjunto,?usuario,?fecha)"
+        nue_var.consulta = "INSERT INTO contratosOriginales(obra,adjunto,usuario,fecha) VALUES (?obra,?adjunto,?usuario,?fecha)"
         Try
             nue_conexion.conectar()
             nue_var.cmd = New MySqlCommand(nue_var.consulta, nue_conexion.conex())
@@ -38,7 +38,7 @@ Public Class Contratos_Originales
     End Function
 
     Public Sub EliminarContrato(ByVal id_contrato As Integer)
-        nue_var.consulta = "Delete from contratosoriginales WHERE id_contratosOriginales = " & id_contrato & ""
+        nue_var.consulta = "Delete from contratosOriginales WHERE id_contratosOriginales = " & id_contrato & ""
         Try
             nue_conexion.conectar()
             nue_var.cmd = New MySqlCommand(nue_var.consulta, nue_conexion.conex())

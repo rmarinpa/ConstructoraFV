@@ -33,6 +33,25 @@ Public Class stock
         End Try
     End Sub
 
+    Public Sub insertar_filtro(ByVal Fecha As Date, ByVal id_obra As Integer, ByVal id_equipo As Integer, ByVal codigo As String, ByVal Tipo_maquina As String, ByVal Litros_consumo As Double)
+        nue_var.consulta = "INSERT INTO fecha_filtro (Fecha, id_obra, id_equipo, codigo, Tipo_maquina, Litros_consumo) VALUES(?Fecha, ?id_obra, ?id_equipo, ?codigo, ?Tipo_maquina, ?Litros_consumo)"
+        Try
+            nue_conexion.conectar()
+            nue_var.cmd = New MySqlCommand(nue_var.consulta, nue_conexion.conex())
+            nue_var.cmd.Parameters.Add("?Fecha", MySql.Data.MySqlClient.MySqlDbType.Date).Value = Fecha
+            nue_var.cmd.Parameters.Add("?id_obra", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = id_obra
+            nue_var.cmd.Parameters.Add("?id_equipo", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = id_equipo
+            nue_var.cmd.Parameters.Add("?codigo", MySql.Data.MySqlClient.MySqlDbType.VarChar).Value = codigo
+            nue_var.cmd.Parameters.Add("?Tipo_maquina", MySql.Data.MySqlClient.MySqlDbType.VarChar).Value = Tipo_maquina
+            nue_var.cmd.Parameters.Add("?Litros_consumo", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Litros_consumo
+
+            nue_var.cmd.ExecuteNonQuery()
+            nue_conexion.desconectar()
+        Catch mierror As MySqlException
+            MsgBox("Error de Conexión a la Base de Datos: " & mierror.Message)
+        End Try
+    End Sub
+
     Public Sub modificar(ByVal Cod_adicional As Integer, ByVal sincroniza As Integer, ByVal version As Integer, ByVal nombre_obra As String, ByVal id_obra As Integer, ByVal Litros As Double, ByVal Fecha As Date)
         nue_var.consulta = "UPDATE tabla_stock SET sincroniza = ?sincroniza, version = ?version, nombre_obra = ?nombre_obra, id_obra = ?id_obra, Litros = ?Litros, Fecha = ?Fecha WHERE id_stock = ?Cod_adicional"
         Try
