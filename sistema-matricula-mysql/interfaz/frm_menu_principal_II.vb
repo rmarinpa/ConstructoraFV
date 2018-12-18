@@ -250,6 +250,16 @@
     Private Sub Button63_Click(sender As Object, e As EventArgs) Handles Button63.Click
         End
     End Sub
+    Private Sub TabPage6_Enter(sender As Object, e As EventArgs) Handles TabPage5.Enter, TabPage6.Enter
+        num_tab = 1
+        frm_menu_principal_VI.Show()
+        Me.Close()
+    End Sub
+    Private Sub TabPage8_Enter(sender As Object, e As EventArgs) Handles TabPage7.Enter
+        num_tab = 1
+        frm_menu_principal_VII.Show()
+        Me.Close()
+    End Sub
     Private Sub TabPage1_Enter(sender As Object, e As EventArgs) Handles TabPage1.Enter
         If num_tab <> 0 Then
             num_tab = 0

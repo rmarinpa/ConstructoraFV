@@ -1597,6 +1597,7 @@ Partial Class frm_menu_principal_VI
         'GroupBox10
         '
         Me.GroupBox10.Controls.Add(Me.txtObservaciones)
+        Me.GroupBox10.Controls.Add(Me.cboObras)
         Me.GroupBox10.Controls.Add(Me.Label62)
         Me.GroupBox10.Controls.Add(Me.txtReajusteNeto)
         Me.GroupBox10.Controls.Add(Me.Label61)
@@ -1612,7 +1613,6 @@ Partial Class frm_menu_principal_VI
         Me.GroupBox10.Controls.Add(Me.txtRetencionesCanjeadas)
         Me.GroupBox10.Controls.Add(Me.Label52)
         Me.GroupBox10.Controls.Add(Me.txtRetenciones)
-        Me.GroupBox10.Controls.Add(Me.cboObras)
         Me.GroupBox10.Controls.Add(Me.Label51)
         Me.GroupBox10.Controls.Add(Me.txtNroEstadoPago)
         Me.GroupBox10.Controls.Add(Me.txtReajuste)
@@ -1635,7 +1635,7 @@ Partial Class frm_menu_principal_VI
         '
         'txtObservaciones
         '
-        Me.txtObservaciones.Location = New System.Drawing.Point(110, 401)
+        Me.txtObservaciones.Location = New System.Drawing.Point(111, 401)
         Me.txtObservaciones.Name = "txtObservaciones"
         Me.txtObservaciones.Size = New System.Drawing.Size(192, 23)
         Me.txtObservaciones.TabIndex = 46
@@ -1704,7 +1704,7 @@ Partial Class frm_menu_principal_VI
         '
         'txtValorEstadoPago
         '
-        Me.txtValorEstadoPago.Location = New System.Drawing.Point(193, 285)
+        Me.txtValorEstadoPago.Location = New System.Drawing.Point(192, 285)
         Me.txtValorEstadoPago.Name = "txtValorEstadoPago"
         Me.txtValorEstadoPago.Size = New System.Drawing.Size(110, 23)
         Me.txtValorEstadoPago.TabIndex = 38
@@ -1762,7 +1762,7 @@ Partial Class frm_menu_principal_VI
         '
         'txtRetenciones
         '
-        Me.txtRetenciones.Location = New System.Drawing.Point(121, 201)
+        Me.txtRetenciones.Location = New System.Drawing.Point(120, 200)
         Me.txtRetenciones.Name = "txtRetenciones"
         Me.txtRetenciones.Size = New System.Drawing.Size(182, 23)
         Me.txtRetenciones.TabIndex = 32
@@ -1770,7 +1770,7 @@ Partial Class frm_menu_principal_VI
         'cboObras
         '
         Me.cboObras.FormattingEnabled = True
-        Me.cboObras.Location = New System.Drawing.Point(94, 30)
+        Me.cboObras.Location = New System.Drawing.Point(93, 22)
         Me.cboObras.Name = "cboObras"
         Me.cboObras.Size = New System.Drawing.Size(209, 25)
         Me.cboObras.TabIndex = 28
@@ -1787,14 +1787,14 @@ Partial Class frm_menu_principal_VI
         '
         'txtNroEstadoPago
         '
-        Me.txtNroEstadoPago.Location = New System.Drawing.Point(174, 59)
+        Me.txtNroEstadoPago.Location = New System.Drawing.Point(174, 53)
         Me.txtNroEstadoPago.Name = "txtNroEstadoPago"
         Me.txtNroEstadoPago.Size = New System.Drawing.Size(129, 23)
         Me.txtNroEstadoPago.TabIndex = 29
         '
         'txtReajuste
         '
-        Me.txtReajuste.Location = New System.Drawing.Point(94, 170)
+        Me.txtReajuste.Location = New System.Drawing.Point(94, 169)
         Me.txtReajuste.Margin = New System.Windows.Forms.Padding(2)
         Me.txtReajuste.Name = "txtReajuste"
         Me.txtReajuste.Size = New System.Drawing.Size(209, 23)
@@ -1812,7 +1812,7 @@ Partial Class frm_menu_principal_VI
         '
         'txtNroFactura
         '
-        Me.txtNroFactura.Location = New System.Drawing.Point(141, 116)
+        Me.txtNroFactura.Location = New System.Drawing.Point(141, 113)
         Me.txtNroFactura.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNroFactura.Name = "txtNroFactura"
         Me.txtNroFactura.Size = New System.Drawing.Size(162, 23)

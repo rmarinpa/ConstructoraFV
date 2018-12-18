@@ -668,7 +668,7 @@ Public Class frm_menu_principal_X
         End Try
     End Sub
 
-    Private Sub cboObra_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cboObra.SelectionChangeCommitted
+    Private Sub cboObra_SelectionChangeCommitted(sender As Object, e As EventArgs)
         LlenarDataGridView()
     End Sub
     Public Function Limpiar()
@@ -690,15 +690,6 @@ Public Class frm_menu_principal_X
             cboObrasModificacion.ValueMember = "Id_identificacion"
             cboObrasModificacion.Text = Module1.Nombre_Obra
 
-            cboObra.DataSource = nue_obra5.listar5(id_obra)
-            cboObra.DisplayMember = "nombre_faena"
-            cboObra.ValueMember = "Id_identificacion"
-            cboObra.Text = Module1.Nombre_Obra
-
-            cboObraFactura.DataSource = nue_obra5.listar5(id_obra)
-            cboObraFactura.DisplayMember = "nombre_faena"
-            cboObraFactura.ValueMember = "Id_identificacion"
-            cboObraFactura.Text = Module1.Nombre_Obra
 
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -819,7 +810,7 @@ Public Class frm_menu_principal_X
         End Try
     End Sub
 
-    Private Sub cboObraFactura_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cboObraFactura.SelectionChangeCommitted
+    Private Sub cboObraFactura_SelectionChangeCommitted(sender As Object, e As EventArgs)
         actualizar_dgvFacturasAdjunto()
         Limpiar()
     End Sub
@@ -839,6 +830,7 @@ Public Class frm_menu_principal_X
                 .Columns(0).HeaderCell.Value = "ID"
                 .Columns(0).Visible = False
                 .Columns(6).HeaderCell.Value = "Obra"
+
                 .Columns(2).HeaderCell.Value = "Nro Estado de Pago"
                 .Columns(3).HeaderCell.Value = "Adjunto"
                 .Columns(3).Visible = False
@@ -1046,8 +1038,6 @@ Public Class frm_menu_principal_X
             MsgBox(ex.Message)
         End Try
     End Sub
-
-
 
     Private Sub dgvContratoOriginal_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvContratoOriginal.CellContentClick
 

@@ -1298,9 +1298,75 @@
         Me.Close()
     End Sub
 
+    Private Sub Button36_Click(sender As Object, e As EventArgs)
+        num_tab = 1
+        frm_menu_principal_VI.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Button35_Click(sender As Object, e As EventArgs)
+        num_tab = 2
+        frm_menu_principal_VI.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Button34_Click(sender As Object, e As EventArgs)
+        num_tab = 3
+        frm_menu_principal_VI.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Button36_Click_1(sender As Object, e As EventArgs) Handles Button36.Click
+        num_tab = 1
+        frm_menu_principal_VI.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Button35_Click_1(sender As Object, e As EventArgs) Handles Button35.Click
+        num_tab = 2
+        frm_menu_principal_VI.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Button34_Click_1(sender As Object, e As EventArgs) Handles Button34.Click
+        num_tab = 3
+        frm_menu_principal_VI.Show()
+        Me.Close()
+    End Sub
+
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         num_tab = 1
         frm_menu_principal_VII.Show()
         Me.Close()
     End Sub
+    Private Sub Button39_Click(sender As Object, e As EventArgs) Handles Button39.Click
+        num_tab = 1
+        frm_menu_principal_VII.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Button38_Click(sender As Object, e As EventArgs) Handles Button38.Click
+        num_tab = 2
+        frm_menu_principal_VII.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Button37_Click(sender As Object, e As EventArgs) Handles Button37.Click
+        num_tab = 3
+        frm_menu_principal_VII.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub TabPage6_Enter(sender As Object, e As EventArgs) Handles TabPage5.Enter, TabPage6.Enter
+        num_tab = 1
+        frm_menu_principal_VI.Show()
+        Me.Close()
+    End Sub
+    Private Sub TabPage8_Enter(sender As Object, e As EventArgs) Handles TabPage7.Enter
+        num_tab = 1
+        frm_menu_principal_VII.Show()
+        Me.Close()
+    End Sub
+
+
 End Class
