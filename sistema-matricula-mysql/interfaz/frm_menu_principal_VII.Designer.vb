@@ -131,6 +131,7 @@ Partial Class frm_menu_principal_VII
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TabPage39 = New System.Windows.Forms.TabPage()
         Me.GroupBox12 = New System.Windows.Forms.GroupBox()
+        Me.dgvContratoOriginal = New System.Windows.Forms.DataGridView()
         Me.lblRutaDescarga = New System.Windows.Forms.Label()
         Me.txtUsuarioArchivo = New System.Windows.Forms.TextBox()
         Me.Label72 = New System.Windows.Forms.Label()
@@ -152,6 +153,7 @@ Partial Class frm_menu_principal_VII
         Me.TextBox30 = New System.Windows.Forms.TextBox()
         Me.TabPage40 = New System.Windows.Forms.TabPage()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.DgvModificaciones = New System.Windows.Forms.DataGridView()
         Me.txtxNroModificacionModificaciones = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -235,8 +237,6 @@ Partial Class frm_menu_principal_VII
         Me.SaveFileDialog3 = New System.Windows.Forms.SaveFileDialog()
         Me.OpenFileDialog6 = New System.Windows.Forms.OpenFileDialog()
         Me.OpenFileDialog8 = New System.Windows.Forms.OpenFileDialog()
-        Me.dgvContratoOriginal = New System.Windows.Forms.DataGridView()
-        Me.DgvModificaciones = New System.Windows.Forms.DataGridView()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage9.SuspendLayout()
         Me.TabControl8.SuspendLayout()
@@ -249,9 +249,11 @@ Partial Class frm_menu_principal_VII
         Me.GroupBox10.SuspendLayout()
         Me.TabPage39.SuspendLayout()
         Me.GroupBox12.SuspendLayout()
+        CType(Me.dgvContratoOriginal, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox11.SuspendLayout()
         Me.TabPage40.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.DgvModificaciones, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         Me.TabPage6.SuspendLayout()
         Me.TabControl5.SuspendLayout()
@@ -266,8 +268,6 @@ Partial Class frm_menu_principal_VII
         Me.TabPage2.SuspendLayout()
         Me.Panel.SuspendLayout()
         CType(Me.dgv_arrendador, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgvContratoOriginal, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DgvModificaciones, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lbl_nombre_obra
@@ -1659,6 +1659,17 @@ Partial Class frm_menu_principal_VII
         Me.GroupBox12.TabStop = False
         Me.GroupBox12.Text = "Información de Adjuntos"
         '
+        'dgvContratoOriginal
+        '
+        Me.dgvContratoOriginal.AllowUserToAddRows = False
+        Me.dgvContratoOriginal.AllowUserToDeleteRows = False
+        Me.dgvContratoOriginal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvContratoOriginal.Location = New System.Drawing.Point(6, 184)
+        Me.dgvContratoOriginal.Name = "dgvContratoOriginal"
+        Me.dgvContratoOriginal.ReadOnly = True
+        Me.dgvContratoOriginal.Size = New System.Drawing.Size(376, 178)
+        Me.dgvContratoOriginal.TabIndex = 26
+        '
         'lblRutaDescarga
         '
         Me.lblRutaDescarga.AutoSize = True
@@ -1873,6 +1884,17 @@ Partial Class frm_menu_principal_VII
         Me.GroupBox1.TabIndex = 24
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Información de Adjuntos"
+        '
+        'DgvModificaciones
+        '
+        Me.DgvModificaciones.AllowUserToAddRows = False
+        Me.DgvModificaciones.AllowUserToDeleteRows = False
+        Me.DgvModificaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DgvModificaciones.Location = New System.Drawing.Point(0, 143)
+        Me.DgvModificaciones.Name = "DgvModificaciones"
+        Me.DgvModificaciones.ReadOnly = True
+        Me.DgvModificaciones.Size = New System.Drawing.Size(592, 216)
+        Me.DgvModificaciones.TabIndex = 28
         '
         'txtxNroModificacionModificaciones
         '
@@ -2836,28 +2858,6 @@ Partial Class frm_menu_principal_VII
         Me.OpenFileDialog8.FileName = "OpenFileDialog8"
         Me.OpenFileDialog8.Filter = "PDF files (*.pdf)|*.pdf"
         '
-        'dgvContratoOriginal
-        '
-        Me.dgvContratoOriginal.AllowUserToAddRows = False
-        Me.dgvContratoOriginal.AllowUserToDeleteRows = False
-        Me.dgvContratoOriginal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvContratoOriginal.Location = New System.Drawing.Point(6, 184)
-        Me.dgvContratoOriginal.Name = "dgvContratoOriginal"
-        Me.dgvContratoOriginal.ReadOnly = True
-        Me.dgvContratoOriginal.Size = New System.Drawing.Size(376, 178)
-        Me.dgvContratoOriginal.TabIndex = 26
-        '
-        'DgvModificaciones
-        '
-        Me.DgvModificaciones.AllowUserToAddRows = False
-        Me.DgvModificaciones.AllowUserToDeleteRows = False
-        Me.DgvModificaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgvModificaciones.Location = New System.Drawing.Point(0, 143)
-        Me.DgvModificaciones.Name = "DgvModificaciones"
-        Me.DgvModificaciones.ReadOnly = True
-        Me.DgvModificaciones.Size = New System.Drawing.Size(592, 216)
-        Me.DgvModificaciones.TabIndex = 28
-        '
         'frm_menu_principal_VII
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2896,12 +2896,14 @@ Partial Class frm_menu_principal_VII
         Me.TabPage39.PerformLayout()
         Me.GroupBox12.ResumeLayout(False)
         Me.GroupBox12.PerformLayout()
+        CType(Me.dgvContratoOriginal, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox11.ResumeLayout(False)
         Me.GroupBox11.PerformLayout()
         Me.TabPage40.ResumeLayout(False)
         Me.TabPage40.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.DgvModificaciones, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.TabPage6.ResumeLayout(False)
@@ -2917,8 +2919,6 @@ Partial Class frm_menu_principal_VII
         Me.TabPage2.ResumeLayout(False)
         Me.Panel.ResumeLayout(False)
         CType(Me.dgv_arrendador, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgvContratoOriginal, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DgvModificaciones, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

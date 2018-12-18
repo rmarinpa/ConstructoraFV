@@ -95,7 +95,6 @@ Public Class frm_menu_principal_VI
     End Sub
 
     Private Sub frm_menu_principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
         Dim rtn As New Date
         lbl_nombre_obra.Text = Nombre_Obra
         lbl_usuario.Text = Nombre_Usuario
@@ -279,13 +278,14 @@ Public Class frm_menu_principal_VI
                         dgvFiltroEstadoPagoMandante()
                         Actualizar_dgvEstadosPagoFirmado()
                         actualizar_dgvFacturasAdjunto()
+                        RellenarCboObras()
 
                     Else
                         MsgBox("Falta ingresar datos", MsgBoxStyle.Exclamation)
 
                     End If
                 Else
-                    MsgBox("Número de Factura ya existe", MsgBoxStyle.Exclamation)
+                    MsgBox("Registro ya existente", MsgBoxStyle.Exclamation)
                 End If
             Catch ex As Exception
                 MsgBox("Verifique los datos ingresados")
@@ -342,7 +342,7 @@ Public Class frm_menu_principal_VI
                     dgvFiltroEstadoPagoMandante()
                     Actualizar_dgvEstadosPagoFirmado()
                     actualizar_dgvFacturasAdjunto()
-
+                    RellenarCboObras()
 
                 Else
                     MsgBox("Verifique los datos")
@@ -611,6 +611,7 @@ Public Class frm_menu_principal_VI
                     LimpiarEstado()
                     Actualizar_dgvEstadosPagoFirmado()
                     actualizar_dgvFacturasAdjunto()
+                    RellenarCboObras()
                 Catch ex As Exception
                     MsgBox(ex.Message)
                 End Try

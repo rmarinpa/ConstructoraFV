@@ -166,3 +166,13 @@ C:\Users\USUARIO\Desktop\Constructpra FV\Version Definivito\sistema-matricula-my
 C:\Users\USUARIO\Desktop\Constructpra FV\Version Definivito\sistema-matricula-mysql\clases\obj\Debug\clases.dll
 C:\Users\USUARIO\Desktop\Constructpra FV\Version Definivito\sistema-matricula-mysql\clases\obj\Debug\clases.xml
 C:\Users\USUARIO\Desktop\Constructpra FV\Version Definivito\sistema-matricula-mysql\clases\obj\Debug\clases.pdb
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\clases\bin\Debug\clases.dll.config
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\clases\bin\Debug\clases.dll
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\clases\bin\Debug\clases.pdb
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\clases\bin\Debug\clases.xml
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\clases\obj\Debug\clases.vbprojResolveAssemblyReference.cache
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\clases\obj\Debug\clases.Resources.resources
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\clases\obj\Debug\clases.vbproj.GenerateResource.Cache
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\clases\obj\Debug\clases.dll
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\clases\obj\Debug\clases.xml
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\clases\obj\Debug\clases.pdb

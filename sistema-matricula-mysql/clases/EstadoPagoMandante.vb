@@ -43,7 +43,7 @@ Public Class EstadoPagoMandante
     End Sub
 
     Public Function Insertar(ByVal nro_Estado_Pago As Integer, ByVal obra As String, ByVal fecha As Date, ByVal nro_factura As Integer, ByVal obras As Integer, ByVal reajuste As Integer, ByVal retenciones As Integer, ByVal retenciones_canjeadas As Integer, ByVal multas As Integer, ByVal valor_estado_pago As Integer, ByVal valor_estado_pago_neto As Integer, ByVal obras_neto As Integer, ByVal reajuste_neto As Integer, ByVal observaciones As String)
-        nue_var.consulta = "INSERT INTO ESTADO_PAGO (nro_Estado_Pago,Obra,Fecha,Nro_factura, obras, reajuste, retenciones, retenciones_canjeadas, multas, valor_estado_pago, valor_estado_pago_neto, obras_neto, reajuste_neto,observaciones) VALUES(?nro_Estado_Pago,?Obra,?Fecha,?Nro_factura, ?obras, ?reajuste, ?retenciones, ?retenciones_canjeadas, ?multas, ?valor_estado_pago, ?valor_estado_pago_neto, ?obras_neto, ?reajuste_neto,?observaciones)"
+        nue_var.consulta = "insert into estado_pago (nro_Estado_Pago,Obra,Fecha,Nro_factura, obras, reajuste, retenciones, retenciones_canjeadas, multas, valor_estado_pago, valor_estado_pago_neto, obras_neto, reajuste_neto,observaciones) VALUES(?nro_Estado_Pago,?Obra,?Fecha,?Nro_factura, ?obras, ?reajuste, ?retenciones, ?retenciones_canjeadas, ?multas, ?valor_estado_pago, ?valor_estado_pago_neto, ?obras_neto, ?reajuste_neto,?observaciones)"
         Try
             nue_conexion.conectar()
             nue_var.cmd = New MySqlCommand(nue_var.consulta, nue_conexion.conex())
@@ -170,7 +170,7 @@ Public Class EstadoPagoMandante
         Dim resultado As Boolean = False
         Try
             nue_conexion.conectar()
-            nue_var.cmd = New MySqlCommand("SELECT * FROM ESTADO_PAGO WHERE nro_estado_pago='" & nro_estadoPago & "' AND obra='" & obra & "'", nue_conexion.conex())
+            nue_var.cmd = New MySqlCommand("SELECT * FROM estado_pago WHERE nro_estado_pago='" & nro_estadoPago & "' AND obra='" & obra & "'", nue_conexion.conex())
             nue_var.dr = nue_var.cmd.ExecuteReader
             If nue_var.dr.Read Then
                 resultado = True
@@ -186,7 +186,7 @@ Public Class EstadoPagoMandante
         Dim resultado As Boolean = False
         Try
             nue_conexion.conectar()
-            nue_var.cmd = New MySqlCommand("SELECT * FROM ESTADO_PAGO_FIRMADO WHERE estado_pago_Id_Estado_Pago='" & nro_estadoPago & "' AND obra='" & obra & "'", nue_conexion.conex())
+            nue_var.cmd = New MySqlCommand("SELECT * FROM estado_pago_firmado WHERE estado_pago_Id_Estado_Pago='" & nro_estadoPago & "' AND obra='" & obra & "'", nue_conexion.conex())
             nue_var.dr = nue_var.cmd.ExecuteReader
             If nue_var.dr.Read Then
                 resultado = True
@@ -194,6 +194,7 @@ Public Class EstadoPagoMandante
             nue_conexion.desconectar()
         Catch ex As Exception
             Return False
+            nue_conexion.desconectar()
         End Try
         Return resultado
     End Function
@@ -202,7 +203,7 @@ Public Class EstadoPagoMandante
         Dim resultado As Boolean = False
         Try
             nue_conexion.conectar()
-            nue_var.cmd = New MySqlCommand("SELECT * FROM FACTURAS_FIRMADAS WHERE estado_pago_Id_Estado_Pago='" & nro_estadoPago & "' AND obra='" & obra & "'", nue_conexion.conex())
+            nue_var.cmd = New MySqlCommand("SELECT * FROM facturas_firmadas WHERE estado_pago_Id_Estado_Pago='" & nro_estadoPago & "' AND obra='" & obra & "'", nue_conexion.conex())
             nue_var.dr = nue_var.cmd.ExecuteReader
             If nue_var.dr.Read Then
                 resultado = True
@@ -210,6 +211,7 @@ Public Class EstadoPagoMandante
             nue_conexion.desconectar()
         Catch ex As Exception
             Return False
+            nue_conexion.desconectar()
         End Try
         Return resultado
     End Function
@@ -280,7 +282,7 @@ Public Class EstadoPagoMandante
     End Function
 
     Public Sub EliminarAdjunto(ByVal idestadopagofirmado As Integer)
-        nue_var.consulta = "Delete from ESTADO_PAGO_FIRMADO WHERE Id_Estado_Pago_Firmado = " & idestadopagofirmado & ""
+        nue_var.consulta = "Delete from estado_pago_firmado WHERE Id_Estado_Pago_Firmado = " & idestadopagofirmado & ""
         Try
             nue_conexion.conectar()
             nue_var.cmd = New MySqlCommand(nue_var.consulta, nue_conexion.conex())

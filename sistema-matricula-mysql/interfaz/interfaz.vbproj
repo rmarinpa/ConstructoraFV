@@ -508,11 +508,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EstadoPagoMandante.rpt</DependentUpon>
-    </Compile>
-    <Compile Include="EstadoPagoMandante2.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EstadoPagoMandante2.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Estado_de_pago_fechas_maq.vb">
@@ -1074,10 +1069,6 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>EstadoPagoMandante.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="EstadoPagoMandante2.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>EstadoPagoMandante2.vb</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Estado_de_pago_fechas_maq.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Estado_de_pago_fechas_maq.vb</LastGenOutput>
@@ -1087,6 +1078,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_maquinaria.resx">
       <DependentUpon>Frm_maquinaria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_principal_VI.resx">
+      <DependentUpon>frm_menu_principal_Vi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_menu_principal_VII.resx">
       <DependentUpon>frm_menu_principal_VII.vb</DependentUpon>

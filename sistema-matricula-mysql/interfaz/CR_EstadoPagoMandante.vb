@@ -1,4 +1,5 @@
-﻿Public Class CR_EstadoPagoMandante
+﻿
+Public Class CR_EstadoPagoMandante
 
     Private Sub CR_EstadoPagoMandante_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim objreporte As New EstadoPagoMandante

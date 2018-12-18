@@ -10,7 +10,8 @@ Public Class frm_menu_principal_X
     Dim nue_report As New clases.listado_maquinas
     Dim nue_obra5 As New clases.Ingreso_subcontratos
     Dim nue_var As New clases.variables
-
+    Dim modificacionesIngresos As New clases.Modificaciones
+    Dim Contrato As New clases.Contratos_Originales
     Dim Cod_1 As String = ""
     Dim Cod_11 As String = ""
     Dim Cod_2 As String = ""
@@ -52,10 +53,13 @@ Public Class frm_menu_principal_X
         RellenarCboObra()
         gbPagoFirmadoAdjunto.Visible = False
         gbFacturasFirmadas.Visible = False
-        gbContrato.Visible = False
+        gbContratoOriginal.Visible = False
         gbModificacionesFirmadas.Visible = False
         LlenarDataGridView()
         actualizar_dgvFacturasAdjunto()
+        Actualizar_dgvModificacion()
+        Actualizar_dgvContrato()
+        LlenarDataGridView()
         If sincroniza = 0 Then
             btn_5_ingresar.Visible = True
             btn_7_ingresar.Visible = True
@@ -681,6 +685,11 @@ Public Class frm_menu_principal_X
             cboObras.ValueMember = "Id_identificacion"
             cboObras.Text = Module1.Nombre_Obra
 
+            cboObrasModificacion.DataSource = nue_obra5.listar5(id_obra)
+            cboObrasModificacion.DisplayMember = "nombre_faena"
+            cboObrasModificacion.ValueMember = "Id_identificacion"
+            cboObrasModificacion.Text = Module1.Nombre_Obra
+
             cboObra.DataSource = nue_obra5.listar5(id_obra)
             cboObra.DisplayMember = "nombre_faena"
             cboObra.ValueMember = "Id_identificacion"
@@ -701,31 +710,35 @@ Public Class frm_menu_principal_X
     Sub LlenarDataGridView()
         Try
             Dim total As Double = 0
-            Dim fila As DataGridViewRow = New DataGridViewRow()
-            Dim obra As String
-            obra = cboObra.Text
-            dgvAdjuntosPagosFirmados.DataSource = nue_obra6.LeerAdjuntoPagosFirmados(obra)
+            Dim obrasFiltro As String
 
-            With dgvAdjuntosPagosFirmados
+            obrasFiltro = cboObras.Text
+            If obrasFiltro = "System.Data.DataRowView" Then
+                obrasFiltro = Nombre_Obra
+            End If
+
+            Dim fila As DataGridViewRow = New DataGridViewRow()
+            dgvFacturasAdjunto.DataSource = nue_obra6.LeerAdjuntoFacturas(obrasFiltro)
+            With dgvFacturasAdjunto
                 .RowHeadersVisible = False
                 .Columns(0).HeaderCell.Value = "ID"
                 .Columns(0).Visible = False
-                .Columns(1).HeaderCell.Value = "Obra"
-                .Columns(2).HeaderCell.Value = "Nro Estado de Pago"
-                .Columns(3).HeaderCell.Value = "Adjunto"
-                .Columns(3).Visible = False
-                .Columns(4).HeaderCell.Value = "Usuario"
-                .Columns(5).HeaderCell.Value = "Fecha de subida"
-                .Columns(6).HeaderCell.Value = "Obras Adjunto"
-                .Columns(6).Visible = False
-                .Columns(7).HeaderCell.Value = "Adjunto"
-                dgvAdjuntosPagosFirmados.Columns(0).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
-                dgvAdjuntosPagosFirmados.Columns(1).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
-                dgvAdjuntosPagosFirmados.Columns(2).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
-                dgvAdjuntosPagosFirmados.Columns(3).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
-                dgvAdjuntosPagosFirmados.Columns(4).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
-                dgvAdjuntosPagosFirmados.Columns(5).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
-                dgvAdjuntosPagosFirmados.Columns(6).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                .Columns(1).HeaderCell.Value = "Obra Adjunto"
+                .Columns(2).HeaderCell.Value = "Obra"
+                .Columns(2).Visible = False
+                .Columns(3).HeaderCell.Value = "N° Estado de Pago Asociado"
+                .Columns(4).HeaderCell.Value = "N° Factura"
+                .Columns(5).HeaderCell.Value = "Adjunto"
+                .Columns(6).HeaderCell.Value = "Usuario"
+                .Columns(7).HeaderCell.Value = "Fecha de subida"
+                .Columns(8).HeaderCell.Value = "Adjunto"
+                .Columns(8).Visible = False
+
+                dgvFacturasAdjunto.Columns(1).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                dgvFacturasAdjunto.Columns(2).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                dgvFacturasAdjunto.Columns(3).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                dgvFacturasAdjunto.Columns(4).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                dgvFacturasAdjunto.Columns(5).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
             End With
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -813,31 +826,37 @@ Public Class frm_menu_principal_X
     Sub actualizar_dgvFacturasAdjunto()
         Try
             Dim total As Double = 0
-            Dim obrasFiltro As String
-
-            obrasFiltro = cboObraFactura.Text
-
             Dim fila As DataGridViewRow = New DataGridViewRow()
-            dgvFacturasAdjunto.DataSource = nue_obra6.LeerAdjuntoFacturas(obrasFiltro)
-            With dgvFacturasAdjunto
+            Dim obraFiltro As String
+            obraFiltro = cboObras.Text
+            If obraFiltro = "System.Data.DataRowView" Then
+                obraFiltro = Nombre_Obra
+            End If
+
+            dgvAdjuntosPagosFirmados.DataSource = nue_obra6.LeerAdjuntoPagosFirmados(obraFiltro)
+            With dgvAdjuntosPagosFirmados
                 .RowHeadersVisible = False
                 .Columns(0).HeaderCell.Value = "ID"
                 .Columns(0).Visible = False
-                .Columns(1).HeaderCell.Value = "Obra Adjunto"
+                .Columns(6).HeaderCell.Value = "Obra"
+                .Columns(2).HeaderCell.Value = "Nro Estado de Pago"
+                .Columns(3).HeaderCell.Value = "Adjunto"
+                .Columns(3).Visible = False
+                .Columns(4).HeaderCell.Value = "Usuario"
+                .Columns(5).HeaderCell.Value = "Fecha de subida"
+                'Obra que realiza el filtro para realizar la conexión con el left Join
+                .Columns(1).HeaderCell.Value = "Obras"
                 .Columns(1).Visible = False
-                .Columns(2).HeaderCell.Value = "Obra"
-                .Columns(3).HeaderCell.Value = "N° Estado de Pago Asociado"
-                .Columns(4).HeaderCell.Value = "N° Factura"
-                .Columns(5).HeaderCell.Value = "Adjunto"
-                .Columns(6).HeaderCell.Value = "Usuario"
-                .Columns(7).HeaderCell.Value = "Fecha de subida"
-                .Columns(8).HeaderCell.Value = "Adjunto"
-                .Columns(8).Visible = False
-                dgvFacturasAdjunto.Columns(1).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
-                dgvFacturasAdjunto.Columns(2).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
-                dgvFacturasAdjunto.Columns(3).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
-                dgvFacturasAdjunto.Columns(4).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
-                dgvFacturasAdjunto.Columns(5).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                .Columns(7).HeaderCell.Value = "Adjunto"
+                dgvAdjuntosPagosFirmados.Columns(0).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                dgvAdjuntosPagosFirmados.Columns(1).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                dgvAdjuntosPagosFirmados.Columns(2).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                dgvAdjuntosPagosFirmados.Columns(3).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                dgvAdjuntosPagosFirmados.Columns(4).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                dgvAdjuntosPagosFirmados.Columns(5).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                dgvAdjuntosPagosFirmados.Columns(6).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                dgvAdjuntosPagosFirmados.Columns(7).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+
             End With
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -864,12 +883,12 @@ Public Class frm_menu_principal_X
     End Sub
 
     Private Sub Button67_Click(sender As Object, e As EventArgs) Handles Button67.Click
-        gbContrato.Visible = True
+        gbContratoOriginal.Visible = True
         gbModificacionesFirmadas.Visible = False
     End Sub
 
     Private Sub Button66_Click(sender As Object, e As EventArgs) Handles Button66.Click
-        gbContrato.Visible = False
+        gbContratoOriginal.Visible = False
         gbModificacionesFirmadas.Visible = True
     End Sub
 
@@ -911,21 +930,7 @@ Public Class frm_menu_principal_X
         End Try
     End Sub
 
-    Private Sub dgvContratoOriginal_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvContratoOriginal.CellClick
-        Try
-            Dim index As Integer
-            index = e.RowIndex
-            Dim selectRow As DataGridViewRow
-            selectRow = dgvContratoOriginal.Rows(index)
-            txtidContratoOriginal.Text = selectRow.Cells(0).Value.ToString()
-            txtNombreObraArchivo.Text = selectRow.Cells(1).Value.ToString()
-            txtNombreArchivo.Text = selectRow.Cells(5).Value.ToString()
-            txtUsuarioArchivo.Text = selectRow.Cells(3).Value.ToString()
-            txtFechaAdjuntadoArchivo.Text = selectRow.Cells(4).Value()
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-    End Sub
+
 
     Private Sub DgvModificaciones_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DgvModificaciones.CellClick
         Try
@@ -971,6 +976,90 @@ Public Class frm_menu_principal_X
         Catch ex As Exception
             MsgBox(ex.Message)
 
+        End Try
+    End Sub
+
+    Private Sub cboFiltroContrato_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cboObrasModificacion.SelectionChangeCommitted
+        Actualizar_dgvModificacion()
+        Actualizar_dgvContrato()
+    End Sub
+
+    Private Sub Actualizar_dgvModificacion()
+        Try
+            Dim fila As DataGridViewRow = New DataGridViewRow()
+            DgvModificaciones.DataSource = modificacionesIngresos.LeerDgvModificaciones(cboObrasModificacion.Text)
+            With DgvModificaciones
+                .RowHeadersVisible = False
+                .Columns(0).HeaderCell.Value = "ID"
+                .Columns(0).Visible = False
+                .Columns(1).HeaderCell.Value = "Obra Adjunto"
+                .Columns(2).HeaderCell.Value = "N° Modificación"
+                .Columns(3).HeaderCell.Value = "Adjunto"
+                .Columns(3).Visible = False
+                .Columns(4).HeaderCell.Value = "Usuario"
+                .Columns(5).HeaderCell.Value = "Fecha de subida"
+                .Columns(6).HeaderCell.Value = "Adjunto"
+                .Columns(7).HeaderCell.Value = "Obra"
+                .Columns(7).Visible = False
+                DgvModificaciones.Columns(1).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                DgvModificaciones.Columns(2).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                DgvModificaciones.Columns(3).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                DgvModificaciones.Columns(4).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                DgvModificaciones.Columns(5).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+            End With
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub Actualizar_dgvContrato()
+        Try
+            'Dim total As Double = 0
+            'Dim fila As DataGridViewRow = New DataGridViewRow()
+            Dim obra As String
+            obra = cboObrasModificacion.Text
+            dgvContratoOriginal.DataSource = Contrato.LeerDgvContrato(obra)
+            With dgvContratoOriginal
+                .RowHeadersVisible = False
+                .Columns(0).HeaderCell.Value = "ID"
+                .Columns(0).Visible = False
+                .Columns(1).HeaderCell.Value = "Obra"
+                .Columns(2).HeaderCell.Value = "Adjunto"
+                .Columns(3).HeaderCell.Value = "Usuario"
+                .Columns(4).HeaderCell.Value = "Fecha"
+                .Columns(5).HeaderCell.Value = "Adjunto"
+                .Columns(5).Visible = False
+            End With
+            dgvContratoOriginal.Columns(1).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+            dgvContratoOriginal.Columns(2).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+            dgvContratoOriginal.Columns(3).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+            dgvContratoOriginal.Columns(4).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+            dgvContratoOriginal.Columns(5).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+
+
+
+            'Metodo para contar el total de una fila
+            'For Each fila In dgvEstadoPago.Rows
+            ' total += Convert.ToDouble(fila.Cells(7).Value)
+            ' Next
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub dgvContratoOriginal_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvContratoOriginal.CellClick
+        Try
+            Dim index As Integer
+            index = e.RowIndex
+            Dim selectRow As DataGridViewRow
+            selectRow = dgvContratoOriginal.Rows(index)
+            txtidContratoOriginal.Text = selectRow.Cells(0).Value.ToString()
+            txtNombreObraArchivo.Text = selectRow.Cells(1).Value.ToString()
+            txtNombreArchivo.Text = selectRow.Cells(5).Value.ToString()
+            txtUsuarioArchivo.Text = selectRow.Cells(3).Value.ToString()
+            txtFechaAdjuntadoArchivo.Text = selectRow.Cells(4).Value()
+        Catch ex As Exception
+            MsgBox(ex.Message)
         End Try
     End Sub
 End Class
