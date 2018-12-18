@@ -944,7 +944,7 @@ Public Class frm_menu_principal_X
                 txtxNroModificacionModificaciones.Text = selectRow.Cells(2).Value.ToString()
                 txtNombreAdjuntoModificaciones.Text = selectRow.Cells(3).Value.ToString()
                 txtUsuarioModificaciones.Text = selectRow.Cells(4).Value.ToString()
-                txtFechaAdjuntoModificaciones.Text = selectRow.Cells(5).Value.ToString()
+                txtFechaAdjuntoModificaciones.Text = selectRow.Cells(5).Value
             Else
                 MsgBox("No se encuentra registro de adjuntos", MsgBoxStyle.Information)
             End If
@@ -1047,19 +1047,25 @@ Public Class frm_menu_principal_X
         End Try
     End Sub
 
-    Private Sub dgvContratoOriginal_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvContratoOriginal.CellClick
+
+
+    Private Sub dgvContratoOriginal_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvContratoOriginal.CellContentClick
+
         Try
             Dim index As Integer
             index = e.RowIndex
             Dim selectRow As DataGridViewRow
             selectRow = dgvContratoOriginal.Rows(index)
             txtidContratoOriginal.Text = selectRow.Cells(0).Value.ToString()
-            txtNombreObraArchivo.Text = selectRow.Cells(1).Value.ToString()
-            txtNombreArchivo.Text = selectRow.Cells(5).Value.ToString()
-            txtUsuarioArchivo.Text = selectRow.Cells(3).Value.ToString()
-            txtFechaAdjuntadoArchivo.Text = selectRow.Cells(4).Value()
+            txtNombreObra.Text = selectRow.Cells(1).Value.ToString()
+            txtNombre.Text = selectRow.Cells(5).Value.ToString()
+            txtUsuario.Text = selectRow.Cells(3).Value.ToString()
+            txtFechaAdjuntado.Text = selectRow.Cells(4).Value()
+
+
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+
     End Sub
 End Class

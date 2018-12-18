@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Y5XtR7cg9D+1Pf0Rni6IR3qpjlg=</dsig:DigestValue>
+        <dsig:DigestValue>lo2O0XNiS5879QlnFVF7bStps4o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -331,14 +331,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Programa Obra Constructora FV S.A.exe" size="70203904">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Programa Obra Constructora FV S.A.exe" size="70157312">
       <assemblyIdentity name="Programa Obra Constructora FV S.A" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>M3Ncn/FjDct0q8j7Q52Z34Dm2yg=</dsig:DigestValue>
+        <dsig:DigestValue>uehGW03Sc0ft3xOgakeoK2el8wo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
