@@ -148,8 +148,6 @@ Partial Class frm_menu_principal_X
         Me.btnEstadoPago = New System.Windows.Forms.Button()
         Me.Label32 = New System.Windows.Forms.Label()
         Me.cboObras = New System.Windows.Forms.ComboBox()
-        Me.btnFacturasFirmadas = New System.Windows.Forms.Button()
-        Me.btnEpFirmado = New System.Windows.Forms.Button()
         Me.gbFacturasFirmadas = New System.Windows.Forms.GroupBox()
         Me.lblAdjuntoFacturas = New System.Windows.Forms.Label()
         Me.dgvFacturasAdjunto = New System.Windows.Forms.DataGridView()
@@ -163,6 +161,8 @@ Partial Class frm_menu_principal_X
         Me.lblFechaAdjunto = New System.Windows.Forms.Label()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.lblNroEstadoDePago = New System.Windows.Forms.Label()
+        Me.btnFacturasFirmadas = New System.Windows.Forms.Button()
+        Me.btnEpFirmado = New System.Windows.Forms.Button()
         Me.gbPagoFirmadoAdjunto = New System.Windows.Forms.GroupBox()
         Me.dgvAdjuntosPagosFirmados = New System.Windows.Forms.DataGridView()
         Me.btnDescargar = New System.Windows.Forms.Button()
@@ -179,16 +179,16 @@ Partial Class frm_menu_principal_X
         Me.gbContratoOriginal = New System.Windows.Forms.GroupBox()
         Me.txtidContratoOriginal = New System.Windows.Forms.TextBox()
         Me.dgvContratoOriginal = New System.Windows.Forms.DataGridView()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.txtContratoResponsable = New System.Windows.Forms.TextBox()
         Me.Label35 = New System.Windows.Forms.Label()
-        Me.txtUsuario = New System.Windows.Forms.TextBox()
+        Me.txtFechaContrato = New System.Windows.Forms.TextBox()
+        Me.txtObraContrato = New System.Windows.Forms.TextBox()
         Me.Label36 = New System.Windows.Forms.Label()
-        Me.txtFechaAdjuntado = New System.Windows.Forms.TextBox()
-        Me.txtNombreObra = New System.Windows.Forms.TextBox()
         Me.Label37 = New System.Windows.Forms.Label()
         Me.Label40 = New System.Windows.Forms.Label()
-        Me.Label41 = New System.Windows.Forms.Label()
-        Me.txtNombre = New System.Windows.Forms.TextBox()
-        Me.Button68 = New System.Windows.Forms.Button()
+        Me.txtNombreContrato = New System.Windows.Forms.TextBox()
+        Me.btnDescargarContrato = New System.Windows.Forms.Button()
         Me.gbModificacionesFirmadas = New System.Windows.Forms.GroupBox()
         Me.txtIdModificacionesContrato = New System.Windows.Forms.TextBox()
         Me.DgvModificaciones = New System.Windows.Forms.DataGridView()
@@ -2072,26 +2072,6 @@ Partial Class frm_menu_principal_X
         Me.cboObras.Size = New System.Drawing.Size(292, 25)
         Me.cboObras.TabIndex = 43
         '
-        'btnFacturasFirmadas
-        '
-        Me.btnFacturasFirmadas.Font = New System.Drawing.Font("Calibri", 11.25!)
-        Me.btnFacturasFirmadas.Location = New System.Drawing.Point(389, 202)
-        Me.btnFacturasFirmadas.Name = "btnFacturasFirmadas"
-        Me.btnFacturasFirmadas.Size = New System.Drawing.Size(137, 45)
-        Me.btnFacturasFirmadas.TabIndex = 42
-        Me.btnFacturasFirmadas.Text = "Ver Facturas Firmadas"
-        Me.btnFacturasFirmadas.UseVisualStyleBackColor = True
-        '
-        'btnEpFirmado
-        '
-        Me.btnEpFirmado.Font = New System.Drawing.Font("Calibri", 11.25!)
-        Me.btnEpFirmado.Location = New System.Drawing.Point(234, 202)
-        Me.btnEpFirmado.Name = "btnEpFirmado"
-        Me.btnEpFirmado.Size = New System.Drawing.Size(118, 45)
-        Me.btnEpFirmado.TabIndex = 41
-        Me.btnEpFirmado.Text = "Ver E.P. Firmados"
-        Me.btnEpFirmado.UseVisualStyleBackColor = True
-        '
         'gbFacturasFirmadas
         '
         Me.gbFacturasFirmadas.Controls.Add(Me.lblAdjuntoFacturas)
@@ -2219,6 +2199,26 @@ Partial Class frm_menu_principal_X
         Me.lblNroEstadoDePago.Size = New System.Drawing.Size(178, 18)
         Me.lblNroEstadoDePago.TabIndex = 30
         Me.lblNroEstadoDePago.Text = "N° Estado de Pago Asociado"
+        '
+        'btnFacturasFirmadas
+        '
+        Me.btnFacturasFirmadas.Font = New System.Drawing.Font("Calibri", 11.25!)
+        Me.btnFacturasFirmadas.Location = New System.Drawing.Point(389, 202)
+        Me.btnFacturasFirmadas.Name = "btnFacturasFirmadas"
+        Me.btnFacturasFirmadas.Size = New System.Drawing.Size(137, 45)
+        Me.btnFacturasFirmadas.TabIndex = 42
+        Me.btnFacturasFirmadas.Text = "Ver Facturas Firmadas"
+        Me.btnFacturasFirmadas.UseVisualStyleBackColor = True
+        '
+        'btnEpFirmado
+        '
+        Me.btnEpFirmado.Font = New System.Drawing.Font("Calibri", 11.25!)
+        Me.btnEpFirmado.Location = New System.Drawing.Point(234, 202)
+        Me.btnEpFirmado.Name = "btnEpFirmado"
+        Me.btnEpFirmado.Size = New System.Drawing.Size(118, 45)
+        Me.btnEpFirmado.TabIndex = 41
+        Me.btnEpFirmado.Text = "Ver E.P. Firmados"
+        Me.btnEpFirmado.UseVisualStyleBackColor = True
         '
         'gbPagoFirmadoAdjunto
         '
@@ -2365,29 +2365,29 @@ Partial Class frm_menu_principal_X
         '
         Me.gbContratoOriginal.Controls.Add(Me.txtidContratoOriginal)
         Me.gbContratoOriginal.Controls.Add(Me.dgvContratoOriginal)
+        Me.gbContratoOriginal.Controls.Add(Me.Label30)
+        Me.gbContratoOriginal.Controls.Add(Me.txtContratoResponsable)
         Me.gbContratoOriginal.Controls.Add(Me.Label35)
-        Me.gbContratoOriginal.Controls.Add(Me.txtUsuario)
+        Me.gbContratoOriginal.Controls.Add(Me.txtFechaContrato)
+        Me.gbContratoOriginal.Controls.Add(Me.txtObraContrato)
         Me.gbContratoOriginal.Controls.Add(Me.Label36)
-        Me.gbContratoOriginal.Controls.Add(Me.txtFechaAdjuntado)
-        Me.gbContratoOriginal.Controls.Add(Me.txtNombreObra)
         Me.gbContratoOriginal.Controls.Add(Me.Label37)
         Me.gbContratoOriginal.Controls.Add(Me.Label40)
-        Me.gbContratoOriginal.Controls.Add(Me.Label41)
-        Me.gbContratoOriginal.Controls.Add(Me.txtNombre)
-        Me.gbContratoOriginal.Controls.Add(Me.Button68)
-        Me.gbContratoOriginal.Location = New System.Drawing.Point(629, 6)
+        Me.gbContratoOriginal.Controls.Add(Me.txtNombreContrato)
+        Me.gbContratoOriginal.Controls.Add(Me.btnDescargarContrato)
+        Me.gbContratoOriginal.Location = New System.Drawing.Point(629, 3)
         Me.gbContratoOriginal.Name = "gbContratoOriginal"
         Me.gbContratoOriginal.Size = New System.Drawing.Size(592, 368)
-        Me.gbContratoOriginal.TabIndex = 53
+        Me.gbContratoOriginal.TabIndex = 55
         Me.gbContratoOriginal.TabStop = False
         Me.gbContratoOriginal.Text = "Contrato Original"
         '
         'txtidContratoOriginal
         '
-        Me.txtidContratoOriginal.Location = New System.Drawing.Point(471, 36)
+        Me.txtidContratoOriginal.Location = New System.Drawing.Point(376, 83)
         Me.txtidContratoOriginal.Name = "txtidContratoOriginal"
         Me.txtidContratoOriginal.Size = New System.Drawing.Size(100, 23)
-        Me.txtidContratoOriginal.TabIndex = 55
+        Me.txtidContratoOriginal.TabIndex = 27
         Me.txtidContratoOriginal.Visible = False
         '
         'dgvContratoOriginal
@@ -2395,101 +2395,101 @@ Partial Class frm_menu_principal_X
         Me.dgvContratoOriginal.AllowUserToAddRows = False
         Me.dgvContratoOriginal.AllowUserToDeleteRows = False
         Me.dgvContratoOriginal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvContratoOriginal.Location = New System.Drawing.Point(10, 172)
+        Me.dgvContratoOriginal.Location = New System.Drawing.Point(6, 184)
         Me.dgvContratoOriginal.Name = "dgvContratoOriginal"
         Me.dgvContratoOriginal.ReadOnly = True
-        Me.dgvContratoOriginal.Size = New System.Drawing.Size(376, 217)
+        Me.dgvContratoOriginal.Size = New System.Drawing.Size(376, 178)
         Me.dgvContratoOriginal.TabIndex = 26
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Location = New System.Drawing.Point(400, 117)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(0, 17)
+        Me.Label30.TabIndex = 25
+        Me.Label30.Visible = False
+        '
+        'txtContratoResponsable
+        '
+        Me.txtContratoResponsable.Enabled = False
+        Me.txtContratoResponsable.Location = New System.Drawing.Point(149, 131)
+        Me.txtContratoResponsable.Name = "txtContratoResponsable"
+        Me.txtContratoResponsable.Size = New System.Drawing.Size(195, 23)
+        Me.txtContratoResponsable.TabIndex = 24
+        Me.txtContratoResponsable.Visible = False
         '
         'Label35
         '
         Me.Label35.AutoSize = True
-        Me.Label35.Location = New System.Drawing.Point(400, 117)
+        Me.Label35.Location = New System.Drawing.Point(6, 137)
         Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(0, 17)
-        Me.Label35.TabIndex = 25
+        Me.Label35.Size = New System.Drawing.Size(91, 17)
+        Me.Label35.TabIndex = 23
+        Me.Label35.Text = "Responsable"
         Me.Label35.Visible = False
         '
-        'txtUsuario
+        'txtFechaContrato
         '
-        Me.txtUsuario.Enabled = False
-        Me.txtUsuario.Location = New System.Drawing.Point(149, 131)
-        Me.txtUsuario.Name = "txtUsuario"
-        Me.txtUsuario.Size = New System.Drawing.Size(195, 23)
-        Me.txtUsuario.TabIndex = 24
-        Me.txtUsuario.Visible = False
+        Me.txtFechaContrato.Enabled = False
+        Me.txtFechaContrato.Location = New System.Drawing.Point(149, 83)
+        Me.txtFechaContrato.Name = "txtFechaContrato"
+        Me.txtFechaContrato.Size = New System.Drawing.Size(195, 23)
+        Me.txtFechaContrato.TabIndex = 22
+        '
+        'txtObraContrato
+        '
+        Me.txtObraContrato.Enabled = False
+        Me.txtObraContrato.Location = New System.Drawing.Point(149, 48)
+        Me.txtObraContrato.Name = "txtObraContrato"
+        Me.txtObraContrato.Size = New System.Drawing.Size(195, 23)
+        Me.txtObraContrato.TabIndex = 20
         '
         'Label36
         '
         Me.Label36.AutoSize = True
-        Me.Label36.Location = New System.Drawing.Point(6, 137)
+        Me.Label36.Location = New System.Drawing.Point(6, 86)
         Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(91, 17)
-        Me.Label36.TabIndex = 23
-        Me.Label36.Text = "Responsable"
-        Me.Label36.Visible = False
-        '
-        'txtFechaAdjuntado
-        '
-        Me.txtFechaAdjuntado.Enabled = False
-        Me.txtFechaAdjuntado.Location = New System.Drawing.Point(149, 83)
-        Me.txtFechaAdjuntado.Name = "txtFechaAdjuntado"
-        Me.txtFechaAdjuntado.Size = New System.Drawing.Size(195, 23)
-        Me.txtFechaAdjuntado.TabIndex = 22
-        '
-        'txtNombreObra
-        '
-        Me.txtNombreObra.Enabled = False
-        Me.txtNombreObra.Location = New System.Drawing.Point(149, 48)
-        Me.txtNombreObra.Name = "txtNombreObra"
-        Me.txtNombreObra.Size = New System.Drawing.Size(195, 23)
-        Me.txtNombreObra.TabIndex = 20
+        Me.Label36.Size = New System.Drawing.Size(115, 17)
+        Me.Label36.TabIndex = 19
+        Me.Label36.Text = "Fecha Adjuntado"
         '
         'Label37
         '
         Me.Label37.AutoSize = True
-        Me.Label37.Location = New System.Drawing.Point(10, 86)
+        Me.Label37.Location = New System.Drawing.Point(10, 51)
         Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(115, 17)
-        Me.Label37.TabIndex = 19
-        Me.Label37.Text = "Fecha Adjuntado"
+        Me.Label37.Size = New System.Drawing.Size(40, 17)
+        Me.Label37.TabIndex = 17
+        Me.Label37.Text = "Obra"
         '
         'Label40
         '
         Me.Label40.AutoSize = True
-        Me.Label40.Location = New System.Drawing.Point(10, 51)
+        Me.Label40.Location = New System.Drawing.Point(10, 146)
         Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(40, 17)
-        Me.Label40.TabIndex = 17
-        Me.Label40.Text = "Obra"
+        Me.Label40.Size = New System.Drawing.Size(133, 17)
+        Me.Label40.TabIndex = 15
+        Me.Label40.Text = "Nombre del Adjunto"
+        Me.Label40.Visible = False
         '
-        'Label41
+        'txtNombreContrato
         '
-        Me.Label41.AutoSize = True
-        Me.Label41.Location = New System.Drawing.Point(10, 146)
-        Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(133, 17)
-        Me.Label41.TabIndex = 15
-        Me.Label41.Text = "Nombre del Adjunto"
-        Me.Label41.Visible = False
+        Me.txtNombreContrato.Enabled = False
+        Me.txtNombreContrato.Location = New System.Drawing.Point(149, 143)
+        Me.txtNombreContrato.Name = "txtNombreContrato"
+        Me.txtNombreContrato.Size = New System.Drawing.Size(195, 23)
+        Me.txtNombreContrato.TabIndex = 16
+        Me.txtNombreContrato.Visible = False
         '
-        'txtNombre
+        'btnDescargarContrato
         '
-        Me.txtNombre.Enabled = False
-        Me.txtNombre.Location = New System.Drawing.Point(149, 143)
-        Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(195, 23)
-        Me.txtNombre.TabIndex = 16
-        Me.txtNombre.Visible = False
-        '
-        'Button68
-        '
-        Me.Button68.Location = New System.Drawing.Point(376, 36)
-        Me.Button68.Name = "Button68"
-        Me.Button68.Size = New System.Drawing.Size(89, 26)
-        Me.Button68.TabIndex = 13
-        Me.Button68.Text = "Descargar"
-        Me.Button68.UseVisualStyleBackColor = True
+        Me.btnDescargarContrato.Location = New System.Drawing.Point(376, 36)
+        Me.btnDescargarContrato.Name = "btnDescargarContrato"
+        Me.btnDescargarContrato.Size = New System.Drawing.Size(89, 26)
+        Me.btnDescargarContrato.TabIndex = 13
+        Me.btnDescargarContrato.Text = "Descargar"
+        Me.btnDescargarContrato.UseVisualStyleBackColor = True
         '
         'gbModificacionesFirmadas
         '
@@ -6047,18 +6047,6 @@ Partial Class frm_menu_principal_X
     Friend WithEvents cboObrasModificacion As System.Windows.Forms.ComboBox
     Friend WithEvents Button66 As System.Windows.Forms.Button
     Friend WithEvents Button67 As System.Windows.Forms.Button
-    Friend WithEvents gbContratoOriginal As System.Windows.Forms.GroupBox
-    Friend WithEvents dgvContratoOriginal As System.Windows.Forms.DataGridView
-    Friend WithEvents Label35 As System.Windows.Forms.Label
-    Friend WithEvents txtUsuario As System.Windows.Forms.TextBox
-    Friend WithEvents Label36 As System.Windows.Forms.Label
-    Friend WithEvents txtFechaAdjuntado As System.Windows.Forms.TextBox
-    Friend WithEvents txtNombreObra As System.Windows.Forms.TextBox
-    Friend WithEvents Label37 As System.Windows.Forms.Label
-    Friend WithEvents Label40 As System.Windows.Forms.Label
-    Friend WithEvents Label41 As System.Windows.Forms.Label
-    Friend WithEvents txtNombre As System.Windows.Forms.TextBox
-    Friend WithEvents Button68 As System.Windows.Forms.Button
     Friend WithEvents gbModificacionesFirmadas As System.Windows.Forms.GroupBox
     Friend WithEvents DgvModificaciones As System.Windows.Forms.DataGridView
     Friend WithEvents txtxNroModificacionModificaciones As System.Windows.Forms.TextBox
@@ -6073,6 +6061,18 @@ Partial Class frm_menu_principal_X
     Friend WithEvents Label47 As System.Windows.Forms.Label
     Friend WithEvents txtNombreAdjuntoModificaciones As System.Windows.Forms.TextBox
     Friend WithEvents Button70 As System.Windows.Forms.Button
-    Friend WithEvents txtidContratoOriginal As System.Windows.Forms.TextBox
     Friend WithEvents txtIdModificacionesContrato As System.Windows.Forms.TextBox
+    Friend WithEvents gbContratoOriginal As System.Windows.Forms.GroupBox
+    Friend WithEvents dgvContratoOriginal As System.Windows.Forms.DataGridView
+    Friend WithEvents Label30 As System.Windows.Forms.Label
+    Friend WithEvents txtContratoResponsable As System.Windows.Forms.TextBox
+    Friend WithEvents Label35 As System.Windows.Forms.Label
+    Friend WithEvents txtFechaContrato As System.Windows.Forms.TextBox
+    Friend WithEvents txtObraContrato As System.Windows.Forms.TextBox
+    Friend WithEvents Label36 As System.Windows.Forms.Label
+    Friend WithEvents Label37 As System.Windows.Forms.Label
+    Friend WithEvents Label40 As System.Windows.Forms.Label
+    Friend WithEvents txtNombreContrato As System.Windows.Forms.TextBox
+    Friend WithEvents btnDescargarContrato As System.Windows.Forms.Button
+    Friend WithEvents txtidContratoOriginal As System.Windows.Forms.TextBox
 End Class

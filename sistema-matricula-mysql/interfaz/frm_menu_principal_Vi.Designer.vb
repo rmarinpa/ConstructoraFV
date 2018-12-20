@@ -119,6 +119,7 @@ Partial Class frm_menu_principal_VI
         Me.dgvEstadoPago = New System.Windows.Forms.DataGridView()
         Me.GroupBox10 = New System.Windows.Forms.GroupBox()
         Me.txtObservaciones = New System.Windows.Forms.TextBox()
+        Me.cboObras = New System.Windows.Forms.ComboBox()
         Me.Label62 = New System.Windows.Forms.Label()
         Me.txtReajusteNeto = New System.Windows.Forms.TextBox()
         Me.Label61 = New System.Windows.Forms.Label()
@@ -134,7 +135,6 @@ Partial Class frm_menu_principal_VI
         Me.txtRetencionesCanjeadas = New System.Windows.Forms.TextBox()
         Me.Label52 = New System.Windows.Forms.Label()
         Me.txtRetenciones = New System.Windows.Forms.TextBox()
-        Me.cboObras = New System.Windows.Forms.ComboBox()
         Me.Label51 = New System.Windows.Forms.Label()
         Me.txtNroEstadoPago = New System.Windows.Forms.TextBox()
         Me.txtReajuste = New System.Windows.Forms.TextBox()
@@ -1492,7 +1492,7 @@ Partial Class frm_menu_principal_VI
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgRetencionesProforma.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgRetencionesProforma.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
-        Me.dgRetencionesProforma.Size = New System.Drawing.Size(216, 57)
+        Me.dgRetencionesProforma.Size = New System.Drawing.Size(252, 78)
         Me.dgRetencionesProforma.TabIndex = 27
         '
         'cboObrasFiltro
@@ -1514,7 +1514,7 @@ Partial Class frm_menu_principal_VI
         '
         'txtIdEstadoPago
         '
-        Me.txtIdEstadoPago.Location = New System.Drawing.Point(596, 380)
+        Me.txtIdEstadoPago.Location = New System.Drawing.Point(596, 404)
         Me.txtIdEstadoPago.Name = "txtIdEstadoPago"
         Me.txtIdEstadoPago.Size = New System.Drawing.Size(100, 23)
         Me.txtIdEstadoPago.TabIndex = 20
@@ -1525,7 +1525,7 @@ Partial Class frm_menu_principal_VI
         Me.btnEliminar.BackColor = System.Drawing.Color.Transparent
         Me.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnEliminar.Location = New System.Drawing.Point(510, 380)
+        Me.btnEliminar.Location = New System.Drawing.Point(510, 385)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(80, 52)
         Me.btnEliminar.TabIndex = 14
@@ -1537,7 +1537,7 @@ Partial Class frm_menu_principal_VI
         '
         Me.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnModificar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnModificar.Location = New System.Drawing.Point(424, 380)
+        Me.btnModificar.Location = New System.Drawing.Point(424, 385)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(80, 52)
         Me.btnModificar.TabIndex = 13
@@ -1550,7 +1550,7 @@ Partial Class frm_menu_principal_VI
         Me.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnAgregar.Enabled = False
         Me.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnAgregar.Location = New System.Drawing.Point(338, 438)
+        Me.btnAgregar.Location = New System.Drawing.Point(338, 447)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(80, 52)
         Me.btnAgregar.TabIndex = 15
@@ -1562,7 +1562,7 @@ Partial Class frm_menu_principal_VI
         '
         Me.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnNuevo.Location = New System.Drawing.Point(338, 380)
+        Me.btnNuevo.Location = New System.Drawing.Point(338, 385)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(80, 52)
         Me.btnNuevo.TabIndex = 12
@@ -1575,7 +1575,7 @@ Partial Class frm_menu_principal_VI
         Me.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnCancelar.Enabled = False
         Me.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnCancelar.Location = New System.Drawing.Point(424, 438)
+        Me.btnCancelar.Location = New System.Drawing.Point(424, 447)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(80, 52)
         Me.btnCancelar.TabIndex = 16
@@ -1588,10 +1588,10 @@ Partial Class frm_menu_principal_VI
         Me.dgvEstadoPago.AllowUserToAddRows = False
         Me.dgvEstadoPago.AllowUserToDeleteRows = False
         Me.dgvEstadoPago.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvEstadoPago.Location = New System.Drawing.Point(338, 109)
+        Me.dgvEstadoPago.Location = New System.Drawing.Point(338, 133)
         Me.dgvEstadoPago.Name = "dgvEstadoPago"
         Me.dgvEstadoPago.ReadOnly = True
-        Me.dgvEstadoPago.Size = New System.Drawing.Size(978, 265)
+        Me.dgvEstadoPago.Size = New System.Drawing.Size(978, 246)
         Me.dgvEstadoPago.TabIndex = 11
         '
         'GroupBox10
@@ -1639,6 +1639,14 @@ Partial Class frm_menu_principal_VI
         Me.txtObservaciones.Name = "txtObservaciones"
         Me.txtObservaciones.Size = New System.Drawing.Size(192, 23)
         Me.txtObservaciones.TabIndex = 46
+        '
+        'cboObras
+        '
+        Me.cboObras.FormattingEnabled = True
+        Me.cboObras.Location = New System.Drawing.Point(93, 22)
+        Me.cboObras.Name = "cboObras"
+        Me.cboObras.Size = New System.Drawing.Size(209, 25)
+        Me.cboObras.TabIndex = 28
         '
         'Label62
         '
@@ -1766,14 +1774,6 @@ Partial Class frm_menu_principal_VI
         Me.txtRetenciones.Name = "txtRetenciones"
         Me.txtRetenciones.Size = New System.Drawing.Size(182, 23)
         Me.txtRetenciones.TabIndex = 32
-        '
-        'cboObras
-        '
-        Me.cboObras.FormattingEnabled = True
-        Me.cboObras.Location = New System.Drawing.Point(93, 22)
-        Me.cboObras.Name = "cboObras"
-        Me.cboObras.Size = New System.Drawing.Size(209, 25)
-        Me.cboObras.TabIndex = 28
         '
         'Label51
         '

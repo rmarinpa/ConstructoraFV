@@ -587,6 +587,16 @@ Public Class frm_menu_principal_X
             Next i
         End If
     End Sub
+    Private Sub TabPage6_Enter(sender As Object, e As EventArgs) Handles TabPage6.Enter
+        num_tab = 1
+        frm_menu_principal_VI.Show()
+        Me.Close()
+    End Sub
+    Private Sub TabPage7_Enter(sender As Object, e As EventArgs) Handles TabPage7.Enter
+        num_tab = 1
+        frm_menu_principal_VII.Show()
+        Me.Close()
+    End Sub
     Private Sub TabPage4_Enter(sender As Object, e As EventArgs) Handles TabPage4.Enter
         num_tab = 1
         frm_menu_principal_IV_V2.Show()
@@ -898,7 +908,7 @@ Public Class frm_menu_principal_X
         End Try
     End Sub
 
-    Private Sub Button68_Click(sender As Object, e As EventArgs) Handles Button68.Click
+    Private Sub Button68_Click(sender As Object, e As EventArgs)
         Try
             lblRutaDescarga.Text.ToString()
             If txtidContratoOriginal.Text <> "" Then
@@ -1039,23 +1049,64 @@ Public Class frm_menu_principal_X
         End Try
     End Sub
 
-    Private Sub dgvContratoOriginal_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvContratoOriginal.CellContentClick
-
+    Private Sub dgvContratoOriginal_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
         Try
             Dim index As Integer
             index = e.RowIndex
             Dim selectRow As DataGridViewRow
             selectRow = dgvContratoOriginal.Rows(index)
             txtidContratoOriginal.Text = selectRow.Cells(0).Value.ToString()
-            txtNombreObra.Text = selectRow.Cells(1).Value.ToString()
-            txtNombre.Text = selectRow.Cells(5).Value.ToString()
-            txtUsuario.Text = selectRow.Cells(3).Value.ToString()
-            txtFechaAdjuntado.Text = selectRow.Cells(4).Value()
+            txtNombreObraArchivo.Text = selectRow.Cells(1).Value.ToString()
+            txtNombreArchivo.Text = selectRow.Cells(5).Value.ToString()
+            txtUsuarioArchivo.Text = selectRow.Cells(3).Value.ToString()
+            txtFechaAdjuntadoArchivo.Text = selectRow.Cells(4).Value()
 
 
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
 
+    End Sub
+
+    Private Sub dgvContratoOriginal_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles dgvContratoOriginal.CellMouseClick
+        Try
+            Dim index As Integer
+            index = e.RowIndex
+            Dim selectRow As DataGridViewRow
+            selectRow = dgvContratoOriginal.Rows(index)
+            txtidContratoOriginal.Text = selectRow.Cells(0).Value.ToString()
+            txtObraContrato.Text = selectRow.Cells(1).Value.ToString()
+            txtNombreContrato.Text = selectRow.Cells(5).Value.ToString()
+            txtContratoResponsable.Text = selectRow.Cells(3).Value.ToString()
+            txtFechaContrato.Text = selectRow.Cells(4).Value()
+
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub btnDescargarContrato_Click(sender As Object, e As EventArgs) Handles btnDescargarContrato.Click
+        Try
+            lblRutaDescarga.Text.ToString()
+            If txtidContratoOriginal.Text <> "" Then
+                SaveFileDialog3.FileName = txtNombreContrato.Text
+                If SaveFileDialog3.ShowDialog = DialogResult.OK Then
+                    SaveFileDialog3.Title = "Escoje la ruta para descargar"
+                    SaveFileDialog3.InitialDirectory = "Descargas"
+                    lblRutaDescarga.Text = SaveFileDialog3.FileName
+
+                    FTPDownloadFile(lblRutaDescarga.Text + "", "ftp://201.148.105.75/Contrato_Original_Modificaciones_Obras/Contrato_Original/" + txtNombreContrato.Text + "", "cfv@constructorafv.com", "gsolis2013")
+                    lblRutaDescarga.Text = ""
+                    SaveFileDialog3.FileName = ""
+                End If
+            Else
+                MsgBox("Debe seleccionar un registro", MsgBoxStyle.Exclamation)
+                lblRutaDescarga.Text = ""
+                SaveFileDialog3.FileName = ""
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 End Class

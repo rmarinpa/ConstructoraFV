@@ -55,13 +55,9 @@ Public Class frm_menu_principal_VI
             dgRetencionesProforma.DataSource = Obra.LeerRetencionesProformas(cboObrasFiltro.Text)
             With dgRetencionesProforma
                 .RowHeadersVisible = False
-                .Columns(0).HeaderCell.Value = "Retencion"
-                .Columns(1).HeaderCell.Value = "Proforma"
+                .Columns(0).HeaderCell.Value = "Retenciones Contrato"
+                .Columns(1).HeaderCell.Value = "Proformas Contrato"
             End With
-
-            dgvEstadoPago.Columns(0).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
-            dgvEstadoPago.Columns(1).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
-            dgvEstadoPago.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
 
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -196,6 +192,11 @@ Public Class frm_menu_principal_VI
         End If
         Return dato
     End Function
+    Private Sub TabPage10_Enter(sender As Object, e As EventArgs) Handles TabPage10.Enter
+        num_tab = 1
+        frm_menu_principal_X.Show()
+        Me.Close()
+    End Sub
     Private Sub TabPage8_Enter(sender As Object, e As EventArgs) Handles TabPage7.Enter
         num_tab = 1
         frm_menu_principal_VII.Show()
@@ -1077,6 +1078,7 @@ Public Class frm_menu_principal_VI
     End Sub
     Private Sub cboObrasFiltro_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboObrasFiltro.SelectedIndexChanged
         dgvFiltroEstadoPagoMandante()
+        LeerRetencion()
     End Sub
 
     Private Sub dgvFiltroEstadoPagoMandante()

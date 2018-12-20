@@ -23,7 +23,7 @@ Partial Class CR_ListadoContratoModificaciones
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
-        Me.ListadoContratoModificaciones21 = New Constructora_FV.ListadoContratoModificaciones2()
+        Me.ListadoContratoModificaciones1 = New Constructora_FV.ListadoContratoModificaciones()
         Me.SuspendLayout()
         '
         'CrystalReportViewer1
@@ -34,7 +34,7 @@ Partial Class CR_ListadoContratoModificaciones
         Me.CrystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CrystalReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
-        Me.CrystalReportViewer1.ReportSource = Me.ListadoContratoModificaciones21
+        Me.CrystalReportViewer1.ReportSource = Me.ListadoContratoModificaciones1
         Me.CrystalReportViewer1.Size = New System.Drawing.Size(815, 441)
         Me.CrystalReportViewer1.TabIndex = 0
         '
@@ -50,5 +50,5 @@ Partial Class CR_ListadoContratoModificaciones
 
     End Sub
     Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
-    Friend WithEvents ListadoContratoModificaciones21 As Constructora_FV.ListadoContratoModificaciones2
+    Friend WithEvents ListadoContratoModificaciones1 As Constructora_FV.ListadoContratoModificaciones
 End Class

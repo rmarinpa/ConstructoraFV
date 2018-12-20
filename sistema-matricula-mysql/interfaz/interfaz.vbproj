@@ -27,7 +27,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>235</ApplicationRevision>
+    <ApplicationRevision>236</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -600,16 +600,10 @@
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="ListadoContratoModificaciones2.vb">
+    <Compile Include="ListadoContratoModificaciones.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ListadoContratoModificaciones2.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ListadoModificaciones.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ListadoModificaciones.rpt</DependentUpon>
+      <DependentUpon>ListadoContratoModificaciones.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Listado_equipost.vb">
@@ -1127,13 +1121,9 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Libro_compras_v2.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListadoContratoModificaciones2.rpt">
+    <EmbeddedResource Include="ListadoContratoModificaciones.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ListadoContratoModificaciones2.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ListadoModificaciones.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ListadoModificaciones.vb</LastGenOutput>
+      <LastGenOutput>ListadoContratoModificaciones.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Listado_equipost.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
