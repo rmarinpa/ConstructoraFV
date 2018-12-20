@@ -232,18 +232,18 @@ Public Class frm_menu_principal_VI
         If Boton = 1 Then
             Try
                 Dim obra As String
-                Dim nro_estadoPago As Integer
+                Dim nro_estadoPago As Decimal
                 Dim fecha As Date
-                Dim nro_factura As Integer
-                Dim valor_obra As Integer
-                Dim reajuste As Integer
-                Dim retenciones As Integer
-                Dim retenciones_canjeadas As Integer
-                Dim multas As Integer
-                Dim valor_estado_pago As Integer
-                Dim valor_estado_pago_neto As Integer
-                Dim obras_neto As Integer
-                Dim reajuste_neto As Integer
+                Dim nro_factura As Decimal
+                Dim valor_obra As Decimal
+                Dim reajuste As Decimal
+                Dim retenciones As Decimal
+                Dim retenciones_canjeadas As Decimal
+                Dim multas As Decimal
+                Dim valor_estado_pago As Decimal
+                Dim valor_estado_pago_neto As Decimal
+                Dim obras_neto As Decimal
+                Dim reajuste_neto As Decimal
                 Dim observaciones As String
                 obra = cboObras.Text
                 nro_estadoPago = txtNroEstadoPago.Text
@@ -264,8 +264,6 @@ Public Class frm_menu_principal_VI
                 If nue_obra6.RegistroExistente(obra, nro_estadoPago) = False Then
                     If txtNroEstadoPago.Text >= 0 And txtNroFactura.Text >= 0 And txtValorObra.Text >= 0 And txtReajuste.Text >= 0 And txtRetenciones.Text >= 0 And
                     txtRetencionesCanjeadas.Text >= 0 And txtMultas.Text >= 0 And txtValorEstadoPago.Text >= 0 And txtValorEstadoPagoNeto.Text >= 0 And txtObrasNeto.Text >= 0 And txtReajusteNeto.Text >= 0 And txtObservaciones.Text <> "" Then
-                        'Se desformatean los valores 
-                        'DesformateoValores()
                         nue_obra6.Insertar(nro_estadoPago, obra, fecha, nro_factura, valor_obra, reajuste, retenciones, retenciones_canjeadas, multas, valor_estado_pago, valor_estado_pago_neto, obras_neto, reajuste_neto, observaciones)
                         LimpiarEstado()
                         BloquearEstado()
@@ -292,22 +290,22 @@ Public Class frm_menu_principal_VI
             End Try
         Else
             Try
-                Dim idestadopago As Integer
+                Dim idestadopago As Decimal
                 Dim sincroniza1 As String
                 Dim version As Integer
                 Dim obra As String
-                Dim nro_estadoPago As Integer
+                Dim nro_estadoPago As Decimal
                 Dim fecha As Date
-                Dim nro_factura As Integer
-                Dim valor_obra As Integer
-                Dim reajuste As Integer
-                Dim retenciones As Integer
-                Dim retenciones_canjeadas As Integer
-                Dim multas As Integer
-                Dim valor_estado_pago As Integer
-                Dim valor_estado_pago_neto As Integer
-                Dim obras_neto As Integer
-                Dim reajuste_neto As Integer
+                Dim nro_factura As Decimal
+                Dim valor_obra As Decimal
+                Dim reajuste As Decimal
+                Dim retenciones As Decimal
+                Dim retenciones_canjeadas As Decimal
+                Dim multas As Decimal
+                Dim valor_estado_pago As Decimal
+                Dim valor_estado_pago_neto As Decimal
+                Dim obras_neto As Decimal
+                Dim reajuste_neto As Decimal
                 Dim observaciones As String
 
 

@@ -972,28 +972,10 @@ C:\Users\USUARIO\Desktop\Constructpra FV\Version Definivito\sistema-matricula-my
 C:\Users\USUARIO\Desktop\Constructpra FV\Version Definivito\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe.manifest
 C:\Users\USUARIO\Desktop\Constructpra FV\Version Definivito\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.application
 C:\Users\USUARIO\Desktop\Constructpra FV\Version Definivito\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_ListadoContratoModificaciones.resources
-C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.config
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbprojResolveAssemblyReference.cache
 C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Interop.AcroPDFLib.dll
 C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\AxInterop.AcroPDFLib.dll
 C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.ResolveComReference.cache
-C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe
-C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.xml
-C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.pdb
-C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.manifest
-C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.application
-C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe
-C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.pdb
-C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.xml
-C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\clases.dll
-C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.dll
-C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.pdfa.dll
-C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.xtra.dll
-C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\clases.pdb
-C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\clases.xml
-C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.xml
-C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\Interop.AcroPDFLib.dll
-C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\AxInterop.AcroPDFLib.dll
-C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbprojResolveAssemblyReference.cache
 C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_EstadoPagoMandante.resources
 C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_ListadoContratoModificaciones.resources
 C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Stock_Petroleo.resources
@@ -1037,6 +1019,7 @@ C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfa
 C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.CR_Resumen_Estado_Pago.resources
 C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_listado_maquinas.resources
 C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Frm_maquinaria.resources
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_VI.resources
 C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_VII.resources
 C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_V_V2.resources
 C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_X.resources
@@ -1054,5 +1037,22 @@ C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfa
 C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.Resources.resources
 C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\interfaz.vbproj.GenerateResource.Cache
 C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.config
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe.manifest
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.exe
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.pdb
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\Programa Obra Constructora FV S.A.xml
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\clases.dll
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.dll
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.pdfa.dll
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.xtra.dll
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\clases.pdb
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\clases.xml
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\itextsharp.xml
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\AxInterop.AcroPDFLib.dll
 C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.application
-C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_VI.resources

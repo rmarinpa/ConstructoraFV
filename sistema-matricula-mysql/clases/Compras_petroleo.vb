@@ -25,10 +25,10 @@ Public Class Compras_petroleo
 
 
             nue_var.cmd.Parameters.Add("?Fecha", MySql.Data.MySqlClient.MySqlDbType.Date).Value = Fecha
-            nue_var.cmd.Parameters.Add("?N_Factura", MySql.Data.MySqlClient.MySqlDbType.Int64).Value = N_Factura
+            nue_var.cmd.Parameters.Add("?N_Factura", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = N_Factura
             nue_var.cmd.Parameters.Add("?Proveedor", MySql.Data.MySqlClient.MySqlDbType.VarChar).Value = Proveedor
             nue_var.cmd.Parameters.Add("?Rut", MySql.Data.MySqlClient.MySqlDbType.VarChar).Value = Rut
-            nue_var.cmd.Parameters.Add("?Descuento", MySql.Data.MySqlClient.MySqlDbType.Int64).Value = Descuento
+            nue_var.cmd.Parameters.Add("?Descuento", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = Descuento
             nue_var.cmd.Parameters.Add("?Imp_esp_var", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Imp_esp_var
             nue_var.cmd.Parameters.Add("?Imp_esp_fijo", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Imp_esp_fijo
             nue_var.cmd.Parameters.Add("?Precio_base", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Precio_base
@@ -38,7 +38,7 @@ Public Class Compras_petroleo
             nue_var.cmd.Parameters.Add("?Total_IEF", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Total_IEF
             nue_var.cmd.Parameters.Add("?Total_Ventas", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Total_Ventas
             nue_var.cmd.Parameters.Add("?Precio", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Precio
-            nue_var.cmd.Parameters.Add("?Litros", MySql.Data.MySqlClient.MySqlDbType.Int64).Value = Litros
+            nue_var.cmd.Parameters.Add("?Litros", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = Litros
             nue_var.cmd.Parameters.Add("?Obra", MySql.Data.MySqlClient.MySqlDbType.VarChar).Value = Obra
             nue_var.cmd.Parameters.Add("?costo_adm", MySql.Data.MySqlClient.MySqlDbType.Double).Value = costo_adm
 
@@ -62,10 +62,10 @@ Public Class Compras_petroleo
 
 
             nue_var.cmd.Parameters.Add("?Fecha", MySql.Data.MySqlClient.MySqlDbType.Date).Value = Fecha
-            nue_var.cmd.Parameters.Add("?N_Factura", MySql.Data.MySqlClient.MySqlDbType.Int64).Value = N_Factura
+            nue_var.cmd.Parameters.Add("?N_Factura", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = N_Factura
             nue_var.cmd.Parameters.Add("?Proveedor", MySql.Data.MySqlClient.MySqlDbType.VarChar).Value = Proveedor
             nue_var.cmd.Parameters.Add("?Rut", MySql.Data.MySqlClient.MySqlDbType.VarChar).Value = Rut
-            nue_var.cmd.Parameters.Add("?Descuento", MySql.Data.MySqlClient.MySqlDbType.Int64).Value = Descuento
+            nue_var.cmd.Parameters.Add("?Descuento", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = Descuento
             nue_var.cmd.Parameters.Add("?Imp_esp_var", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Imp_esp_var
             nue_var.cmd.Parameters.Add("?Imp_esp_fijo", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Imp_esp_fijo
             nue_var.cmd.Parameters.Add("?Precio_base", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Precio_base
@@ -75,7 +75,7 @@ Public Class Compras_petroleo
             nue_var.cmd.Parameters.Add("?Total_IEF", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Total_IEF
             nue_var.cmd.Parameters.Add("?Total_Ventas", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Total_Ventas
             nue_var.cmd.Parameters.Add("?Precio", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Precio
-            nue_var.cmd.Parameters.Add("?Litros", MySql.Data.MySqlClient.MySqlDbType.Int64).Value = Litros
+            nue_var.cmd.Parameters.Add("?Litros", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = Litros
             nue_var.cmd.Parameters.Add("?Obra", MySql.Data.MySqlClient.MySqlDbType.VarChar).Value = Obra
             nue_var.cmd.Parameters.Add("?costo_adm", MySql.Data.MySqlClient.MySqlDbType.Double).Value = costo_adm
             nue_var.cmd.ExecuteNonQuery()

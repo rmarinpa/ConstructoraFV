@@ -606,6 +606,12 @@
       <DependentUpon>ListadoContratoModificaciones2.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ListadoModificaciones.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListadoModificaciones.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Listado_equipost.vb">
       <DependentUpon>Listado_equipost.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -1124,6 +1130,10 @@
     <EmbeddedResource Include="ListadoContratoModificaciones2.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ListadoContratoModificaciones2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoModificaciones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListadoModificaciones.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Listado_equipost.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

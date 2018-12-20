@@ -42,7 +42,7 @@ Public Class EstadoPagoMandante
         End Try
     End Sub
 
-    Public Function Insertar(ByVal nro_Estado_Pago As Integer, ByVal obra As String, ByVal fecha As Date, ByVal nro_factura As Integer, ByVal obras As Integer, ByVal reajuste As Integer, ByVal retenciones As Integer, ByVal retenciones_canjeadas As Integer, ByVal multas As Integer, ByVal valor_estado_pago As Integer, ByVal valor_estado_pago_neto As Integer, ByVal obras_neto As Integer, ByVal reajuste_neto As Integer, ByVal observaciones As String)
+    Public Function Insertar(ByVal nro_Estado_Pago As Decimal, ByVal obra As String, ByVal fecha As Date, ByVal nro_factura As Decimal, ByVal obras As Decimal, ByVal reajuste As Decimal, ByVal retenciones As Decimal, ByVal retenciones_canjeadas As Decimal, ByVal multas As Decimal, ByVal valor_estado_pago As Integer, ByVal valor_estado_pago_neto As Decimal, ByVal obras_neto As Decimal, ByVal reajuste_neto As Decimal, ByVal observaciones As String)
         nue_var.consulta = "insert into estado_pago (nro_Estado_Pago,Obra,Fecha,Nro_factura, obras, reajuste, retenciones, retenciones_canjeadas, multas, valor_estado_pago, valor_estado_pago_neto, obras_neto, reajuste_neto,observaciones) VALUES(?nro_Estado_Pago,?Obra,?Fecha,?Nro_factura, ?obras, ?reajuste, ?retenciones, ?retenciones_canjeadas, ?multas, ?valor_estado_pago, ?valor_estado_pago_neto, ?obras_neto, ?reajuste_neto,?observaciones)"
         Try
             nue_conexion.conectar()
@@ -216,25 +216,25 @@ Public Class EstadoPagoMandante
         Return resultado
     End Function
 
-    Public Sub modificar(ByVal Id_Estado_Pago As Integer, ByVal Nro_Estado_Pago As Integer, ByVal obra As String, ByVal fecha As Date, ByVal nro_factura As Integer, ByVal Obras As Integer, ByVal reajuste As Integer, ByVal retenciones As Integer, ByVal retenciones_canjeadas As Integer, ByVal multas As Integer, ByVal valor_estado_pago As Integer, ByVal valor_estado_pago_neto As Integer, ByVal obras_neto As Integer, ByVal reajuste_neto As Integer, ByVal observaciones As String)
+    Public Sub modificar(ByVal Id_Estado_Pago As Decimal, ByVal Nro_Estado_Pago As Decimal, ByVal obra As String, ByVal fecha As Date, ByVal nro_factura As Decimal, ByVal Obras As Decimal, ByVal reajuste As Decimal, ByVal retenciones As Decimal, ByVal retenciones_canjeadas As Decimal, ByVal multas As Decimal, ByVal valor_estado_pago As Decimal, ByVal valor_estado_pago_neto As Decimal, ByVal obras_neto As Decimal, ByVal reajuste_neto As Decimal, ByVal observaciones As String)
         nue_var.consulta = "UPDATE estado_pago SET Nro_Estado_Pago = ?Nro_Estado_Pago,obra = ?obra,fecha = ?fecha, nro_factura = ?nro_factura,  Obras = ?Obras, reajuste = ?reajuste, retenciones = ?retenciones , retenciones_canjeadas = ?retenciones_canjeadas , multas = ?multas , valor_estado_pago = ?valor_estado_pago , valor_estado_pago_neto = ?valor_estado_pago_neto , obras_neto = ?obras_neto ,reajuste_neto = ?reajuste_neto, observaciones = ?observaciones WHERE Id_Estado_Pago  = ?Id_Estado_Pago"
         Try
             nue_conexion.conectar()
             nue_var.cmd = New MySqlCommand(nue_var.consulta, nue_conexion.conex())
-            nue_var.cmd.Parameters.Add("?Id_Estado_Pago", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = Id_Estado_Pago
-            nue_var.cmd.Parameters.Add("?Nro_Estado_Pago", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = Nro_Estado_Pago
+            nue_var.cmd.Parameters.Add("?Id_Estado_Pago", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = Id_Estado_Pago
+            nue_var.cmd.Parameters.Add("?Nro_Estado_Pago", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = Nro_Estado_Pago
             nue_var.cmd.Parameters.Add("?obra", MySql.Data.MySqlClient.MySqlDbType.String).Value = obra
             nue_var.cmd.Parameters.Add("?fecha", MySql.Data.MySqlClient.MySqlDbType.DateTime).Value = fecha
-            nue_var.cmd.Parameters.Add("?nro_factura", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = nro_factura
-            nue_var.cmd.Parameters.Add("?Obras", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = Obras
-            nue_var.cmd.Parameters.Add("?Reajuste", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = reajuste
-            nue_var.cmd.Parameters.Add("?Retenciones", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = retenciones
-            nue_var.cmd.Parameters.Add("?Retenciones_Canjeadas", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = retenciones_canjeadas
-            nue_var.cmd.Parameters.Add("?Multas", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = multas
-            nue_var.cmd.Parameters.Add("?Valor_Estado_Pago", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = valor_estado_pago
-            nue_var.cmd.Parameters.Add("?Valor_Estado_Pago_Neto", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = valor_estado_pago_neto
-            nue_var.cmd.Parameters.Add("?Obras_Neto", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = obras_neto
-            nue_var.cmd.Parameters.Add("?Reajuste_Neto", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = reajuste_neto
+            nue_var.cmd.Parameters.Add("?nro_factura", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = nro_factura
+            nue_var.cmd.Parameters.Add("?Obras", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = Obras
+            nue_var.cmd.Parameters.Add("?Reajuste", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = reajuste
+            nue_var.cmd.Parameters.Add("?Retenciones", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = retenciones
+            nue_var.cmd.Parameters.Add("?Retenciones_Canjeadas", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = retenciones_canjeadas
+            nue_var.cmd.Parameters.Add("?Multas", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = multas
+            nue_var.cmd.Parameters.Add("?Valor_Estado_Pago", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = valor_estado_pago
+            nue_var.cmd.Parameters.Add("?Valor_Estado_Pago_Neto", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = valor_estado_pago_neto
+            nue_var.cmd.Parameters.Add("?Obras_Neto", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = obras_neto
+            nue_var.cmd.Parameters.Add("?Reajuste_Neto", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = reajuste_neto
             nue_var.cmd.Parameters.Add("?Observaciones", MySql.Data.MySqlClient.MySqlDbType.String).Value = observaciones
             MsgBox("Se modificó correctamente")
             nue_var.cmd.ExecuteNonQuery()

@@ -33,10 +33,10 @@ Public Class Facturas_petroleo
             nue_var.cmd.Parameters.Add("?nombre_obra", MySql.Data.MySqlClient.MySqlDbType.VarChar).Value = nombre_obra
             nue_var.cmd.Parameters.Add("?id_obra", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = id_obra
             nue_var.cmd.Parameters.Add("?Fecha", MySql.Data.MySqlClient.MySqlDbType.Date).Value = Fecha
-            nue_var.cmd.Parameters.Add("?N_Factura", MySql.Data.MySqlClient.MySqlDbType.Int64).Value = N_Factura
+            nue_var.cmd.Parameters.Add("?N_Factura", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = N_Factura
             nue_var.cmd.Parameters.Add("?Proveedor", MySql.Data.MySqlClient.MySqlDbType.VarChar).Value = Proveedor
             nue_var.cmd.Parameters.Add("?Rut", MySql.Data.MySqlClient.MySqlDbType.VarChar).Value = Rut
-            nue_var.cmd.Parameters.Add("?Litros", MySql.Data.MySqlClient.MySqlDbType.Int64).Value = Litros
+            nue_var.cmd.Parameters.Add("?Litros", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = Litros
             nue_var.cmd.Parameters.Add("?Cargo_adic", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Cargo_adic
 
             nue_var.cmd.ExecuteNonQuery()
@@ -59,10 +59,10 @@ Public Class Facturas_petroleo
 
 
             nue_var.cmd.Parameters.Add("?Fecha", MySql.Data.MySqlClient.MySqlDbType.Date).Value = Fecha
-            nue_var.cmd.Parameters.Add("?N_Factura", MySql.Data.MySqlClient.MySqlDbType.Int64).Value = N_Factura
+            nue_var.cmd.Parameters.Add("?N_Factura", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = N_Factura
             nue_var.cmd.Parameters.Add("?Proveedor", MySql.Data.MySqlClient.MySqlDbType.VarChar).Value = Proveedor
             nue_var.cmd.Parameters.Add("?Rut", MySql.Data.MySqlClient.MySqlDbType.VarChar).Value = Rut
-            nue_var.cmd.Parameters.Add("?Litros", MySql.Data.MySqlClient.MySqlDbType.Int64).Value = Litros
+            nue_var.cmd.Parameters.Add("?Litros", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = Litros
             nue_var.cmd.Parameters.Add("?Cargo_adic", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Cargo_adic
             nue_var.cmd.ExecuteNonQuery()
             nue_conexion.desconectar()
@@ -111,7 +111,7 @@ Public Class Facturas_petroleo
             nue_var.cmd.Parameters.Add("?N_guia", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = N_guia
             nue_var.cmd.Parameters.Add("?Id_storage", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = Id_storage
 
-            nue_var.cmd.Parameters.Add("?Descuento", MySql.Data.MySqlClient.MySqlDbType.Int64).Value = Descuento
+            nue_var.cmd.Parameters.Add("?Descuento", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = Descuento
             nue_var.cmd.Parameters.Add("?Imp_esp_var", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Imp_esp_var
             nue_var.cmd.Parameters.Add("?Imp_esp_fijo", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Imp_esp_fijo
             nue_var.cmd.Parameters.Add("?Precio_base", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Precio_base
@@ -121,7 +121,7 @@ Public Class Facturas_petroleo
             nue_var.cmd.Parameters.Add("?Total_IEF", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Total_IEF
             nue_var.cmd.Parameters.Add("?Total_Compra", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Total_Compra
             nue_var.cmd.Parameters.Add("?Precio", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Precio
-            nue_var.cmd.Parameters.Add("?Litros", MySql.Data.MySqlClient.MySqlDbType.Int64).Value = Litros
+            nue_var.cmd.Parameters.Add("?Litros", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = Litros
 
             nue_var.cmd.ExecuteNonQuery()
             nue_conexion.desconectar()
@@ -145,7 +145,7 @@ Public Class Facturas_petroleo
             nue_var.cmd.Parameters.Add("?Id_storage", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = Id_storage
 
 
-            nue_var.cmd.Parameters.Add("?Descuento", MySql.Data.MySqlClient.MySqlDbType.Int64).Value = Descuento
+            nue_var.cmd.Parameters.Add("?Descuento", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = Descuento
             nue_var.cmd.Parameters.Add("?Imp_esp_var", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Imp_esp_var
             nue_var.cmd.Parameters.Add("?Imp_esp_fijo", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Imp_esp_fijo
             nue_var.cmd.Parameters.Add("?Precio_base", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Precio_base
@@ -155,7 +155,7 @@ Public Class Facturas_petroleo
             nue_var.cmd.Parameters.Add("?Total_IEF", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Total_IEF
             nue_var.cmd.Parameters.Add("?Total_Compra", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Total_Compra
             nue_var.cmd.Parameters.Add("?Precio", MySql.Data.MySqlClient.MySqlDbType.Double).Value = Precio
-            nue_var.cmd.Parameters.Add("?Litros", MySql.Data.MySqlClient.MySqlDbType.Int64).Value = Litros
+            nue_var.cmd.Parameters.Add("?Litros", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = Litros
 
             nue_var.cmd.ExecuteNonQuery()
             nue_conexion.desconectar()

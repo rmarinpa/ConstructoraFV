@@ -862,29 +862,37 @@ Public Class frm_menu_principal_VII
     End Sub
 
     Private Sub txtAumentoObra_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtAumentoObra.KeyPress
+        If Char.IsLetter(e.KeyChar) Then
+            e.Handled = True
+        End If
         'Condicional que evalua que la tecla pulsada sea un número si no lo es mostrará un MSGBOX con una orden de que teclées sólo números
 
-        If Char.IsNumber(e.KeyChar) Then
-            e.Handled = False
-        ElseIf Char.IsControl(e.KeyChar) Then
-            e.Handled = False
-        ElseIf Char.IsSeparator(e.KeyChar) Then
-            e.Handled = False
-        Else : e.Handled = True
-        End If
+        'If Char.IsNumber(e.KeyChar) Then
+        '    e.Handled = False
+        'ElseIf Char.IsControl(e.KeyChar) Then
+        '    e.Handled = False
+        'ElseIf Char.IsSeparator(e.KeyChar) Then
+        '    e.Handled = False
+        'Else : e.Handled = True
+        'End If
     End Sub
 
     Private Sub txtDisminucionObra_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtDisminucionObra.KeyPress
+
+        If Char.IsLetter(e.KeyChar) Then
+            e.Handled = True
+        End If
+
         'Condicional que evalua que la tecla pulsada sea un número si no lo es mostrará un MSGBOX con una orden de que teclées sólo números
 
-        If Char.IsNumber(e.KeyChar) Then
-            e.Handled = False
-        ElseIf Char.IsControl(e.KeyChar) Then
-            e.Handled = False
-        ElseIf Char.IsSeparator(e.KeyChar) Then
-            e.Handled = False
-        Else : e.Handled = True
-        End If
+        'If Char.IsNumber(e.KeyChar) Then
+        '    e.Handled = False
+        'ElseIf Char.IsControl(e.KeyChar) Then
+        '    e.Handled = False
+        'ElseIf Char.IsSeparator(e.KeyChar) Then
+        '    e.Handled = False
+        'Else : e.Handled = True
+        'End If
     End Sub
 
     Private Sub txtObraExtraordinaria_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtObraExtraordinaria.KeyPress
