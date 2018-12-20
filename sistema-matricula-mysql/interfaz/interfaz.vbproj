@@ -17,7 +17,7 @@
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\German\OneDrive\Programa Obra CFV\</PublishUrl>
+    <PublishUrl>C:\Users\USUARIO\Desktop\CFV\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -27,7 +27,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>234</ApplicationRevision>
+    <ApplicationRevision>235</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -198,6 +198,18 @@
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="CR_EstadoPagoMandante.Designer.vb">
+      <DependentUpon>CR_EstadoPagoMandante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_EstadoPagoMandante.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstadoPagoMandante.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EstadoPagoMandante.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CR_Cuentas_Contables4_v2.vb">
       <DependentUpon>CR_Cuentas_Contables4_v2.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -209,12 +221,6 @@
       <AutoGen>True</AutoGen>
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="CR_EstadoPagoMandante.designer.vb">
-      <DependentUpon>CR_EstadoPagoMandante.vb</DependentUpon>
-    </Compile>
-    <Compile Include="CR_EstadoPagoMandante.vb">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="CR_ListadoContratoModificaciones.Designer.vb">
       <DependentUpon>CR_ListadoContratoModificaciones.vb</DependentUpon>
@@ -503,12 +509,6 @@
       <AutoGen>True</AutoGen>
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="EstadoPagoMandante.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EstadoPagoMandante.rpt</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Estado_de_pago_fechas_maq.vb">
       <DependentUpon>Estado_de_pago_fechas_maq.rpt</DependentUpon>
@@ -902,6 +902,13 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Crrevision_rendimiento_Los_marios.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="CR_EstadoPagoMandante.resx">
+      <DependentUpon>CR_EstadoPagoMandante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstadoPagoMandante.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EstadoPagoMandante.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="CR_Cuentas_Contables4_v2.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CR_Cuentas_Contables4_v2.vb</LastGenOutput>
@@ -909,9 +916,6 @@
     <EmbeddedResource Include="CR_Cuentas_Contables4_v2_T.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CR_Cuentas_Contables4_v2_T.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CR_EstadoPagoMandante.resx">
-      <DependentUpon>CR_EstadoPagoMandante.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CR_ListadoContratoModificaciones.resx">
       <DependentUpon>CR_ListadoContratoModificaciones.vb</DependentUpon>
@@ -1064,10 +1068,6 @@
     <EmbeddedResource Include="CR_litros_petroleo.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CR_litros_petroleo.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EstadoPagoMandante.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>EstadoPagoMandante.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Estado_de_pago_fechas_maq.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

@@ -1,11 +1,15 @@
-﻿
+﻿Imports CrystalDecisions.CrystalReports.Engine
+Imports CrystalDecisions.Shared
 Public Class CR_EstadoPagoMandante
 
     Private Sub CR_EstadoPagoMandante_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim objreporte As New EstadoPagoMandante
-        'Se insertan los valores de paramemtros que definimos en el procedimiento almacenado
-        objreporte.SetParameterValue("nombreobra", Module1.Nombre_Faena)
-        CrystalReportViewer1.ReportSource = objreporte
-        CrystalReportViewer1.RefreshReport()
+        Try
+            Dim reporte As New EstadoPagoMandante
+            reporte.SetParameterValue("nombreObra", Module1.Nombre_Faena)
+            CrystalReportViewer1.ReportSource = reporte
+            CrystalReportViewer1.Refresh()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 End Class
