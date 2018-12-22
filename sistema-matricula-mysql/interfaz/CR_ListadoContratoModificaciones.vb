@@ -9,5 +9,6 @@
         CrystalReportViewer1.Refresh()
         Report1.SetParameterValue("nombreObra", Nombre_Obra)
         CrystalReportViewer1.ReportSource = Report1
+
     End Sub
 End Class

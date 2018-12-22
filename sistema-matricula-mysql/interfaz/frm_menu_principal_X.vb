@@ -897,7 +897,7 @@ Public Class frm_menu_principal_X
     Private Sub Button65_Click(sender As Object, e As EventArgs) Handles Button65.Click
         Try
             If cboObras.Text <> "" Then
-                Module1.Nombre_Faena = cboObras.Text
+                Module1.Nombre_Faena = cboObrasModificacion.Text
                 CR_ListadoContratoModificaciones.Show()
             Else
                 MsgBox("Debe selecionar una obra", MsgBoxStyle.Information)

@@ -2686,7 +2686,7 @@ Partial Class frm_menu_principal_X
         Me.Button66.Name = "Button66"
         Me.Button66.Size = New System.Drawing.Size(137, 45)
         Me.Button66.TabIndex = 48
-        Me.Button66.Text = "Ver Facturas Firmadas"
+        Me.Button66.Text = "Ver Modificaciones"
         Me.Button66.UseVisualStyleBackColor = True
         '
         'Button67
