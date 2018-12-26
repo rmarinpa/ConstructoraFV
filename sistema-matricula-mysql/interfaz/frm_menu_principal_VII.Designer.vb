@@ -23,6 +23,7 @@ Partial Class frm_menu_principal_VII
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_menu_principal_VII))
         Me.lbl_nombre_obra = New System.Windows.Forms.Label()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -1355,6 +1356,7 @@ Partial Class frm_menu_principal_VII
         '
         Me.btnEliminar.BackColor = System.Drawing.Color.Transparent
         Me.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnEliminar.Image = CType(resources.GetObject("btnEliminar.Image"), System.Drawing.Image)
         Me.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnEliminar.Location = New System.Drawing.Point(500, 360)
         Me.btnEliminar.Name = "btnEliminar"
@@ -1367,6 +1369,7 @@ Partial Class frm_menu_principal_VII
         'btnModificar
         '
         Me.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnModificar.Image = CType(resources.GetObject("btnModificar.Image"), System.Drawing.Image)
         Me.btnModificar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnModificar.Location = New System.Drawing.Point(414, 360)
         Me.btnModificar.Name = "btnModificar"
@@ -1380,6 +1383,7 @@ Partial Class frm_menu_principal_VII
         '
         Me.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnAgregar.Enabled = False
+        Me.btnAgregar.Image = CType(resources.GetObject("btnAgregar.Image"), System.Drawing.Image)
         Me.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnAgregar.Location = New System.Drawing.Point(328, 418)
         Me.btnAgregar.Name = "btnAgregar"
@@ -1392,6 +1396,7 @@ Partial Class frm_menu_principal_VII
         'btnNuevo
         '
         Me.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnNuevo.Image = CType(resources.GetObject("btnNuevo.Image"), System.Drawing.Image)
         Me.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnNuevo.Location = New System.Drawing.Point(328, 360)
         Me.btnNuevo.Name = "btnNuevo"
@@ -1405,6 +1410,7 @@ Partial Class frm_menu_principal_VII
         '
         Me.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnCancelar.Enabled = False
+        Me.btnCancelar.Image = CType(resources.GetObject("btnCancelar.Image"), System.Drawing.Image)
         Me.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnCancelar.Location = New System.Drawing.Point(414, 418)
         Me.btnCancelar.Name = "btnCancelar"
@@ -1744,11 +1750,11 @@ Partial Class frm_menu_principal_VII
         '
         'btnEliminarAdjunto
         '
+        Me.btnEliminarAdjunto.Image = CType(resources.GetObject("btnEliminarAdjunto.Image"), System.Drawing.Image)
         Me.btnEliminarAdjunto.Location = New System.Drawing.Point(471, 36)
         Me.btnEliminarAdjunto.Name = "btnEliminarAdjunto"
-        Me.btnEliminarAdjunto.Size = New System.Drawing.Size(84, 26)
+        Me.btnEliminarAdjunto.Size = New System.Drawing.Size(84, 41)
         Me.btnEliminarAdjunto.TabIndex = 14
-        Me.btnEliminarAdjunto.Text = "Eliminar"
         Me.btnEliminarAdjunto.UseVisualStyleBackColor = True
         '
         'txtNombreArchivo
@@ -1762,11 +1768,11 @@ Partial Class frm_menu_principal_VII
         '
         'btnDescargar
         '
+        Me.btnDescargar.Image = CType(resources.GetObject("btnDescargar.Image"), System.Drawing.Image)
         Me.btnDescargar.Location = New System.Drawing.Point(376, 36)
         Me.btnDescargar.Name = "btnDescargar"
-        Me.btnDescargar.Size = New System.Drawing.Size(89, 26)
+        Me.btnDescargar.Size = New System.Drawing.Size(89, 41)
         Me.btnDescargar.TabIndex = 13
-        Me.btnDescargar.Text = "Descargar"
         Me.btnDescargar.UseVisualStyleBackColor = True
         '
         'GroupBox11
@@ -1987,11 +1993,11 @@ Partial Class frm_menu_principal_VII
         '
         'Button64
         '
+        Me.Button64.Image = CType(resources.GetObject("Button64.Image"), System.Drawing.Image)
         Me.Button64.Location = New System.Drawing.Point(471, 36)
         Me.Button64.Name = "Button64"
-        Me.Button64.Size = New System.Drawing.Size(84, 26)
+        Me.Button64.Size = New System.Drawing.Size(84, 41)
         Me.Button64.TabIndex = 14
-        Me.Button64.Text = "Eliminar"
         Me.Button64.UseVisualStyleBackColor = True
         '
         'txtNombreAdjuntoModificaciones
@@ -2005,11 +2011,11 @@ Partial Class frm_menu_principal_VII
         '
         'Button65
         '
+        Me.Button65.Image = CType(resources.GetObject("Button65.Image"), System.Drawing.Image)
         Me.Button65.Location = New System.Drawing.Point(376, 36)
         Me.Button65.Name = "Button65"
-        Me.Button65.Size = New System.Drawing.Size(89, 26)
+        Me.Button65.Size = New System.Drawing.Size(89, 41)
         Me.Button65.TabIndex = 13
-        Me.Button65.Text = "Descargar"
         Me.Button65.UseVisualStyleBackColor = True
         '
         'GroupBox2

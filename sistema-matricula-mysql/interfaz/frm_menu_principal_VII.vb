@@ -196,6 +196,7 @@ Public Class frm_menu_principal_VII
             proforma = txtProformas.Text
 
             If TipoBoton = 1 Then
+                'Se inserta el registro
                 If txtNroModificacion.Text >= 0 Or txtAumentoObra.Text >= 0 Or txtDisminucionObra.Text >= 0 Or txtObraExtraordinaria.Text >= 0 Or txtAumentoDisminucion.Text >= 0 Then
                     If modificaciones.RegistroExistente(obras, nromodificacion) = False Then
                         modificaciones.InsertarlistadoModificaciones(obras, nromodificacion, fecha, aumentoObra, disminucionObra, obraExtraordinaria, aumentoDisminucion, retencion, proforma)
@@ -215,10 +216,11 @@ Public Class frm_menu_principal_VII
                     End If
                 End If
             Else
+                'Se modifica el registro
                 If txtNroModificacion.Text > 0 Or txtAumentoObra.Text > 0 Or txtDisminucionObra.Text > 0 Or txtObraExtraordinaria.Text > 0 Or txtAumentoDisminucion.Text > 0 Then
                     If modificaciones.RegistroExistente(obras, nromodificacion) = True Then
                         idModificaciones = txtIdModificaciones.Text
-                        modificaciones.ModificarListado(idModificaciones, obras, nromodificacion, fecha, aumentoObra, disminucionObra, obraExtraordinaria, aumentoDisminucion)
+                        modificaciones.ModificarListado(idModificaciones, obras, nromodificacion, fecha, aumentoObra, disminucionObra, obraExtraordinaria, aumentoDisminucion, retencion, proforma)
                         LimpiarListado()
                         BloquearListado()
                         btnAgregar.Enabled = False

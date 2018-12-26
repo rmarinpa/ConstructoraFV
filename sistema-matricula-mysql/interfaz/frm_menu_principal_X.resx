@@ -3224,6 +3224,54 @@
         D//Z
 </value>
   </data>
+  <data name="btnDescargarFacturasAdjuntas.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAFFSURBVFhH7dW5TcVAFIVhR6wlIEEBJNARDYAE9MIiCGgF
+        kbEHgIASKIA1gP9YGmm4HNvj50fmI30Jcz3XT3fGVGPGjBmQdezjCe/4xDMOsIZ/ywKO8N3hEPOYatT8
+        DK6hc4qpvsQxXKM2GslEmcMOrvCKL+Qbx+RrUe8zsYI7uM2SGFeT7KE4mtk93Ea5GFeTPKI4u3CbRDGu
+        JvlAZzRzNX+B2ySKcTU5vcQ11OPPzVhG18yjGFfTRL3Us45+eUnzDZRGtW6PnHqqd33VXEGkq7iKrqhG
+        tW6PaBvVZfaHLg9YRFO0phr3rKPexW+bnKApWnPPNHlDfTrdYht3HkrmHtUvoKvhFtvE89Bn7rkLFH94
+        onQe+s49t4XiT6+jmfede3KLWdSZ5EM0xA2W8Cvp36+uhg6He3AInZFzbGIGY8aMIVX1Azr4ji+52X9S
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnDescargar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAFFSURBVFhH7dW5TcVAFIVhR6wlIEEBJNARDYAE9MIiCGgF
+        kbEHgIASKIA1gP9YGmm4HNvj50fmI30Jcz3XT3fGVGPGjBmQdezjCe/4xDMOsIZ/ywKO8N3hEPOYatT8
+        DK6hc4qpvsQxXKM2GslEmcMOrvCKL+Qbx+RrUe8zsYI7uM2SGFeT7KE4mtk93Ea5GFeTPKI4u3CbRDGu
+        JvlAZzRzNX+B2ySKcTU5vcQ11OPPzVhG18yjGFfTRL3Us45+eUnzDZRGtW6PnHqqd33VXEGkq7iKrqhG
+        tW6PaBvVZfaHLg9YRFO0phr3rKPexW+bnKApWnPPNHlDfTrdYht3HkrmHtUvoKvhFtvE89Bn7rkLFH94
+        onQe+s49t4XiT6+jmfede3KLWdSZ5EM0xA2W8Cvp36+uhg6He3AInZFzbGIGY8aMIVX1Azr4ji+52X9S
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnDescargarContrato.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAFFSURBVFhH7dW5TcVAFIVhR6wlIEEBJNARDYAE9MIiCGgF
+        kbEHgIASKIA1gP9YGmm4HNvj50fmI30Jcz3XT3fGVGPGjBmQdezjCe/4xDMOsIZ/ywKO8N3hEPOYatT8
+        DK6hc4qpvsQxXKM2GslEmcMOrvCKL+Qbx+RrUe8zsYI7uM2SGFeT7KE4mtk93Ea5GFeTPKI4u3CbRDGu
+        JvlAZzRzNX+B2ySKcTU5vcQ11OPPzVhG18yjGFfTRL3Us45+eUnzDZRGtW6PnHqqd33VXEGkq7iKrqhG
+        tW6PaBvVZfaHLg9YRFO0phr3rKPexW+bnKApWnPPNHlDfTrdYht3HkrmHtUvoKvhFtvE89Bn7rkLFH94
+        onQe+s49t4XiT6+jmfede3KLWdSZ5EM0xA2W8Cvp36+uhg6He3AInZFzbGIGY8aMIVX1Azr4ji+52X9S
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="Button70.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAFFSURBVFhH7dW5TcVAFIVhR6wlIEEBJNARDYAE9MIiCGgF
+        kbEHgIASKIA1gP9YGmm4HNvj50fmI30Jcz3XT3fGVGPGjBmQdezjCe/4xDMOsIZ/ywKO8N3hEPOYatT8
+        DK6hc4qpvsQxXKM2GslEmcMOrvCKL+Qbx+RrUe8zsYI7uM2SGFeT7KE4mtk93Ea5GFeTPKI4u3CbRDGu
+        JvlAZzRzNX+B2ySKcTU5vcQ11OPPzVhG18yjGFfTRL3Us45+eUnzDZRGtW6PnHqqd33VXEGkq7iKrqhG
+        tW6PaBvVZfaHLg9YRFO0phr3rKPexW+bnKApWnPPNHlDfTrdYht3HkrmHtUvoKvhFtvE89Bn7rkLFH94
+        onQe+s49t4XiT6+jmfede3KLWdSZ5EM0xA2W8Cvp36+uhg6He3AInZFzbGIGY8aMIVX1Azr4ji+52X9S
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="btn_descargar5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEB6AHoAAD/4QacRXhpZgAATU0AKgAAAAgACwEOAAIAAAAyAAAAkgESAAMAAAAB

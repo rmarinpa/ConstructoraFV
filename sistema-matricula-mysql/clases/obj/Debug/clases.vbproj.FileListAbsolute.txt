@@ -175,3 +175,4 @@ C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\clases\
 C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\clases\obj\Debug\clases.dll
 C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\clases\obj\Debug\clases.xml
 C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\clases\obj\Debug\clases.pdb
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\clases\obj\Debug\clases.vbprojResolveAssemblyReference.cache

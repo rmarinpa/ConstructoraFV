@@ -23,8 +23,9 @@ Partial Class frm_menu_principal_VI
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_menu_principal_VI))
         Me.lbl_nombre_obra = New System.Windows.Forms.Label()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -1470,27 +1471,27 @@ Partial Class frm_menu_principal_VI
         Me.dgRetencionesProforma.AllowUserToDeleteRows = False
         Me.dgRetencionesProforma.BackgroundColor = System.Drawing.SystemColors.Control
         Me.dgRetencionesProforma.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgRetencionesProforma.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgRetencionesProforma.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.dgRetencionesProforma.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgRetencionesProforma.GridColor = System.Drawing.SystemColors.Control
         Me.dgRetencionesProforma.Location = New System.Drawing.Point(616, 43)
         Me.dgRetencionesProforma.Name = "dgRetencionesProforma"
         Me.dgRetencionesProforma.ReadOnly = True
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgRetencionesProforma.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgRetencionesProforma.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.dgRetencionesProforma.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
         Me.dgRetencionesProforma.Size = New System.Drawing.Size(252, 78)
         Me.dgRetencionesProforma.TabIndex = 27
@@ -1498,7 +1499,7 @@ Partial Class frm_menu_principal_VI
         'cboObrasFiltro
         '
         Me.cboObrasFiltro.FormattingEnabled = True
-        Me.cboObrasFiltro.Location = New System.Drawing.Point(450, 43)
+        Me.cboObrasFiltro.Location = New System.Drawing.Point(450, 44)
         Me.cboObrasFiltro.Name = "cboObrasFiltro"
         Me.cboObrasFiltro.Size = New System.Drawing.Size(149, 25)
         Me.cboObrasFiltro.TabIndex = 22
@@ -1524,6 +1525,7 @@ Partial Class frm_menu_principal_VI
         '
         Me.btnEliminar.BackColor = System.Drawing.Color.Transparent
         Me.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnEliminar.Image = CType(resources.GetObject("btnEliminar.Image"), System.Drawing.Image)
         Me.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnEliminar.Location = New System.Drawing.Point(510, 385)
         Me.btnEliminar.Name = "btnEliminar"
@@ -1536,6 +1538,7 @@ Partial Class frm_menu_principal_VI
         'btnModificar
         '
         Me.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnModificar.Image = CType(resources.GetObject("btnModificar.Image"), System.Drawing.Image)
         Me.btnModificar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnModificar.Location = New System.Drawing.Point(424, 385)
         Me.btnModificar.Name = "btnModificar"
@@ -1549,6 +1552,7 @@ Partial Class frm_menu_principal_VI
         '
         Me.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnAgregar.Enabled = False
+        Me.btnAgregar.Image = CType(resources.GetObject("btnAgregar.Image"), System.Drawing.Image)
         Me.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnAgregar.Location = New System.Drawing.Point(338, 447)
         Me.btnAgregar.Name = "btnAgregar"
@@ -1561,6 +1565,7 @@ Partial Class frm_menu_principal_VI
         'btnNuevo
         '
         Me.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnNuevo.Image = CType(resources.GetObject("btnNuevo.Image"), System.Drawing.Image)
         Me.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnNuevo.Location = New System.Drawing.Point(338, 385)
         Me.btnNuevo.Name = "btnNuevo"
@@ -1574,6 +1579,7 @@ Partial Class frm_menu_principal_VI
         '
         Me.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnCancelar.Enabled = False
+        Me.btnCancelar.Image = CType(resources.GetObject("btnCancelar.Image"), System.Drawing.Image)
         Me.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnCancelar.Location = New System.Drawing.Point(424, 447)
         Me.btnCancelar.Name = "btnCancelar"
@@ -2009,11 +2015,11 @@ Partial Class frm_menu_principal_VI
         '
         'btnEliminarAdjunto
         '
-        Me.btnEliminarAdjunto.Location = New System.Drawing.Point(471, 36)
+        Me.btnEliminarAdjunto.Image = CType(resources.GetObject("btnEliminarAdjunto.Image"), System.Drawing.Image)
+        Me.btnEliminarAdjunto.Location = New System.Drawing.Point(488, 30)
         Me.btnEliminarAdjunto.Name = "btnEliminarAdjunto"
-        Me.btnEliminarAdjunto.Size = New System.Drawing.Size(84, 26)
+        Me.btnEliminarAdjunto.Size = New System.Drawing.Size(67, 38)
         Me.btnEliminarAdjunto.TabIndex = 14
-        Me.btnEliminarAdjunto.Text = "Eliminar"
         Me.btnEliminarAdjunto.UseVisualStyleBackColor = True
         '
         'txtNombreArchivo
@@ -2027,11 +2033,11 @@ Partial Class frm_menu_principal_VI
         '
         'btnDescargar
         '
-        Me.btnDescargar.Location = New System.Drawing.Point(376, 36)
+        Me.btnDescargar.Image = CType(resources.GetObject("btnDescargar.Image"), System.Drawing.Image)
+        Me.btnDescargar.Location = New System.Drawing.Point(403, 30)
         Me.btnDescargar.Name = "btnDescargar"
-        Me.btnDescargar.Size = New System.Drawing.Size(89, 26)
+        Me.btnDescargar.Size = New System.Drawing.Size(69, 38)
         Me.btnDescargar.TabIndex = 13
-        Me.btnDescargar.Text = "Descargar"
         Me.btnDescargar.UseVisualStyleBackColor = True
         '
         'dgvAdjuntosPagosFirmados
@@ -2267,20 +2273,20 @@ Partial Class frm_menu_principal_VI
         '
         'btnDescargarFacturasAdjuntas
         '
-        Me.btnDescargarFacturasAdjuntas.Location = New System.Drawing.Point(401, 29)
+        Me.btnDescargarFacturasAdjuntas.Image = CType(resources.GetObject("btnDescargarFacturasAdjuntas.Image"), System.Drawing.Image)
+        Me.btnDescargarFacturasAdjuntas.Location = New System.Drawing.Point(420, 29)
         Me.btnDescargarFacturasAdjuntas.Name = "btnDescargarFacturasAdjuntas"
-        Me.btnDescargarFacturasAdjuntas.Size = New System.Drawing.Size(84, 26)
+        Me.btnDescargarFacturasAdjuntas.Size = New System.Drawing.Size(82, 39)
         Me.btnDescargarFacturasAdjuntas.TabIndex = 14
-        Me.btnDescargarFacturasAdjuntas.Text = "Descargar"
         Me.btnDescargarFacturasAdjuntas.UseVisualStyleBackColor = True
         '
         'btnEliminarFacturasAdjuntas
         '
-        Me.btnEliminarFacturasAdjuntas.Location = New System.Drawing.Point(491, 29)
+        Me.btnEliminarFacturasAdjuntas.Image = CType(resources.GetObject("btnEliminarFacturasAdjuntas.Image"), System.Drawing.Image)
+        Me.btnEliminarFacturasAdjuntas.Location = New System.Drawing.Point(521, 28)
         Me.btnEliminarFacturasAdjuntas.Name = "btnEliminarFacturasAdjuntas"
-        Me.btnEliminarFacturasAdjuntas.Size = New System.Drawing.Size(89, 26)
+        Me.btnEliminarFacturasAdjuntas.Size = New System.Drawing.Size(89, 40)
         Me.btnEliminarFacturasAdjuntas.TabIndex = 13
-        Me.btnEliminarFacturasAdjuntas.Text = "Eliminar"
         Me.btnEliminarFacturasAdjuntas.UseVisualStyleBackColor = True
         '
         'GroupBox13

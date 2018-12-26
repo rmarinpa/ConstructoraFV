@@ -2117,11 +2117,11 @@ Partial Class frm_menu_principal_X
         'btnDescargarFacturasAdjuntas
         '
         Me.btnDescargarFacturasAdjuntas.Font = New System.Drawing.Font("Calibri", 11.25!)
+        Me.btnDescargarFacturasAdjuntas.Image = CType(resources.GetObject("btnDescargarFacturasAdjuntas.Image"), System.Drawing.Image)
         Me.btnDescargarFacturasAdjuntas.Location = New System.Drawing.Point(526, 217)
         Me.btnDescargarFacturasAdjuntas.Name = "btnDescargarFacturasAdjuntas"
-        Me.btnDescargarFacturasAdjuntas.Size = New System.Drawing.Size(84, 26)
+        Me.btnDescargarFacturasAdjuntas.Size = New System.Drawing.Size(84, 41)
         Me.btnDescargarFacturasAdjuntas.TabIndex = 28
-        Me.btnDescargarFacturasAdjuntas.Text = "Descargar"
         Me.btnDescargarFacturasAdjuntas.UseVisualStyleBackColor = True
         '
         'txtInfoObra
@@ -2255,11 +2255,11 @@ Partial Class frm_menu_principal_X
         'btnDescargar
         '
         Me.btnDescargar.Font = New System.Drawing.Font("Calibri", 11.25!)
+        Me.btnDescargar.Image = CType(resources.GetObject("btnDescargar.Image"), System.Drawing.Image)
         Me.btnDescargar.Location = New System.Drawing.Point(478, 225)
         Me.btnDescargar.Name = "btnDescargar"
         Me.btnDescargar.Size = New System.Drawing.Size(89, 26)
         Me.btnDescargar.TabIndex = 13
-        Me.btnDescargar.Text = "Descargar"
         Me.btnDescargar.UseVisualStyleBackColor = True
         '
         'lblRutaDescarga
@@ -2484,11 +2484,11 @@ Partial Class frm_menu_principal_X
         '
         'btnDescargarContrato
         '
+        Me.btnDescargarContrato.Image = CType(resources.GetObject("btnDescargarContrato.Image"), System.Drawing.Image)
         Me.btnDescargarContrato.Location = New System.Drawing.Point(376, 36)
         Me.btnDescargarContrato.Name = "btnDescargarContrato"
-        Me.btnDescargarContrato.Size = New System.Drawing.Size(89, 26)
+        Me.btnDescargarContrato.Size = New System.Drawing.Size(89, 42)
         Me.btnDescargarContrato.TabIndex = 13
-        Me.btnDescargarContrato.Text = "Descargar"
         Me.btnDescargarContrato.UseVisualStyleBackColor = True
         '
         'gbModificacionesFirmadas
@@ -2633,11 +2633,11 @@ Partial Class frm_menu_principal_X
         '
         'Button70
         '
+        Me.Button70.Image = CType(resources.GetObject("Button70.Image"), System.Drawing.Image)
         Me.Button70.Location = New System.Drawing.Point(376, 36)
         Me.Button70.Name = "Button70"
         Me.Button70.Size = New System.Drawing.Size(89, 26)
         Me.Button70.TabIndex = 13
-        Me.Button70.Text = "Descargar"
         Me.Button70.UseVisualStyleBackColor = True
         '
         'TextBox9
