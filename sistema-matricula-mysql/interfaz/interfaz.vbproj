@@ -535,6 +535,12 @@
     <Compile Include="Frm_maquinaria.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm_menu_principal_IX.Designer.vb">
+      <DependentUpon>frm_menu_principal_IX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_principal_IX.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_menu_principal_Vi.designer.vb">
       <DependentUpon>frm_menu_principal_Vi.vb</DependentUpon>
     </Compile>
@@ -545,6 +551,12 @@
       <DependentUpon>frm_menu_principal_VII.vb</DependentUpon>
     </Compile>
     <Compile Include="frm_menu_principal_VII.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_menu_principal_VIII.Designer.vb">
+      <DependentUpon>frm_menu_principal_VIII.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_principal_VIII.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_menu_principal_V_V2.Designer.vb">
@@ -606,12 +618,6 @@
       <AutoGen>True</AutoGen>
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="ListadoContratoModificaciones.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ListadoContratoModificaciones.rpt</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Listado_equipost.vb">
       <DependentUpon>Listado_equipost.rpt</DependentUpon>
@@ -1090,11 +1096,17 @@
     <EmbeddedResource Include="Frm_maquinaria.resx">
       <DependentUpon>Frm_maquinaria.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_principal_IX.resx">
+      <DependentUpon>frm_menu_principal_IX.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_menu_principal_VI.resx">
       <DependentUpon>frm_menu_principal_Vi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_menu_principal_VII.resx">
       <DependentUpon>frm_menu_principal_VII.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_principal_VIII.resx">
+      <DependentUpon>frm_menu_principal_VIII.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_menu_principal_V_V2.resx">
       <DependentUpon>frm_menu_principal_V_V2.vb</DependentUpon>
@@ -1131,10 +1143,6 @@
     <EmbeddedResource Include="Libro_compras_v2.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Libro_compras_v2.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ListadoContratoModificaciones.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ListadoContratoModificaciones.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Listado_equipost.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

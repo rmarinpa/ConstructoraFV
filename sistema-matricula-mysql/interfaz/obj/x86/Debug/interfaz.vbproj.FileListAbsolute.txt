@@ -1056,3 +1056,5 @@ C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfa
 C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\Interop.AcroPDFLib.dll
 C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\bin\Debug\AxInterop.AcroPDFLib.dll
 C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Programa Obra Constructora FV S.A.application
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_VIII.resources
+C:\Users\USUARIO\Documents\GitHub\ConstructoraFV\sistema-matricula-mysql\interfaz\obj\x86\Debug\Constructora_FV.frm_menu_principal_IX.resources

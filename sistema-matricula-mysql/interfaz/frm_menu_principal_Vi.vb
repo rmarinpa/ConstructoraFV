@@ -645,7 +645,7 @@ Public Class frm_menu_principal_VI
                     TextBox3.Text = ""
                     OpenFileDialog4.FileName = ""
                 Else
-                    MsgBox("Número estado pago, ya existente", MsgBoxStyle.Critical)
+                    MsgBox("Número estado pago, ya existente", MsgBoxStyle.Exclamation)
                 End If
             Else
                 MsgBox("Verifique los datos", MsgBoxStyle.Exclamation)
@@ -1078,6 +1078,7 @@ Public Class frm_menu_principal_VI
         dgvFiltroEstadoPagoMandante()
         LeerRetencion()
     End Sub
+
 
     Private Sub dgvFiltroEstadoPagoMandante()
         Try

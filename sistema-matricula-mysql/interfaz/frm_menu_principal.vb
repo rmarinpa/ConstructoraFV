@@ -1368,5 +1368,15 @@
         Me.Close()
     End Sub
 
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        num_tab = 1
+        frm_menu_principal_VIII.Show()
+        Me.Close()
+    End Sub
 
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        num_tab = 1
+        frm_menu_principal_IX.Show()
+        Me.Close()
+    End Sub
 End Class

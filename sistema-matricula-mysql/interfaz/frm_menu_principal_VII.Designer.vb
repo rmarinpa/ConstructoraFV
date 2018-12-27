@@ -131,8 +131,8 @@ Partial Class frm_menu_principal_VII
         Me.Label50 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TabPage39 = New System.Windows.Forms.TabPage()
-        Me.GroupBox12 = New System.Windows.Forms.GroupBox()
         Me.dgvContratoOriginal = New System.Windows.Forms.DataGridView()
+        Me.GroupBox12 = New System.Windows.Forms.GroupBox()
         Me.lblRutaDescarga = New System.Windows.Forms.Label()
         Me.txtUsuarioArchivo = New System.Windows.Forms.TextBox()
         Me.txtFechaAdjuntadoArchivo = New System.Windows.Forms.TextBox()
@@ -151,8 +151,8 @@ Partial Class frm_menu_principal_VII
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox30 = New System.Windows.Forms.TextBox()
         Me.TabPage40 = New System.Windows.Forms.TabPage()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.DgvModificaciones = New System.Windows.Forms.DataGridView()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtxNroModificacionModificaciones = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -245,12 +245,12 @@ Partial Class frm_menu_principal_VII
         CType(Me.dgvListadoModificaciones, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox10.SuspendLayout()
         Me.TabPage39.SuspendLayout()
-        Me.GroupBox12.SuspendLayout()
         CType(Me.dgvContratoOriginal, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox12.SuspendLayout()
         Me.GroupBox11.SuspendLayout()
         Me.TabPage40.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
         CType(Me.DgvModificaciones, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.TabPage6.SuspendLayout()
         Me.TabControl5.SuspendLayout()
@@ -1461,22 +1461,22 @@ Partial Class frm_menu_principal_VII
         Me.Label11.AutoSize = True
         Me.Label11.Location = New System.Drawing.Point(7, 388)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(144, 17)
+        Me.Label11.Size = New System.Drawing.Size(213, 17)
         Me.Label11.TabIndex = 36
-        Me.Label11.Text = "Cambio en Proformas"
+        Me.Label11.Text = "Aumento/Disminución Proformas"
         '
         'txtProformas
         '
-        Me.txtProformas.Location = New System.Drawing.Point(174, 382)
+        Me.txtProformas.Location = New System.Drawing.Point(226, 382)
         Me.txtProformas.Name = "txtProformas"
-        Me.txtProformas.Size = New System.Drawing.Size(129, 23)
+        Me.txtProformas.Size = New System.Drawing.Size(77, 23)
         Me.txtProformas.TabIndex = 35
         '
         'txtRetenciones
         '
-        Me.txtRetenciones.Location = New System.Drawing.Point(174, 340)
+        Me.txtRetenciones.Location = New System.Drawing.Point(240, 340)
         Me.txtRetenciones.Name = "txtRetenciones"
-        Me.txtRetenciones.Size = New System.Drawing.Size(129, 23)
+        Me.txtRetenciones.Size = New System.Drawing.Size(63, 23)
         Me.txtRetenciones.TabIndex = 34
         '
         'Label10
@@ -1484,9 +1484,9 @@ Partial Class frm_menu_principal_VII
         Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(7, 343)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(153, 17)
+        Me.Label10.Size = New System.Drawing.Size(227, 17)
         Me.Label10.TabIndex = 33
-        Me.Label10.Text = "Cambio en retenciones"
+        Me.Label10.Text = "Aumento/Disminución Retenciones"
         '
         'txtAumentoDisminucion
         '
@@ -1641,6 +1641,17 @@ Partial Class frm_menu_principal_VII
         Me.TabPage39.Text = "Ingreso de Contrato Original (Resolución)"
         Me.TabPage39.UseVisualStyleBackColor = True
         '
+        'dgvContratoOriginal
+        '
+        Me.dgvContratoOriginal.AllowUserToAddRows = False
+        Me.dgvContratoOriginal.AllowUserToDeleteRows = False
+        Me.dgvContratoOriginal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvContratoOriginal.Location = New System.Drawing.Point(367, 240)
+        Me.dgvContratoOriginal.Name = "dgvContratoOriginal"
+        Me.dgvContratoOriginal.ReadOnly = True
+        Me.dgvContratoOriginal.Size = New System.Drawing.Size(453, 103)
+        Me.dgvContratoOriginal.TabIndex = 26
+        '
         'GroupBox12
         '
         Me.GroupBox12.Controls.Add(Me.lblRutaDescarga)
@@ -1658,17 +1669,6 @@ Partial Class frm_menu_principal_VII
         Me.GroupBox12.TabIndex = 21
         Me.GroupBox12.TabStop = False
         Me.GroupBox12.Text = "Información de Adjuntos"
-        '
-        'dgvContratoOriginal
-        '
-        Me.dgvContratoOriginal.AllowUserToAddRows = False
-        Me.dgvContratoOriginal.AllowUserToDeleteRows = False
-        Me.dgvContratoOriginal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvContratoOriginal.Location = New System.Drawing.Point(367, 240)
-        Me.dgvContratoOriginal.Name = "dgvContratoOriginal"
-        Me.dgvContratoOriginal.ReadOnly = True
-        Me.dgvContratoOriginal.Size = New System.Drawing.Size(453, 103)
-        Me.dgvContratoOriginal.TabIndex = 26
         '
         'lblRutaDescarga
         '
@@ -1849,6 +1849,17 @@ Partial Class frm_menu_principal_VII
         Me.TabPage40.Text = "Ingreso de Modificaciónes Firmadas"
         Me.TabPage40.UseVisualStyleBackColor = True
         '
+        'DgvModificaciones
+        '
+        Me.DgvModificaciones.AllowUserToAddRows = False
+        Me.DgvModificaciones.AllowUserToDeleteRows = False
+        Me.DgvModificaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DgvModificaciones.Location = New System.Drawing.Point(374, 255)
+        Me.DgvModificaciones.Name = "DgvModificaciones"
+        Me.DgvModificaciones.ReadOnly = True
+        Me.DgvModificaciones.Size = New System.Drawing.Size(592, 161)
+        Me.DgvModificaciones.TabIndex = 28
+        '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.txtxNroModificacionModificaciones)
@@ -1868,17 +1879,6 @@ Partial Class frm_menu_principal_VII
         Me.GroupBox1.TabIndex = 24
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Información de Adjuntos"
-        '
-        'DgvModificaciones
-        '
-        Me.DgvModificaciones.AllowUserToAddRows = False
-        Me.DgvModificaciones.AllowUserToDeleteRows = False
-        Me.DgvModificaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgvModificaciones.Location = New System.Drawing.Point(374, 255)
-        Me.DgvModificaciones.Name = "DgvModificaciones"
-        Me.DgvModificaciones.ReadOnly = True
-        Me.DgvModificaciones.Size = New System.Drawing.Size(592, 161)
-        Me.DgvModificaciones.TabIndex = 28
         '
         'txtxNroModificacionModificaciones
         '
@@ -2864,16 +2864,16 @@ Partial Class frm_menu_principal_VII
         Me.GroupBox10.PerformLayout()
         Me.TabPage39.ResumeLayout(False)
         Me.TabPage39.PerformLayout()
+        CType(Me.dgvContratoOriginal, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox12.ResumeLayout(False)
         Me.GroupBox12.PerformLayout()
-        CType(Me.dgvContratoOriginal, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox11.ResumeLayout(False)
         Me.GroupBox11.PerformLayout()
         Me.TabPage40.ResumeLayout(False)
         Me.TabPage40.PerformLayout()
+        CType(Me.DgvModificaciones, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.DgvModificaciones, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.TabPage6.ResumeLayout(False)

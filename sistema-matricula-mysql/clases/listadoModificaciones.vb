@@ -19,7 +19,7 @@ Public Class listadoModificaciones
 
             nue_var.cmd.ExecuteNonQuery()
             nue_conexion.desconectar()
-            MsgBox("Se insertó correctamente")
+            MsgBox("Insertado correctamente", MsgBoxStyle.Information)
             Return True
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -60,7 +60,7 @@ Public Class listadoModificaciones
             nue_var.cmd.Parameters.Add("?proforma", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = proforma
             nue_var.cmd.ExecuteNonQuery()
             nue_conexion.desconectar()
-            MsgBox("Se modificó correctamente")
+            MsgBox("Modificado correctamente", MsgBoxStyle.Information)
             Return True
         Catch mierror As MySqlException
             MsgBox("Error de Conexión a la Base de Datos: " & mierror.Message)
@@ -78,7 +78,7 @@ Public Class listadoModificaciones
             nue_var.cmd = New MySqlCommand(nue_var.consulta, nue_conexion.conex())
             nue_var.cmd.ExecuteNonQuery()
             nue_conexion.desconectar()
-            MsgBox("Se eliminó correctamente")
+            MsgBox("Eliminado correctamente", MsgBoxStyle.Information)
             Return True
         Catch ex As MySqlException
             MsgBox("Error de Conexión a la Base de Datos: " & ex.Message)
