@@ -163,6 +163,12 @@
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="ContratoOriginal_Modificaciones.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContratoOriginal_Modificaciones.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CrDiesel_Completo _v2.vb">
       <DependentUpon>CrDiesel_Completo _v2.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -205,6 +211,12 @@
     <Compile Include="CR_EstadoPagoMandante.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="CR_ListadoContratoModificaciones.Designer.vb">
+      <DependentUpon>CR_ListadoContratoModificaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR_ListadoContratoModificaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EstadoPagoMandante.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -222,12 +234,6 @@
       <AutoGen>True</AutoGen>
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="CR_ListadoContratoModificaciones.Designer.vb">
-      <DependentUpon>CR_ListadoContratoModificaciones.vb</DependentUpon>
-    </Compile>
-    <Compile Include="CR_ListadoContratoModificaciones.vb">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="CR_Stock_Petroleo.Designer.vb">
       <DependentUpon>CR_Stock_Petroleo.vb</DependentUpon>
@@ -879,6 +885,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Boletas_consulta.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="ContratoOriginal_Modificaciones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ContratoOriginal_Modificaciones.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="CrDiesel_Completo _v2.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrDiesel_Completo _v2.vb</LastGenOutput>
@@ -906,6 +916,9 @@
     <EmbeddedResource Include="CR_EstadoPagoMandante.resx">
       <DependentUpon>CR_EstadoPagoMandante.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CR_ListadoContratoModificaciones.resx">
+      <DependentUpon>CR_ListadoContratoModificaciones.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EstadoPagoMandante.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>EstadoPagoMandante.vb</LastGenOutput>
@@ -917,9 +930,6 @@
     <EmbeddedResource Include="CR_Cuentas_Contables4_v2_T.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CR_Cuentas_Contables4_v2_T.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CR_ListadoContratoModificaciones.resx">
-      <DependentUpon>CR_ListadoContratoModificaciones.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CR_Stock_Petroleo.resx">
       <DependentUpon>CR_Stock_Petroleo.vb</DependentUpon>

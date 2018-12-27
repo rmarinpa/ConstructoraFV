@@ -135,12 +135,10 @@ Partial Class frm_menu_principal_VII
         Me.dgvContratoOriginal = New System.Windows.Forms.DataGridView()
         Me.lblRutaDescarga = New System.Windows.Forms.Label()
         Me.txtUsuarioArchivo = New System.Windows.Forms.TextBox()
-        Me.Label72 = New System.Windows.Forms.Label()
         Me.txtFechaAdjuntadoArchivo = New System.Windows.Forms.TextBox()
         Me.txtNombreObraArchivo = New System.Windows.Forms.TextBox()
         Me.Label71 = New System.Windows.Forms.Label()
         Me.Label69 = New System.Windows.Forms.Label()
-        Me.Label66 = New System.Windows.Forms.Label()
         Me.btnEliminarAdjunto = New System.Windows.Forms.Button()
         Me.txtNombreArchivo = New System.Windows.Forms.TextBox()
         Me.btnDescargar = New System.Windows.Forms.Button()
@@ -159,12 +157,10 @@ Partial Class frm_menu_principal_VII
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtUsuarioModificaciones = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.txtFechaAdjuntoModificaciones = New System.Windows.Forms.TextBox()
         Me.txtObraModificaciones = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Button64 = New System.Windows.Forms.Button()
         Me.txtNombreAdjuntoModificaciones = New System.Windows.Forms.TextBox()
         Me.Button65 = New System.Windows.Forms.Button()
@@ -1631,6 +1627,7 @@ Partial Class frm_menu_principal_VII
         '
         Me.TabPage39.AutoScroll = True
         Me.TabPage39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TabPage39.Controls.Add(Me.dgvContratoOriginal)
         Me.TabPage39.Controls.Add(Me.GroupBox12)
         Me.TabPage39.Controls.Add(Me.GroupBox11)
         Me.TabPage39.Controls.Add(Me.TextBox30)
@@ -1646,21 +1643,18 @@ Partial Class frm_menu_principal_VII
         '
         'GroupBox12
         '
-        Me.GroupBox12.Controls.Add(Me.dgvContratoOriginal)
         Me.GroupBox12.Controls.Add(Me.lblRutaDescarga)
         Me.GroupBox12.Controls.Add(Me.txtUsuarioArchivo)
-        Me.GroupBox12.Controls.Add(Me.Label72)
         Me.GroupBox12.Controls.Add(Me.txtFechaAdjuntadoArchivo)
         Me.GroupBox12.Controls.Add(Me.txtNombreObraArchivo)
         Me.GroupBox12.Controls.Add(Me.Label71)
         Me.GroupBox12.Controls.Add(Me.Label69)
-        Me.GroupBox12.Controls.Add(Me.Label66)
         Me.GroupBox12.Controls.Add(Me.btnEliminarAdjunto)
         Me.GroupBox12.Controls.Add(Me.txtNombreArchivo)
         Me.GroupBox12.Controls.Add(Me.btnDescargar)
-        Me.GroupBox12.Location = New System.Drawing.Point(358, 42)
+        Me.GroupBox12.Location = New System.Drawing.Point(367, 42)
         Me.GroupBox12.Name = "GroupBox12"
-        Me.GroupBox12.Size = New System.Drawing.Size(592, 368)
+        Me.GroupBox12.Size = New System.Drawing.Size(640, 192)
         Me.GroupBox12.TabIndex = 21
         Me.GroupBox12.TabStop = False
         Me.GroupBox12.Text = "Información de Adjuntos"
@@ -1670,10 +1664,10 @@ Partial Class frm_menu_principal_VII
         Me.dgvContratoOriginal.AllowUserToAddRows = False
         Me.dgvContratoOriginal.AllowUserToDeleteRows = False
         Me.dgvContratoOriginal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvContratoOriginal.Location = New System.Drawing.Point(6, 184)
+        Me.dgvContratoOriginal.Location = New System.Drawing.Point(367, 240)
         Me.dgvContratoOriginal.Name = "dgvContratoOriginal"
         Me.dgvContratoOriginal.ReadOnly = True
-        Me.dgvContratoOriginal.Size = New System.Drawing.Size(376, 178)
+        Me.dgvContratoOriginal.Size = New System.Drawing.Size(453, 103)
         Me.dgvContratoOriginal.TabIndex = 26
         '
         'lblRutaDescarga
@@ -1688,21 +1682,11 @@ Partial Class frm_menu_principal_VII
         'txtUsuarioArchivo
         '
         Me.txtUsuarioArchivo.Enabled = False
-        Me.txtUsuarioArchivo.Location = New System.Drawing.Point(149, 131)
+        Me.txtUsuarioArchivo.Location = New System.Drawing.Point(439, 144)
         Me.txtUsuarioArchivo.Name = "txtUsuarioArchivo"
         Me.txtUsuarioArchivo.Size = New System.Drawing.Size(195, 23)
         Me.txtUsuarioArchivo.TabIndex = 24
         Me.txtUsuarioArchivo.Visible = False
-        '
-        'Label72
-        '
-        Me.Label72.AutoSize = True
-        Me.Label72.Location = New System.Drawing.Point(6, 137)
-        Me.Label72.Name = "Label72"
-        Me.Label72.Size = New System.Drawing.Size(91, 17)
-        Me.Label72.TabIndex = 23
-        Me.Label72.Text = "Responsable"
-        Me.Label72.Visible = False
         '
         'txtFechaAdjuntadoArchivo
         '
@@ -1738,29 +1722,22 @@ Partial Class frm_menu_principal_VII
         Me.Label69.TabIndex = 17
         Me.Label69.Text = "Obra"
         '
-        'Label66
-        '
-        Me.Label66.AutoSize = True
-        Me.Label66.Location = New System.Drawing.Point(10, 146)
-        Me.Label66.Name = "Label66"
-        Me.Label66.Size = New System.Drawing.Size(133, 17)
-        Me.Label66.TabIndex = 15
-        Me.Label66.Text = "Nombre del Adjunto"
-        Me.Label66.Visible = False
-        '
         'btnEliminarAdjunto
         '
         Me.btnEliminarAdjunto.Image = CType(resources.GetObject("btnEliminarAdjunto.Image"), System.Drawing.Image)
-        Me.btnEliminarAdjunto.Location = New System.Drawing.Point(471, 36)
+        Me.btnEliminarAdjunto.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnEliminarAdjunto.Location = New System.Drawing.Point(109, 117)
         Me.btnEliminarAdjunto.Name = "btnEliminarAdjunto"
-        Me.btnEliminarAdjunto.Size = New System.Drawing.Size(84, 41)
+        Me.btnEliminarAdjunto.Size = New System.Drawing.Size(94, 56)
         Me.btnEliminarAdjunto.TabIndex = 14
+        Me.btnEliminarAdjunto.Text = "Eliminar"
+        Me.btnEliminarAdjunto.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnEliminarAdjunto.UseVisualStyleBackColor = True
         '
         'txtNombreArchivo
         '
         Me.txtNombreArchivo.Enabled = False
-        Me.txtNombreArchivo.Location = New System.Drawing.Point(149, 143)
+        Me.txtNombreArchivo.Location = New System.Drawing.Point(439, 117)
         Me.txtNombreArchivo.Name = "txtNombreArchivo"
         Me.txtNombreArchivo.Size = New System.Drawing.Size(195, 23)
         Me.txtNombreArchivo.TabIndex = 16
@@ -1769,10 +1746,13 @@ Partial Class frm_menu_principal_VII
         'btnDescargar
         '
         Me.btnDescargar.Image = CType(resources.GetObject("btnDescargar.Image"), System.Drawing.Image)
-        Me.btnDescargar.Location = New System.Drawing.Point(376, 36)
+        Me.btnDescargar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnDescargar.Location = New System.Drawing.Point(9, 117)
         Me.btnDescargar.Name = "btnDescargar"
-        Me.btnDescargar.Size = New System.Drawing.Size(89, 41)
+        Me.btnDescargar.Size = New System.Drawing.Size(94, 56)
         Me.btnDescargar.TabIndex = 13
+        Me.btnDescargar.Text = "Descargar"
+        Me.btnDescargar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnDescargar.UseVisualStyleBackColor = True
         '
         'GroupBox11
@@ -1785,7 +1765,7 @@ Partial Class frm_menu_principal_VII
         Me.GroupBox11.Controls.Add(Me.TextBox3)
         Me.GroupBox11.Location = New System.Drawing.Point(2, 42)
         Me.GroupBox11.Name = "GroupBox11"
-        Me.GroupBox11.Size = New System.Drawing.Size(350, 368)
+        Me.GroupBox11.Size = New System.Drawing.Size(350, 442)
         Me.GroupBox11.TabIndex = 20
         Me.GroupBox11.TabStop = False
         Me.GroupBox11.Text = "Ingreso de Contrato Original (Resolución)"
@@ -1856,6 +1836,7 @@ Partial Class frm_menu_principal_VII
         '
         Me.TabPage40.AutoScroll = True
         Me.TabPage40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TabPage40.Controls.Add(Me.DgvModificaciones)
         Me.TabPage40.Controls.Add(Me.GroupBox1)
         Me.TabPage40.Controls.Add(Me.GroupBox2)
         Me.TabPage40.Controls.Add(Me.TextBox1)
@@ -1870,23 +1851,20 @@ Partial Class frm_menu_principal_VII
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.DgvModificaciones)
         Me.GroupBox1.Controls.Add(Me.txtxNroModificacionModificaciones)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txtUsuarioModificaciones)
-        Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.txtFechaAdjuntoModificaciones)
         Me.GroupBox1.Controls.Add(Me.txtObraModificaciones)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Button64)
         Me.GroupBox1.Controls.Add(Me.txtNombreAdjuntoModificaciones)
         Me.GroupBox1.Controls.Add(Me.Button65)
-        Me.GroupBox1.Location = New System.Drawing.Point(360, 42)
+        Me.GroupBox1.Location = New System.Drawing.Point(374, 42)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(592, 368)
+        Me.GroupBox1.Size = New System.Drawing.Size(640, 207)
         Me.GroupBox1.TabIndex = 24
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Información de Adjuntos"
@@ -1896,10 +1874,10 @@ Partial Class frm_menu_principal_VII
         Me.DgvModificaciones.AllowUserToAddRows = False
         Me.DgvModificaciones.AllowUserToDeleteRows = False
         Me.DgvModificaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgvModificaciones.Location = New System.Drawing.Point(0, 143)
+        Me.DgvModificaciones.Location = New System.Drawing.Point(374, 255)
         Me.DgvModificaciones.Name = "DgvModificaciones"
         Me.DgvModificaciones.ReadOnly = True
-        Me.DgvModificaciones.Size = New System.Drawing.Size(592, 216)
+        Me.DgvModificaciones.Size = New System.Drawing.Size(592, 161)
         Me.DgvModificaciones.TabIndex = 28
         '
         'txtxNroModificacionModificaciones
@@ -1931,21 +1909,11 @@ Partial Class frm_menu_principal_VII
         'txtUsuarioModificaciones
         '
         Me.txtUsuarioModificaciones.Enabled = False
-        Me.txtUsuarioModificaciones.Location = New System.Drawing.Point(149, 143)
+        Me.txtUsuarioModificaciones.Location = New System.Drawing.Point(372, 75)
         Me.txtUsuarioModificaciones.Name = "txtUsuarioModificaciones"
         Me.txtUsuarioModificaciones.Size = New System.Drawing.Size(195, 23)
         Me.txtUsuarioModificaciones.TabIndex = 24
         Me.txtUsuarioModificaciones.Visible = False
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(6, 152)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(91, 17)
-        Me.Label2.TabIndex = 23
-        Me.Label2.Text = "Responsable"
-        Me.Label2.Visible = False
         '
         'txtFechaAdjuntoModificaciones
         '
@@ -1981,29 +1949,22 @@ Partial Class frm_menu_principal_VII
         Me.Label4.TabIndex = 17
         Me.Label4.Text = "Obra"
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(6, 172)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(133, 17)
-        Me.Label5.TabIndex = 15
-        Me.Label5.Text = "Nombre del Adjunto"
-        Me.Label5.Visible = False
-        '
         'Button64
         '
         Me.Button64.Image = CType(resources.GetObject("Button64.Image"), System.Drawing.Image)
-        Me.Button64.Location = New System.Drawing.Point(471, 36)
+        Me.Button64.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button64.Location = New System.Drawing.Point(109, 143)
         Me.Button64.Name = "Button64"
-        Me.Button64.Size = New System.Drawing.Size(84, 41)
+        Me.Button64.Size = New System.Drawing.Size(94, 56)
         Me.Button64.TabIndex = 14
+        Me.Button64.Text = "Eliminar"
+        Me.Button64.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button64.UseVisualStyleBackColor = True
         '
         'txtNombreAdjuntoModificaciones
         '
         Me.txtNombreAdjuntoModificaciones.Enabled = False
-        Me.txtNombreAdjuntoModificaciones.Location = New System.Drawing.Point(149, 170)
+        Me.txtNombreAdjuntoModificaciones.Location = New System.Drawing.Point(372, 30)
         Me.txtNombreAdjuntoModificaciones.Name = "txtNombreAdjuntoModificaciones"
         Me.txtNombreAdjuntoModificaciones.Size = New System.Drawing.Size(195, 23)
         Me.txtNombreAdjuntoModificaciones.TabIndex = 16
@@ -2012,10 +1973,13 @@ Partial Class frm_menu_principal_VII
         'Button65
         '
         Me.Button65.Image = CType(resources.GetObject("Button65.Image"), System.Drawing.Image)
-        Me.Button65.Location = New System.Drawing.Point(376, 36)
+        Me.Button65.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button65.Location = New System.Drawing.Point(9, 143)
         Me.Button65.Name = "Button65"
-        Me.Button65.Size = New System.Drawing.Size(89, 41)
+        Me.Button65.Size = New System.Drawing.Size(94, 56)
         Me.Button65.TabIndex = 13
+        Me.Button65.Text = "Descargar"
+        Me.Button65.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button65.UseVisualStyleBackColor = True
         '
         'GroupBox2
@@ -3100,12 +3064,10 @@ Partial Class frm_menu_principal_VII
     Friend WithEvents GroupBox12 As GroupBox
     Friend WithEvents lblRutaDescarga As Label
     Friend WithEvents txtUsuarioArchivo As TextBox
-    Friend WithEvents Label72 As Label
     Friend WithEvents txtFechaAdjuntadoArchivo As TextBox
     Friend WithEvents txtNombreObraArchivo As TextBox
     Friend WithEvents Label71 As Label
     Friend WithEvents Label69 As Label
-    Friend WithEvents Label66 As Label
     Friend WithEvents btnEliminarAdjunto As Button
     Friend WithEvents txtNombreArchivo As TextBox
     Friend WithEvents btnDescargar As Button
@@ -3113,12 +3075,10 @@ Partial Class frm_menu_principal_VII
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label1 As Label
     Friend WithEvents txtUsuarioModificaciones As TextBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents txtFechaAdjuntoModificaciones As TextBox
     Friend WithEvents txtObraModificaciones As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
     Friend WithEvents Button64 As Button
     Friend WithEvents txtNombreAdjuntoModificaciones As TextBox
     Friend WithEvents Button65 As Button

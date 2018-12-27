@@ -57,14 +57,14 @@ Public Class frm_menu_principal_VI
                 .RowHeadersVisible = False
                 .Columns(0).HeaderCell.Value = "Retenciones Contrato"
                 .Columns(1).HeaderCell.Value = "Proformas Contrato"
+
+                dgRetencionesProforma.Columns(0).DefaultCellStyle.Format = "C"
+                dgRetencionesProforma.Columns(1).DefaultCellStyle.Format = "C"
             End With
 
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-    End Sub
-    Sub LeerProforma()
-
     End Sub
 
     Sub RellenarCboObras()
@@ -110,11 +110,10 @@ Public Class frm_menu_principal_VI
         'Se bloquean las cajas de texto
         BloquearEstado()
         RellenarCboObras()
-
+        LeerRetencion()
         Actualizar_dgvEstadosPagoFirmado()
         dgvFiltroEstadoPagoMandante()
 
-        LeerRetencion()
         If sincroniza = 0 Then
             btn_sincronizar.Visible = False
             pb_list.Visible = False
@@ -287,7 +286,7 @@ Public Class frm_menu_principal_VI
                     MsgBox("Registro ya existente", MsgBoxStyle.Exclamation)
                 End If
             Catch ex As Exception
-                MsgBox("Verifique los datos ingresados")
+                MsgBox("Verifique los datos ingresados", MsgBoxStyle.Exclamation)
             End Try
         Else
             Try
@@ -708,7 +707,7 @@ Public Class frm_menu_principal_VI
             DownloadStream.Write(bytes, 0, bytes.Length)
             '  Close the FileStream
             DownloadStream.Close()
-            MsgBox("Se ha descargado el archivo ")
+            MsgBox("Archivo guardado en: " + downloadpath.ToString, MsgBoxStyle.Information)
 
         Catch ex As Exception
             MessageBox.Show(ex.Message)
@@ -804,7 +803,7 @@ Public Class frm_menu_principal_VI
             fecha = DateTime.Now
 
             nue_obra6.InsertarFacturaFirmada(obra, nroEstadoPagoAsociado, nroFactura, adjunto, usuario, fecha)
-            MsgBox("Archivo " + lblAdjuntoFacturas.Text + " subido correctamente")
+
 
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -936,10 +935,10 @@ Public Class frm_menu_principal_VI
 
             If resultado = DialogResult.Yes Then
                 Try
+                    nue_obra6.EliminarAdjunto(idestadopagofirmado)
                     mReq.Credentials = New System.Net.NetworkCredential("cfv@constructorafv.com", "gsolis2013")
                     mReq.Method = System.Net.WebRequestMethods.Ftp.DeleteFile
                     mReq.GetResponse()
-                    nue_obra6.EliminarAdjunto(idestadopagofirmado)
                     LimpiarEstadosPago()
                     Actualizar_dgvEstadosPagoFirmado()
                 Catch ex As Exception
@@ -1023,12 +1022,11 @@ Public Class frm_menu_principal_VI
                 Dim mReq As System.Net.FtpWebRequest = DirectCast(System.Net.WebRequest.Create("ftp://201.148.105.75/Estado_De_Pago_Mandante/Facturas_Firmadas/" + txtAdjuntoFacturasFirmadas.Text), System.Net.FtpWebRequest)
 
                 If resultado = DialogResult.Yes Then
-
+                    idEstadoPagoFacturasFirmadas = txtIdEstadoPagoFacturasFirmadas.Text
+                    nue_obra6.EliminarAdjuntoFacturasFirmadas(idEstadoPagoFacturasFirmadas)
                     mReq.Credentials = New System.Net.NetworkCredential("cfv@constructorafv.com", "gsolis2013")
                     mReq.Method = System.Net.WebRequestMethods.Ftp.DeleteFile
                     mReq.GetResponse()
-                    idEstadoPagoFacturasFirmadas = txtIdEstadoPagoFacturasFirmadas.Text
-                    nue_obra6.EliminarAdjuntoFacturasFirmadas(idEstadoPagoFacturasFirmadas)
                     actualizar_dgvFacturasAdjunto()
                     LimpiarFacturasFirmada()
                 ElseIf resultado = DialogResult.No Then

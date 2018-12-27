@@ -12,7 +12,7 @@ Public Class Modificaciones
             nue_var.cmd.Parameters.Add("?adjunto", MySql.Data.MySqlClient.MySqlDbType.String).Value = adjunto
             nue_var.cmd.Parameters.Add("?usuario", MySql.Data.MySqlClient.MySqlDbType.String).Value = usuario
             nue_var.cmd.Parameters.Add("?fecha", MySql.Data.MySqlClient.MySqlDbType.DateTime).Value = fecha
-            MsgBox("Archivo " + adjunto + " subido correctamente")
+            MsgBox("Archivo " + adjunto + " subido correctamente", MsgBoxStyle.Information)
             nue_var.cmd.ExecuteNonQuery()
             nue_conexion.desconectar()
         Catch ex As Exception

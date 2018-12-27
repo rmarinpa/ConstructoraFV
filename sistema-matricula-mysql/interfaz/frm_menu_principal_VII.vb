@@ -384,7 +384,7 @@ Public Class frm_menu_principal_VII
             DownloadStream.Write(bytes, 0, bytes.Length)
             '  Close the FileStream
             DownloadStream.Close()
-            MessageBox.Show("Archivo descargado")
+            MsgBox("Archivo guardado en: " + downloadpath.ToString, MsgBoxStyle.Information)
 
         Catch ex As Exception
             MessageBox.Show(ex.Message)

@@ -1939,7 +1939,7 @@ Partial Class frm_menu_principal_VI
         Me.GroupBox12.Controls.Add(Me.btnDescargar)
         Me.GroupBox12.Location = New System.Drawing.Point(376, 61)
         Me.GroupBox12.Name = "GroupBox12"
-        Me.GroupBox12.Size = New System.Drawing.Size(592, 157)
+        Me.GroupBox12.Size = New System.Drawing.Size(640, 232)
         Me.GroupBox12.TabIndex = 17
         Me.GroupBox12.TabStop = False
         Me.GroupBox12.Text = "Información de Adjuntos"
@@ -2016,10 +2016,13 @@ Partial Class frm_menu_principal_VI
         'btnEliminarAdjunto
         '
         Me.btnEliminarAdjunto.Image = CType(resources.GetObject("btnEliminarAdjunto.Image"), System.Drawing.Image)
-        Me.btnEliminarAdjunto.Location = New System.Drawing.Point(488, 30)
+        Me.btnEliminarAdjunto.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnEliminarAdjunto.Location = New System.Drawing.Point(110, 150)
         Me.btnEliminarAdjunto.Name = "btnEliminarAdjunto"
-        Me.btnEliminarAdjunto.Size = New System.Drawing.Size(67, 38)
+        Me.btnEliminarAdjunto.Size = New System.Drawing.Size(94, 56)
         Me.btnEliminarAdjunto.TabIndex = 14
+        Me.btnEliminarAdjunto.Text = "Eliminar"
+        Me.btnEliminarAdjunto.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnEliminarAdjunto.UseVisualStyleBackColor = True
         '
         'txtNombreArchivo
@@ -2034,10 +2037,13 @@ Partial Class frm_menu_principal_VI
         'btnDescargar
         '
         Me.btnDescargar.Image = CType(resources.GetObject("btnDescargar.Image"), System.Drawing.Image)
-        Me.btnDescargar.Location = New System.Drawing.Point(403, 30)
+        Me.btnDescargar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnDescargar.Location = New System.Drawing.Point(10, 150)
         Me.btnDescargar.Name = "btnDescargar"
-        Me.btnDescargar.Size = New System.Drawing.Size(69, 38)
+        Me.btnDescargar.Size = New System.Drawing.Size(94, 56)
         Me.btnDescargar.TabIndex = 13
+        Me.btnDescargar.Text = "Descargar"
+        Me.btnDescargar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnDescargar.UseVisualStyleBackColor = True
         '
         'dgvAdjuntosPagosFirmados
@@ -2045,10 +2051,10 @@ Partial Class frm_menu_principal_VI
         Me.dgvAdjuntosPagosFirmados.AllowUserToAddRows = False
         Me.dgvAdjuntosPagosFirmados.AllowUserToDeleteRows = False
         Me.dgvAdjuntosPagosFirmados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvAdjuntosPagosFirmados.Location = New System.Drawing.Point(376, 243)
+        Me.dgvAdjuntosPagosFirmados.Location = New System.Drawing.Point(376, 299)
         Me.dgvAdjuntosPagosFirmados.Name = "dgvAdjuntosPagosFirmados"
         Me.dgvAdjuntosPagosFirmados.ReadOnly = True
-        Me.dgvAdjuntosPagosFirmados.Size = New System.Drawing.Size(592, 157)
+        Me.dgvAdjuntosPagosFirmados.Size = New System.Drawing.Size(640, 181)
         Me.dgvAdjuntosPagosFirmados.TabIndex = 2
         '
         'GroupBox11
@@ -2063,7 +2069,7 @@ Partial Class frm_menu_principal_VI
         Me.GroupBox11.Controls.Add(Me.TextBox3)
         Me.GroupBox11.Location = New System.Drawing.Point(5, 61)
         Me.GroupBox11.Name = "GroupBox11"
-        Me.GroupBox11.Size = New System.Drawing.Size(350, 378)
+        Me.GroupBox11.Size = New System.Drawing.Size(350, 419)
         Me.GroupBox11.TabIndex = 0
         Me.GroupBox11.TabStop = False
         Me.GroupBox11.Text = "Ingreso de Estados de Pago Firmados"
@@ -2169,10 +2175,10 @@ Partial Class frm_menu_principal_VI
         Me.dgvFacturasAdjunto.AllowUserToAddRows = False
         Me.dgvFacturasAdjunto.AllowUserToDeleteRows = False
         Me.dgvFacturasAdjunto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvFacturasAdjunto.Location = New System.Drawing.Point(372, 261)
+        Me.dgvFacturasAdjunto.Location = New System.Drawing.Point(372, 349)
         Me.dgvFacturasAdjunto.Name = "dgvFacturasAdjunto"
         Me.dgvFacturasAdjunto.ReadOnly = True
-        Me.dgvFacturasAdjunto.Size = New System.Drawing.Size(616, 150)
+        Me.dgvFacturasAdjunto.Size = New System.Drawing.Size(640, 140)
         Me.dgvFacturasAdjunto.TabIndex = 19
         '
         'GroupBox14
@@ -2190,7 +2196,7 @@ Partial Class frm_menu_principal_VI
         Me.GroupBox14.Controls.Add(Me.btnEliminarFacturasAdjuntas)
         Me.GroupBox14.Location = New System.Drawing.Point(372, 61)
         Me.GroupBox14.Name = "GroupBox14"
-        Me.GroupBox14.Size = New System.Drawing.Size(616, 187)
+        Me.GroupBox14.Size = New System.Drawing.Size(640, 282)
         Me.GroupBox14.TabIndex = 18
         Me.GroupBox14.TabStop = False
         Me.GroupBox14.Text = "Información de Adjuntos"
@@ -2274,19 +2280,25 @@ Partial Class frm_menu_principal_VI
         'btnDescargarFacturasAdjuntas
         '
         Me.btnDescargarFacturasAdjuntas.Image = CType(resources.GetObject("btnDescargarFacturasAdjuntas.Image"), System.Drawing.Image)
-        Me.btnDescargarFacturasAdjuntas.Location = New System.Drawing.Point(420, 29)
+        Me.btnDescargarFacturasAdjuntas.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnDescargarFacturasAdjuntas.Location = New System.Drawing.Point(9, 200)
         Me.btnDescargarFacturasAdjuntas.Name = "btnDescargarFacturasAdjuntas"
-        Me.btnDescargarFacturasAdjuntas.Size = New System.Drawing.Size(82, 39)
+        Me.btnDescargarFacturasAdjuntas.Size = New System.Drawing.Size(94, 56)
         Me.btnDescargarFacturasAdjuntas.TabIndex = 14
+        Me.btnDescargarFacturasAdjuntas.Text = "Descargar"
+        Me.btnDescargarFacturasAdjuntas.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnDescargarFacturasAdjuntas.UseVisualStyleBackColor = True
         '
         'btnEliminarFacturasAdjuntas
         '
         Me.btnEliminarFacturasAdjuntas.Image = CType(resources.GetObject("btnEliminarFacturasAdjuntas.Image"), System.Drawing.Image)
-        Me.btnEliminarFacturasAdjuntas.Location = New System.Drawing.Point(521, 28)
+        Me.btnEliminarFacturasAdjuntas.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnEliminarFacturasAdjuntas.Location = New System.Drawing.Point(117, 200)
         Me.btnEliminarFacturasAdjuntas.Name = "btnEliminarFacturasAdjuntas"
-        Me.btnEliminarFacturasAdjuntas.Size = New System.Drawing.Size(89, 40)
+        Me.btnEliminarFacturasAdjuntas.Size = New System.Drawing.Size(94, 56)
         Me.btnEliminarFacturasAdjuntas.TabIndex = 13
+        Me.btnEliminarFacturasAdjuntas.Text = "Eliminar"
+        Me.btnEliminarFacturasAdjuntas.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnEliminarFacturasAdjuntas.UseVisualStyleBackColor = True
         '
         'GroupBox13
@@ -2303,7 +2315,7 @@ Partial Class frm_menu_principal_VI
         Me.GroupBox13.Controls.Add(Me.txtSubidaFacturas)
         Me.GroupBox13.Location = New System.Drawing.Point(3, 61)
         Me.GroupBox13.Name = "GroupBox13"
-        Me.GroupBox13.Size = New System.Drawing.Size(336, 497)
+        Me.GroupBox13.Size = New System.Drawing.Size(336, 428)
         Me.GroupBox13.TabIndex = 1
         Me.GroupBox13.TabStop = False
         Me.GroupBox13.Text = "Ingreso de Facturas de Estado de Pago"

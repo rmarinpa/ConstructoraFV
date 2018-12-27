@@ -16,7 +16,7 @@ Public Class EstadoPagoMandante
             nue_var.cmd.Parameters.Add("?fecha", MySql.Data.MySqlClient.MySqlDbType.DateTime).Value = fecha
             nue_var.cmd.ExecuteNonQuery()
             nue_conexion.desconectar()
-            MsgBox("Archivo " + adjunto + " subido correctamente")
+            MsgBox("Archivo " + adjunto + " subido correctamente", MsgBoxStyle.Information)
         Catch ex As Exception
             MsgBox(ex.Message)
             nue_conexion.desconectar()
@@ -36,6 +36,7 @@ Public Class EstadoPagoMandante
             nue_var.cmd.Parameters.Add("?fecha", MySql.Data.MySqlClient.MySqlDbType.DateTime).Value = fecha
             nue_var.cmd.ExecuteNonQuery()
             nue_conexion.desconectar()
+            MsgBox("Archivo " + adjunto + " subido correctamente", MsgBoxStyle.Information)
         Catch ex As Exception
             MsgBox(ex.Message)
             nue_conexion.desconectar()
@@ -63,7 +64,7 @@ Public Class EstadoPagoMandante
             nue_var.cmd.Parameters.Add("?observaciones", MySql.Data.MySqlClient.MySqlDbType.String).Value = observaciones
             nue_var.cmd.ExecuteNonQuery()
             nue_conexion.desconectar()
-            MsgBox("Se insertó correctamente")
+            MsgBox("Insertado correctamente", MsgBoxStyle.Information)
             Return True
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -236,7 +237,7 @@ Public Class EstadoPagoMandante
             nue_var.cmd.Parameters.Add("?Obras_Neto", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = obras_neto
             nue_var.cmd.Parameters.Add("?Reajuste_Neto", MySql.Data.MySqlClient.MySqlDbType.Decimal).Value = reajuste_neto
             nue_var.cmd.Parameters.Add("?Observaciones", MySql.Data.MySqlClient.MySqlDbType.String).Value = observaciones
-            MsgBox("Se modificó correctamente")
+            MsgBox("Modificado Correctamente", MsgBoxStyle.Information)
             nue_var.cmd.ExecuteNonQuery()
             nue_conexion.desconectar()
         Catch mierror As MySqlException
@@ -273,7 +274,7 @@ Public Class EstadoPagoMandante
             nue_var.cmd = New MySqlCommand(nue_var.consulta, nue_conexion.conex())
             nue_var.cmd.ExecuteNonQuery()
             nue_conexion.desconectar()
-            MsgBox("Se eliminó correctamente")
+            MsgBox("Eliminado Correctamente", MsgBoxStyle.Information)
         Catch mierror As MySqlException
             MsgBox("El Estado de Pago posee archivos adjuntos, si desea eliminar este registro debe borrar dichos archivos", MsgBoxStyle.Critical)
             Throw New Exception
@@ -288,7 +289,7 @@ Public Class EstadoPagoMandante
             nue_var.cmd = New MySqlCommand(nue_var.consulta, nue_conexion.conex())
             nue_var.cmd.ExecuteNonQuery()
             nue_conexion.desconectar()
-            MsgBox("Se eliminó correctamente")
+            MsgBox("Archivo adjunto eliminado correctamente", MsgBoxStyle.Information)
         Catch mierror As MySqlException
             MsgBox("Error de Conexión a la Base de Datos: " & mierror.Message)
             nue_conexion.desconectar()
@@ -301,7 +302,7 @@ Public Class EstadoPagoMandante
             nue_var.cmd = New MySqlCommand(nue_var.consulta, nue_conexion.conex())
             nue_var.cmd.ExecuteNonQuery()
             nue_conexion.desconectar()
-            MsgBox("Se eliminó correctamente")
+            MsgBox("Archivo adjunto eliminado correctamente", MsgBoxStyle.Information)
         Catch mierror As MySqlException
             MsgBox("Error de Conexión a la Base de Datos: " & mierror.Message)
             nue_conexion.desconectar()

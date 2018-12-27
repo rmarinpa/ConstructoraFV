@@ -14,7 +14,7 @@ Public Class Contratos_Originales
             nue_var.cmd.Parameters.Add("?fecha", MySql.Data.MySqlClient.MySqlDbType.DateTime).Value = fecha
             nue_var.cmd.ExecuteNonQuery()
             nue_conexion.desconectar()
-            MsgBox("Archivo " + adjunto + " subido correctamente")
+            MsgBox("Archivo: " + adjunto + " subido correctamente", MsgBoxStyle.Information)
         Catch ex As Exception
             MsgBox(ex.Message)
             nue_conexion.desconectar()
@@ -45,7 +45,7 @@ Public Class Contratos_Originales
             nue_var.cmd = New MySqlCommand(nue_var.consulta, nue_conexion.conex())
             nue_var.cmd.ExecuteNonQuery()
             nue_conexion.desconectar()
-            MsgBox("Se eliminó correctamente")
+            MsgBox("Archivo adjunto eliminado correctamente", MsgBoxStyle.Information)
         Catch mierror As MySqlException
             MsgBox("Error de Conexión a la Base de Datos: " & mierror.Message)
             nue_conexion.desconectar()

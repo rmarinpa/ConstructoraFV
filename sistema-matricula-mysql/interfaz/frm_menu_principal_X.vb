@@ -766,7 +766,7 @@ Public Class frm_menu_principal_X
             DownloadStream.Write(bytes, 0, bytes.Length)
             '  Close the FileStream
             DownloadStream.Close()
-            MsgBox("Se ha descargado el archivo ")
+            MsgBox("Archivo guardado en: " + downloadpath.ToString, MsgBoxStyle.Information)
         Catch ex As Exception
             MessageBox.Show(ex.Message)
             Exit Sub
@@ -785,6 +785,7 @@ Public Class frm_menu_principal_X
                     FTPDownloadFile(lblAdjuntoFacturas.Text + "", "ftp://201.148.105.75/Estado_De_Pago_Mandante/Facturas_Firmadas/" + txtAdjuntoFacturasFirmadas.Text, "cfv@constructorafv.com", "gsolis2013")
                     SaveFileDialog1.FileName = ""
                     lblAdjuntoFacturas.Text = ""
+                    txtAdjuntoFacturasFirmadas.Text = ""
                 End If
                 SaveFileDialogFacturasFirmadas.FileName = ""
             Else

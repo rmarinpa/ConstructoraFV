@@ -2087,7 +2087,7 @@ Partial Class frm_menu_principal_X
         Me.gbFacturasFirmadas.Controls.Add(Me.Label31)
         Me.gbFacturasFirmadas.Controls.Add(Me.lblNroEstadoDePago)
         Me.gbFacturasFirmadas.Font = New System.Drawing.Font("Calibri", 11.25!)
-        Me.gbFacturasFirmadas.Location = New System.Drawing.Point(612, 12)
+        Me.gbFacturasFirmadas.Location = New System.Drawing.Point(606, 18)
         Me.gbFacturasFirmadas.Name = "gbFacturasFirmadas"
         Me.gbFacturasFirmadas.Size = New System.Drawing.Size(616, 406)
         Me.gbFacturasFirmadas.TabIndex = 40
@@ -2111,17 +2111,20 @@ Partial Class frm_menu_principal_X
         Me.dgvFacturasAdjunto.Location = New System.Drawing.Point(12, 209)
         Me.dgvFacturasAdjunto.Name = "dgvFacturasAdjunto"
         Me.dgvFacturasAdjunto.ReadOnly = True
-        Me.dgvFacturasAdjunto.Size = New System.Drawing.Size(502, 178)
+        Me.dgvFacturasAdjunto.Size = New System.Drawing.Size(598, 178)
         Me.dgvFacturasAdjunto.TabIndex = 31
         '
         'btnDescargarFacturasAdjuntas
         '
         Me.btnDescargarFacturasAdjuntas.Font = New System.Drawing.Font("Calibri", 11.25!)
         Me.btnDescargarFacturasAdjuntas.Image = CType(resources.GetObject("btnDescargarFacturasAdjuntas.Image"), System.Drawing.Image)
-        Me.btnDescargarFacturasAdjuntas.Location = New System.Drawing.Point(526, 217)
+        Me.btnDescargarFacturasAdjuntas.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnDescargarFacturasAdjuntas.Location = New System.Drawing.Point(516, 144)
         Me.btnDescargarFacturasAdjuntas.Name = "btnDescargarFacturasAdjuntas"
-        Me.btnDescargarFacturasAdjuntas.Size = New System.Drawing.Size(84, 41)
+        Me.btnDescargarFacturasAdjuntas.Size = New System.Drawing.Size(94, 56)
         Me.btnDescargarFacturasAdjuntas.TabIndex = 28
+        Me.btnDescargarFacturasAdjuntas.Text = "Descargar"
+        Me.btnDescargarFacturasAdjuntas.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnDescargarFacturasAdjuntas.UseVisualStyleBackColor = True
         '
         'txtInfoObra
@@ -2142,7 +2145,7 @@ Partial Class frm_menu_principal_X
         '
         'txtAdjuntoFacturasFirmadas
         '
-        Me.txtAdjuntoFacturasFirmadas.Location = New System.Drawing.Point(554, 181)
+        Me.txtAdjuntoFacturasFirmadas.Location = New System.Drawing.Point(400, 164)
         Me.txtAdjuntoFacturasFirmadas.Name = "txtAdjuntoFacturasFirmadas"
         Me.txtAdjuntoFacturasFirmadas.Size = New System.Drawing.Size(56, 26)
         Me.txtAdjuntoFacturasFirmadas.TabIndex = 38
@@ -2249,17 +2252,20 @@ Partial Class frm_menu_principal_X
         Me.dgvAdjuntosPagosFirmados.Location = New System.Drawing.Point(13, 172)
         Me.dgvAdjuntosPagosFirmados.Name = "dgvAdjuntosPagosFirmados"
         Me.dgvAdjuntosPagosFirmados.ReadOnly = True
-        Me.dgvAdjuntosPagosFirmados.Size = New System.Drawing.Size(400, 227)
+        Me.dgvAdjuntosPagosFirmados.Size = New System.Drawing.Size(499, 227)
         Me.dgvAdjuntosPagosFirmados.TabIndex = 20
         '
         'btnDescargar
         '
         Me.btnDescargar.Font = New System.Drawing.Font("Calibri", 11.25!)
         Me.btnDescargar.Image = CType(resources.GetObject("btnDescargar.Image"), System.Drawing.Image)
-        Me.btnDescargar.Location = New System.Drawing.Point(478, 225)
+        Me.btnDescargar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnDescargar.Location = New System.Drawing.Point(418, 98)
         Me.btnDescargar.Name = "btnDescargar"
-        Me.btnDescargar.Size = New System.Drawing.Size(89, 26)
+        Me.btnDescargar.Size = New System.Drawing.Size(94, 56)
         Me.btnDescargar.TabIndex = 13
+        Me.btnDescargar.Text = "Descargar"
+        Me.btnDescargar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnDescargar.UseVisualStyleBackColor = True
         '
         'lblRutaDescarga
@@ -2274,7 +2280,7 @@ Partial Class frm_menu_principal_X
         'txtUsuarioArchivo
         '
         Me.txtUsuarioArchivo.Enabled = False
-        Me.txtUsuarioArchivo.Location = New System.Drawing.Point(522, 157)
+        Me.txtUsuarioArchivo.Location = New System.Drawing.Point(353, 88)
         Me.txtUsuarioArchivo.Name = "txtUsuarioArchivo"
         Me.txtUsuarioArchivo.Size = New System.Drawing.Size(36, 26)
         Me.txtUsuarioArchivo.TabIndex = 24
@@ -2337,9 +2343,9 @@ Partial Class frm_menu_principal_X
         'txtNombreArchivo
         '
         Me.txtNombreArchivo.Enabled = False
-        Me.txtNombreArchivo.Location = New System.Drawing.Point(353, 157)
+        Me.txtNombreArchivo.Location = New System.Drawing.Point(353, 128)
         Me.txtNombreArchivo.Name = "txtNombreArchivo"
-        Me.txtNombreArchivo.Size = New System.Drawing.Size(127, 26)
+        Me.txtNombreArchivo.Size = New System.Drawing.Size(36, 26)
         Me.txtNombreArchivo.TabIndex = 16
         Me.txtNombreArchivo.Visible = False
         '
@@ -2375,16 +2381,16 @@ Partial Class frm_menu_principal_X
         Me.gbContratoOriginal.Controls.Add(Me.Label40)
         Me.gbContratoOriginal.Controls.Add(Me.txtNombreContrato)
         Me.gbContratoOriginal.Controls.Add(Me.btnDescargarContrato)
-        Me.gbContratoOriginal.Location = New System.Drawing.Point(629, 3)
+        Me.gbContratoOriginal.Location = New System.Drawing.Point(623, 6)
         Me.gbContratoOriginal.Name = "gbContratoOriginal"
-        Me.gbContratoOriginal.Size = New System.Drawing.Size(592, 368)
+        Me.gbContratoOriginal.Size = New System.Drawing.Size(592, 299)
         Me.gbContratoOriginal.TabIndex = 55
         Me.gbContratoOriginal.TabStop = False
         Me.gbContratoOriginal.Text = "Contrato Original"
         '
         'txtidContratoOriginal
         '
-        Me.txtidContratoOriginal.Location = New System.Drawing.Point(376, 83)
+        Me.txtidContratoOriginal.Location = New System.Drawing.Point(149, 170)
         Me.txtidContratoOriginal.Name = "txtidContratoOriginal"
         Me.txtidContratoOriginal.Size = New System.Drawing.Size(100, 23)
         Me.txtidContratoOriginal.TabIndex = 27
@@ -2395,10 +2401,10 @@ Partial Class frm_menu_principal_X
         Me.dgvContratoOriginal.AllowUserToAddRows = False
         Me.dgvContratoOriginal.AllowUserToDeleteRows = False
         Me.dgvContratoOriginal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvContratoOriginal.Location = New System.Drawing.Point(6, 184)
+        Me.dgvContratoOriginal.Location = New System.Drawing.Point(9, 117)
         Me.dgvContratoOriginal.Name = "dgvContratoOriginal"
         Me.dgvContratoOriginal.ReadOnly = True
-        Me.dgvContratoOriginal.Size = New System.Drawing.Size(376, 178)
+        Me.dgvContratoOriginal.Size = New System.Drawing.Size(531, 161)
         Me.dgvContratoOriginal.TabIndex = 26
         '
         'Label30
@@ -2485,10 +2491,13 @@ Partial Class frm_menu_principal_X
         'btnDescargarContrato
         '
         Me.btnDescargarContrato.Image = CType(resources.GetObject("btnDescargarContrato.Image"), System.Drawing.Image)
-        Me.btnDescargarContrato.Location = New System.Drawing.Point(376, 36)
+        Me.btnDescargarContrato.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnDescargarContrato.Location = New System.Drawing.Point(443, 47)
         Me.btnDescargarContrato.Name = "btnDescargarContrato"
-        Me.btnDescargarContrato.Size = New System.Drawing.Size(89, 42)
+        Me.btnDescargarContrato.Size = New System.Drawing.Size(94, 56)
         Me.btnDescargarContrato.TabIndex = 13
+        Me.btnDescargarContrato.Text = "Descargar"
+        Me.btnDescargarContrato.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnDescargarContrato.UseVisualStyleBackColor = True
         '
         'gbModificacionesFirmadas
@@ -2509,7 +2518,7 @@ Partial Class frm_menu_principal_X
         Me.gbModificacionesFirmadas.Controls.Add(Me.Button70)
         Me.gbModificacionesFirmadas.Location = New System.Drawing.Point(629, 6)
         Me.gbModificacionesFirmadas.Name = "gbModificacionesFirmadas"
-        Me.gbModificacionesFirmadas.Size = New System.Drawing.Size(592, 368)
+        Me.gbModificacionesFirmadas.Size = New System.Drawing.Size(592, 412)
         Me.gbModificacionesFirmadas.TabIndex = 54
         Me.gbModificacionesFirmadas.TabStop = False
         Me.gbModificacionesFirmadas.Text = "Información de Adjuntos"
@@ -2530,7 +2539,7 @@ Partial Class frm_menu_principal_X
         Me.DgvModificaciones.Location = New System.Drawing.Point(0, 143)
         Me.DgvModificaciones.Name = "DgvModificaciones"
         Me.DgvModificaciones.ReadOnly = True
-        Me.DgvModificaciones.Size = New System.Drawing.Size(592, 216)
+        Me.DgvModificaciones.Size = New System.Drawing.Size(586, 216)
         Me.DgvModificaciones.TabIndex = 28
         '
         'txtxNroModificacionModificaciones
@@ -2634,10 +2643,13 @@ Partial Class frm_menu_principal_X
         'Button70
         '
         Me.Button70.Image = CType(resources.GetObject("Button70.Image"), System.Drawing.Image)
-        Me.Button70.Location = New System.Drawing.Point(376, 36)
+        Me.Button70.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button70.Location = New System.Drawing.Point(492, 72)
         Me.Button70.Name = "Button70"
-        Me.Button70.Size = New System.Drawing.Size(89, 26)
+        Me.Button70.Size = New System.Drawing.Size(94, 56)
         Me.Button70.TabIndex = 13
+        Me.Button70.Text = "Descargar"
+        Me.Button70.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button70.UseVisualStyleBackColor = True
         '
         'TextBox9
