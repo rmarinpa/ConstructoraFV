@@ -2820,7 +2820,7 @@ Partial Class frm_menu_principal_VII
         '
         'OpenFileDialog6
         '
-        Me.OpenFileDialog6.FileName = "OpenFileDialog6"
+        Me.OpenFileDialog6.FileName = "PDF files (*.pdf)|*.pdf"
         Me.OpenFileDialog6.Filter = "PDF files (*.pdf)|*.pdf"
         '
         'OpenFileDialog8

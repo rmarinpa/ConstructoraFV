@@ -300,7 +300,7 @@
         Dim num_resolucion As String
         Dim fecha_resol, fecha_inicio, fecha_fin As Date
 
-        If (txt_1_nom_obra.Text <> "" And txt_1_nom_faena.Text <> "" And txt_1_prof_residente.Text <> "") Then
+        If (txt_1_nom_obra.Text <> "" And txt_1_nom_faena.Text <> "" And txt_1_prof_residente.Text <> "" And txt_1_monto.Text <> "" And txt_1_proforma.Text <> "" And txt_1_resol.Text <> "") Then
 
             nombre_faena = txt_1_nom_faena.Text
             prof_residente = txt_1_prof_residente.Text

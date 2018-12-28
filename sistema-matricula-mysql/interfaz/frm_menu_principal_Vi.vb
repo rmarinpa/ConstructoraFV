@@ -42,6 +42,9 @@ Public Class frm_menu_principal_VI
     Dim codigo_libre As Integer
     Dim suma_litros As Double
     Dim Boton As Integer
+    Dim ObraFiltro As String
+    Dim obraNroEstadoPago As String
+    Dim obraFacturaFirmada As String
 
     Sub LeerRetencion()
         Try
@@ -67,7 +70,7 @@ Public Class frm_menu_principal_VI
         End Try
     End Sub
 
-    Sub RellenarCboObras()
+    Private Sub RellenarCboObras()
         cboObrasPagoFirmado.DataSource = nue_obra5.listar5(id_obra)
         cboObrasPagoFirmado.DisplayMember = "nombre_faena"
         cboObrasPagoFirmado.ValueMember = "Id_identificacion"
@@ -276,7 +279,7 @@ Public Class frm_menu_principal_VI
                         dgvFiltroEstadoPagoMandante()
                         Actualizar_dgvEstadosPagoFirmado()
                         actualizar_dgvFacturasAdjunto()
-                        RellenarCboObras()
+                        ActualizarCbo()
 
                     Else
                         MsgBox("Falta ingresar datos", MsgBoxStyle.Exclamation)
@@ -340,7 +343,7 @@ Public Class frm_menu_principal_VI
                     dgvFiltroEstadoPagoMandante()
                     Actualizar_dgvEstadosPagoFirmado()
                     actualizar_dgvFacturasAdjunto()
-                    RellenarCboObras()
+                    ActualizarCbo()
 
                 Else
                     MsgBox("Verifique los datos")
@@ -350,51 +353,8 @@ Public Class frm_menu_principal_VI
             End Try
         End If
     End Sub
-    'Metodo de prueba
 
-    Public Function SumarTotales(valor_obra1, valor_obra2, valor_obra3, valor_obra4)
-        Try
-            Dim total As Integer
-            total = valor_obra1 + valor_obra2 + valor_obra3 + valor_obra4
-            Return total
-        Catch ex As Exception
-            ex.Message.ToString()
-            Return False
-        End Try
-    End Function
-
-
-    'Metodo de prueba
-    Public Function Agregar(ByVal obra As String, ByVal nro_estadoPago As Integer,
-                                     ByVal fecha As Date, ByVal nro_factura As Integer,
-                                     ByVal valor_obra As Integer, ByVal reajuste As Integer,
-                                     ByVal retenciones As Integer, ByVal retenciones_canjeadas As Integer,
-                                     ByVal multas As Integer, ByVal valor_estado_pago As Integer,
-                                     ByVal valor_estado_pago_neto As Integer, ByVal obras_neto As Integer,
-                                     ByVal reajuste_neto As Integer, ByVal observaciones As String)
-        Try
-            If nue_obra6.RegistroExistente(obra, nro_estadoPago) = False Then
-                nue_obra6.Insertar(nro_estadoPago, obra, fecha, nro_factura, valor_obra, reajuste, retenciones, retenciones_canjeadas, multas, valor_estado_pago, valor_estado_pago_neto, obras_neto, reajuste_neto, observaciones)
-                MsgBox("Se insertó correctamente")
-                LimpiarEstado()
-                BloquearEstado()
-                btnAgregar.Enabled = False
-                btnCancelar.Enabled = False
-                btnNuevo.Enabled = True
-                btnModificar.Enabled = True
-                btnEliminar.Enabled = True
-                cboObras.Text = obra
-                dgvFiltroEstadoPagoMandante()
-                Return True
-            Else
-                MsgBox("Número de Factura ya existe", MsgBoxStyle.Exclamation)
-                Return False
-            End If
-        Catch ex As Exception
-            MsgBox("Verifique los datos ingresados")
-        End Try
-    End Function
-    Sub DesbloquearEstado()
+    Private Sub DesbloquearEstado()
         txtNroEstadoPago.Enabled = True
         txtObservaciones.Enabled = True
         cboObras.Enabled = True
@@ -609,7 +569,8 @@ Public Class frm_menu_principal_VI
                     LimpiarEstado()
                     Actualizar_dgvEstadosPagoFirmado()
                     actualizar_dgvFacturasAdjunto()
-                    RellenarCboObras()
+                    cboObras.Text = Nombre_Obra
+                    ActualizarCbo()
                 Catch ex As Exception
                     MsgBox(ex.Message)
                 End Try
@@ -1077,8 +1038,24 @@ Public Class frm_menu_principal_VI
     Private Sub cboObrasFiltro_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboObrasFiltro.SelectedIndexChanged
         dgvFiltroEstadoPagoMandante()
         LeerRetencion()
+        ObraFiltro = cboObrasFiltro.Text
+        ActualizarCbo()
     End Sub
+    Private Sub ActualizarCbo()
+        cboObrasPagoFirmado.Text = ObraFiltro
+        cboObrasPagoFirmado.Text = ObraFiltro
+        cboObrasFacturasPago.Text = ObraFiltro
+        cboObras.Text = ObraFiltro
 
+        cboEstadoPagoFirmado.DataSource = nue_obra6.LeerNroEstadoPago(obraNroEstadoPago)
+        cboEstadoPagoFirmado.DisplayMember = "Nro_Estado_Pago"
+        cboEstadoPagoFirmado.ValueMember = "Id_Estado_Pago"
+
+        cboEstadoPagoAsociado.DataSource = nue_obra6.LeerNroEstadoPagoFactura(obraFacturaFirmada)
+        cboEstadoPagoAsociado.DisplayMember = "Nro_Estado_Pago"
+        cboEstadoPagoAsociado.ValueMember = "Id_Estado_Pago"
+
+    End Sub
 
     Private Sub dgvFiltroEstadoPagoMandante()
         Try
@@ -1201,7 +1178,7 @@ Public Class frm_menu_principal_VI
         End Try
     End Sub
     Private Sub cboObrasPagoFirmado_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboObrasPagoFirmado.SelectedIndexChanged
-        Dim obraNroEstadoPago As String
+
         obraNroEstadoPago = cboObrasPagoFirmado.Text.ToString
         If obraNroEstadoPago = "System.Data.DataRowView" Then
             obraNroEstadoPago = Nombre_Obra
@@ -1249,9 +1226,9 @@ Public Class frm_menu_principal_VI
     End Sub
 
     Private Sub cboObrasFacturasPago_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboObrasFacturasPago.SelectedIndexChanged
-        Dim obraFacturaFirmada As String
+
         obraFacturaFirmada = cboObrasFacturasPago.Text.ToString
-        If cboObrasPagoFirmado.Text.ToString = "System.Data.DataRowView" Then
+        If cboObrasFacturasPago.Text.ToString = "System.Data.DataRowView" Then
             obraFacturaFirmada = Nombre_Obra
         End If
         cboEstadoPagoAsociado.DataSource = nue_obra6.LeerNroEstadoPagoFactura(obraFacturaFirmada)
@@ -1481,6 +1458,5 @@ Public Class frm_menu_principal_VI
             MessageBox.Show(ex.Message)
         End Try
     End Sub
-
 
 End Class

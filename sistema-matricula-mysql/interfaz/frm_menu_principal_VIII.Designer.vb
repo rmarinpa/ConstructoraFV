@@ -185,6 +185,15 @@ Partial Class frm_menu_principal_VIII
         Me.SaveFileDialog3 = New System.Windows.Forms.SaveFileDialog()
         Me.OpenFileDialog6 = New System.Windows.Forms.OpenFileDialog()
         Me.OpenFileDialog8 = New System.Windows.Forms.OpenFileDialog()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage9.SuspendLayout()
         Me.TabControl8.SuspendLayout()
@@ -193,6 +202,7 @@ Partial Class frm_menu_principal_VIII
         Me.TabPage41.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        Me.TabPage42.SuspendLayout()
         Me.TabPage7.SuspendLayout()
         Me.TabControl6.SuspendLayout()
         Me.TabPage6.SuspendLayout()
@@ -208,6 +218,7 @@ Partial Class frm_menu_principal_VIII
         Me.TabPage2.SuspendLayout()
         Me.Panel.SuspendLayout()
         CType(Me.dgv_arrendador, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'lbl_nombre_obra
@@ -223,7 +234,7 @@ Partial Class frm_menu_principal_VIII
         '
         'PictureBox5
         '
-        Me.PictureBox5.Location = New System.Drawing.Point(10, 12)
+        Me.PictureBox5.Location = New System.Drawing.Point(-8, -17)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(160, 54)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -1412,6 +1423,7 @@ Partial Class frm_menu_principal_VIII
         '
         Me.TabPage42.AutoScroll = True
         Me.TabPage42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TabPage42.Controls.Add(Me.GroupBox2)
         Me.TabPage42.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPage42.Location = New System.Drawing.Point(4, 38)
         Me.TabPage42.Margin = New System.Windows.Forms.Padding(2)
@@ -1887,7 +1899,7 @@ Partial Class frm_menu_principal_VIII
         Me.TabControl11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabControl11.ImeMode = System.Windows.Forms.ImeMode.[On]
         Me.TabControl11.ItemSize = New System.Drawing.Size(80, 40)
-        Me.TabControl11.Location = New System.Drawing.Point(10, 82)
+        Me.TabControl11.Location = New System.Drawing.Point(-8, 36)
         Me.TabControl11.Margin = New System.Windows.Forms.Padding(2)
         Me.TabControl11.Name = "TabControl11"
         Me.TabControl11.SelectedIndex = 0
@@ -2126,7 +2138,7 @@ Partial Class frm_menu_principal_VIII
         Me.Button62.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button62.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button62.ForeColor = System.Drawing.Color.Black
-        Me.Button62.Location = New System.Drawing.Point(1082, 12)
+        Me.Button62.Location = New System.Drawing.Point(1064, 12)
         Me.Button62.Margin = New System.Windows.Forms.Padding(2)
         Me.Button62.Name = "Button62"
         Me.Button62.Size = New System.Drawing.Size(112, 45)
@@ -2140,7 +2152,7 @@ Partial Class frm_menu_principal_VIII
         Me.Button63.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button63.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button63.ForeColor = System.Drawing.Color.Black
-        Me.Button63.Location = New System.Drawing.Point(1199, 12)
+        Me.Button63.Location = New System.Drawing.Point(1181, 12)
         Me.Button63.Margin = New System.Windows.Forms.Padding(2)
         Me.Button63.Name = "Button63"
         Me.Button63.Size = New System.Drawing.Size(112, 45)
@@ -2150,7 +2162,7 @@ Partial Class frm_menu_principal_VIII
         '
         'pb_list
         '
-        Me.pb_list.Location = New System.Drawing.Point(1316, 62)
+        Me.pb_list.Location = New System.Drawing.Point(1298, 62)
         Me.pb_list.Margin = New System.Windows.Forms.Padding(2)
         Me.pb_list.Name = "pb_list"
         Me.pb_list.Size = New System.Drawing.Size(112, 19)
@@ -2162,7 +2174,7 @@ Partial Class frm_menu_principal_VIII
         Me.btn_sincronizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_sincronizar.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_sincronizar.ForeColor = System.Drawing.Color.Black
-        Me.btn_sincronizar.Location = New System.Drawing.Point(1316, 12)
+        Me.btn_sincronizar.Location = New System.Drawing.Point(1298, 12)
         Me.btn_sincronizar.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_sincronizar.Name = "btn_sincronizar"
         Me.btn_sincronizar.Size = New System.Drawing.Size(112, 45)
@@ -2174,7 +2186,7 @@ Partial Class frm_menu_principal_VIII
         '
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Calibri", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(791, 7)
+        Me.Label22.Location = New System.Drawing.Point(564, 7)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(126, 33)
         Me.Label22.TabIndex = 35
@@ -2184,7 +2196,7 @@ Partial Class frm_menu_principal_VIII
         '
         Me.lbl_usuario.AutoSize = True
         Me.lbl_usuario.Font = New System.Drawing.Font("Calibri", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_usuario.Location = New System.Drawing.Point(906, 7)
+        Me.lbl_usuario.Location = New System.Drawing.Point(679, 7)
         Me.lbl_usuario.Name = "lbl_usuario"
         Me.lbl_usuario.Size = New System.Drawing.Size(119, 33)
         Me.lbl_usuario.TabIndex = 36
@@ -2194,7 +2206,7 @@ Partial Class frm_menu_principal_VIII
         '
         Me.lbl_sincroniza.AutoSize = True
         Me.lbl_sincroniza.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_sincroniza.Location = New System.Drawing.Point(776, 40)
+        Me.lbl_sincroniza.Location = New System.Drawing.Point(549, 40)
         Me.lbl_sincroniza.Name = "lbl_sincroniza"
         Me.lbl_sincroniza.Size = New System.Drawing.Size(93, 19)
         Me.lbl_sincroniza.TabIndex = 43
@@ -2203,7 +2215,7 @@ Partial Class frm_menu_principal_VIII
         'dgv_arrendador
         '
         Me.dgv_arrendador.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv_arrendador.Location = New System.Drawing.Point(1292, 62)
+        Me.dgv_arrendador.Location = New System.Drawing.Point(1065, 62)
         Me.dgv_arrendador.Margin = New System.Windows.Forms.Padding(2)
         Me.dgv_arrendador.Name = "dgv_arrendador"
         Me.dgv_arrendador.RowTemplate.Height = 24
@@ -2264,6 +2276,92 @@ Partial Class frm_menu_principal_VIII
         Me.OpenFileDialog8.FileName = "OpenFileDialog8"
         Me.OpenFileDialog8.Filter = "PDF files (*.pdf)|*.pdf"
         '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.TextBox2)
+        Me.GroupBox2.Controls.Add(Me.DateTimePicker1)
+        Me.GroupBox2.Controls.Add(Me.ComboBox2)
+        Me.GroupBox2.Controls.Add(Me.ComboBox1)
+        Me.GroupBox2.Controls.Add(Me.Label11)
+        Me.GroupBox2.Controls.Add(Me.Label10)
+        Me.GroupBox2.Controls.Add(Me.Label9)
+        Me.GroupBox2.Controls.Add(Me.Label8)
+        Me.GroupBox2.Location = New System.Drawing.Point(31, 53)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(1346, 182)
+        Me.GroupBox2.TabIndex = 0
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Ingreso Avance Ítems Controlados"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(44, 62)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(40, 17)
+        Me.Label8.TabIndex = 0
+        Me.Label8.Text = "Obra"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(44, 125)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(34, 17)
+        Me.Label9.TabIndex = 1
+        Me.Label9.Text = "Ítem"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(325, 62)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(47, 17)
+        Me.Label10.TabIndex = 2
+        Me.Label10.Text = "Fecha"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(325, 117)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(64, 17)
+        Me.Label11.TabIndex = 3
+        Me.Label11.Text = "Cantidad"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(162, 62)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 25)
+        Me.ComboBox1.TabIndex = 4
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(162, 117)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 25)
+        Me.ComboBox2.TabIndex = 5
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker1.Location = New System.Drawing.Point(416, 62)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 23)
+        Me.DateTimePicker1.TabIndex = 6
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(416, 117)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(200, 23)
+        Me.TextBox2.TabIndex = 7
+        '
         'frm_menu_principal_VIII
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2296,6 +2394,7 @@ Partial Class frm_menu_principal_VIII
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.TabPage42.ResumeLayout(False)
         Me.TabPage7.ResumeLayout(False)
         Me.TabControl6.ResumeLayout(False)
         Me.TabPage6.ResumeLayout(False)
@@ -2311,6 +2410,8 @@ Partial Class frm_menu_principal_VIII
         Me.TabPage2.ResumeLayout(False)
         Me.Panel.ResumeLayout(False)
         CType(Me.dgv_arrendador, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -2476,4 +2577,13 @@ Partial Class frm_menu_principal_VIII
     Friend WithEvents cboObraControl As System.Windows.Forms.ComboBox
     Friend WithEvents cboObraControlFiltro As System.Windows.Forms.ComboBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
 End Class

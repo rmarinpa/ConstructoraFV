@@ -44,8 +44,10 @@ Public Class frm_menu_principal_VII
     Dim codigo_libre As Integer
     Dim suma_litros As Double
     Dim TipoBoton As Integer
+    Dim ObraFiltro As String
+    Dim obraModificacion As String
 
-    Sub RellenarCboObras()
+    Private Sub RellenarCboObras()
         cboObrasModificaciones.DataSource = nue_obra5.listar5(id_obra)
         cboObrasModificaciones.DisplayMember = "nombre_faena"
         cboObrasModificaciones.ValueMember = "Id_identificacion"
@@ -89,6 +91,7 @@ Public Class frm_menu_principal_VII
         Actualizar_dgvModificacion()
         Actualizar_dgvContrato()
         actualizar_dgvListado()
+
 
         If sincroniza = 0 Then
             btn_sincronizar.Visible = False
@@ -210,7 +213,7 @@ Public Class frm_menu_principal_VII
                         actualizar_dgvListado()
                         Actualizar_dgvContrato()
                         Actualizar_dgvModificacion()
-                        RellenarCboObras()
+                        ActualizarCbo()
                     Else
                         MsgBox("Registro ya existente", MsgBoxStyle.Exclamation)
                     End If
@@ -231,6 +234,7 @@ Public Class frm_menu_principal_VII
                         actualizar_dgvListado()
                         Actualizar_dgvContrato()
                         Actualizar_dgvModificacion()
+                        ActualizarCbo()
                     Else
                         MsgBox("Registro ya existente", MsgBoxStyle.Exclamation)
                     End If
@@ -448,7 +452,7 @@ Public Class frm_menu_principal_VII
                     actualizar_dgvListado()
                     Actualizar_dgvContrato()
                     Actualizar_dgvModificacion()
-                    RellenarCboObras()
+                    ActualizarCbo()
                 Catch ex As Exception
                     MsgBox(ex.Message)
                 End Try
@@ -814,9 +818,19 @@ Public Class frm_menu_principal_VII
         txtNombreAdjuntoModificaciones.Text = ""
     End Sub
 
-    Private Sub cboObrasListadoFiltro_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboObrasListadoFiltro.SelectedIndexChanged
-        actualizar_dgvListado()
-        LimpiarListado()
+
+
+    Private Sub ActualizarCbo()
+        ObraFiltro = cboObrasListadoFiltro.Text
+        cboObrasContratoOriginal.Text = ObraFiltro
+        cboObrasModificacion.Text = ObraFiltro
+        cboObrasModificaciones.Text = ObraFiltro
+
+
+        cboNroModificacionContrato.DataSource = modificacionesIngresos.LeerModificacionesExistente(obraModificacion)
+        cboNroModificacionContrato.DisplayMember = "nro_modificacion"
+        cboNroModificacionContrato.ValueMember = "id_modificaciones"
+
     End Sub
 
     Private Sub cboObrasContratoOriginal_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboObrasContratoOriginal.SelectedIndexChanged
@@ -824,8 +838,6 @@ Public Class frm_menu_principal_VII
     End Sub
 
     Private Sub cboObrasModificacion_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboObrasModificacion.SelectedIndexChanged
-
-        Dim obraModificacion As String
         obraModificacion = cboObrasModificacion.Text.ToString
         If obraModificacion = "System.Data.DataRowView" Then
             obraModificacion = Nombre_Obra
@@ -1050,5 +1062,11 @@ Public Class frm_menu_principal_VII
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+    End Sub
+
+    Private Sub cboObrasListadoFiltro_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboObrasListadoFiltro.SelectedIndexChanged
+        actualizar_dgvListado()
+        LimpiarListado()
+        ActualizarCbo()
     End Sub
 End Class
