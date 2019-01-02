@@ -23,6 +23,7 @@ Partial Class frm_menu_principal_IX
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_menu_principal_IX))
         Me.lbl_nombre_obra = New System.Windows.Forms.Label()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -100,6 +101,7 @@ Partial Class frm_menu_principal_IX
         Me.TabPage7 = New System.Windows.Forms.TabPage()
         Me.TabControl6 = New System.Windows.Forms.TabControl()
         Me.TabPage38 = New System.Windows.Forms.TabPage()
+        Me.TabPage39 = New System.Windows.Forms.TabPage()
         Me.TabPage40 = New System.Windows.Forms.TabPage()
         Me.TabPage6 = New System.Windows.Forms.TabPage()
         Me.TabControl5 = New System.Windows.Forms.TabControl()
@@ -161,7 +163,6 @@ Partial Class frm_menu_principal_IX
         Me.SaveFileDialog3 = New System.Windows.Forms.SaveFileDialog()
         Me.OpenFileDialog6 = New System.Windows.Forms.OpenFileDialog()
         Me.OpenFileDialog8 = New System.Windows.Forms.OpenFileDialog()
-        Me.TabPage39 = New System.Windows.Forms.TabPage()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage9.SuspendLayout()
         Me.TabControl8.SuspendLayout()
@@ -197,6 +198,7 @@ Partial Class frm_menu_principal_IX
         '
         'PictureBox5
         '
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
         Me.PictureBox5.Location = New System.Drawing.Point(10, 12)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(160, 54)
@@ -1229,6 +1231,20 @@ Partial Class frm_menu_principal_IX
         Me.TabPage38.Text = "Listado Modificaciones"
         Me.TabPage38.UseVisualStyleBackColor = True
         '
+        'TabPage39
+        '
+        Me.TabPage39.AutoScroll = True
+        Me.TabPage39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TabPage39.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabPage39.Location = New System.Drawing.Point(4, 38)
+        Me.TabPage39.Margin = New System.Windows.Forms.Padding(2)
+        Me.TabPage39.Name = "TabPage39"
+        Me.TabPage39.Padding = New System.Windows.Forms.Padding(2)
+        Me.TabPage39.Size = New System.Drawing.Size(1404, 523)
+        Me.TabPage39.TabIndex = 1
+        Me.TabPage39.Text = "Ingreso de Contrato Original (Resolución)"
+        Me.TabPage39.UseVisualStyleBackColor = True
+        '
         'TabPage40
         '
         Me.TabPage40.AutoScroll = True
@@ -1991,20 +2007,6 @@ Partial Class frm_menu_principal_IX
         '
         Me.OpenFileDialog8.FileName = "OpenFileDialog8"
         Me.OpenFileDialog8.Filter = "PDF files (*.pdf)|*.pdf"
-        '
-        'TabPage39
-        '
-        Me.TabPage39.AutoScroll = True
-        Me.TabPage39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TabPage39.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TabPage39.Location = New System.Drawing.Point(4, 38)
-        Me.TabPage39.Margin = New System.Windows.Forms.Padding(2)
-        Me.TabPage39.Name = "TabPage39"
-        Me.TabPage39.Padding = New System.Windows.Forms.Padding(2)
-        Me.TabPage39.Size = New System.Drawing.Size(1404, 523)
-        Me.TabPage39.TabIndex = 1
-        Me.TabPage39.Text = "Ingreso de Contrato Original (Resolución)"
-        Me.TabPage39.UseVisualStyleBackColor = True
         '
         'frm_menu_principal_IX
         '

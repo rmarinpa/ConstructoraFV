@@ -23,8 +23,6 @@ Partial Class frm_menu_principal_VI
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_menu_principal_VI))
         Me.lbl_nombre_obra = New System.Windows.Forms.Label()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
@@ -108,7 +106,14 @@ Partial Class frm_menu_principal_VI
         Me.TabPage6 = New System.Windows.Forms.TabPage()
         Me.TabControl5 = New System.Windows.Forms.TabControl()
         Me.TabPage35 = New System.Windows.Forms.TabPage()
-        Me.dgRetencionesProforma = New System.Windows.Forms.DataGridView()
+        Me.txtTotalRetenciones = New System.Windows.Forms.TextBox()
+        Me.lblProforma = New System.Windows.Forms.Label()
+        Me.txtTotalProforma = New System.Windows.Forms.TextBox()
+        Me.lblRetencion = New System.Windows.Forms.Label()
+        Me.txtProformaOriginal = New System.Windows.Forms.TextBox()
+        Me.txtRetencionOriginal = New System.Windows.Forms.TextBox()
+        Me.txtProformaModificada = New System.Windows.Forms.TextBox()
+        Me.txtRetencionModificada = New System.Windows.Forms.TextBox()
         Me.cboObrasFiltro = New System.Windows.Forms.ComboBox()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.txtIdEstadoPago = New System.Windows.Forms.TextBox()
@@ -308,7 +313,6 @@ Partial Class frm_menu_principal_VI
         Me.TabPage6.SuspendLayout()
         Me.TabControl5.SuspendLayout()
         Me.TabPage35.SuspendLayout()
-        CType(Me.dgRetencionesProforma, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvEstadoPago, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox10.SuspendLayout()
         Me.TabPage36.SuspendLayout()
@@ -354,7 +358,8 @@ Partial Class frm_menu_principal_VI
         '
         'PictureBox5
         '
-        Me.PictureBox5.Location = New System.Drawing.Point(13, 12)
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(34, 17)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(160, 54)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -1443,7 +1448,14 @@ Partial Class frm_menu_principal_VI
         '
         Me.TabPage35.AutoScroll = True
         Me.TabPage35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TabPage35.Controls.Add(Me.dgRetencionesProforma)
+        Me.TabPage35.Controls.Add(Me.txtTotalRetenciones)
+        Me.TabPage35.Controls.Add(Me.lblProforma)
+        Me.TabPage35.Controls.Add(Me.txtTotalProforma)
+        Me.TabPage35.Controls.Add(Me.lblRetencion)
+        Me.TabPage35.Controls.Add(Me.txtProformaOriginal)
+        Me.TabPage35.Controls.Add(Me.txtRetencionOriginal)
+        Me.TabPage35.Controls.Add(Me.txtProformaModificada)
+        Me.TabPage35.Controls.Add(Me.txtRetencionModificada)
         Me.TabPage35.Controls.Add(Me.cboObrasFiltro)
         Me.TabPage35.Controls.Add(Me.Label23)
         Me.TabPage35.Controls.Add(Me.txtIdEstadoPago)
@@ -1465,41 +1477,76 @@ Partial Class frm_menu_principal_VI
         Me.TabPage35.Text = "Ingreso Estados de Pago Mandante"
         Me.TabPage35.UseVisualStyleBackColor = True
         '
-        'dgRetencionesProforma
+        'txtTotalRetenciones
         '
-        Me.dgRetencionesProforma.AllowUserToAddRows = False
-        Me.dgRetencionesProforma.AllowUserToDeleteRows = False
-        Me.dgRetencionesProforma.BackgroundColor = System.Drawing.SystemColors.Control
-        Me.dgRetencionesProforma.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgRetencionesProforma.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.dgRetencionesProforma.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgRetencionesProforma.GridColor = System.Drawing.SystemColors.Control
-        Me.dgRetencionesProforma.Location = New System.Drawing.Point(616, 43)
-        Me.dgRetencionesProforma.Name = "dgRetencionesProforma"
-        Me.dgRetencionesProforma.ReadOnly = True
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgRetencionesProforma.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.dgRetencionesProforma.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
-        Me.dgRetencionesProforma.Size = New System.Drawing.Size(252, 78)
-        Me.dgRetencionesProforma.TabIndex = 27
+        Me.txtTotalRetenciones.Enabled = False
+        Me.txtTotalRetenciones.Location = New System.Drawing.Point(742, 61)
+        Me.txtTotalRetenciones.Name = "txtTotalRetenciones"
+        Me.txtTotalRetenciones.Size = New System.Drawing.Size(100, 23)
+        Me.txtTotalRetenciones.TabIndex = 36
+        '
+        'lblProforma
+        '
+        Me.lblProforma.AutoSize = True
+        Me.lblProforma.Location = New System.Drawing.Point(630, 98)
+        Me.lblProforma.Name = "lblProforma"
+        Me.lblProforma.Size = New System.Drawing.Size(66, 17)
+        Me.lblProforma.TabIndex = 35
+        Me.lblProforma.Text = "Proforma"
+        '
+        'txtTotalProforma
+        '
+        Me.txtTotalProforma.Enabled = False
+        Me.txtTotalProforma.Location = New System.Drawing.Point(742, 101)
+        Me.txtTotalProforma.Name = "txtTotalProforma"
+        Me.txtTotalProforma.Size = New System.Drawing.Size(100, 23)
+        Me.txtTotalProforma.TabIndex = 34
+        '
+        'lblRetencion
+        '
+        Me.lblRetencion.AutoSize = True
+        Me.lblRetencion.Location = New System.Drawing.Point(630, 61)
+        Me.lblRetencion.Name = "lblRetencion"
+        Me.lblRetencion.Size = New System.Drawing.Size(72, 17)
+        Me.lblRetencion.TabIndex = 33
+        Me.lblRetencion.Text = "Retencion"
+        '
+        'txtProformaOriginal
+        '
+        Me.txtProformaOriginal.Location = New System.Drawing.Point(1124, 389)
+        Me.txtProformaOriginal.Name = "txtProformaOriginal"
+        Me.txtProformaOriginal.Size = New System.Drawing.Size(100, 23)
+        Me.txtProformaOriginal.TabIndex = 32
+        Me.txtProformaOriginal.Visible = False
+        '
+        'txtRetencionOriginal
+        '
+        Me.txtRetencionOriginal.Location = New System.Drawing.Point(1002, 389)
+        Me.txtRetencionOriginal.Name = "txtRetencionOriginal"
+        Me.txtRetencionOriginal.Size = New System.Drawing.Size(100, 23)
+        Me.txtRetencionOriginal.TabIndex = 31
+        Me.txtRetencionOriginal.Visible = False
+        '
+        'txtProformaModificada
+        '
+        Me.txtProformaModificada.Location = New System.Drawing.Point(1124, 420)
+        Me.txtProformaModificada.Name = "txtProformaModificada"
+        Me.txtProformaModificada.Size = New System.Drawing.Size(100, 23)
+        Me.txtProformaModificada.TabIndex = 30
+        Me.txtProformaModificada.Visible = False
+        '
+        'txtRetencionModificada
+        '
+        Me.txtRetencionModificada.Location = New System.Drawing.Point(1002, 420)
+        Me.txtRetencionModificada.Name = "txtRetencionModificada"
+        Me.txtRetencionModificada.Size = New System.Drawing.Size(100, 23)
+        Me.txtRetencionModificada.TabIndex = 29
+        Me.txtRetencionModificada.Visible = False
         '
         'cboObrasFiltro
         '
         Me.cboObrasFiltro.FormattingEnabled = True
-        Me.cboObrasFiltro.Location = New System.Drawing.Point(450, 44)
+        Me.cboObrasFiltro.Location = New System.Drawing.Point(450, 67)
         Me.cboObrasFiltro.Name = "cboObrasFiltro"
         Me.cboObrasFiltro.Size = New System.Drawing.Size(149, 25)
         Me.cboObrasFiltro.TabIndex = 22
@@ -1507,7 +1554,7 @@ Partial Class frm_menu_principal_VI
         'Label23
         '
         Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(335, 45)
+        Me.Label23.Location = New System.Drawing.Point(335, 67)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(109, 17)
         Me.Label23.TabIndex = 21
@@ -3587,9 +3634,9 @@ Partial Class frm_menu_principal_VI
         '
         'frm_menu_principal_VI
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.AutoScroll = True
+        Me.AutoScroll = true
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(1060, 619)
         Me.Controls.Add(Me.dgv_arrendador)
@@ -3603,67 +3650,66 @@ Partial Class frm_menu_principal_VI
         Me.Controls.Add(Me.TabControl11)
         Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.lbl_nombre_obra)
-        Me.DoubleBuffered = True
+        Me.DoubleBuffered = true
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "frm_menu_principal_VI"
         Me.Text = "Estado Pago Mandante"
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPage9.ResumeLayout(False)
-        Me.TabControl8.ResumeLayout(False)
-        Me.TabPage8.ResumeLayout(False)
-        Me.TabControl7.ResumeLayout(False)
-        Me.TabPage7.ResumeLayout(False)
-        Me.TabControl6.ResumeLayout(False)
-        Me.TabPage6.ResumeLayout(False)
-        Me.TabControl5.ResumeLayout(False)
-        Me.TabPage35.ResumeLayout(False)
-        Me.TabPage35.PerformLayout()
-        CType(Me.dgRetencionesProforma, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgvEstadoPago, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox10.ResumeLayout(False)
-        Me.GroupBox10.PerformLayout()
-        Me.TabPage36.ResumeLayout(False)
-        Me.TabPage36.PerformLayout()
-        Me.GroupBox12.ResumeLayout(False)
-        Me.GroupBox12.PerformLayout()
-        CType(Me.dgvAdjuntosPagosFirmados, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox11.ResumeLayout(False)
-        Me.GroupBox11.PerformLayout()
-        Me.TabPage37.ResumeLayout(False)
-        Me.TabPage37.PerformLayout()
-        CType(Me.dgvFacturasAdjunto, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox14.ResumeLayout(False)
-        Me.GroupBox14.PerformLayout()
-        Me.GroupBox13.ResumeLayout(False)
-        Me.GroupBox13.PerformLayout()
-        Me.TabPage5.ResumeLayout(False)
-        Me.TabControl4.ResumeLayout(False)
-        Me.TabPage4.ResumeLayout(False)
-        Me.TabControl3.ResumeLayout(False)
-        Me.TabPage3.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        Me.TabControl11.ResumeLayout(False)
-        Me.TabPage1.ResumeLayout(False)
-        Me.TabPage2.ResumeLayout(False)
-        Me.Panel.ResumeLayout(False)
-        Me.TabPage11.ResumeLayout(False)
-        Me.TabPage11.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        Me.TabPage12.ResumeLayout(False)
-        Me.TabPage12.PerformLayout()
-        CType(Me.dgv_2_cuentas, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
-        Me.TabPage13.ResumeLayout(False)
-        Me.TabPage13.PerformLayout()
-        CType(Me.dgv_uf, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox4.PerformLayout()
-        CType(Me.dgv_arrendador, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
+        CType(Me.PictureBox5,System.ComponentModel.ISupportInitialize).EndInit
+        Me.TabPage9.ResumeLayout(false)
+        Me.TabControl8.ResumeLayout(false)
+        Me.TabPage8.ResumeLayout(false)
+        Me.TabControl7.ResumeLayout(false)
+        Me.TabPage7.ResumeLayout(false)
+        Me.TabControl6.ResumeLayout(false)
+        Me.TabPage6.ResumeLayout(false)
+        Me.TabControl5.ResumeLayout(false)
+        Me.TabPage35.ResumeLayout(false)
+        Me.TabPage35.PerformLayout
+        CType(Me.dgvEstadoPago,System.ComponentModel.ISupportInitialize).EndInit
+        Me.GroupBox10.ResumeLayout(false)
+        Me.GroupBox10.PerformLayout
+        Me.TabPage36.ResumeLayout(false)
+        Me.TabPage36.PerformLayout
+        Me.GroupBox12.ResumeLayout(false)
+        Me.GroupBox12.PerformLayout
+        CType(Me.dgvAdjuntosPagosFirmados,System.ComponentModel.ISupportInitialize).EndInit
+        Me.GroupBox11.ResumeLayout(false)
+        Me.GroupBox11.PerformLayout
+        Me.TabPage37.ResumeLayout(false)
+        Me.TabPage37.PerformLayout
+        CType(Me.dgvFacturasAdjunto,System.ComponentModel.ISupportInitialize).EndInit
+        Me.GroupBox14.ResumeLayout(false)
+        Me.GroupBox14.PerformLayout
+        Me.GroupBox13.ResumeLayout(false)
+        Me.GroupBox13.PerformLayout
+        Me.TabPage5.ResumeLayout(false)
+        Me.TabControl4.ResumeLayout(false)
+        Me.TabPage4.ResumeLayout(false)
+        Me.TabControl3.ResumeLayout(false)
+        Me.TabPage3.ResumeLayout(false)
+        Me.Panel2.ResumeLayout(false)
+        Me.TabControl11.ResumeLayout(false)
+        Me.TabPage1.ResumeLayout(false)
+        Me.TabPage2.ResumeLayout(false)
+        Me.Panel.ResumeLayout(false)
+        Me.TabPage11.ResumeLayout(false)
+        Me.TabPage11.PerformLayout
+        Me.GroupBox2.ResumeLayout(false)
+        Me.GroupBox2.PerformLayout
+        Me.GroupBox1.ResumeLayout(false)
+        Me.GroupBox1.PerformLayout
+        Me.TabPage12.ResumeLayout(false)
+        Me.TabPage12.PerformLayout
+        CType(Me.dgv_2_cuentas,System.ComponentModel.ISupportInitialize).EndInit
+        Me.GroupBox3.ResumeLayout(false)
+        Me.GroupBox3.PerformLayout
+        Me.TabPage13.ResumeLayout(false)
+        Me.TabPage13.PerformLayout
+        CType(Me.dgv_uf,System.ComponentModel.ISupportInitialize).EndInit
+        Me.GroupBox4.ResumeLayout(false)
+        Me.GroupBox4.PerformLayout
+        CType(Me.dgv_arrendador,System.ComponentModel.ISupportInitialize).EndInit
+        Me.ResumeLayout(false)
         Me.PerformLayout
 
 End Sub
@@ -3938,5 +3984,12 @@ End Sub
     Friend WithEvents cboEstadoPagoFirmado As ComboBox
     Friend WithEvents cboEstadoPagoAsociado As ComboBox
     Friend WithEvents txtAdjuntoFacturasFirmadas As TextBox
-    Friend WithEvents dgRetencionesProforma As System.Windows.Forms.DataGridView
+    Friend WithEvents txtRetencionModificada As System.Windows.Forms.TextBox
+    Friend WithEvents txtProformaModificada As System.Windows.Forms.TextBox
+    Friend WithEvents txtTotalRetenciones As System.Windows.Forms.TextBox
+    Friend WithEvents lblProforma As System.Windows.Forms.Label
+    Friend WithEvents txtTotalProforma As System.Windows.Forms.TextBox
+    Friend WithEvents lblRetencion As System.Windows.Forms.Label
+    Friend WithEvents txtProformaOriginal As System.Windows.Forms.TextBox
+    Friend WithEvents txtRetencionOriginal As System.Windows.Forms.TextBox
 End Class

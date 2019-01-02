@@ -248,16 +248,6 @@ Public Class EstadoPagoMandante
         End Try
     End Sub
 
-    Public Function LeerArchivoAdjunto(ByVal id As String) As DataTable
-        nue_var.dt = New DataTable
-        nue_conexion.conectar()
-        nue_var.da = New MySqlDataAdapter("select adjunto from estado_pago_firmado where Id_Estado_Pago_Firmado = '" & id & "' order by id_Estado_Pago_Firmado desc ", nue_conexion.conex())
-        nue_var.da.Fill(nue_var.dt)
-        nue_conexion.desconectar()
-        LeerArchivoAdjunto = nue_var.dt
-        Return LeerArchivoAdjunto
-    End Function
-
     Public Function UltimoNroFactura(ByVal NombreObra As String) As DataTable
         nue_var.dt = New DataTable
         nue_conexion.conectar()

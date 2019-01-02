@@ -1367,6 +1367,11 @@
         frm_menu_principal_VII.Show()
         Me.Close()
     End Sub
+    Private Sub TabPage9_Enter(sender As Object, e As EventArgs) Handles TabPage8.Enter
+        num_tab = 1
+        frm_menu_principal_VIII.Show()
+        Me.Close()
+    End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         num_tab = 1

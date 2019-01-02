@@ -118,6 +118,15 @@ Partial Class frm_menu_principal_VIII
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TabPage42 = New System.Windows.Forms.TabPage()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.TabPage43 = New System.Windows.Forms.TabPage()
         Me.TabPage44 = New System.Windows.Forms.TabPage()
         Me.TabPage7 = New System.Windows.Forms.TabPage()
@@ -173,27 +182,52 @@ Partial Class frm_menu_principal_VIII
         Me.lbl_usuario = New System.Windows.Forms.Label()
         Me.lbl_sincroniza = New System.Windows.Forms.Label()
         Me.dgv_arrendador = New System.Windows.Forms.DataGridView()
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
-        Me.SaveFileDialog2 = New System.Windows.Forms.SaveFileDialog()
-        Me.OpenFileDialog2 = New System.Windows.Forms.OpenFileDialog()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.OpenFileDialog7 = New System.Windows.Forms.OpenFileDialog()
-        Me.OpenFileDialog3 = New System.Windows.Forms.OpenFileDialog()
-        Me.OpenFileDialog4 = New System.Windows.Forms.OpenFileDialog()
-        Me.OpenFileDialog5 = New System.Windows.Forms.OpenFileDialog()
-        Me.SaveFileDialog3 = New System.Windows.Forms.SaveFileDialog()
-        Me.OpenFileDialog6 = New System.Windows.Forms.OpenFileDialog()
-        Me.OpenFileDialog8 = New System.Windows.Forms.OpenFileDialog()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
+        Me.DataGridView4 = New System.Windows.Forms.DataGridView()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Button64 = New System.Windows.Forms.Button()
+        Me.Button65 = New System.Windows.Forms.Button()
+        Me.Button66 = New System.Windows.Forms.Button()
+        Me.Button67 = New System.Windows.Forms.Button()
+        Me.Button68 = New System.Windows.Forms.Button()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Button69 = New System.Windows.Forms.Button()
+        Me.Button70 = New System.Windows.Forms.Button()
+        Me.Button71 = New System.Windows.Forms.Button()
+        Me.Button72 = New System.Windows.Forms.Button()
+        Me.Button73 = New System.Windows.Forms.Button()
+        Me.Button74 = New System.Windows.Forms.Button()
+        Me.Button75 = New System.Windows.Forms.Button()
+        Me.Button76 = New System.Windows.Forms.Button()
+        Me.Button77 = New System.Windows.Forms.Button()
+        Me.Button78 = New System.Windows.Forms.Button()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
+        Me.DateTimePicker4 = New System.Windows.Forms.DateTimePicker()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage9.SuspendLayout()
         Me.TabControl8.SuspendLayout()
@@ -203,6 +237,9 @@ Partial Class frm_menu_principal_VIII
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.TabPage42.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.TabPage43.SuspendLayout()
+        Me.TabPage44.SuspendLayout()
         Me.TabPage7.SuspendLayout()
         Me.TabControl6.SuspendLayout()
         Me.TabPage6.SuspendLayout()
@@ -218,7 +255,11 @@ Partial Class frm_menu_principal_VIII
         Me.TabPage2.SuspendLayout()
         Me.Panel.SuspendLayout()
         CType(Me.dgv_arrendador, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lbl_nombre_obra
@@ -234,7 +275,8 @@ Partial Class frm_menu_principal_VIII
         '
         'PictureBox5
         '
-        Me.PictureBox5.Location = New System.Drawing.Point(-8, -17)
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(8, 17)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(160, 54)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -1214,8 +1256,9 @@ Partial Class frm_menu_principal_VIII
         '
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.AliceBlue
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(31, 286)
+        Me.DataGridView1.Location = New System.Drawing.Point(5, 277)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.Size = New System.Drawing.Size(1346, 194)
@@ -1224,11 +1267,11 @@ Partial Class frm_menu_principal_VIII
         'TextBox1
         '
         Me.TextBox1.BackColor = System.Drawing.SystemColors.HotTrack
-        Me.TextBox1.Location = New System.Drawing.Point(-5, 5)
+        Me.TextBox1.Location = New System.Drawing.Point(1, 15)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(1403, 23)
         Me.TextBox1.TabIndex = 1
-        Me.TextBox1.Text = "Control de Obra"
+        Me.TextBox1.Text = "Ítems a Controlar" & Global.Microsoft.VisualBasic.ChrW(9)
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'GroupBox1
@@ -1250,12 +1293,11 @@ Partial Class frm_menu_principal_VIII
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(31, 53)
+        Me.GroupBox1.Location = New System.Drawing.Point(1, 58)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(1346, 182)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Ítems a Controlar"
         '
         'btnCancelarControl
         '
@@ -1423,6 +1465,8 @@ Partial Class frm_menu_principal_VIII
         '
         Me.TabPage42.AutoScroll = True
         Me.TabPage42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TabPage42.Controls.Add(Me.DataGridView2)
+        Me.TabPage42.Controls.Add(Me.TextBox3)
         Me.TabPage42.Controls.Add(Me.GroupBox2)
         Me.TabPage42.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPage42.Location = New System.Drawing.Point(4, 38)
@@ -1434,10 +1478,103 @@ Partial Class frm_menu_principal_VIII
         Me.TabPage42.Text = "Ingreso Avance Ítems Controlados"
         Me.TabPage42.UseVisualStyleBackColor = True
         '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.Button64)
+        Me.GroupBox2.Controls.Add(Me.Button65)
+        Me.GroupBox2.Controls.Add(Me.Button66)
+        Me.GroupBox2.Controls.Add(Me.Button67)
+        Me.GroupBox2.Controls.Add(Me.Button68)
+        Me.GroupBox2.Controls.Add(Me.TextBox2)
+        Me.GroupBox2.Controls.Add(Me.DateTimePicker1)
+        Me.GroupBox2.Controls.Add(Me.ComboBox2)
+        Me.GroupBox2.Controls.Add(Me.ComboBox1)
+        Me.GroupBox2.Controls.Add(Me.Label11)
+        Me.GroupBox2.Controls.Add(Me.Label10)
+        Me.GroupBox2.Controls.Add(Me.Label9)
+        Me.GroupBox2.Controls.Add(Me.Label8)
+        Me.GroupBox2.Location = New System.Drawing.Point(1, 53)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(1346, 182)
+        Me.GroupBox2.TabIndex = 0
+        Me.GroupBox2.TabStop = False
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(501, 81)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(93, 23)
+        Me.TextBox2.TabIndex = 7
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker1.Location = New System.Drawing.Point(501, 38)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 23)
+        Me.DateTimePicker1.TabIndex = 6
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(163, 84)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 25)
+        Me.ComboBox2.TabIndex = 5
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(163, 44)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 25)
+        Me.ComboBox1.TabIndex = 4
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(394, 84)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(64, 17)
+        Me.Label11.TabIndex = 3
+        Me.Label11.Text = "Cantidad"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(394, 44)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(47, 17)
+        Me.Label10.TabIndex = 2
+        Me.Label10.Text = "Fecha"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(6, 90)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(34, 17)
+        Me.Label9.TabIndex = 1
+        Me.Label9.Text = "Ítem"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(6, 43)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(40, 17)
+        Me.Label8.TabIndex = 0
+        Me.Label8.Text = "Obra"
+        '
         'TabPage43
         '
         Me.TabPage43.AutoScroll = True
         Me.TabPage43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TabPage43.Controls.Add(Me.DataGridView3)
+        Me.TabPage43.Controls.Add(Me.TextBox4)
+        Me.TabPage43.Controls.Add(Me.GroupBox3)
         Me.TabPage43.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPage43.Location = New System.Drawing.Point(4, 38)
         Me.TabPage43.Margin = New System.Windows.Forms.Padding(2)
@@ -1451,6 +1588,9 @@ Partial Class frm_menu_principal_VIII
         '
         Me.TabPage44.AutoScroll = True
         Me.TabPage44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TabPage44.Controls.Add(Me.DataGridView4)
+        Me.TabPage44.Controls.Add(Me.TextBox5)
+        Me.TabPage44.Controls.Add(Me.GroupBox4)
         Me.TabPage44.Location = New System.Drawing.Point(4, 38)
         Me.TabPage44.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage44.Name = "TabPage44"
@@ -1899,7 +2039,7 @@ Partial Class frm_menu_principal_VIII
         Me.TabControl11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabControl11.ImeMode = System.Windows.Forms.ImeMode.[On]
         Me.TabControl11.ItemSize = New System.Drawing.Size(80, 40)
-        Me.TabControl11.Location = New System.Drawing.Point(-8, 36)
+        Me.TabControl11.Location = New System.Drawing.Point(4, 83)
         Me.TabControl11.Margin = New System.Windows.Forms.Padding(2)
         Me.TabControl11.Name = "TabControl11"
         Me.TabControl11.SelectedIndex = 0
@@ -2223,144 +2363,490 @@ Partial Class frm_menu_principal_VIII
         Me.dgv_arrendador.TabIndex = 44
         Me.dgv_arrendador.Visible = False
         '
-        'OpenFileDialog1
+        'TextBox3
         '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
-        Me.OpenFileDialog1.Filter = "(*.doc)|*.doc"
+        Me.TextBox3.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.TextBox3.Location = New System.Drawing.Point(1, 15)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(1403, 23)
+        Me.TextBox3.TabIndex = 8
+        Me.TextBox3.Text = "Ingreso Avance Ítems Controlados" & Global.Microsoft.VisualBasic.ChrW(9)
+        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'SaveFileDialog1
+        'GroupBox3
         '
-        Me.SaveFileDialog1.Filter = "(*.doc)|*.doc"
+        Me.GroupBox3.Controls.Add(Me.TextBox10)
+        Me.GroupBox3.Controls.Add(Me.DateTimePicker4)
+        Me.GroupBox3.Controls.Add(Me.DateTimePicker3)
+        Me.GroupBox3.Controls.Add(Me.TextBox9)
+        Me.GroupBox3.Controls.Add(Me.TextBox8)
+        Me.GroupBox3.Controls.Add(Me.TextBox7)
+        Me.GroupBox3.Controls.Add(Me.Button74)
+        Me.GroupBox3.Controls.Add(Me.Button75)
+        Me.GroupBox3.Controls.Add(Me.Button76)
+        Me.GroupBox3.Controls.Add(Me.Button77)
+        Me.GroupBox3.Controls.Add(Me.Button78)
+        Me.GroupBox3.Controls.Add(Me.Label23)
+        Me.GroupBox3.Controls.Add(Me.Label21)
+        Me.GroupBox3.Controls.Add(Me.Label20)
+        Me.GroupBox3.Controls.Add(Me.Label19)
+        Me.GroupBox3.Controls.Add(Me.Label18)
+        Me.GroupBox3.Controls.Add(Me.Label17)
+        Me.GroupBox3.Controls.Add(Me.ComboBox5)
+        Me.GroupBox3.Controls.Add(Me.Label16)
+        Me.GroupBox3.Location = New System.Drawing.Point(1, 53)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(1346, 182)
+        Me.GroupBox3.TabIndex = 0
+        Me.GroupBox3.TabStop = False
         '
-        'SaveFileDialog2
+        'TextBox4
         '
-        Me.SaveFileDialog2.Filter = "(*.doc)|*.doc"
+        Me.TextBox4.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.TextBox4.Location = New System.Drawing.Point(1, 15)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(1403, 23)
+        Me.TextBox4.TabIndex = 9
+        Me.TextBox4.Text = "Carta Gantt"
+        Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'OpenFileDialog2
+        'GroupBox4
         '
-        Me.OpenFileDialog2.FileName = "OpenFileDialog2"
-        Me.OpenFileDialog2.Filter = "PDF files (*.pdf)|*.pdf"
+        Me.GroupBox4.Controls.Add(Me.Button69)
+        Me.GroupBox4.Controls.Add(Me.Button70)
+        Me.GroupBox4.Controls.Add(Me.Button71)
+        Me.GroupBox4.Controls.Add(Me.Button72)
+        Me.GroupBox4.Controls.Add(Me.Button73)
+        Me.GroupBox4.Controls.Add(Me.TextBox6)
+        Me.GroupBox4.Controls.Add(Me.ComboBox4)
+        Me.GroupBox4.Controls.Add(Me.ComboBox3)
+        Me.GroupBox4.Controls.Add(Me.DateTimePicker2)
+        Me.GroupBox4.Controls.Add(Me.Label15)
+        Me.GroupBox4.Controls.Add(Me.Label14)
+        Me.GroupBox4.Controls.Add(Me.Label13)
+        Me.GroupBox4.Controls.Add(Me.Label12)
+        Me.GroupBox4.Location = New System.Drawing.Point(1, 53)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(1346, 182)
+        Me.GroupBox4.TabIndex = 0
+        Me.GroupBox4.TabStop = False
         '
-        'OpenFileDialog7
+        'TextBox5
         '
-        Me.OpenFileDialog7.FileName = "OpenFileDialog7"
-        Me.OpenFileDialog7.Filter = "PDF files (*.pdf)|*.pdf"
+        Me.TextBox5.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.TextBox5.Location = New System.Drawing.Point(1, 15)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(1403, 23)
+        Me.TextBox5.TabIndex = 10
+        Me.TextBox5.Text = "Ingreso Avance Mensual Carta Gantt"
+        Me.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'OpenFileDialog3
+        'DataGridView2
         '
-        Me.OpenFileDialog3.FileName = "OpenFileDialog3"
-        Me.OpenFileDialog3.Filter = "PDF files (*.pdf)|*.pdf"
+        Me.DataGridView2.AllowUserToAddRows = False
+        Me.DataGridView2.AllowUserToDeleteRows = False
+        Me.DataGridView2.BackgroundColor = System.Drawing.Color.AliceBlue
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Location = New System.Drawing.Point(5, 277)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.ReadOnly = True
+        Me.DataGridView2.Size = New System.Drawing.Size(1346, 194)
+        Me.DataGridView2.TabIndex = 9
         '
-        'OpenFileDialog4
+        'DataGridView3
         '
-        Me.OpenFileDialog4.FileName = "OpenFileDialog4"
-        Me.OpenFileDialog4.Filter = "PDF files (*.pdf)|*.pdf"
+        Me.DataGridView3.AllowUserToAddRows = False
+        Me.DataGridView3.AllowUserToDeleteRows = False
+        Me.DataGridView3.BackgroundColor = System.Drawing.Color.AliceBlue
+        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView3.Location = New System.Drawing.Point(5, 277)
+        Me.DataGridView3.Name = "DataGridView3"
+        Me.DataGridView3.ReadOnly = True
+        Me.DataGridView3.Size = New System.Drawing.Size(1346, 194)
+        Me.DataGridView3.TabIndex = 10
         '
-        'OpenFileDialog5
+        'DataGridView4
         '
-        Me.OpenFileDialog5.FileName = "OpenFileDialog5"
-        Me.OpenFileDialog5.Filter = "PDF files (*.pdf)|*.pdf"
+        Me.DataGridView4.AllowUserToAddRows = False
+        Me.DataGridView4.AllowUserToDeleteRows = False
+        Me.DataGridView4.BackgroundColor = System.Drawing.Color.AliceBlue
+        Me.DataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView4.Location = New System.Drawing.Point(5, 277)
+        Me.DataGridView4.Name = "DataGridView4"
+        Me.DataGridView4.ReadOnly = True
+        Me.DataGridView4.Size = New System.Drawing.Size(1346, 194)
+        Me.DataGridView4.TabIndex = 11
         '
-        'SaveFileDialog3
+        'Label12
         '
-        Me.SaveFileDialog3.FileName = "PDF files (*.pdf)|*.pdf"
-        Me.SaveFileDialog3.Filter = "PDF files (*.pdf)|*.pdf"
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(6, 43)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(40, 17)
+        Me.Label12.TabIndex = 0
+        Me.Label12.Text = "Obra"
         '
-        'OpenFileDialog6
+        'Label13
         '
-        Me.OpenFileDialog6.FileName = "OpenFileDialog6"
-        Me.OpenFileDialog6.Filter = "PDF files (*.pdf)|*.pdf"
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(6, 90)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(34, 17)
+        Me.Label13.TabIndex = 1
+        Me.Label13.Text = "Ítem"
         '
-        'OpenFileDialog8
+        'Button64
         '
-        Me.OpenFileDialog8.FileName = "OpenFileDialog8"
-        Me.OpenFileDialog8.Filter = "PDF files (*.pdf)|*.pdf"
+        Me.Button64.Enabled = False
+        Me.Button64.Image = CType(resources.GetObject("Button64.Image"), System.Drawing.Image)
+        Me.Button64.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button64.Location = New System.Drawing.Point(975, 108)
+        Me.Button64.Name = "Button64"
+        Me.Button64.Size = New System.Drawing.Size(80, 52)
+        Me.Button64.TabIndex = 21
+        Me.Button64.Text = "Cancelar"
+        Me.Button64.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button64.UseVisualStyleBackColor = True
         '
-        'GroupBox2
+        'Button65
         '
-        Me.GroupBox2.Controls.Add(Me.TextBox2)
-        Me.GroupBox2.Controls.Add(Me.DateTimePicker1)
-        Me.GroupBox2.Controls.Add(Me.ComboBox2)
-        Me.GroupBox2.Controls.Add(Me.ComboBox1)
-        Me.GroupBox2.Controls.Add(Me.Label11)
-        Me.GroupBox2.Controls.Add(Me.Label10)
-        Me.GroupBox2.Controls.Add(Me.Label9)
-        Me.GroupBox2.Controls.Add(Me.Label8)
-        Me.GroupBox2.Location = New System.Drawing.Point(31, 53)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(1346, 182)
-        Me.GroupBox2.TabIndex = 0
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Ingreso Avance Ítems Controlados"
+        Me.Button65.Enabled = False
+        Me.Button65.Image = CType(resources.GetObject("Button65.Image"), System.Drawing.Image)
+        Me.Button65.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button65.Location = New System.Drawing.Point(868, 108)
+        Me.Button65.Name = "Button65"
+        Me.Button65.Size = New System.Drawing.Size(80, 52)
+        Me.Button65.TabIndex = 20
+        Me.Button65.Text = "Guardar"
+        Me.Button65.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button65.UseVisualStyleBackColor = True
         '
-        'Label8
+        'Button66
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(44, 62)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(40, 17)
-        Me.Label8.TabIndex = 0
-        Me.Label8.Text = "Obra"
+        Me.Button66.Image = CType(resources.GetObject("Button66.Image"), System.Drawing.Image)
+        Me.Button66.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button66.Location = New System.Drawing.Point(1078, 38)
+        Me.Button66.Name = "Button66"
+        Me.Button66.Size = New System.Drawing.Size(80, 52)
+        Me.Button66.TabIndex = 19
+        Me.Button66.Text = "Eliminar"
+        Me.Button66.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button66.UseVisualStyleBackColor = True
         '
-        'Label9
+        'Button67
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(44, 125)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(34, 17)
-        Me.Label9.TabIndex = 1
-        Me.Label9.Text = "Ítem"
+        Me.Button67.Image = CType(resources.GetObject("Button67.Image"), System.Drawing.Image)
+        Me.Button67.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button67.Location = New System.Drawing.Point(975, 38)
+        Me.Button67.Name = "Button67"
+        Me.Button67.Size = New System.Drawing.Size(80, 52)
+        Me.Button67.TabIndex = 18
+        Me.Button67.Text = "Modificar"
+        Me.Button67.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button67.UseVisualStyleBackColor = True
         '
-        'Label10
+        'Button68
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(325, 62)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(47, 17)
-        Me.Label10.TabIndex = 2
-        Me.Label10.Text = "Fecha"
+        Me.Button68.Image = CType(resources.GetObject("Button68.Image"), System.Drawing.Image)
+        Me.Button68.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button68.Location = New System.Drawing.Point(868, 38)
+        Me.Button68.Name = "Button68"
+        Me.Button68.Size = New System.Drawing.Size(80, 52)
+        Me.Button68.TabIndex = 17
+        Me.Button68.Text = "Nuevo"
+        Me.Button68.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button68.UseVisualStyleBackColor = True
         '
-        'Label11
+        'Label14
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(325, 117)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(64, 17)
-        Me.Label11.TabIndex = 3
-        Me.Label11.Text = "Cantidad"
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(394, 44)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(47, 17)
+        Me.Label14.TabIndex = 2
+        Me.Label14.Text = "Fecha"
         '
-        'ComboBox1
+        'Label15
         '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(162, 62)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 25)
-        Me.ComboBox1.TabIndex = 4
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(394, 84)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(64, 17)
+        Me.Label15.TabIndex = 3
+        Me.Label15.Text = "Cantidad"
         '
-        'ComboBox2
+        'DateTimePicker2
         '
-        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(162, 117)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 25)
-        Me.ComboBox2.TabIndex = 5
+        Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker2.Location = New System.Drawing.Point(501, 38)
+        Me.DateTimePicker2.Name = "DateTimePicker2"
+        Me.DateTimePicker2.Size = New System.Drawing.Size(200, 23)
+        Me.DateTimePicker2.TabIndex = 4
         '
-        'DateTimePicker1
+        'ComboBox3
         '
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(416, 62)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 23)
-        Me.DateTimePicker1.TabIndex = 6
+        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Location = New System.Drawing.Point(163, 44)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(121, 25)
+        Me.ComboBox3.TabIndex = 5
         '
-        'TextBox2
+        'ComboBox4
         '
-        Me.TextBox2.Location = New System.Drawing.Point(416, 117)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(200, 23)
-        Me.TextBox2.TabIndex = 7
+        Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Location = New System.Drawing.Point(163, 84)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(121, 25)
+        Me.ComboBox4.TabIndex = 6
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(501, 81)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(93, 23)
+        Me.TextBox6.TabIndex = 7
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(6, 43)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(40, 17)
+        Me.Label16.TabIndex = 1
+        Me.Label16.Text = "Obra"
+        '
+        'ComboBox5
+        '
+        Me.ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox5.FormattingEnabled = True
+        Me.ComboBox5.Location = New System.Drawing.Point(117, 43)
+        Me.ComboBox5.Name = "ComboBox5"
+        Me.ComboBox5.Size = New System.Drawing.Size(121, 25)
+        Me.ComboBox5.TabIndex = 2
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(9, 97)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(88, 17)
+        Me.Label17.TabIndex = 3
+        Me.Label17.Text = "Nombre Ítem"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(271, 43)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(83, 17)
+        Me.Label18.TabIndex = 4
+        Me.Label18.Text = "Fecha Inicio"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(271, 96)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(103, 17)
+        Me.Label19.TabIndex = 5
+        Me.Label19.Text = "Fecha Termino"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(560, 43)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(64, 17)
+        Me.Label20.TabIndex = 6
+        Me.Label20.Text = "Cantidad"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(560, 97)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(53, 17)
+        Me.Label21.TabIndex = 7
+        Me.Label21.Text = "Unidad"
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Location = New System.Drawing.Point(770, 45)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(134, 17)
+        Me.Label23.TabIndex = 8
+        Me.Label23.Text = "Precio Unitario (CD)"
+        '
+        'Button69
+        '
+        Me.Button69.Enabled = False
+        Me.Button69.Image = CType(resources.GetObject("Button69.Image"), System.Drawing.Image)
+        Me.Button69.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button69.Location = New System.Drawing.Point(1071, 108)
+        Me.Button69.Name = "Button69"
+        Me.Button69.Size = New System.Drawing.Size(80, 52)
+        Me.Button69.TabIndex = 26
+        Me.Button69.Text = "Cancelar"
+        Me.Button69.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button69.UseVisualStyleBackColor = True
+        '
+        'Button70
+        '
+        Me.Button70.Enabled = False
+        Me.Button70.Image = CType(resources.GetObject("Button70.Image"), System.Drawing.Image)
+        Me.Button70.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button70.Location = New System.Drawing.Point(964, 108)
+        Me.Button70.Name = "Button70"
+        Me.Button70.Size = New System.Drawing.Size(80, 52)
+        Me.Button70.TabIndex = 25
+        Me.Button70.Text = "Guardar"
+        Me.Button70.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button70.UseVisualStyleBackColor = True
+        '
+        'Button71
+        '
+        Me.Button71.Image = CType(resources.GetObject("Button71.Image"), System.Drawing.Image)
+        Me.Button71.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button71.Location = New System.Drawing.Point(1174, 38)
+        Me.Button71.Name = "Button71"
+        Me.Button71.Size = New System.Drawing.Size(80, 52)
+        Me.Button71.TabIndex = 24
+        Me.Button71.Text = "Eliminar"
+        Me.Button71.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button71.UseVisualStyleBackColor = True
+        '
+        'Button72
+        '
+        Me.Button72.Image = CType(resources.GetObject("Button72.Image"), System.Drawing.Image)
+        Me.Button72.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button72.Location = New System.Drawing.Point(1071, 38)
+        Me.Button72.Name = "Button72"
+        Me.Button72.Size = New System.Drawing.Size(80, 52)
+        Me.Button72.TabIndex = 23
+        Me.Button72.Text = "Modificar"
+        Me.Button72.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button72.UseVisualStyleBackColor = True
+        '
+        'Button73
+        '
+        Me.Button73.Image = CType(resources.GetObject("Button73.Image"), System.Drawing.Image)
+        Me.Button73.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button73.Location = New System.Drawing.Point(964, 38)
+        Me.Button73.Name = "Button73"
+        Me.Button73.Size = New System.Drawing.Size(80, 52)
+        Me.Button73.TabIndex = 22
+        Me.Button73.Text = "Nuevo"
+        Me.Button73.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button73.UseVisualStyleBackColor = True
+        '
+        'Button74
+        '
+        Me.Button74.Enabled = False
+        Me.Button74.Image = CType(resources.GetObject("Button74.Image"), System.Drawing.Image)
+        Me.Button74.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button74.Location = New System.Drawing.Point(1157, 113)
+        Me.Button74.Name = "Button74"
+        Me.Button74.Size = New System.Drawing.Size(80, 52)
+        Me.Button74.TabIndex = 26
+        Me.Button74.Text = "Cancelar"
+        Me.Button74.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button74.UseVisualStyleBackColor = True
+        '
+        'Button75
+        '
+        Me.Button75.Enabled = False
+        Me.Button75.Image = CType(resources.GetObject("Button75.Image"), System.Drawing.Image)
+        Me.Button75.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button75.Location = New System.Drawing.Point(1050, 113)
+        Me.Button75.Name = "Button75"
+        Me.Button75.Size = New System.Drawing.Size(80, 52)
+        Me.Button75.TabIndex = 25
+        Me.Button75.Text = "Guardar"
+        Me.Button75.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button75.UseVisualStyleBackColor = True
+        '
+        'Button76
+        '
+        Me.Button76.Image = CType(resources.GetObject("Button76.Image"), System.Drawing.Image)
+        Me.Button76.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button76.Location = New System.Drawing.Point(1260, 43)
+        Me.Button76.Name = "Button76"
+        Me.Button76.Size = New System.Drawing.Size(80, 52)
+        Me.Button76.TabIndex = 24
+        Me.Button76.Text = "Eliminar"
+        Me.Button76.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button76.UseVisualStyleBackColor = True
+        '
+        'Button77
+        '
+        Me.Button77.Image = CType(resources.GetObject("Button77.Image"), System.Drawing.Image)
+        Me.Button77.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button77.Location = New System.Drawing.Point(1157, 43)
+        Me.Button77.Name = "Button77"
+        Me.Button77.Size = New System.Drawing.Size(80, 52)
+        Me.Button77.TabIndex = 23
+        Me.Button77.Text = "Modificar"
+        Me.Button77.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button77.UseVisualStyleBackColor = True
+        '
+        'Button78
+        '
+        Me.Button78.Image = CType(resources.GetObject("Button78.Image"), System.Drawing.Image)
+        Me.Button78.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button78.Location = New System.Drawing.Point(1050, 43)
+        Me.Button78.Name = "Button78"
+        Me.Button78.Size = New System.Drawing.Size(80, 52)
+        Me.Button78.TabIndex = 22
+        Me.Button78.Text = "Nuevo"
+        Me.Button78.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button78.UseVisualStyleBackColor = True
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(117, 97)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(100, 23)
+        Me.TextBox7.TabIndex = 27
+        '
+        'TextBox8
+        '
+        Me.TextBox8.Location = New System.Drawing.Point(637, 45)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(100, 23)
+        Me.TextBox8.TabIndex = 28
+        '
+        'TextBox9
+        '
+        Me.TextBox9.Location = New System.Drawing.Point(637, 97)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(100, 23)
+        Me.TextBox9.TabIndex = 29
+        '
+        'DateTimePicker3
+        '
+        Me.DateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker3.Location = New System.Drawing.Point(389, 43)
+        Me.DateTimePicker3.Name = "DateTimePicker3"
+        Me.DateTimePicker3.Size = New System.Drawing.Size(138, 23)
+        Me.DateTimePicker3.TabIndex = 30
+        '
+        'DateTimePicker4
+        '
+        Me.DateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker4.Location = New System.Drawing.Point(389, 97)
+        Me.DateTimePicker4.Name = "DateTimePicker4"
+        Me.DateTimePicker4.Size = New System.Drawing.Size(138, 23)
+        Me.DateTimePicker4.TabIndex = 31
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Location = New System.Drawing.Point(911, 43)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(100, 23)
+        Me.TextBox10.TabIndex = 32
         '
         'frm_menu_principal_VIII
         '
@@ -2395,6 +2881,13 @@ Partial Class frm_menu_principal_VIII
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.TabPage42.ResumeLayout(False)
+        Me.TabPage42.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.TabPage43.ResumeLayout(False)
+        Me.TabPage43.PerformLayout()
+        Me.TabPage44.ResumeLayout(False)
+        Me.TabPage44.PerformLayout()
         Me.TabPage7.ResumeLayout(False)
         Me.TabControl6.ResumeLayout(False)
         Me.TabPage6.ResumeLayout(False)
@@ -2410,8 +2903,13 @@ Partial Class frm_menu_principal_VIII
         Me.TabPage2.ResumeLayout(False)
         Me.Panel.ResumeLayout(False)
         CType(Me.dgv_arrendador, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -2540,20 +3038,9 @@ Partial Class frm_menu_principal_VIII
     Friend WithEvents lbl_usuario As System.Windows.Forms.Label
     Friend WithEvents lbl_sincroniza As System.Windows.Forms.Label
     Friend WithEvents dgv_arrendador As System.Windows.Forms.DataGridView
-    Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
-    Friend WithEvents SaveFileDialog1 As System.Windows.Forms.SaveFileDialog
-    Friend WithEvents SaveFileDialog2 As System.Windows.Forms.SaveFileDialog
-    Friend WithEvents OpenFileDialog2 As System.Windows.Forms.OpenFileDialog
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
-    Friend WithEvents OpenFileDialog7 As System.Windows.Forms.OpenFileDialog
     Friend WithEvents informes As System.Windows.Forms.TabPage
-    Friend WithEvents OpenFileDialog3 As OpenFileDialog
-    Friend WithEvents OpenFileDialog4 As OpenFileDialog
-    Friend WithEvents OpenFileDialog5 As OpenFileDialog
-    Friend WithEvents SaveFileDialog3 As SaveFileDialog
     Friend WithEvents TabPage36 As TabPage
-    Friend WithEvents OpenFileDialog6 As OpenFileDialog
-    Friend WithEvents OpenFileDialog8 As OpenFileDialog
     Friend WithEvents TabPage39 As System.Windows.Forms.TabPage
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
@@ -2586,4 +3073,49 @@ Partial Class frm_menu_principal_VIII
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
+    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
+    Friend WithEvents DataGridView2 As System.Windows.Forms.DataGridView
+    Friend WithEvents Button64 As System.Windows.Forms.Button
+    Friend WithEvents Button65 As System.Windows.Forms.Button
+    Friend WithEvents Button66 As System.Windows.Forms.Button
+    Friend WithEvents Button67 As System.Windows.Forms.Button
+    Friend WithEvents Button68 As System.Windows.Forms.Button
+    Friend WithEvents DataGridView3 As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridView4 As System.Windows.Forms.DataGridView
+    Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
+    Friend WithEvents DateTimePicker4 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents DateTimePicker3 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents Button74 As System.Windows.Forms.Button
+    Friend WithEvents Button75 As System.Windows.Forms.Button
+    Friend WithEvents Button76 As System.Windows.Forms.Button
+    Friend WithEvents Button77 As System.Windows.Forms.Button
+    Friend WithEvents Button78 As System.Windows.Forms.Button
+    Friend WithEvents Label23 As System.Windows.Forms.Label
+    Friend WithEvents Label21 As System.Windows.Forms.Label
+    Friend WithEvents Label20 As System.Windows.Forms.Label
+    Friend WithEvents Label19 As System.Windows.Forms.Label
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox5 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents Button69 As System.Windows.Forms.Button
+    Friend WithEvents Button70 As System.Windows.Forms.Button
+    Friend WithEvents Button71 As System.Windows.Forms.Button
+    Friend WithEvents Button72 As System.Windows.Forms.Button
+    Friend WithEvents Button73 As System.Windows.Forms.Button
+    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents ComboBox4 As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
 End Class

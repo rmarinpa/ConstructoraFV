@@ -250,6 +250,9 @@ Public Class frm_menu_principal_VII
             Dim total As Double = 0
             Dim fila As DataGridViewRow = New DataGridViewRow()
             Dim obrasFiltrolistado As String
+            If cboObrasListadoFiltro.Text = "System.Data.DataRowView" Then
+                cboObrasListadoFiltro.Text = Nombre_Obra
+            End If
             obrasFiltrolistado = cboObrasListadoFiltro.Text
             dgvListadoModificaciones.DataSource = modificaciones.LeerDgvListadoModificaciones(obrasFiltrolistado)
             With dgvListadoModificaciones
@@ -433,7 +436,7 @@ Public Class frm_menu_principal_VII
     End Sub
 
     Private Sub Button63_Click(sender As Object, e As EventArgs) Handles Button63.Click
-        Me.Close()
+        End
     End Sub
 
     Private Sub cboObras_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cboObrasModificaciones.KeyPress
@@ -581,6 +584,10 @@ Public Class frm_menu_principal_VII
             'Dim total As Double = 0
             'Dim fila As DataGridViewRow = New DataGridViewRow()
             Dim obra As String
+            If cboObrasListadoFiltro.Text = "System.Data.DataRowView" Then
+                cboObrasListadoFiltro.Text = Nombre_Obra
+            End If
+
             obra = cboObrasContratoOriginal.Text
             dgvContratoOriginal.DataSource = Contrato.LeerDgvContrato(obra)
             With dgvContratoOriginal

@@ -150,7 +150,7 @@ Public Class frm_menu_principal_IX
     End Sub
 
     Private Sub Button63_Click(sender As Object, e As EventArgs) Handles Button63.Click
-        Me.Close()
+        End
     End Sub
 
 

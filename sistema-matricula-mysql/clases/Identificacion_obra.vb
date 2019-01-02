@@ -119,4 +119,19 @@ Public Class Identificacion_obra
         End Try
     End Function
 
+    Public Function LeerRetencionesProformasModificada(ByVal obra As String) As DataTable
+        Try
+            Dim Lista As Byte
+            nue_var.ds = New DataSet
+            nue_conexion.conectar()
+            nue_var.da = New MySqlDataAdapter("select retencion, proforma from listadomodificaciones where obra = '" & obra & "' ", nue_conexion.conex())
+            nue_var.da.Fill(nue_var.ds, "registro")
+            Lista = nue_var.ds.Tables("registro").Rows.Count
+            nue_conexion.desconectar()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            nue_conexion.desconectar()
+        End Try
+    End Function
+
 End Class

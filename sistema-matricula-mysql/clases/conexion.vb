@@ -3,7 +3,7 @@ Public Class conexion
 
     'aqui coloca tu cadena de conexion de xampp, wampp o lo que sea que uses
 
-    Private con As New MySqlConnection("server=201.148.105.75; database=const113_ConstructoraFV; user id=const113_admin2; password=Admin477547;Convert Zero Datetime=True;Convert Zero Datetime=True; Use Procedure Bodies=false;default command timeout=600")
+    Friend con As New MySqlConnection("server=201.148.105.75; database=const113_ConstructoraFV; user id=const113_admin2; password=Admin477547;Convert Zero Datetime=True;Convert Zero Datetime=True; Use Procedure Bodies=false;default command timeout=600")
     'Private con2 As New MySqlConnection("server=localhost; database=const113_constructorafv; user id=const113_admin2; password=Admin477547;Convert Zero Datetime=True;Convert Zero Datetime=True; Use Procedure Bodies=false;default command timeout=600")
     Private con2 As New MySqlConnection("server=localhost; database=const113_constructorafv; user id=const113_admin2; password=gsolis2013;Convert Zero Datetime=True;Convert Zero Datetime=True; Use Procedure Bodies=false;default command timeout=600")
     'procedimiento que abre la conexion mysql

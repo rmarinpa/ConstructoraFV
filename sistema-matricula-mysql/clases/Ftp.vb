@@ -9,6 +9,7 @@ Public Class Ftp
         Me.host = host
         Me.user = user
         Me.pass = pass
+
     End Sub
 
     Public Function eliminarFichero(ByVal fichero As String) As String

@@ -1,9 +1,11 @@
 ﻿Imports Microsoft.Office.Interop.Word 'Control de office
 Imports System.IO 'sistema de archivos
 Imports Microsoft.Office.Interop
-Imports MySql.Data.MySqlClient
 Imports System.Net
 Imports System.Globalization
+Imports MySql.Data.MySqlClient
+Imports clases.conexion
+Imports clases.variables
 
 Public Class frm_menu_principal_VI
     Dim nue_obra2 As New clases.Registro_petroleo
@@ -46,52 +48,6 @@ Public Class frm_menu_principal_VI
     Dim obraNroEstadoPago As String
     Dim obraFacturaFirmada As String
 
-    Sub LeerRetencion()
-        Try
-            Dim total As Double = 0
-            Dim fila As DataGridViewRow = New DataGridViewRow()
-            Dim obraFiltro As String
-            obraFiltro = cboObrasFiltro.Text
-            If obraFiltro = "System.Data.DataRowView" Then
-                cboObrasFiltro.Text = Nombre_Obra
-            End If
-            dgRetencionesProforma.DataSource = Obra.LeerRetencionesProformas(cboObrasFiltro.Text)
-            With dgRetencionesProforma
-                .RowHeadersVisible = False
-                .Columns(0).HeaderCell.Value = "Retenciones Contrato"
-                .Columns(1).HeaderCell.Value = "Proformas Contrato"
-
-                dgRetencionesProforma.Columns(0).DefaultCellStyle.Format = "C"
-                dgRetencionesProforma.Columns(1).DefaultCellStyle.Format = "C"
-            End With
-
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-    End Sub
-
-    Private Sub RellenarCboObras()
-        cboObrasPagoFirmado.DataSource = nue_obra5.listar5(id_obra)
-        cboObrasPagoFirmado.DisplayMember = "nombre_faena"
-        cboObrasPagoFirmado.ValueMember = "Id_identificacion"
-
-
-        cboObrasFiltro.DataSource = nue_obra5.listar5(id_obra)
-        cboObrasFiltro.DisplayMember = "nombre_faena"
-        cboObrasFiltro.ValueMember = "Id_identificacion"
-
-
-        cboObrasFacturasPago.DataSource = nue_obra5.listar5(id_obra)
-        cboObrasFacturasPago.DisplayMember = "nombre_faena"
-        cboObrasFacturasPago.ValueMember = "Id_identificacion"
-
-
-        cboObras.DataSource = nue_obra5.listar5(id_obra)
-        cboObras.DisplayMember = "nombre_faena"
-        cboObras.ValueMember = "Id_identificacion"
-
-
-    End Sub
 
     Private Sub frm_menu_principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim rtn As New Date
@@ -113,9 +69,10 @@ Public Class frm_menu_principal_VI
         'Se bloquean las cajas de texto
         BloquearEstado()
         RellenarCboObras()
-        LeerRetencion()
         Actualizar_dgvEstadosPagoFirmado()
         dgvFiltroEstadoPagoMandante()
+        LeerRetencion_Proforma()
+        LeerRetencion_Proforma_Modificada()
 
         If sincroniza = 0 Then
             btn_sincronizar.Visible = False
@@ -155,6 +112,122 @@ Public Class frm_menu_principal_VI
         End If
         Me.WindowState = FormWindowState.Maximized
     End Sub
+
+    Private Sub LeerRetencion_Proforma_Modificada()
+
+        Try
+            Dim consulta As String
+            Dim lista As Byte
+            Dim adaptador As New MySqlDataAdapter
+            Dim datos As DataSet
+            Dim nue_conexion As New clases.conexion
+
+            consulta = "select *, SUM(retencion) As 'RetencionTotal', SUM(proforma) As 'ProformaTotal' from listadomodificaciones where obra = '" & cboObrasFiltro.Text & "'"
+            adaptador = New MySqlDataAdapter(consulta, nue_conexion.conex())
+
+            datos = New DataSet
+            adaptador.Fill(datos, "registro")
+            lista = datos.Tables("registro").Rows.Count
+
+            If lista <> 0 Then
+                txtRetencionModificada.Text = datos.Tables("registro").Rows(0).Item("RetencionTotal")
+                txtProformaModificada.Text = datos.Tables("registro").Rows(0).Item("ProformaTotal")
+            End If
+        Catch ex As Exception
+            'MsgBox(ex.Message)
+            Return
+        End Try
+    End Sub
+
+
+    Private Sub LeerRetencion_Proforma()
+        Try
+            Dim consulta As String
+            Dim lista As Byte
+            Dim adaptador As New MySqlDataAdapter
+            Dim datos As DataSet
+            Dim nue_conexion As New clases.conexion
+
+            consulta = "select * from identificacion_obra where nombre_faena = '" & cboObrasFiltro.Text & "'"
+            
+            adaptador = New MySqlDataAdapter(consulta, nue_conexion.conex())
+            datos = New DataSet
+            adaptador.Fill(datos, "registro")
+            lista = datos.Tables("registro").Rows.Count
+
+            If lista <> 0 Then
+                If IsDBNull(lista) Then
+                    Return
+                End If
+
+                txtRetencionOriginal.Text = datos.Tables("registro").Rows(0).Item("retenciones")
+                txtProformaOriginal.Text = datos.Tables("registro").Rows(0).Item("proforma")
+
+            End If
+        Catch ex As Exception
+            Return
+            'MsgBox(ex.Message)
+        End Try
+    End Sub
+    Private Sub TotalProforma_Retencion()
+        Try
+            If txtRetencionModificada.Text <> "" And txtProformaModificada.Text <> "" And txtRetencionOriginal.Text <> "" And txtProformaOriginal.Text <> "" Then
+                Dim RetencionOriginal As Double
+                Dim ProformaOriginal As Double
+                Dim RetencionModificada As Double
+                Dim ProformaModificada As Double
+                Dim TotalProforma As Double
+                Dim TotalRetencion As Double
+
+                RetencionModificada = txtRetencionModificada.Text
+                ProformaModificada = txtProformaModificada.Text
+                RetencionOriginal = txtRetencionOriginal.Text
+                ProformaOriginal = txtProformaOriginal.Text
+
+                TotalRetencion = RetencionOriginal + RetencionModificada
+
+                TotalProforma = ProformaOriginal + ProformaModificada
+
+                'Formato moneda en textbox
+                Dim RetencionFormato As Decimal = Decimal.Parse(TotalRetencion, New CultureInfo("es-ES"))
+                Dim ProformaFormato As Decimal = Decimal.Parse(TotalProforma, New CultureInfo("es-ES"))
+
+                txtTotalRetenciones.Text = TotalRetencion
+
+                txtTotalProforma.Text = TotalProforma
+
+                txtTotalRetenciones.Text = FormatCurrency(txtTotalRetenciones.Text)
+                txtTotalProforma.Text = FormatCurrency(txtTotalProforma.Text)
+
+            End If
+            Return
+        Catch ex As Exception
+            'MsgBox(ex.Message)
+            Return
+        End Try
+    End Sub
+
+    Private Sub RellenarCboObras()
+        cboObrasPagoFirmado.DataSource = nue_obra5.listar5(id_obra)
+        cboObrasPagoFirmado.DisplayMember = "nombre_faena"
+        cboObrasPagoFirmado.ValueMember = "Id_identificacion"
+
+
+        cboObrasFiltro.DataSource = nue_obra5.listar5(id_obra)
+        cboObrasFiltro.DisplayMember = "nombre_faena"
+        cboObrasFiltro.ValueMember = "Id_identificacion"
+
+
+        cboObrasFacturasPago.DataSource = nue_obra5.listar5(id_obra)
+        cboObrasFacturasPago.DisplayMember = "nombre_faena"
+        cboObrasFacturasPago.ValueMember = "Id_identificacion"
+
+
+        cboObras.DataSource = nue_obra5.listar5(id_obra)
+        cboObras.DisplayMember = "nombre_faena"
+        cboObras.ValueMember = "Id_identificacion"
+    End Sub
+
 
     Private Sub txt_1_plazo_TextChanged(sender As Object, e As EventArgs) Handles txt_1_plazo.TextChanged
         Dim fecha_inicial As Date
@@ -1029,20 +1102,21 @@ Public Class frm_menu_principal_VI
     End Sub
 
     Private Sub Button63_Click(sender As Object, e As EventArgs) Handles Button63.Click
-        Me.Close()
+        End
     End Sub
 
     Private Sub cboObras_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cboObras.KeyPress
         e.Handled = True
     End Sub
     Private Sub cboObrasFiltro_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboObrasFiltro.SelectedIndexChanged
-        dgvFiltroEstadoPagoMandante()
-        LeerRetencion()
         ObraFiltro = cboObrasFiltro.Text
+        dgvFiltroEstadoPagoMandante()
         ActualizarCbo()
+        LeerRetencion_Proforma()
+        LeerRetencion_Proforma_Modificada()
+        TotalProforma_Retencion()
     End Sub
     Private Sub ActualizarCbo()
-        cboObrasPagoFirmado.Text = ObraFiltro
         cboObrasPagoFirmado.Text = ObraFiltro
         cboObrasFacturasPago.Text = ObraFiltro
         cboObras.Text = ObraFiltro
