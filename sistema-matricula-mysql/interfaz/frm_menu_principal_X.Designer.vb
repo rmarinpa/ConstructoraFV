@@ -2656,7 +2656,7 @@ Partial Class frm_menu_principal_X
         '
         Me.TextBox9.BackColor = System.Drawing.Color.Aquamarine
         Me.TextBox9.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox9.Location = New System.Drawing.Point(3, 12)
+        Me.TextBox9.Location = New System.Drawing.Point(3, 19)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(611, 26)
         Me.TextBox9.TabIndex = 52
@@ -2676,7 +2676,7 @@ Partial Class frm_menu_principal_X
         'Label34
         '
         Me.Label34.AutoSize = True
-        Me.Label34.Location = New System.Drawing.Point(47, 105)
+        Me.Label34.Location = New System.Drawing.Point(47, 112)
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(40, 17)
         Me.Label34.TabIndex = 50
@@ -2686,7 +2686,7 @@ Partial Class frm_menu_principal_X
         '
         Me.cboObrasModificacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboObrasModificacion.FormattingEnabled = True
-        Me.cboObrasModificacion.Location = New System.Drawing.Point(234, 106)
+        Me.cboObrasModificacion.Location = New System.Drawing.Point(234, 112)
         Me.cboObrasModificacion.Name = "cboObrasModificacion"
         Me.cboObrasModificacion.Size = New System.Drawing.Size(292, 25)
         Me.cboObrasModificacion.TabIndex = 49

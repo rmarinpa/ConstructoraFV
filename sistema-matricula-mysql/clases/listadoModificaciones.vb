@@ -2,20 +2,20 @@
 Public Class listadoModificaciones
     Dim nue_conexion As New conexion
     Dim nue_var As New variables
-    Public Function InsertarlistadoModificaciones(ByVal obra As String, ByVal nro_modificacion As Integer, ByVal fecha As DateTime, ByVal aumentoObra As Integer, ByVal disminucionObra As Integer, ByVal obraExtraordinaria As Integer, ByVal plazo As Integer, ByVal retencion As Integer, ByVal proforma As Integer)
+    Public Function InsertarlistadoModificaciones(ByVal obra As String, ByVal nro_modificacion As Double, ByVal fecha As DateTime, ByVal aumentoObra As Double, ByVal disminucionObra As Double, ByVal obraExtraordinaria As Double, ByVal plazo As Double, ByVal retencion As Double, ByVal proforma As Double)
         nue_var.consulta = "INSERT INTO listadomodificaciones (obra,nro_modificacion,fecha,aumentoObra,disminucionObra,obraExtraordinaria,plazo,retencion,proforma) VALUES (?obra,?nro_modificacion,?fecha,?aumentoObra,?disminucionObra,?obraExtraordinaria,?plazo,?retencion,?proforma)"
         Try
             nue_conexion.conectar()
             nue_var.cmd = New MySqlCommand(nue_var.consulta, nue_conexion.conex())
             nue_var.cmd.Parameters.Add("?obra", MySql.Data.MySqlClient.MySqlDbType.String).Value = obra
-            nue_var.cmd.Parameters.Add("?nro_modificacion", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = nro_modificacion
+            nue_var.cmd.Parameters.Add("?nro_modificacion", MySql.Data.MySqlClient.MySqlDbType.Double).Value = nro_modificacion
             nue_var.cmd.Parameters.Add("?fecha", MySql.Data.MySqlClient.MySqlDbType.DateTime).Value = fecha
-            nue_var.cmd.Parameters.Add("?aumentoObra", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = aumentoObra
-            nue_var.cmd.Parameters.Add("?disminucionObra", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = disminucionObra
-            nue_var.cmd.Parameters.Add("?obraExtraordinaria", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = obraExtraordinaria
-            nue_var.cmd.Parameters.Add("?plazo", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = plazo
-            nue_var.cmd.Parameters.Add("?retencion", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = retencion
-            nue_var.cmd.Parameters.Add("?proforma", MySql.Data.MySqlClient.MySqlDbType.Int32).Value = proforma
+            nue_var.cmd.Parameters.Add("?aumentoObra", MySql.Data.MySqlClient.MySqlDbType.Double).Value = aumentoObra
+            nue_var.cmd.Parameters.Add("?disminucionObra", MySql.Data.MySqlClient.MySqlDbType.Double).Value = disminucionObra
+            nue_var.cmd.Parameters.Add("?obraExtraordinaria", MySql.Data.MySqlClient.MySqlDbType.Double).Value = obraExtraordinaria
+            nue_var.cmd.Parameters.Add("?plazo", MySql.Data.MySqlClient.MySqlDbType.Double).Value = plazo
+            nue_var.cmd.Parameters.Add("?retencion", MySql.Data.MySqlClient.MySqlDbType.Double).Value = retencion
+            nue_var.cmd.Parameters.Add("?proforma", MySql.Data.MySqlClient.MySqlDbType.Double).Value = proforma
 
             nue_var.cmd.ExecuteNonQuery()
             nue_conexion.desconectar()

@@ -462,7 +462,7 @@ Public Class frm_menu_principal_IV_V2
             Me.Close()
         End If
     End Sub
-    Private Sub TabPage6_Enter(sender As Object, e As EventArgs) Handles TabPage5.Enter, TabPage6.Enter
+    Private Sub TabPage6_Enter(sender As Object, e As EventArgs) Handles TabPage6.Enter
         num_tab = 1
         frm_menu_principal_VI.Show()
         Me.Close()
@@ -2527,49 +2527,49 @@ Public Class frm_menu_principal_IV_V2
 
                         If IsNumeric(dgv_datosAgregados1.Rows(i).Cells(7).Value) Then
 
-                        
-                        If Not IsNumeric(dgv_datosAgregados1.Rows(i).Cells(4).Value.ToString()) Then
-                            cantidad = 0
-                        Else
-                            cantidad = CDbl(dgv_datosAgregados1.Rows(i).Cells(4).Value.ToString())
-                        End If
 
-                        If Not IsNumeric(dgv_datosAgregados1.Rows(i).Cells(5).Value.ToString()) Then
-                            precio_total = 0
-                        Else
-                            precio_total = CDbl(dgv_datosAgregados1.Rows(i).Cells(5).Value.ToString())
-                        End If
+                            If Not IsNumeric(dgv_datosAgregados1.Rows(i).Cells(4).Value.ToString()) Then
+                                cantidad = 0
+                            Else
+                                cantidad = CDbl(dgv_datosAgregados1.Rows(i).Cells(4).Value.ToString())
+                            End If
 
-                        If Not IsNumeric(dgv_datosAgregados1.Rows(i).Cells(3).Value.ToString()) Then
-                            precio_un = 0
-                        Else
-                            precio_un = CDbl(dgv_datosAgregados1.Rows(i).Cells(3).Value.ToString())
-                        End If
+                            If Not IsNumeric(dgv_datosAgregados1.Rows(i).Cells(5).Value.ToString()) Then
+                                precio_total = 0
+                            Else
+                                precio_total = CDbl(dgv_datosAgregados1.Rows(i).Cells(5).Value.ToString())
+                            End If
 
-                        item = dgv_datosAgregados1.Rows(i).Cells(1).Value.ToString()
-                        unidad_pago = dgv_datosAgregados1.Rows(i).Cells(2).Value.ToString()
-                        cuenta_contable = dgv_datosAgregados1.Rows(i).Cells(6).Value.ToString()
+                            If Not IsNumeric(dgv_datosAgregados1.Rows(i).Cells(3).Value.ToString()) Then
+                                precio_un = 0
+                            Else
+                                precio_un = CDbl(dgv_datosAgregados1.Rows(i).Cells(3).Value.ToString())
+                            End If
 
-                        If dgv_datosAgregados1.Rows(i).Cells(7).Value.ToString() = 1 Then
-                            nue_obra1.insertar_item(1, 0, Nombre_Obra, id_obra, rut, Id_subcontrato, item, unidad_pago, precio_un, cantidad, precio_total, cuenta_contable)
+                            item = dgv_datosAgregados1.Rows(i).Cells(1).Value.ToString()
+                            unidad_pago = dgv_datosAgregados1.Rows(i).Cells(2).Value.ToString()
+                            cuenta_contable = dgv_datosAgregados1.Rows(i).Cells(6).Value.ToString()
 
-                        ElseIf dgv_datosAgregados1.Rows(i).Cells(7).Value.ToString() = 2 And dgv_datosAgregados1.Rows(i).Cells(9).Value.ToString() = 1 And sincroniza = 1 Then
-                            Cod_1 = dgv_datosAgregados1.Rows(i).Cells(0).Value.ToString()
-                            nue_obra1.modificar_item(CInt(Cod_1), 1, 0, Nombre_Obra, id_obra, rut, Id_subcontrato, item, unidad_pago, precio_un, cantidad, precio_total, cuenta_contable)
+                            If dgv_datosAgregados1.Rows(i).Cells(7).Value.ToString() = 1 Then
+                                nue_obra1.insertar_item(1, 0, Nombre_Obra, id_obra, rut, Id_subcontrato, item, unidad_pago, precio_un, cantidad, precio_total, cuenta_contable)
 
-                        ElseIf dgv_datosAgregados1.Rows(i).Cells(7).Value.ToString() = 2 And sincroniza = 0 Then
-                            Cod_1 = dgv_datosAgregados1.Rows(i).Cells(0).Value.ToString()
-                            version_mod1 = CInt(dgv_datosAgregados1.Rows(i).Cells(8).Value.ToString()) + 1
-                            nue_obra1.modificar_item(CInt(Cod_1), 2, version_mod1, Nombre_Obra, id_obra, rut, Id_subcontrato, item, unidad_pago, precio_un, cantidad, precio_total, cuenta_contable)
+                            ElseIf dgv_datosAgregados1.Rows(i).Cells(7).Value.ToString() = 2 And dgv_datosAgregados1.Rows(i).Cells(9).Value.ToString() = 1 And sincroniza = 1 Then
+                                Cod_1 = dgv_datosAgregados1.Rows(i).Cells(0).Value.ToString()
+                                nue_obra1.modificar_item(CInt(Cod_1), 1, 0, Nombre_Obra, id_obra, rut, Id_subcontrato, item, unidad_pago, precio_un, cantidad, precio_total, cuenta_contable)
 
-                            'ElseIf dgv_datosAgregados1.Rows(i).Cells(6).Value.ToString() = 3 And dgv_datosAgregados1.Rows(i).Cells(9).Value.ToString() = 1 And sincroniza = 1 Then
+                            ElseIf dgv_datosAgregados1.Rows(i).Cells(7).Value.ToString() = 2 And sincroniza = 0 Then
+                                Cod_1 = dgv_datosAgregados1.Rows(i).Cells(0).Value.ToString()
+                                version_mod1 = CInt(dgv_datosAgregados1.Rows(i).Cells(8).Value.ToString()) + 1
+                                nue_obra1.modificar_item(CInt(Cod_1), 2, version_mod1, Nombre_Obra, id_obra, rut, Id_subcontrato, item, unidad_pago, precio_un, cantidad, precio_total, cuenta_contable)
 
-                            'ElseIf dgv_datosAgregados1.Rows(i).Cells(6).Value.ToString() = 3 And dgv_datosAgregados1.Rows(i).Cells(9).Value.ToString() <> 1 And sincroniza = 1 Then
+                                'ElseIf dgv_datosAgregados1.Rows(i).Cells(6).Value.ToString() = 3 And dgv_datosAgregados1.Rows(i).Cells(9).Value.ToString() = 1 And sincroniza = 1 Then
 
-                        End If
+                                'ElseIf dgv_datosAgregados1.Rows(i).Cells(6).Value.ToString() = 3 And dgv_datosAgregados1.Rows(i).Cells(9).Value.ToString() <> 1 And sincroniza = 1 Then
 
-                        actualizar_dgv1()
-                        actualiza_equipos()
+                            End If
+
+                            actualizar_dgv1()
+                            actualiza_equipos()
 
                         End If
                     Next i

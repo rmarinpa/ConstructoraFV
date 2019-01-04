@@ -158,9 +158,35 @@ Public Class frm_menu_principal_VIII
         cboObraControl.DisplayMember = "nombre_faena"
         cboObraControl.ValueMember = "Id_identificacion"
 
-        cboObraControlFiltro.DataSource = nue_obra5.listar5(id_obra)
-        cboObraControlFiltro.DisplayMember = "nombre_faena"
-        cboObraControlFiltro.ValueMember = "Id_identificacion"
+        cboFiltroObraControl.DataSource = nue_obra5.listar5(id_obra)
+        cboFiltroObraControl.DisplayMember = "nombre_faena"
+        cboFiltroObraControl.ValueMember = "Id_identificacion"
+
+        cboFiltroObraAvance.DataSource = nue_obra5.listar5(id_obra)
+        cboFiltroObraAvance.DisplayMember = "nombre_faena"
+        cboFiltroObraAvance.ValueMember = "Id_identificacion"
+
+        cboObraAvance.DataSource = nue_obra5.listar5(id_obra)
+        cboObraAvance.DisplayMember = "nombre_faena"
+        cboObraAvance.ValueMember = "Id_identificacion"
+
+        cboFiltroObraGantt.DataSource = nue_obra5.listar5(id_obra)
+        cboFiltroObraGantt.DisplayMember = "nombre_faena"
+        cboFiltroObraGantt.ValueMember = "Id_identificacion"
+
+        cboObraGantt.DataSource = nue_obra5.listar5(id_obra)
+        cboObraGantt.DisplayMember = "nombre_faena"
+        cboObraGantt.ValueMember = "Id_identificacion"
+
+        cboFiltroObraMensual.DataSource = nue_obra5.listar5(id_obra)
+        cboFiltroObraMensual.DisplayMember = "nombre_faena"
+        cboFiltroObraMensual.ValueMember = "Id_identificacion"
+
+        cboObraMensual.DataSource = nue_obra5.listar5(id_obra)
+        cboObraMensual.DisplayMember = "nombre_faena"
+        cboObraMensual.ValueMember = "Id_identificacion"
+
+
 
     End Sub
 

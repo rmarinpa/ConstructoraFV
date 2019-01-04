@@ -1490,9 +1490,9 @@ Partial Class frm_menu_principal_VI
         Me.lblProforma.AutoSize = True
         Me.lblProforma.Location = New System.Drawing.Point(630, 98)
         Me.lblProforma.Name = "lblProforma"
-        Me.lblProforma.Size = New System.Drawing.Size(66, 17)
+        Me.lblProforma.Size = New System.Drawing.Size(73, 17)
         Me.lblProforma.TabIndex = 35
-        Me.lblProforma.Text = "Proforma"
+        Me.lblProforma.Text = "Proformas"
         '
         'txtTotalProforma
         '
@@ -1507,9 +1507,9 @@ Partial Class frm_menu_principal_VI
         Me.lblRetencion.AutoSize = True
         Me.lblRetencion.Location = New System.Drawing.Point(630, 61)
         Me.lblRetencion.Name = "lblRetencion"
-        Me.lblRetencion.Size = New System.Drawing.Size(72, 17)
+        Me.lblRetencion.Size = New System.Drawing.Size(87, 17)
         Me.lblRetencion.TabIndex = 33
-        Me.lblRetencion.Text = "Retencion"
+        Me.lblRetencion.Text = "Retenciones"
         '
         'txtProformaOriginal
         '

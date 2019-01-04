@@ -179,14 +179,14 @@ Public Class frm_menu_principal_VII
         Try
             Dim idModificaciones As Integer
             Dim obras As String
-            Dim nromodificacion As Integer
+            Dim nromodificacion As Double
             Dim fecha As DateTime
-            Dim aumentoObra As Integer
-            Dim disminucionObra As Integer
-            Dim obraExtraordinaria As Integer
-            Dim aumentoDisminucion As Integer
-            Dim retencion As Integer
-            Dim proforma As Integer
+            Dim aumentoObra As Double
+            Dim disminucionObra As Double
+            Dim obraExtraordinaria As Double
+            Dim aumentoDisminucion As Double
+            Dim retencion As Double
+            Dim proforma As Double
 
             obras = cboObrasModificaciones.Text
             nromodificacion = txtNroModificacion.Text
@@ -265,16 +265,23 @@ Public Class frm_menu_principal_VII
                 .Columns(4).HeaderCell.Value = "Aumento Obra ($)"
                 .Columns(5).HeaderCell.Value = "Disminución Obra ($)"
                 .Columns(6).HeaderCell.Value = "Obra Extraordinaria ($)"
-                .Columns(7).HeaderCell.Value = "Aumento/Disminución de Plazo"
-                .Columns(8).HeaderCell.Value = "Aumento/Disminución Retenciones"
-                .Columns(9).HeaderCell.Value = "Aumento/Disminución Proformas"
-
-
+                .Columns(7).HeaderCell.Value = "Aumento/Dism Plazo"
+                .Columns(8).HeaderCell.Value = "Aumento/Dism Retenciones"
+                .Columns(9).HeaderCell.Value = "Aumento/Dism Proformas"
             End With
+            dgvListadoModificaciones.Columns(1).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+            dgvListadoModificaciones.Columns(2).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+            dgvListadoModificaciones.Columns(3).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+            dgvListadoModificaciones.Columns(4).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+            dgvListadoModificaciones.Columns(5).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+            dgvListadoModificaciones.Columns(6).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+            'dgvListadoModificaciones.Columns(7).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+            'dgvListadoModificaciones.Columns(8).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+            'dgvListadoModificaciones.Columns(9).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+
             dgvListadoModificaciones.Columns(4).DefaultCellStyle.Format = "C"
             dgvListadoModificaciones.Columns(5).DefaultCellStyle.Format = "C"
             dgvListadoModificaciones.Columns(6).DefaultCellStyle.Format = "C"
-            dgvListadoModificaciones.Columns(7).DefaultCellStyle.Format = "C"
             dgvListadoModificaciones.Columns(8).DefaultCellStyle.Format = "C"
             dgvListadoModificaciones.Columns(9).DefaultCellStyle.Format = "C"
 

@@ -597,6 +597,16 @@ Public Class frm_menu_principal_X
         frm_menu_principal_VII.Show()
         Me.Close()
     End Sub
+    Private Sub TabPage8_Enter(sender As Object, e As EventArgs) Handles TabPage8.Enter
+        num_tab = 1
+        frm_menu_principal_VIII.Show()
+        Me.Close()
+    End Sub
+    Private Sub TabPage9_Enter(sender As Object, e As EventArgs) Handles TabPage9.Enter
+        num_tab = 1
+        frm_menu_principal_IX.Show()
+        Me.Close()
+    End Sub
     Private Sub TabPage4_Enter(sender As Object, e As EventArgs) Handles TabPage4.Enter
         num_tab = 1
         frm_menu_principal_IV_V2.Show()
